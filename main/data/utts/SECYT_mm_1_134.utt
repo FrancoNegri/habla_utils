@@ -1,0 +1,163 @@
+EST_File utterance
+DataType ascii
+version 2
+EST_Header_End
+Features max_id 66 ; type Text ; iform "\"No escupir en el suelo\"" ; filename prompt-utt/SECYT_mm_1_134.utt ; fileid SECYT_mm_1_134 ; 
+Stream_Items
+1 id _1 ; name No ; whitespace "" ; prepunctuation "" ; 
+2 id _2 ; name escupir ; whitespace " " ; prepunctuation "" ; 
+3 id _3 ; name en ; whitespace " " ; prepunctuation "" ; 
+4 id _4 ; name el ; whitespace " " ; prepunctuation "" ; 
+5 id _5 ; name suelo ; whitespace " " ; prepunctuation "" ; 
+6 id _10 ; name suelo ; pbreak B ; pos nil ; 
+7 id _9 ; name el ; pbreak NB ; pos nil ; 
+8 id _8 ; name en ; pbreak NB ; pos nil ; 
+9 id _7 ; name escupir ; pbreak NB ; pos nil ; 
+10 id _6 ; name No ; pbreak NB ; pos nil ; 
+11 id _12 ; name syl ; stress 0 ; 
+12 id _15 ; name syl ; stress 0 ; 
+13 id _18 ; name syl ; stress 0 ; 
+14 id _21 ; name syl ; stress 0 ; 
+15 id _25 ; name syl ; stress 0 ; 
+16 id _28 ; name syl ; stress 0 ; 
+17 id _31 ; name syl ; stress 0 ; 
+18 id _35 ; name syl ; stress 0 ; 
+19 id _65 ; name # ; end 0.15 ; 
+20 id _38 ; name # ; dur_factor 1 ; end 0.33 ; 
+21 id _13 ; name n ; dur_factor 1 ; end 0.515 ; 
+22 id _14 ; name o1 ; dur_factor 1 ; end 0.7 ; 
+23 id _16 ; name e ; dur_factor 1 ; end 0.785 ; 
+24 id _17 ; name s ; dur_factor 1 ; end 0.855 ; 
+25 id _19 ; name k ; dur_factor 1 ; end 0.96 ; 
+26 id _20 ; name u ; dur_factor 1 ; end 1.02 ; 
+27 id _22 ; name p ; dur_factor 1 ; end 1.125 ; 
+28 id _23 ; name i1 ; dur_factor 1 ; end 1.25 ; 
+29 id _24 ; name r ; dur_factor 1 ; end 1.285 ; 
+30 id _26 ; name e ; dur_factor 1 ; end 1.37 ; 
+31 id _27 ; name n ; dur_factor 1 ; end 1.43 ; 
+32 id _29 ; name e ; dur_factor 1 ; end 1.49 ; 
+33 id _30 ; name l ; dur_factor 1 ; end 1.565 ; 
+34 id _32 ; name s ; dur_factor 1 ; end 1.72 ; 
+35 id _33 ; name u0 ; dur_factor 1 ; end 1.8 ; 
+36 id _34 ; name e1 ; dur_factor 1 ; end 1.87 ; 
+37 id _36 ; name l ; dur_factor 1.2 ; end 1.955 ; 
+38 id _37 ; name o ; dur_factor 1.2 ; end 2.08 ; 
+39 id _39 ; name # ; dur_factor 1 ; end 2.17 ; 
+40 id _40 ; name nil ; 
+41 id _41 ; name nil ; 
+42 id _43 ; f0 110 ; pos 1.742 ; 
+43 id _42 ; f0 130 ; pos 0.25 ; 
+44 id _66 ; name BB ; 
+End_of_Stream_Items
+Relations
+Relation Token ; "(" ")" ; 
+6 10 1 0 0 0
+1 1 0 6 2 0
+7 9 2 0 0 0
+2 2 0 7 3 1
+8 8 3 0 0 0
+3 3 0 8 4 2
+9 7 4 0 0 0
+4 4 0 9 5 3
+10 6 5 0 0 0
+5 5 0 10 0 4
+End_of_Relation
+Relation Word ; "(" ")" ; 
+1 10 0 0 2 0
+2 9 0 0 3 1
+3 8 0 0 4 2
+4 7 0 0 5 3
+5 6 0 0 0 4
+End_of_Relation
+Relation Syllable ; "(" ")" ; 
+1 11 0 0 2 0
+2 12 0 0 3 1
+3 13 0 0 4 2
+4 14 0 0 5 3
+5 15 0 0 6 4
+6 16 0 0 7 5
+7 17 0 0 8 6
+8 18 0 0 0 7
+End_of_Relation
+Relation Segment ; "(" ")" ; 
+1 19 0 0 2 0
+2 20 0 0 3 1
+3 21 0 0 4 2
+4 22 0 0 5 3
+5 23 0 0 6 4
+6 24 0 0 7 5
+7 25 0 0 8 6
+8 26 0 0 9 7
+9 27 0 0 10 8
+10 28 0 0 11 9
+11 29 0 0 12 10
+12 30 0 0 13 11
+13 31 0 0 14 12
+14 32 0 0 15 13
+15 33 0 0 16 14
+16 34 0 0 17 15
+17 35 0 0 18 16
+18 36 0 0 19 17
+19 37 0 0 20 18
+20 38 0 0 21 19
+21 39 0 0 0 20
+End_of_Relation
+Relation SylStructure ; "(" ")" ; 
+7 21 6 0 8 0
+8 22 0 0 0 7
+6 11 1 7 0 0
+1 10 0 6 2 0
+12 23 9 0 13 0
+13 24 0 0 0 12
+9 12 2 12 10 0
+14 25 10 0 15 0
+15 26 0 0 0 14
+10 13 0 14 11 9
+16 27 11 0 17 0
+17 28 0 0 18 16
+18 29 0 0 0 17
+11 14 0 16 0 10
+2 9 0 9 3 1
+20 30 19 0 21 0
+21 31 0 0 0 20
+19 15 3 20 0 0
+3 8 0 19 4 2
+23 32 22 0 24 0
+24 33 0 0 0 23
+22 16 4 23 0 0
+4 7 0 22 5 3
+27 34 25 0 28 0
+28 35 0 0 29 27
+29 36 0 0 0 28
+25 17 5 27 26 0
+30 37 26 0 31 0
+31 38 0 0 0 30
+26 18 0 30 0 25
+5 6 0 25 0 4
+End_of_Relation
+Relation IntEvent ; "(" ")" ; 
+1 40 0 0 2 0
+2 41 0 0 0 1
+End_of_Relation
+Relation Intonation ; "(" ")" ; 
+3 40 1 0 0 0
+1 15 0 3 2 0
+4 41 2 0 0 0
+2 16 0 4 0 1
+End_of_Relation
+Relation Target ; "(" ")" ; 
+3 43 1 0 0 0
+1 20 0 3 2 0
+4 42 2 0 0 0
+2 38 0 4 0 1
+End_of_Relation
+Relation Phrase ; ()
+2 10 1 0 3 0
+3 9 0 0 4 2
+4 8 0 0 5 3
+5 7 0 0 6 4
+6 6 0 0 0 5
+1 44 0 2 0 0
+End_of_Relation
+End_of_Relations
+End_of_Utterance

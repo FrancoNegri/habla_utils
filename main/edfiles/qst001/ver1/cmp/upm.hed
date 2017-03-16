@@ -1,0 +1,11 @@
+// increase the number of mixtures per stream
+MU +1 {*.state[2].stream[1-1].mix}
+MU +1 {*.state[3].stream[1-1].mix}
+MU +1 {*.state[4].stream[1-1].mix}
+MU +1 {*.state[5].stream[1-1].mix}
+MU +1 {*.state[6].stream[1-1].mix}
+MU +1 {*.state[2].stream[2-4].mix}
+MU +1 {*.state[3].stream[2-4].mix}
+MU +1 {*.state[4].stream[2-4].mix}
+MU +1 {*.state[5].stream[2-4].mix}
+MU +1 {*.state[6].stream[2-4].mix}

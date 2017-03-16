@@ -1,0 +1,12 @@
+
+TR 2
+
+// load trees for dur
+LT "/home/franco/htk/habla_utils/main/trees/qst001/ver1/dur/dur.inf.untied"
+
+// make unseen model
+AU "/home/franco/htk/habla_utils/main/data/lists/full_all.list"
+
+// make model compact
+CO "/home/franco/htk/habla_utils/main/models/qst001/ver1/dur/tiedlist"
+

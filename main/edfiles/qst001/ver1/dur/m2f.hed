@@ -1,0 +1,35 @@
+// copy monophone models to fullcontext ones
+CL "/home/franco/htk/habla_utils/main/data/lists/full.list"
+
+// tie state transition probability
+TI T_# {*-#+*.transP}
+TI T_a {*-a+*.transP}
+TI T_a1 {*-a1+*.transP}
+TI T_b {*-b+*.transP}
+TI T_ch {*-ch+*.transP}
+TI T_d {*-d+*.transP}
+TI T_e {*-e+*.transP}
+TI T_e1 {*-e1+*.transP}
+TI T_f {*-f+*.transP}
+TI T_g {*-g+*.transP}
+TI T_i {*-i+*.transP}
+TI T_i0 {*-i0+*.transP}
+TI T_i1 {*-i1+*.transP}
+TI T_k {*-k+*.transP}
+TI T_l {*-l+*.transP}
+TI T_ll {*-ll+*.transP}
+TI T_m {*-m+*.transP}
+TI T_n {*-n+*.transP}
+TI T_ny {*-ny+*.transP}
+TI T_o {*-o+*.transP}
+TI T_o1 {*-o1+*.transP}
+TI T_p {*-p+*.transP}
+TI T_r {*-r+*.transP}
+TI T_rr {*-rr+*.transP}
+TI T_s {*-s+*.transP}
+TI T_t {*-t+*.transP}
+TI T_th {*-th+*.transP}
+TI T_u {*-u+*.transP}
+TI T_u0 {*-u0+*.transP}
+TI T_u1 {*-u1+*.transP}
+TI T_x {*-x+*.transP}

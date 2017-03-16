@@ -1,0 +1,15 @@
+
+TR 2
+
+// load trees for mgc
+LT "/home/franco/htk/habla_utils/main/trees/qst001/ver1/cmp/mgc.inf.untied"
+
+// load trees for lf0
+LT "/home/franco/htk/habla_utils/main/trees/qst001/ver1/cmp/lf0.inf.untied"
+
+// make unseen model
+AU "/home/franco/htk/habla_utils/main/data/lists/full_all.list"
+
+// make model compact
+CO "/home/franco/htk/habla_utils/main/models/qst001/ver1/cmp/tiedlist"
+

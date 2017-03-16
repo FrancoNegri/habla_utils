@@ -1,0 +1,165 @@
+EST_File utterance
+DataType ascii
+version 2
+EST_Header_End
+Features max_id 73 ; type Text ; iform "\"Ingerir champú es riesgoso\"" ; filename prompt-utt/SECYT_mm_1_704.utt ; fileid SECYT_mm_1_704 ; 
+Stream_Items
+1 id _1 ; name Ingerir ; whitespace "" ; prepunctuation "" ; 
+2 id _2 ; name champú ; whitespace " " ; prepunctuation "" ; 
+3 id _3 ; name es ; whitespace " " ; prepunctuation "" ; 
+4 id _4 ; name riesgoso ; whitespace " " ; prepunctuation "" ; 
+5 id _8 ; name riesgoso ; pbreak B ; pos nil ; 
+6 id _7 ; name es ; pbreak NB ; pos nil ; 
+7 id _6 ; name champú ; pbreak NB ; pos nil ; 
+8 id _5 ; name Ingerir ; pbreak NB ; pos nil ; 
+9 id _10 ; name syl ; stress 0 ; 
+10 id _13 ; name syl ; stress 0 ; 
+11 id _16 ; name syl ; stress 0 ; 
+12 id _20 ; name syl ; stress 0 ; 
+13 id _24 ; name syl ; stress 0 ; 
+14 id _27 ; name syl ; stress 0 ; 
+15 id _30 ; name syl ; stress 0 ; 
+16 id _35 ; name syl ; stress 0 ; 
+17 id _38 ; name syl ; stress 0 ; 
+18 id _72 ; name # ; end 0.15 ; 
+19 id _41 ; name # ; dur_factor 1 ; end 0.435 ; 
+20 id _11 ; name i ; dur_factor 1 ; end 0.56 ; 
+21 id _12 ; name n ; dur_factor 1 ; end 0.615 ; 
+22 id _14 ; name x ; dur_factor 1 ; end 0.63 ; 
+23 id _15 ; name e ; dur_factor 1 ; end 0.645 ; 
+24 id _17 ; name r ; dur_factor 1 ; end 0.83 ; 
+25 id _18 ; name i1 ; dur_factor 1 ; end 0.85 ; 
+26 id _19 ; name r ; dur_factor 1 ; end 1.05 ; 
+27 id _71 ; name # ; end 1.08 ; 
+28 id _21 ; name ch ; dur_factor 1 ; end 1.095 ; 
+29 id _22 ; name a ; dur_factor 1 ; end 1.215 ; 
+30 id _23 ; name m ; dur_factor 1 ; end 1.295 ; 
+31 id _25 ; name p ; dur_factor 1 ; end 1.37 ; 
+32 id _26 ; name u1 ; dur_factor 1 ; end 1.51 ; 
+33 id _28 ; name e1 ; dur_factor 1 ; end 1.525 ; 
+34 id _29 ; name s ; dur_factor 1 ; end 1.54 ; 
+35 id _31 ; name rr ; dur_factor 1 ; end 1.8 ; 
+36 id _32 ; name i0 ; dur_factor 1 ; end 1.82 ; 
+37 id _33 ; name e ; dur_factor 1 ; end 1.905 ; 
+38 id _34 ; name s ; dur_factor 1 ; end 1.92 ; 
+39 id _36 ; name g ; dur_factor 1 ; end 2.03 ; 
+40 id _37 ; name o1 ; dur_factor 1 ; end 2.12 ; 
+41 id _39 ; name s ; dur_factor 1.2 ; end 2.275 ; 
+42 id _40 ; name o ; dur_factor 1.2 ; end 2.415 ; 
+43 id _42 ; name # ; dur_factor 1 ; end 2.46 ; 
+44 id _44 ; f0 110 ; pos 2.123 ; 
+45 id _43 ; f0 130 ; pos 0.25 ; 
+46 id _73 ; name BB ; 
+End_of_Stream_Items
+Relations
+Relation Token ; "(" ")" ; 
+5 8 1 0 0 0
+1 1 0 5 2 0
+6 7 2 0 0 0
+2 2 0 6 3 1
+7 6 3 0 0 0
+3 3 0 7 4 2
+8 5 4 0 0 0
+4 4 0 8 0 3
+End_of_Relation
+Relation Word ; "(" ")" ; 
+1 8 0 0 2 0
+2 7 0 0 3 1
+3 6 0 0 4 2
+4 5 0 0 0 3
+End_of_Relation
+Relation Syllable ; "(" ")" ; 
+1 9 0 0 2 0
+2 10 0 0 3 1
+3 11 0 0 4 2
+4 12 0 0 5 3
+5 13 0 0 6 4
+6 14 0 0 7 5
+7 15 0 0 8 6
+8 16 0 0 9 7
+9 17 0 0 0 8
+End_of_Relation
+Relation Segment ; "(" ")" ; 
+1 18 0 0 2 0
+2 19 0 0 3 1
+3 20 0 0 4 2
+4 21 0 0 5 3
+5 22 0 0 6 4
+6 23 0 0 7 5
+7 24 0 0 8 6
+8 25 0 0 9 7
+9 26 0 0 10 8
+10 27 0 0 11 9
+11 28 0 0 12 10
+12 29 0 0 13 11
+13 30 0 0 14 12
+14 31 0 0 15 13
+15 32 0 0 16 14
+16 33 0 0 17 15
+17 34 0 0 18 16
+18 35 0 0 19 17
+19 36 0 0 20 18
+20 37 0 0 21 19
+21 38 0 0 22 20
+22 39 0 0 23 21
+23 40 0 0 24 22
+24 41 0 0 25 23
+25 42 0 0 26 24
+26 43 0 0 0 25
+End_of_Relation
+Relation SylStructure ; "(" ")" ; 
+8 20 5 0 9 0
+9 21 0 0 0 8
+5 9 1 8 6 0
+10 22 6 0 11 0
+11 23 0 0 0 10
+6 10 0 10 7 5
+12 24 7 0 13 0
+13 25 0 0 14 12
+14 26 0 0 0 13
+7 11 0 12 0 6
+1 8 0 5 2 0
+17 28 15 0 18 0
+18 29 0 0 19 17
+19 30 0 0 0 18
+15 12 2 17 16 0
+20 31 16 0 21 0
+21 32 0 0 0 20
+16 13 0 20 0 15
+2 7 0 15 3 1
+23 33 22 0 24 0
+24 34 0 0 0 23
+22 14 3 23 0 0
+3 6 0 22 4 2
+28 35 25 0 29 0
+29 36 0 0 30 28
+30 37 0 0 31 29
+31 38 0 0 0 30
+25 15 4 28 26 0
+32 39 26 0 33 0
+33 40 0 0 0 32
+26 16 0 32 27 25
+34 41 27 0 35 0
+35 42 0 0 0 34
+27 17 0 34 0 26
+4 5 0 25 0 3
+End_of_Relation
+Relation IntEvent ; "(" ")" ; 
+End_of_Relation
+Relation Intonation ; "(" ")" ; 
+End_of_Relation
+Relation Target ; "(" ")" ; 
+3 45 1 0 0 0
+1 19 0 3 2 0
+4 44 2 0 0 0
+2 42 0 4 0 1
+End_of_Relation
+Relation Phrase ; ()
+2 8 1 0 3 0
+3 7 0 0 4 2
+4 6 0 0 5 3
+5 5 0 0 0 4
+1 46 0 2 0 0
+End_of_Relation
+End_of_Relations
+End_of_Utterance

@@ -1,0 +1,9 @@
+MAXSEMITIEDITER = 20
+SEMITIEDMACRO   = "cmp"
+SAVEFULLC = T
+BASECLASS = "/home/franco/htk/habla_utils/main/models/qst001/ver1/cmp/stc.base"
+TRANSKIND = SEMIT
+USEBIAS   = F
+ADAPTKIND = BASE
+BLOCKSIZE = "IntVec 3 35 35 35 IntVec 1 1 IntVec 1 1 IntVec 1 1 "
+BANDWIDTH = "IntVec 3 35 35 35 IntVec 1 1 IntVec 1 1 IntVec 1 1 "

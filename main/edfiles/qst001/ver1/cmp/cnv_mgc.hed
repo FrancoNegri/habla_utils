@@ -1,0 +1,11 @@
+
+TR 2
+
+// load trees for mgc
+LT "/home/franco/htk/habla_utils/main/trees/qst001/ver1/cmp/mgc.inf.untied"
+
+// convert loaded trees for hts_engine format
+CT "/home/franco/htk/habla_utils/main/trees/qst001/ver1/cmp"
+
+// convert mmf for hts_engine format
+CM "/home/franco/htk/habla_utils/main/models/qst001/ver1/cmp"
