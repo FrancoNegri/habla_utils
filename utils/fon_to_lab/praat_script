@@ -1,0 +1,7 @@
+form Test command line calls
+    sentence file SECYT_mm_1_1.wav
+endform
+
+Read from file: file$
+pop = Get duration
+writeInfoLine: pop

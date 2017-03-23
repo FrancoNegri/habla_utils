@@ -2,8 +2,9 @@
 #Transforms to lab format
 import sys
 import re
+import subprocess
 
-def syylable_counter(times,syllables_times):
+def syylable_counter(times,syllables_times,start_value):
     pos_foward = []
     currentIndex = -1
     counter=0
@@ -17,16 +18,19 @@ def syylable_counter(times,syllables_times):
                     pos_foward.append(counter)
                     break
                 else:
-                    counter=1
+                    counter=start_value
                     pos_foward.append(counter)
                     currentIndex = index
                     break
         if not match:
             print "any match on:", time
-            counter=1
+            counter=start_value
             currentIndex = -1
             pos_foward.append(counter)
     return pos_foward
+
+def syylable_counter_backwards(times,syllables_times,start_value=0):
+
 
 def main():
     usage = 'Usage: ./lab_to_textgrid.py file'
@@ -55,8 +59,12 @@ def main():
         times.append(time)
     phones.append("x")
     phones.append("x")
-    #TODO how to find end of audio?
-    times.append("99")
+    #Very rare and crapy way of doing it, but it works for now...
+    f = open("temp.txt", "w+")
+    subprocess.call(['../praat/praat', '--run', 'praat_script'],stdout=f)
+    f.seek(0)
+    end_of_audio = f.read()
+    times.append(end_of_audio.strip())
 
     # now get the syllables
     syllables = []
@@ -77,9 +85,9 @@ def main():
     syllables_times.append(1000)
 
     # #Count silabbles foward
-    pos_foward = syylable_counter(times,syllables_times)
+    pos_foward = syylable_counter(times,syllables_times,start_value=1)
     #TODO: fix this one
-    pos_backwards = syylable_counter(reversed(times),syllables_times)
+    pos_backwards = syylable_counter_backwards(times,syllables_times,start_value=0)
 
     #write all in lab format
     width = 8
@@ -92,6 +100,7 @@ def main():
         lab.write("@"+str(pos_foward[i])+"_"+str(pos_backwards[i])+"\n")
     fon.close()
     lab.close()
+    print times
 
 if __name__ == "__main__":
     main()
