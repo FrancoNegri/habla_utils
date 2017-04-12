@@ -5,7 +5,7 @@ import re
 import itertools
 
 #####
-#Gets a monophone lab and a fullcontext lab, and merge the phone times of the first one with the ones of the second ones
+#Gets a monophone lab and a fullcontext/mono lab, and merge the phone times of the first one with the ones of the second ones
 ####
 
 def main():

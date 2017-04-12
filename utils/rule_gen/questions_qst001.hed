@@ -1,5 +1,5 @@
 QS "LL-Vowel"	{a^*,e^*,i^*,o^*,u^*,i0^*,u0^*,a1^*,e1^*,i1^*,o1^*,u1^*}
-QS "LL-Consonant"	{#^*,p^*,t^*,k^*,b^*,d^*,g^*,f^*,s^*,x^*,th^*,ch^*,m^*,n^*,ny^*,l^*,ll^*,r^*,rr^*}
+QS "LL-Consonant"	{p^*,t^*,k^*,b^*,d^*,g^*,f^*,s^*,x^*,th^*,ch^*,m^*,n^*,ny^*,l^*,ll^*,r^*,rr^*}
 QS "LL-Stop"	{p^*,t^*,k^*,b^*,d^*,g^*}
 QS "LL-Nasal"	{m^*,n^*,ny^*}
 QS "LL-Fricative"	{f^*,s^*,x^*,th^*}
@@ -19,8 +19,8 @@ QS "LL-Low_Vowel"	{a^*,a1^*}
 QS "LL-Rounded_Vowel"	{u^*,u1^*,u0^*,o^*,o1^*}
 QS "LL-Unrounded_Vowel"	{a^*,e^*,i^*,i0^*,a1^*,i1^*,e1^*}
 QS "LL-Reduced_Vowel"	{i^*,i0^*,e^*,i1^*,e1^*}
-QS "LL-Unvoiced_Consonant"	{}
-QS "LL-Voiced_Consonant"	{}
+QS "LL-Unvoiced_Consonant"	{p^*,t^*,k^*,f^*,s^*,th^*,ch^*}
+QS "LL-Voiced_Consonant"	{b^*,d^*,g^*,m^*,n^*,ny^*,l^*,r^*,rr^*}
 QS "LL-Front_Consonant"	{p^*,b^*,m^*,f^*}
 QS "LL-Central_Consonant"	{s^*,n^*,l^*,r^*,rr^*,t^*,d^*,th^*,ch^*,ny^*,ll^*}
 QS "LL-Back_Consonant"	{k^*,g^*,x^*}
@@ -30,9 +30,8 @@ QS "LL-Velar"	{k^*,g^*,x^*}
 QS "LL-Paletal"	{ch^*,ny^*,ll^*}
 QS "LL-Labio-Dental"	{f^*}
 QS "LL-Dental"	{t^*,d^*,th^*}
-QS "LL-Unvoiced_Fricative"	{}
-QS "LL-Voiced_Fricative"	{}
-QS "LL-#"	{#^*}
+QS "LL-Unvoiced_Fricative"	{s^*,th^*,f^*}
+QS "LL-sp"	{sp^*}
 QS "LL-a"	{a^*}
 QS "LL-e"	{e^*}
 QS "LL-i"	{i^*}
@@ -80,7 +79,7 @@ QS "LL-Central_Stop"	{d^*,t^*}
 QS "LL-Back_Stop"	{k^*,g^*}
 
 QS "L-Vowel"	{*^a-*,*^e-*,*^i-*,*^o-*,*^u-*,*^i0-*,*^u0-*,*^a1-*,*^e1-*,*^i1-*,*^o1-*,*^u1-*}
-QS "L-Consonant"	{*^#-*,*^p-*,*^t-*,*^k-*,*^b-*,*^d-*,*^g-*,*^f-*,*^s-*,*^x-*,*^th-*,*^ch-*,*^m-*,*^n-*,*^ny-*,*^l-*,*^ll-*,*^r-*,*^rr-*}
+QS "L-Consonant"	{*^p-*,*^t-*,*^k-*,*^b-*,*^d-*,*^g-*,*^f-*,*^s-*,*^x-*,*^th-*,*^ch-*,*^m-*,*^n-*,*^ny-*,*^l-*,*^ll-*,*^r-*,*^rr-*}
 QS "L-Stop"	{*^p-*,*^t-*,*^k-*,*^b-*,*^d-*,*^g-*}
 QS "L-Nasal"	{*^m-*,*^n-*,*^ny-*}
 QS "L-Fricative"	{*^f-*,*^s-*,*^x-*,*^th-*}
@@ -100,8 +99,8 @@ QS "L-Low_Vowel"	{*^a-*,*^a1-*}
 QS "L-Rounded_Vowel"	{*^u-*,*^u1-*,*^u0-*,*^o-*,*^o1-*}
 QS "L-Unrounded_Vowel"	{*^a-*,*^e-*,*^i-*,*^i0-*,*^a1-*,*^i1-*,*^e1-*}
 QS "L-Reduced_Vowel"	{*^i-*,*^i0-*,*^e-*,*^i1-*,*^e1-*}
-QS "L-Unvoiced_Consonant"	{}
-QS "L-Voiced_Consonant"	{}
+QS "L-Unvoiced_Consonant"	{*^p-*,*^t-*,*^k-*,*^f-*,*^s-*,*^th-*,*^ch-*}
+QS "L-Voiced_Consonant"	{*^b-*,*^d-*,*^g-*,*^m-*,*^n-*,*^ny-*,*^l-*,*^r-*,*^rr-*}
 QS "L-Front_Consonant"	{*^p-*,*^b-*,*^m-*,*^f-*}
 QS "L-Central_Consonant"	{*^s-*,*^n-*,*^l-*,*^r-*,*^rr-*,*^t-*,*^d-*,*^th-*,*^ch-*,*^ny-*,*^ll-*}
 QS "L-Back_Consonant"	{*^k-*,*^g-*,*^x-*}
@@ -111,9 +110,8 @@ QS "L-Velar"	{*^k-*,*^g-*,*^x-*}
 QS "L-Paletal"	{*^ch-*,*^ny-*,*^ll-*}
 QS "L-Labio-Dental"	{*^f-*}
 QS "L-Dental"	{*^t-*,*^d-*,*^th-*}
-QS "L-Unvoiced_Fricative"	{}
-QS "L-Voiced_Fricative"	{}
-QS "L-#"	{*^#-*}
+QS "L-Unvoiced_Fricative"	{*^s-*,*^th-*,*^f-*}
+QS "L-sp"	{*^sp-*}
 QS "L-a"	{*^a-*}
 QS "L-e"	{*^e-*}
 QS "L-i"	{*^i-*}
@@ -161,7 +159,7 @@ QS "L-Central_Stop"	{*^d-*,*^t-*}
 QS "L-Back_Stop"	{*^k-*,*^g-*}
 
 QS "C-Vowel"	{*-a+*,*-e+*,*-i+*,*-o+*,*-u+*,*-i0+*,*-u0+*,*-a1+*,*-e1+*,*-i1+*,*-o1+*,*-u1+*}
-QS "C-Consonant"	{*-#+*,*-p+*,*-t+*,*-k+*,*-b+*,*-d+*,*-g+*,*-f+*,*-s+*,*-x+*,*-th+*,*-ch+*,*-m+*,*-n+*,*-ny+*,*-l+*,*-ll+*,*-r+*,*-rr+*}
+QS "C-Consonant"	{*-p+*,*-t+*,*-k+*,*-b+*,*-d+*,*-g+*,*-f+*,*-s+*,*-x+*,*-th+*,*-ch+*,*-m+*,*-n+*,*-ny+*,*-l+*,*-ll+*,*-r+*,*-rr+*}
 QS "C-Stop"	{*-p+*,*-t+*,*-k+*,*-b+*,*-d+*,*-g+*}
 QS "C-Nasal"	{*-m+*,*-n+*,*-ny+*}
 QS "C-Fricative"	{*-f+*,*-s+*,*-x+*,*-th+*}
@@ -181,8 +179,8 @@ QS "C-Low_Vowel"	{*-a+*,*-a1+*}
 QS "C-Rounded_Vowel"	{*-u+*,*-u1+*,*-u0+*,*-o+*,*-o1+*}
 QS "C-Unrounded_Vowel"	{*-a+*,*-e+*,*-i+*,*-i0+*,*-a1+*,*-i1+*,*-e1+*}
 QS "C-Reduced_Vowel"	{*-i+*,*-i0+*,*-e+*,*-i1+*,*-e1+*}
-QS "C-Unvoiced_Consonant"	{}
-QS "C-Voiced_Consonant"	{}
+QS "C-Unvoiced_Consonant"	{*-p+*,*-t+*,*-k+*,*-f+*,*-s+*,*-th+*,*-ch+*}
+QS "C-Voiced_Consonant"	{*-b+*,*-d+*,*-g+*,*-m+*,*-n+*,*-ny+*,*-l+*,*-r+*,*-rr+*}
 QS "C-Front_Consonant"	{*-p+*,*-b+*,*-m+*,*-f+*}
 QS "C-Central_Consonant"	{*-s+*,*-n+*,*-l+*,*-r+*,*-rr+*,*-t+*,*-d+*,*-th+*,*-ch+*,*-ny+*,*-ll+*}
 QS "C-Back_Consonant"	{*-k+*,*-g+*,*-x+*}
@@ -192,9 +190,8 @@ QS "C-Velar"	{*-k+*,*-g+*,*-x+*}
 QS "C-Paletal"	{*-ch+*,*-ny+*,*-ll+*}
 QS "C-Labio-Dental"	{*-f+*}
 QS "C-Dental"	{*-t+*,*-d+*,*-th+*}
-QS "C-Unvoiced_Fricative"	{}
-QS "C-Voiced_Fricative"	{}
-QS "C-#"	{*-#+*}
+QS "C-Unvoiced_Fricative"	{*-s+*,*-th+*,*-f+*}
+QS "C-sp"	{*-sp+*}
 QS "C-a"	{*-a+*}
 QS "C-e"	{*-e+*}
 QS "C-i"	{*-i+*}
@@ -242,7 +239,7 @@ QS "C-Central_Stop"	{*-d+*,*-t+*}
 QS "C-Back_Stop"	{*-k+*,*-g+*}
 
 QS "R-Vowel"	{*+a=*,*+e=*,*+i=*,*+o=*,*+u=*,*+i0=*,*+u0=*,*+a1=*,*+e1=*,*+i1=*,*+o1=*,*+u1=*}
-QS "R-Consonant"	{*+#=*,*+p=*,*+t=*,*+k=*,*+b=*,*+d=*,*+g=*,*+f=*,*+s=*,*+x=*,*+th=*,*+ch=*,*+m=*,*+n=*,*+ny=*,*+l=*,*+ll=*,*+r=*,*+rr=*}
+QS "R-Consonant"	{*+p=*,*+t=*,*+k=*,*+b=*,*+d=*,*+g=*,*+f=*,*+s=*,*+x=*,*+th=*,*+ch=*,*+m=*,*+n=*,*+ny=*,*+l=*,*+ll=*,*+r=*,*+rr=*}
 QS "R-Stop"	{*+p=*,*+t=*,*+k=*,*+b=*,*+d=*,*+g=*}
 QS "R-Nasal"	{*+m=*,*+n=*,*+ny=*}
 QS "R-Fricative"	{*+f=*,*+s=*,*+x=*,*+th=*}
@@ -262,8 +259,8 @@ QS "R-Low_Vowel"	{*+a=*,*+a1=*}
 QS "R-Rounded_Vowel"	{*+u=*,*+u1=*,*+u0=*,*+o=*,*+o1=*}
 QS "R-Unrounded_Vowel"	{*+a=*,*+e=*,*+i=*,*+i0=*,*+a1=*,*+i1=*,*+e1=*}
 QS "R-Reduced_Vowel"	{*+i=*,*+i0=*,*+e=*,*+i1=*,*+e1=*}
-QS "R-Unvoiced_Consonant"	{}
-QS "R-Voiced_Consonant"	{}
+QS "R-Unvoiced_Consonant"	{*+p=*,*+t=*,*+k=*,*+f=*,*+s=*,*+th=*,*+ch=*}
+QS "R-Voiced_Consonant"	{*+b=*,*+d=*,*+g=*,*+m=*,*+n=*,*+ny=*,*+l=*,*+r=*,*+rr=*}
 QS "R-Front_Consonant"	{*+p=*,*+b=*,*+m=*,*+f=*}
 QS "R-Central_Consonant"	{*+s=*,*+n=*,*+l=*,*+r=*,*+rr=*,*+t=*,*+d=*,*+th=*,*+ch=*,*+ny=*,*+ll=*}
 QS "R-Back_Consonant"	{*+k=*,*+g=*,*+x=*}
@@ -273,9 +270,8 @@ QS "R-Velar"	{*+k=*,*+g=*,*+x=*}
 QS "R-Paletal"	{*+ch=*,*+ny=*,*+ll=*}
 QS "R-Labio-Dental"	{*+f=*}
 QS "R-Dental"	{*+t=*,*+d=*,*+th=*}
-QS "R-Unvoiced_Fricative"	{}
-QS "R-Voiced_Fricative"	{}
-QS "R-#"	{*+#=*}
+QS "R-Unvoiced_Fricative"	{*+s=*,*+th=*,*+f=*}
+QS "R-sp"	{*+sp=*}
 QS "R-a"	{*+a=*}
 QS "R-e"	{*+e=*}
 QS "R-i"	{*+i=*}
@@ -323,7 +319,7 @@ QS "R-Central_Stop"	{*+d=*,*+t=*}
 QS "R-Back_Stop"	{*+k=*,*+g=*}
 
 QS "RR-Vowel"	{*=a@*,*=e@*,*=i@*,*=o@*,*=u@*,*=i0@*,*=u0@*,*=a1@*,*=e1@*,*=i1@*,*=o1@*,*=u1@*}
-QS "RR-Consonant"	{*=#@*,*=p@*,*=t@*,*=k@*,*=b@*,*=d@*,*=g@*,*=f@*,*=s@*,*=x@*,*=th@*,*=ch@*,*=m@*,*=n@*,*=ny@*,*=l@*,*=ll@*,*=r@*,*=rr@*}
+QS "RR-Consonant"	{*=p@*,*=t@*,*=k@*,*=b@*,*=d@*,*=g@*,*=f@*,*=s@*,*=x@*,*=th@*,*=ch@*,*=m@*,*=n@*,*=ny@*,*=l@*,*=ll@*,*=r@*,*=rr@*}
 QS "RR-Stop"	{*=p@*,*=t@*,*=k@*,*=b@*,*=d@*,*=g@*}
 QS "RR-Nasal"	{*=m@*,*=n@*,*=ny@*}
 QS "RR-Fricative"	{*=f@*,*=s@*,*=x@*,*=th@*}
@@ -343,8 +339,8 @@ QS "RR-Low_Vowel"	{*=a@*,*=a1@*}
 QS "RR-Rounded_Vowel"	{*=u@*,*=u1@*,*=u0@*,*=o@*,*=o1@*}
 QS "RR-Unrounded_Vowel"	{*=a@*,*=e@*,*=i@*,*=i0@*,*=a1@*,*=i1@*,*=e1@*}
 QS "RR-Reduced_Vowel"	{*=i@*,*=i0@*,*=e@*,*=i1@*,*=e1@*}
-QS "RR-Unvoiced_Consonant"	{}
-QS "RR-Voiced_Consonant"	{}
+QS "RR-Unvoiced_Consonant"	{*=p@*,*=t@*,*=k@*,*=f@*,*=s@*,*=th@*,*=ch@*}
+QS "RR-Voiced_Consonant"	{*=b@*,*=d@*,*=g@*,*=m@*,*=n@*,*=ny@*,*=l@*,*=r@*,*=rr@*}
 QS "RR-Front_Consonant"	{*=p@*,*=b@*,*=m@*,*=f@*}
 QS "RR-Central_Consonant"	{*=s@*,*=n@*,*=l@*,*=r@*,*=rr@*,*=t@*,*=d@*,*=th@*,*=ch@*,*=ny@*,*=ll@*}
 QS "RR-Back_Consonant"	{*=k@*,*=g@*,*=x@*}
@@ -354,9 +350,8 @@ QS "RR-Velar"	{*=k@*,*=g@*,*=x@*}
 QS "RR-Paletal"	{*=ch@*,*=ny@*,*=ll@*}
 QS "RR-Labio-Dental"	{*=f@*}
 QS "RR-Dental"	{*=t@*,*=d@*,*=th@*}
-QS "RR-Unvoiced_Fricative"	{}
-QS "RR-Voiced_Fricative"	{}
-QS "RR-#"	{*=#@*}
+QS "RR-Unvoiced_Fricative"	{*=s@*,*=th@*,*=f@*}
+QS "RR-sp"	{*=sp@*}
 QS "RR-a"	{*=a@*}
 QS "RR-e"	{*=e@*}
 QS "RR-i"	{*=i@*}

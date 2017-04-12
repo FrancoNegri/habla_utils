@@ -71,8 +71,8 @@ STRAIGHT    =
 
 # Festival commands
 USEUTT    = 1
-TEXT2UTT  = /home/franco/htk/tesis/festival/examples/text2utt
-DUMPFEATS = /home/franco/htk/tesis/festival/examples/dumpfeats
+TEXT2UTT  = /home/franckn/htk/habla_utils/utils/festival/examples/text2utt
+DUMPFEATS = /home/franckn/htk/habla_utils/utils/festival/examples/dumpfeats
 
 # speech analysis conditions
 SAMPFREQ   = 48000   # Sampling frequency (48kHz)

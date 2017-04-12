@@ -1,7 +1,7 @@
 #!/usr/bin/python
 
 #Cleans labs: cleans multiple "#" phones in fullcontext lab
-#Warning, times will end up being non continuous, but for this specific script I don't care
+#Warning, times and phonemes prior and after will end up being non continuous, but for this specific script I don't care
 
 import sys
 import re
@@ -19,8 +19,6 @@ ofname = sys.argv[2]
 inf = open(ifname, 'r')
 outf = open(ofname, 'w')
 
-# get info from .lab
-start_parsing = False
 prev_lavel = ""
 for line in inf:
     tokens = line.split()

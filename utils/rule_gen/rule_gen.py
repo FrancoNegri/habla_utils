@@ -1,43 +1,43 @@
-   # (pau  - 0 0 0 0 0 0 -) ;; silence
-   # (a  + l 3 2 - 0 0 -) ;; ari: rosa 
-   # (e  + l 2 1 - 0 0 -) ;; ari: gest'o
-   # (i  + l 1 1 - 0 0 -) ;; ari: ni~nera
-   # (o  + l 2 3 + 0 0 -) ;; ari: zapato
-   # (u  + l 1 3 + 0 0 -) ;; ari: muchacho
+#!/usr/bin/python
+# (pau  - 0 0 0 0 0 0 -) ;; silence
+# (a  + l 3 2 - 0 0 -) ;; ari: rosa 
+# (e  + l 2 1 - 0 0 -) ;; ari: gest'o
+# (i  + l 1 1 - 0 0 -) ;; ari: ni~nera
+# (o  + l 2 3 + 0 0 -) ;; ari: zapato
+# (u  + l 1 3 + 0 0 -) ;; ari: muchacho
 
-   # (iW  + s 1 1 - 0 0 -) ;; ari: iogur (weak vowels in dipthongs)
-   # (uW  + s 1 3 + 0 0 -) ;; ari: agua, washington (weak vowels in dipthongs)
+# (iW  + s 1 1 - 0 0 -) ;; ari: iogur (weak vowels in dipthongs)
+# (uW  + s 1 3 + 0 0 -) ;; ari: agua, washington (weak vowels in dipthongs)
 
-   # (aS + l 3 2 - 0 0 -) ;; ari: mano
-   # (eS + l 2 1 - 0 0 -) ;; ari: mesa
-   # (iS + l 1 1 - 0 0 -) ;; ari: pino
-   # (oS + l 2 3 + 0 0 -) ;; ari: 'opera
-   # (uS + l 1 3 + 0 0 -) ;; ari: tortura
+# (aS + l 3 2 - 0 0 -) ;; ari: mano
+# (eS + l 2 1 - 0 0 -) ;; ari: mesa
+# (iS + l 1 1 - 0 0 -) ;; ari: pino
+# (oS + l 2 3 + 0 0 -) ;; ari: 'opera
+# (uS + l 1 3 + 0 0 -) ;; ari: tortura
 
-   # (p  - 0 - - - s l -) ;; ari: pollo
-   # (t  - 0 - - - s d -) ;; ari: torre
-   # (k  - 0 - - - s v -) ;; ari: casa, kilo, queso
-   # (b  - 0 - - - s l +) ;; ari: bola, vivir
-   # (d  - 0 - - - s d +) ;; ari: cada
-   # (g  - 0 - - - s v +) ;; ari: gato, guerra, wisky (huevo?)
+# (p  - 0 - - - s l -) ;; ari: pollo
+# (t  - 0 - - - s d -) ;; ari: torre
+# (k  - 0 - - - s v -) ;; ari: casa, kilo, queso
+# (b  - 0 - - - s l +) ;; ari: bola, vivir
+# (d  - 0 - - - s d +) ;; ari: cada
+# (g  - 0 - - - s v +) ;; ari: gato, guerra, wisky (huevo?)
 
-   # (f  - 0 - - - f b -) ;; ari: feo
-   # (s  - 0 - - - f a -) ;; ari: caso, excavar?
-   # (j  - 0 - - - f v -) ;; ari: mexico, juan, gesto, caja 
-   # (ch - 0 - - - a p -) ;; ari: muchacho
-   # (th - 0 - - - f d -) ;; ari: cebolla, zapato 
+# (f  - 0 - - - f b -) ;; ari: feo
+# (s  - 0 - - - f a -) ;; ari: caso, excavar?
+# (j  - 0 - - - f v -) ;; ari: mexico, juan, gesto, caja 
+# (ch - 0 - - - a p -) ;; ari: muchacho
+# (th - 0 - - - f d -) ;; ari: cebolla, zapato 
 
-   # (m  - 0 - - - n l +) ;; ari: mano
-   # (n  - 0 - - - n a +) ;; ari: nada
-   # (ny - 0 - - - n p +) ;; ari: ni~na
+# (m  - 0 - - - n l +) ;; ari: mano
+# (n  - 0 - - - n a +) ;; ari: nada
+# (ny - 0 - - - n p +) ;; ari: ni~na
 
-   # (l  - 0 - - - l a +) ;; ari: lado
-   # (y  - 0 - - - l p +) ;; ari: coyote, ya (callar, llorar)
-   # (r  - 0 - - - l a +) ;; ari: trozo
-   # (rr - 0 - - - l a +) ;; ari: rosa, carro
+# (l  - 0 - - - l a +) ;; ari: lado
+# (y  - 0 - - - l p +) ;; ari: coyote, ya (callar, llorar)
+# (r  - 0 - - - l a +) ;; ari: trozo
+# (rr - 0 - - - l a +) ;; ari: rosa, carro
 
 def main():
-
 	#Extraigo todas las features que necesito
 	all_ = []
 
@@ -113,6 +113,8 @@ def main():
 				back_frontness_vowel.append(features[0])
 
 		else:
+			if features[0] == "sp":
+				continue
 			consonantes.append(features[0])
 			#   ;; 6 consonant type: stop fricative affricative nasal liquid
 			# (ctype s f a n l 0)
@@ -143,9 +145,9 @@ def main():
 				velar.append(features[0])
 			# ;; 8 consonant voicing
 			#   	(cvox + - 0)
-			if features[7] is "+":
+			if features[8] is "+":
 				consonant_plus.append(features[0])
-			elif features[7] is "-":
+			elif features[8] is "-":
 				consonant_minus.append(features[0])
 
 		# ;; 5 lip rounding
@@ -219,7 +221,8 @@ def main():
 		escribir(output,lugar,"Dental", dental ,prefijo,postfijo)
 
 		escribir(output,lugar,"Unvoiced_Fricative",list(set(consonant_minus) & set(fricative)),prefijo,postfijo)
-		escribir(output,lugar,"Voiced_Fricative",list(set(consonant_plus) & set(fricative)),prefijo,postfijo)
+		#no existen fricativas voiced, esto no es necesario
+		#escribir(output,lugar,"Voiced_Fricative",list(set(consonant_plus) & set(fricative)),prefijo,postfijo)
 
 		for fonema in all_:
 			escribir(output,lugar,fonema,[fonema],prefijo,postfijo)
@@ -244,14 +247,6 @@ def main():
 		escribir(output,lugar,"Front_Stop", ["b", "p"] ,prefijo,postfijo)
 		escribir(output,lugar,"Central_Stop", ["d", "t"] ,prefijo,postfijo)
 		escribir(output,lugar,"Back_Stop", ["k", "g"] ,prefijo,postfijo)
-
-
-
-
-
-		
-
-
 		output.write("\n")
 
 

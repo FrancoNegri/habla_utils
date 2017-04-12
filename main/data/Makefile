@@ -71,8 +71,8 @@ STRAIGHT    =
 
 # Festival commands
 USEUTT    = 1
-TEXT2UTT  = /home/franco/htk/tesis/festival/examples/text2utt
-DUMPFEATS = /home/franco/htk/tesis/festival/examples/dumpfeats
+TEXT2UTT  = /home/franckn/htk/habla_utils/utils/festival/examples/text2utt
+DUMPFEATS = /home/franckn/htk/habla_utils/utils/festival/examples/dumpfeats
 
 # speech analysis conditions
 SAMPFREQ   = 48000   # Sampling frequency (48kHz)
@@ -86,8 +86,8 @@ GAMMA      = 0      # pole/zero weight for mel-generalized cepstral (MGC) analys
 MGCORDER   = 34   # order of MGC analysis
 BAPORDER   = 24   # order of BAP analysis
 LNGAIN     = 1     # use logarithmic gain rather than linear gain
-LOWERF0    = 110    # lower limit for f0 extraction (Hz)
-UPPERF0    = 280    # upper limit for f0 extraction (Hz)
+LOWERF0    = 100    # lower limit for f0 extraction (Hz)
+UPPERF0    = 350    # upper limit for f0 extraction (Hz)
 
 # windows for calculating delta features
 MGCWIN  = win/mgc.win
@@ -105,7 +105,6 @@ labels: lab mlf list scp
 
 features:
 	# Extracting features from raw audio
-	#Descomentar!
 	mkdir -p mgc lf0 bap
 	SAMPKHZ=`echo $(SAMPFREQ) | $(X2X) +af | $(SOPR) -m 0.001 | $(X2X) +fa`; \
 	for raw in raw/$(DATASET)_$(SPEAKER)_*.raw; do \
@@ -303,10 +302,10 @@ lab:
 mlf:
 	# Generating monophone and fullcontext Master Label Files (MLF)
 	echo "#!MLF!#" > labels/mono.mlf
-	echo "\"*/$(DATASET)_$(SPEAKER)_*.lab\" -> \"/home/franco/htk/habla_utils/main/data/labels/mono\"" >> labels/mono.mlf
+	echo "\"*/$(DATASET)_$(SPEAKER)_*.lab\" -> \"/home/franckn/htk/habla_utils/main/data/labels/mono\"" >> labels/mono.mlf
 
 	echo "#!MLF!#" > labels/full.mlf
-	echo "\"*/$(DATASET)_$(SPEAKER)_*.lab\" -> \"/home/franco/htk/habla_utils/main/data/labels/full\"" >> labels/full.mlf
+	echo "\"*/$(DATASET)_$(SPEAKER)_*.lab\" -> \"/home/franckn/htk/habla_utils/main/data/labels/full\"" >> labels/full.mlf
 
 list:
 	# Generating a fullcontext model list file
@@ -345,7 +344,7 @@ scp:
 	mkdir -p scp
 
 	rm -f scp/train.scp
-	for cmp in /home/franco/htk/habla_utils/main/data/cmp/$(DATASET)_$(SPEAKER)_*.cmp; do \
+	for cmp in /home/franckn/htk/habla_utils/main/data/cmp/$(DATASET)_$(SPEAKER)_*.cmp; do \
 		if [ -s $${cmp} -a -s labels/mono/`basename $${cmp} .cmp`.lab -a -s labels/full/`basename $${cmp} .cmp`.lab ]; then \
 			echo $${cmp} >> scp/train.scp; \
 		fi \
@@ -353,7 +352,7 @@ scp:
 
 	# Generating a generation label script
 	rm -f scp/gen.scp
-	for lab in /home/franco/htk/habla_utils/main/data/labels/gen/*.lab; do \
+	for lab in /home/franckn/htk/habla_utils/main/data/labels/gen/*.lab; do \
 		echo $${lab} >> scp/gen.scp; \
 	done
 
