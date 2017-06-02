@@ -1,0 +1,5 @@
+Primero que nada generé audios como me habías dicho en el mail anterior variando los pesos para ver que se obtenía. Están todos en el  adjunto simpleInterp.tar.gz, donde por ejemplo interpolacion1-9.wav es la interpolacion con 10% ingles - 90 % castellano.
+Después me estuve peleando con la API de hts_engine para poder realizar una interpolación mas granular. Según la modificación que hice, ahora es posible jugar con tres parámetros distintos: Duración de los fonos, Parameters (sonidos) y GV (como un filtro para mejorar la calidad del audio?)
+Estuve experimentando con este cambio, dejando dos parámetros fijos en 0.6 ingles - 0.4 castellano y variando el parámetro restante entre 0.1 y 0.9. Te adjunto esos resultados también.
+Creo que no esta usando gv para nada, porque al cambiar solo ese parámetro no encuentro ninguna diferencia en lo que genera.
+Ademaaaaas, por lo que entiendo Parameters contiene dos tipos distintos de información y sería posible granularizar todavía mas eso para ver que onda. 
