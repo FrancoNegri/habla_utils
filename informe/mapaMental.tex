@@ -1,0 +1,23 @@
+para el entrenamiento de hts se requieren de dos cosas: un corpus de datos y sus uternaces.
+
+Los uternaces son una transcripcion fonetica del corpus que ademas poseen metadata concerniente a si la silaba esta acentuada, que fono precede al fono actual, que fono viene despues, etc.
+
+Estos uternaces se generaron usando festival y festvox con alineamiento forzado que basicamente, a partir de una transcripcion grafemica genera un posible audio y lo trata de machear con el audio "real".
+
+Una vez generados estos uternaces se procede al entrenamiento usando hts.
+
+Hts usa para modelar el audio HMMs. Estos HMM son maquinas de estado finitos que, en cada unidad de tiempo (frame) indican a que estado se debe mover (vale quedarse en el mismo estado). 
+
+Ver mas en detalle esto...
+
+En particular podemos comenzar diciendo que hts genera tres hmm distintos: uno para el espectro de los fonemas (usando mel-cepsal), uno para la frecuencia principal y otro para la duración. Donde ademas cada estado del hmm del espectro se genera como una gausiana N-dimencional, el f0 como una gausiana unidimencional para la parte voiced y una gausiana 0-dimencional para la parte unvoiced y la duración se modela como una normal.
+
+El problema ahora es como meter la información prosodica en todo esto, para resolver esto se es que se utiliza la metadata que generamos antes:
+
+Lo que propone hts es que existen muchos factores contextuales que afectan al espectro, la frecuencia y la duración. 
+
+La manera de incluir esto en el modelo que propone hts es clusterizar los datos usando la información contextual que le damos y por ejemplo en vez de generar un modelo espectral para tal fonema, genera un arbol de decición donde en cada hoja obtenes un modelo espectral diferente. Idem para f0 y duración.
+
+Para la sintesis, partiendo de un etiquetado con información contextual. Concatenando diferentes cachos de HMM context dependent se genera un HMM. Las duraciones en cada estado se determinan para maximizar las probabilidades. A partir de las duraciones, se generan los coeficientes de mel-cepsal y f0 usando la inforamción del hmm generado.
+
+A partir de las duraciones, el f0 y el espectro se genera el audio final.
