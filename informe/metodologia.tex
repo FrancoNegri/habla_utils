@@ -1,29 +1,40 @@
-\section{Objetivo}
+\section{Objetivos}
 
-El objetivo de este trabajo se sentrará en explorar diversas tecnicas para sintetizar habla en español con acento extranjero. 
-
-
-Para ello utilizaremos HTS para el entrenamiento y sintesis del habla y Festival y Festvox para realizar el etiquetado automatico de los datos.
-
-
-Partiendo de tres corpus de datos, dos de ellos en castellano y uno en ingles, generaremos tres HMMs distintos (dos HMMs en castellano y uno en ingles) y utilizando herramientas provistas por HTS interpolaremos entre ellos para obtener distintos grados de acento ingles a la hora de sintetizar.
-
-
-Dado que el castellano y el ingles no utilizan los mismos simbolos foneticos, una problematica a resolver será mapear fonemas del ingles con su fonema mas similar del cercano.
+El objetivo de este trabajo se sentrará generar un sistema de sintesis de habla basado en HMMs que sea capaz de sintetizar habla en español con acento extranjero. Una vez obtenidos resultados que consideremos aceptables, procederemos a una etapa de experimentación donde buscaremos \completarObjetivos
 
 \break
 
 \section{Metodología}
 
+En esta sección presentaremos la metodología utilizada para la generación de HMMs, la interpolación entre los mismos y otras tecnicas utilizadas.
+
+
+A modo de resumen, estos serán los pasos a realizar:
+
+
+A partir de tres corpus de datos, dos de ellos en castellano y uno en ingles, se realizará un etiquetado fonetico de los corpus para su posterior utilización en el entrenamiento de los HMMs.
+
+
+Realizar el entrenamiento del sistema. Para esto contaremos con un sistema de sintesis de voz basado en HMM conocido como HTS. 
+
+
+Una vez generados los HMMs (Uno por cada corpus disponible) utilizaremos herramientas provistas por HTS para interpolar entre ellos y así obtener distintos grados de fonetica y prosodia inglesa a la hora de sintetizar audios.
+
+
+Dado que el castellano y el ingles no utilizan los mismos simbolos foneticos, si queremos sintetizar audios en castellano con el HMM generado con el corpus en ingles, un desafío que deberemos resolver es el de cubrir todos los simbolos foneticos del castellano por alguno del ingles.
+
 \subsection{Preparación De los datos}
 
+
 Como ya adelantamos, en este trabajo contamos con tres corpus de datos dispoinbles:
+
 
 \begin{itemize}
 \item secyt-mujer: 741 oraciones, $48$ minutos de habla.
 \item loc1\_pal: 1593 oraciones, $2$ horas y $26$ minutos de habla.
 \item CMU-ARCTIC-SLT: 1132 oraciones, 56 minutos de habla.
 \end{itemize}
+
 
 Dadas la cantidad de horas de audio disponibles, tanto para loc1\_pal como para CMU-ARCTIC-SLT decidimos utilizar alineamiento forzado para obtener las transcripciones foneticas necesarias para el entrenamiento. Para esto se utilizó Festival y Festvox que a partir de los audios y sus transcripciones grafemicas, permite realizar EHMM alignment sobre el corpus de datos. Para secyt-mujer contabamos previamente con las transcripciones foneticas ya realizadas por lo que decidimos utilizar estas. 
 
@@ -35,11 +46,14 @@ Para este trabajo todos los audios usarán sampling rate de 48kHz, precisión de
 
 
 % Cosas para hablar:
+%TODO: phonetically balanced?
 % contextual factors: cuales son, para que sirven.
 % desarrollar generacion de uternaces: secty alineaminento mixto: tiempos a mano, features automaticos.
 % el etiquetado de cmu\_arctic es en ingles y mapeando al castellano.
 
 \subsection{Entrenamiento Con HTS}
+
+Tanto para el entrenamiento y sintesis del habla se utilizará HTS.
 
 
 Comenzaremos dando un pequeño resumen del funcionamiento del sistema utilizado:
@@ -61,6 +75,7 @@ En particular para este trabajo el entrenamiento de todos los modelos se realiza
 % 5 fonemas.
 % hmms
 % arboles de decición.
+%questions
 
 \subsection{Sintesis utilizando hts\_engine}
 
