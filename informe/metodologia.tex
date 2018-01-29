@@ -23,19 +23,40 @@ Como ya adelantamos, en este trabajo contamos con tres corpus de datos disponibl
 \begin{itemize}
 \item secyt-mujer: 741 oraciones, $48$ minutos de habla.
 \item loc1\_pal: 1593 oraciones, $2$ horas y $26$ minutos de habla.
-\item CMU-ARCTIC-SLT: 1132 oraciones, 56 minutos de habla.
+\item CMU-ARCTIC-SLT: 1132 oraciones, $56$ minutos de habla.
 \end{itemize}
 
 Para los tres corpus se contaba ademas con sus transcripciones grafemicas. 
 
-Para poder realizar el entrenamiento con HTS, fue necesario generar los utternaces respectivos para cada corpus. Los mismos consisten basicamente en una transcripción fonetica de los audios dividida en segmentos temporales y metadata contextual como la cantidad de silabas en la palabra siendo transcripta, fonemas que preceden y proceden al actual, etc. Estos utternaces serán utilizados para modelar cada fonema con una mezcla de variables aleatorias gaussianas. 
+En los inicios del trabajo contabamos con un solo corpus de datos $secyt-mujer$ compuesto por 741 oraciones equivalentes a $48$ minutos de habla. Para el mismo tambien contabamos con sus transcripciones foneticas y grafemicas anotadas de manera manual.
 
-Dadas la cantidad de horas de audio disponibles, y al costo que conlleva realizar transcripciones manuales de un corpus, tanto para loc1\_pal como para CMU-ARCTIC-SLT se decidió utilizar alineamiento forzado automático para obtener los utternaces mencionados. Para esto se utilizaron Festival y Festvox que a partir de los audios y sus transcripciones grafemicas, permite realizar EHMM alignment sobre el corpus de datos. Para secyt-mujer contábamos previamente con las transcripciones fonéticas realizadas a mano, por lo que primero probamos realizar un etiquetado con EHMM alignment, y luego un metodo mixto donde utilizambamos parte de la información del EHMM (principalmente para determinar que fonema correspondía en cada segmento) y las transcripciones a mano para ajustarlos de manera mas presisa.
+En primera instancia, realizamos varias pruebas de concepto utlizando HTS y este corpus. Para ello fue neceasrio construir los utternaces del mismo. Estos consisten basicamente en una transcripción fonetica de los audios dividida en segmentos temporales y datos contextual tales como la cantidad de silabas en la palabra siendo transcripta, fonemas que preceden y proceden al actual, etc. Estos utternaces serán utilizados en el entrenamiento con HTS para modelar cada uno de los fonemas con una mezcla de variables aleatorias gaussianas. 
 
-Comparando resultados, el modelo generado con secyt-mujer y EHMM resulto ser el modelos que peor resultados arrojó, sintetizando oraciones con muchos clicks y voces mas metalicas. El metodo mixto si bien arrojó resultados mejores, todavía presentaba algunos clicks y una voz no del todo natural. Los mejores resultados fueron obtenidos por loc1\_pal con EHMM. Nuestra teoría es que esto se debe a la disparidad en la cantidad de audios y horas de habla. Concideramos que esto juega un papel predominante en la calidad de los TTS generados, aún cuando se utiliza un metodo de etiquetado puramente automatico y propenso a errores.
+Para obtener los utternaces se plantearon varias estrategias posibles. La primera a intentar, dada su facilidad, fue utilizando alineamiento automatico utilizando EHMM alignment $[4]$. Para esto utilizamos Festival, Festvox y las transcripciones grafemicas del corpus. Los resultados preliminares fueron bastante adversos, los audios generados resultaban poco inteligibles notandose claros defectos acusticos en el fonema /rr que sonaba mas como una /r.
+
+Utilizando Praat para visualizar el alineamiento entre utternaces y audios, descubrimos que la alineación estaba desfazada. Especulamos que esto se debió a algun problema con la normalización de los audios \completar.
+
+Dado que para este corpus contabamos con las transcripciones foneticas anotadas de manera manual se procedió a implementar un hibrido con EHMM. De esta manera buscamos mejorar la alineación pero manteniendo el repertorio fonetico, y la metainformación brindada por el alineamiento automatico.
+
+El modelo generado con estos utternaces mixtos resulto ser superior a los generados solo con alineamniento automatico. Aún así los audios sintetizados todavía no alcanzaban una calidad aceptable, sonando metalicos y aguardentosos.
+
+Se pudieron observar otros detalles tales como que la voz original tenía un pitch mayor que la producida por los modelos, al rededor de un $10\%$.
+
+En este momento del trabajo obtenemos otro corpus de datos $loc1\_pal$ con $1593$ oraciones en castellano rioplatense que se aproximan $2$ horas y $26$ minutos de habla.
+
+Para este corpus no cotabamos con transcripciones foneticas manuales por lo que nos vimos forzados a utilizar EHMM nuevamente. Aún así, los resultados fueron muy superiores a los conseguidos con secyt-mujer. Los audios sintetizados resultaban inteligibles y con un marcado acento rioplatense. Tras ajustar algunos parametros decidimos proseguir con uno de los modelos generados con este corpus.
+
+La teoría de porque hubo tanta disparidad en la calidad de los resultados es cantidad de audios y horas de habla de cada base de datos. Concideramos que esto juega un papel predominante en la calidad de los TTS generados, aún cuando se utiliza un metodo de etiquetado puramente automatico y propenso a errores en el alineamiento.
+
+Por ultimo utilizamos el corpus $CMU-ARCTIC-SLT$ con $1132$ oraciones y $56$ minutos de habla, disponible en la pagina de hts [5].
 
 Para este trabajo todos los audios usarán sampling rate de 48kHz, precisión de 16 bits, mono.
 
+Una lista extensiva de los parametros utilizados para el entrenamiento se puede ver en el apendice 3
+
+El rango de extraccion de frecuencia principal para  utilizado fue de 100 hz a 350hz.
+
+% hablar de intelibililidad como para ya ir adelantando el tema
 % Cosas para hablar:
 % 5 fonemas.
 %TODO: phonetically balanced?
@@ -64,13 +85,15 @@ En el proximo paso procederemos a realizar mezclas entre el tts en castellano y 
 
 \subsection{Entrenamiento Con HTS}
 
-HTS es un TTS basado en HMMs que modela simultáneamente la duración, el espectro (mel-cepstrum) y la frecuencia principal ($f0$) de manera simultanea utilizando un framework de HMM:
+HTS es un TTS basado en HMMs que modela simultáneamente la duración, el espectro (mel-cepstrum) y la frecuencia principal ($f0$) de utilizando un framework de HMM:
 
 \includegraphics[scale=0.5]{imagenes/hmm.png}
 
 Por otra parte HTS toma la decisión de modelar la información prosódica dentro de este mismo framework. Para esto, las distribuciones para el espectro, la frecuencia principal y las duraciones son clusterizadas independientemente utilizando la información contextual conseguida en los utternaces. A continuación se presenta una vista esquemática de la estructura de este HMM:
 
 \includegraphics[scale=0.5]{imagenes/hmmContext.png}
+
+(Aclarar: Imágenes extraídas de la disertación doctoral, Profesor Tadashi Kitamura)
 
 En particular para este trabajo la clusterización de datos se realizó generando arboles de decición, para cada fonema se tomaron los dos fonemas precedentes y los dos fonemas procendetes y se extrageron las siguientes features:
 
@@ -84,10 +107,15 @@ En particular para este trabajo la clusterización de datos se realizó generand
 \item En caso de ser una consonante, si es lennis o fortis.
 \end{itemize}
 
-Esta información fué introducida con posterioridad al modelo, y pudimos apreciar una drastica mejora en los audios generados. Las primeras pruebas sonaban sumamente metalicas y carentes de prosodia pero una vez agregados los factores contextuales pudimos comprobar que ahora las voces sonaban mucho mas humanas.
 
+En la siguiente imagen se muestra un fragmento de un arbol de decición generado para modelar la duración de los fonemas.
 
-(Aclarar: Imágenes extraídas de la disertación doctoral, Profesor Tadashi Kitamura)
+\includegraphics[scale=0.5]{imagenes/arbolDeDesicionTesis.png}
+
+Con este modelo, el sistema podra inferir por ejemplo cosas como: si el fonema actual no es nasal (C-Nasal) seguido de un stop (R-Stop), que no es el fonema $l$ estará modelado por función de probabilidad gaussiana definida en $dur_s2_7$.
+
+En las primeras iteraciones del desarrollo no contabamos con la información acustica por lo que se generaron modelos carentes de información contextual. En estos primeros modelos se pudo apreciar una calidad mucho peor en los audios generados, sonando estos sumamente metalicos y carentes de prosodia. Tras un par de iteraciónes y tras agregar los factores contextuales pudimos comprobar que ahora las voces sonaban mucho mas humanas.
+
 % Cosas para hablar:
 % contextual factors: cuales son, para que sirven.
 % arboles de decición.
@@ -95,11 +123,13 @@ Esta información fué introducida con posterioridad al modelo, y pudimos apreci
 % expandir sobre hmms
 \subsection{Síntesis utilizando hts\_engine}
 
-Para la síntesis se utilizó hts\_engine, una herramienta de linea de comandos que no solo permite sintetizar oraciones utilizando los modelos acústicos generados sino además interpolar entre los distintos HMMs disponibles. Utilizaremos esta herramienta para interpolar entre los HMMs de ingles y castellano para lograr nuevos modelos que mezclen los features acústicos con distintos grados de ingles y de castellano.
+Finalmente para generar voces con acento extrangero se utilizó hts\_engine. Esta herramienta permite interpolar con pesos arbitrarios entre varios HMMs para producir un nuevo HMM con una mezcla de la carga fonetica de ambos hablantes y sintetizar audios. Esto nos brinda un gran rango explorativo para experimentar y ajustar la carga fonetica de los modelos originales para acercarnos al objetivo. 
 
-Un desafío que se presenta para este trabajo es el mapeo de los fonemas del ingles al castellano. Para empezar, la transcripción fonética realizada por festival de las oraciones en ingles puede utilizar $50$ símbolos distintos, mientras que la transcripción fonética del castellano utiliza $31$. Habiendo además muchos símbolos sin equivalencia. (por ejemplo, con el fonema $\/rr$).
 
-Para resolver esto desarrollamos una solución adhoc que consistió en desarrollar una función sobreyectiva que permita tener cubiertos los $31$fonemas del castellano por alguno del ingles.
+Comenzamos realizando pequeñas pruebas internas para probar la efectividad del metodo y concluimos que eran satisfactorias, era posible generar oraciones donde la carga fonetica era distintivamente estadounidense (detalles como la /r mas suavizada, o las vocales mas abiertas)
+
+
+En preparación para la experimentación posterior, surge la pregunta de si es posible utulizar tecnicas de speaker adaptation para...
 
 % Cosas para hablar:
 % Expandir en que consiste la interpolación.

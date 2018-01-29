@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.10.5)  15 NOV 2017 20:43
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.10.5)  17 JAN 2018 20:51
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -404,6 +404,43 @@ Cargando package 'caratula' v0.5 (2013/08/04)
 ) (./informe.aux
 LaTeX Info: Redefining \. on input line 6.
 LaTeX Info: Redefining \% on input line 6.
+
+
+LaTeX Warning: Label `pics:blablabla' multiply defined.
+
+
+LaTeX Warning: Label `pics:blablabla' multiply defined.
+
+
+LaTeX Warning: Label `pics:blablabla' multiply defined.
+
+
+LaTeX Warning: Label `pics:blablabla' multiply defined.
+
+
+LaTeX Warning: Label `pics:blablabla' multiply defined.
+
+
+LaTeX Warning: Label `pics:blablabla' multiply defined.
+
+
+LaTeX Warning: Label `pics:blablabla' multiply defined.
+
+
+LaTeX Warning: Label `pics:blablabla' multiply defined.
+
+
+LaTeX Warning: Label `pics:blablabla' multiply defined.
+
+
+LaTeX Warning: Label `pics:blablabla' multiply defined.
+
+
+LaTeX Warning: Label `pics:blablabla' multiply defined.
+
+
+LaTeX Warning: Label `pics:blablabla' multiply defined.
+
 )
 \openout1 = `informe.aux'.
 
@@ -514,49 +551,354 @@ Underfull \hbox (badness 10000) in paragraph at lines 21--21
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./logo_dc.jpg> <./logo_uba
-.jpg>] (./introduccion.tex) (./metodologia.tex [1] [2]
-<imagenes/hmm.png, id=21, 708.6475pt x 426.59375pt>
+.jpg>] (./introduccion.tex) (./metodologia.tex [1]
+! Undefined control sequence.
+l.37 ...la normalización de los audios \completar
+                                                  .
+? 
+[2] [3] <imagenes/hmm.png, id=26, 708.6475pt x 426.59375pt>
 File: imagenes/hmm.png Graphic file (type png)
- <use imagenes/hmm.png>
-Package pdftex.def Info: imagenes/hmm.png used on input line 52.
+
+<use imagenes/hmm.png>
+Package pdftex.def Info: imagenes/hmm.png used on input line 90.
 (pdftex.def)             Requested size: 354.32289pt x 213.29634pt.
 
-Overfull \hbox (24.32289pt too wide) in paragraph at lines 52--53
+Overfull \hbox (24.32289pt too wide) in paragraph at lines 90--91
 [][] 
  []
 
-<imagenes/hmmContext.png, id=22, 602.25pt x 461.725pt>
+<imagenes/hmmContext.png, id=27, 602.25pt x 461.725pt>
 File: imagenes/hmmContext.png Graphic file (type png)
 
 <use imagenes/hmmContext.png>
-Package pdftex.def Info: imagenes/hmmContext.png used on input line 56.
+Package pdftex.def Info: imagenes/hmmContext.png used on input line 94.
 (pdftex.def)             Requested size: 301.12425pt x 230.86194pt.
- [3 <./imagenes/hmm.png>] [4 <./imagenes/hmmContext.png>]) [5] (./experimentaci
-on.tex) (./apendice.tex [6] [7]) [8]
-(./referencias.tex) [9] (./informe.aux
+ [4 <./imagenes/hmm.png>]
+<imagenes/arbolDeDesicionTesis.png, id=31, 879.285pt x 580.1675pt>
+File: imagenes/arbolDeDesicionTesis.png Graphic file (type png)
+
+<use imagenes/arbolDeDesicionTesis.png>
+Package pdftex.def Info: imagenes/arbolDeDesicionTesis.png used on input line 1
+13.
+(pdftex.def)             Requested size: 439.64143pt x 290.08302pt.
+
+Overfull \hbox (109.64143pt too wide) in paragraph at lines 113--114
+[][] 
+ []
+
+[5 <./imagenes/hmmContext.png>]) [6 <./imagenes/arbolDeDesicionTesis.png>]
+(./experimentacion.tex
+<estudio_online/estudio1.png, id=40, 1150.2975pt x 489.83pt>
+File: estudio_online/estudio1.png Graphic file (type png)
+
+<use estudio_online/estudio1.png>
+Package pdftex.def Info: estudio_online/estudio1.png used on input line 25.
+(pdftex.def)             Requested size: 575.14735pt x 244.9144pt.
+
+Overfull \hbox (245.14735pt too wide) in paragraph at lines 25--26
+[][] 
+ []
+
+[7] <estudio_online/estudio2.png, id=45, 1069.9975pt x 323.2075pt>
+File: estudio_online/estudio2.png Graphic file (type png)
+
+<use estudio_online/estudio2.png>
+Package pdftex.def Info: estudio_online/estudio2.png used on input line 29.
+(pdftex.def)             Requested size: 534.99744pt x 161.60335pt.
+
+Overfull \hbox (204.99744pt too wide) in paragraph at lines 29--30
+[][] 
+ []
+
+<estudio_online/estudio3.png, id=46, 1020.81375pt x 248.93pt>
+File: estudio_online/estudio3.png Graphic file (type png)
+
+<use estudio_online/estudio3.png>
+Package pdftex.def Info: estudio_online/estudio3.png used on input line 33.
+(pdftex.def)             Requested size: 510.40562pt x 124.46469pt.
+
+Overfull \hbox (180.40562pt too wide) in paragraph at lines 33--34
+[][] 
+ []
+
+[8 <./estudio_online/estudio1.png> <./estudio_online/estudio2.png>]
+<datosDemograficos/edad.png, id=50, 602.25pt x 372.39125pt>
+File: datosDemograficos/edad.png Graphic file (type png)
+
+<use datosDemograficos/edad.png>
+Package pdftex.def Info: datosDemograficos/edad.png used on input line 62.
+(pdftex.def)             Requested size: 180.67639pt x 111.71823pt.
+
+<datosDemograficos/genero.png, id=51, 602.25pt x 372.39125pt>
+File: datosDemograficos/genero.png Graphic file (type png)
+
+<use datosDemograficos/genero.png>
+Package pdftex.def Info: datosDemograficos/genero.png used on input line 76.
+(pdftex.def)             Requested size: 180.67639pt x 111.71823pt.
+ [9 <./estudio_online/estudio3.png> <./datosDemograficos/edad.png (PNG copy)>]
+<datosDemograficos/infancia.png, id=55, 602.25pt x 372.39125pt>
+File: datosDemograficos/infancia.png Graphic file (type png)
+
+<use datosDemograficos/infancia.png>
+Package pdftex.def Info: datosDemograficos/infancia.png used on input line 90.
+(pdftex.def)             Requested size: 180.67639pt x 111.71823pt.
+
+<imagenes/plots_raw/1.png, id=56, 578.16pt x 433.62pt>
+File: imagenes/plots_raw/1.png Graphic file (type png)
+
+<use imagenes/plots_raw/1.png>
+Package pdftex.def Info: imagenes/plots_raw/1.png used on input line 106.
+(pdftex.def)             Requested size: 172.5pt x 129.37242pt.
+
+<imagenes/plots_raw/2.png, id=58, 578.16pt x 433.62pt>
+File: imagenes/plots_raw/2.png Graphic file (type png)
+
+<use imagenes/plots_raw/2.png>
+Package pdftex.def Info: imagenes/plots_raw/2.png used on input line 107.
+(pdftex.def)             Requested size: 172.5pt x 129.37242pt.
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 104--109
+ []$ 
+ []
+
+<imagenes/plots_raw/3.png, id=59, 578.16pt x 433.62pt>
+File: imagenes/plots_raw/3.png Graphic file (type png)
+
+<use imagenes/plots_raw/3.png>
+Package pdftex.def Info: imagenes/plots_raw/3.png used on input line 117.
+(pdftex.def)             Requested size: 172.5pt x 129.37242pt.
+
+<imagenes/plots_raw/4.png, id=60, 578.16pt x 433.62pt>
+File: imagenes/plots_raw/4.png Graphic file (type png)
+
+<use imagenes/plots_raw/4.png>
+Package pdftex.def Info: imagenes/plots_raw/4.png used on input line 118.
+(pdftex.def)             Requested size: 172.5pt x 129.37242pt.
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 115--120
+ []$ 
+ []
+
+<imagenes/plots_raw/5.png, id=61, 578.16pt x 433.62pt>
+File: imagenes/plots_raw/5.png Graphic file (type png)
+
+<use imagenes/plots_raw/5.png>
+Package pdftex.def Info: imagenes/plots_raw/5.png used on input line 128.
+(pdftex.def)             Requested size: 172.5pt x 129.37242pt.
+
+<imagenes/plots_raw/6.png, id=62, 578.16pt x 433.62pt>
+File: imagenes/plots_raw/6.png Graphic file (type png)
+
+<use imagenes/plots_raw/6.png>
+Package pdftex.def Info: imagenes/plots_raw/6.png used on input line 129.
+(pdftex.def)             Requested size: 172.5pt x 129.37242pt.
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 126--131
+ []$ 
+ []
+
+<imagenes/plots_raw/7.png, id=63, 578.16pt x 433.62pt>
+File: imagenes/plots_raw/7.png Graphic file (type png)
+
+<use imagenes/plots_raw/7.png>
+Package pdftex.def Info: imagenes/plots_raw/7.png used on input line 140.
+(pdftex.def)             Requested size: 172.5pt x 129.37242pt.
+
+<imagenes/plots_raw/8.png, id=64, 578.16pt x 433.62pt>
+File: imagenes/plots_raw/8.png Graphic file (type png)
+
+<use imagenes/plots_raw/8.png>
+Package pdftex.def Info: imagenes/plots_raw/8.png used on input line 141.
+(pdftex.def)             Requested size: 172.5pt x 129.37242pt.
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 138--143
+ []$ 
+ []
+
+<imagenes/plots_raw/9.png, id=65, 578.16pt x 433.62pt>
+File: imagenes/plots_raw/9.png Graphic file (type png)
+
+<use imagenes/plots_raw/9.png>
+Package pdftex.def Info: imagenes/plots_raw/9.png used on input line 151.
+(pdftex.def)             Requested size: 172.5pt x 129.37242pt.
+
+<imagenes/plots_raw/10.png, id=66, 578.16pt x 433.62pt>
+File: imagenes/plots_raw/10.png Graphic file (type png)
+
+<use imagenes/plots_raw/10.png>
+Package pdftex.def Info: imagenes/plots_raw/10.png used on input line 152.
+(pdftex.def)             Requested size: 172.5pt x 129.37242pt.
+
+Overfull \hbox (20.00002pt too wide) in paragraph at lines 149--154
+ []$ 
+ []
+
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 166.
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 166.
+ [10 <./datosDemograficos/genero.png (PNG copy)> <./datosDemograficos/infancia.
+png (PNG copy)>]
+[11 <./imagenes/plots_raw/1.png> <./imagenes/plots_raw/2.png> <./imagenes/plots
+_raw/3.png> <./imagenes/plots_raw/4.png> <./imagenes/plots_raw/5.png> <./imagen
+es/plots_raw/6.png>] [12 <./imagenes/plots_raw/7.png> <./imagenes/plots_raw/8.p
+ng> <./imagenes/plots_raw/9.png> <./imagenes/plots_raw/10.png>]
+<imagenes/plots_normalized/1.png, id=87, 578.16pt x 433.62pt>
+File: imagenes/plots_normalized/1.png Graphic file (type png)
+
+<use imagenes/plots_normalized/1.png>
+Package pdftex.def Info: imagenes/plots_normalized/1.png used on input line 197
+.
+(pdftex.def)             Requested size: 172.5pt x 129.37242pt.
+
+<imagenes/plots_normalized/2.png, id=88, 578.16pt x 433.62pt>
+File: imagenes/plots_normalized/2.png Graphic file (type png)
+
+<use imagenes/plots_normalized/2.png>
+Package pdftex.def Info: imagenes/plots_normalized/2.png used on input line 198
+.
+(pdftex.def)             Requested size: 172.5pt x 129.37242pt.
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 195--200
+ []$ 
+ []
+
+<imagenes/plots_normalized/3.png, id=89, 578.16pt x 433.62pt>
+File: imagenes/plots_normalized/3.png Graphic file (type png)
+
+<use imagenes/plots_normalized/3.png>
+Package pdftex.def Info: imagenes/plots_normalized/3.png used on input line 208
+.
+(pdftex.def)             Requested size: 172.5pt x 129.37242pt.
+
+<imagenes/plots_normalized/4.png, id=90, 578.16pt x 433.62pt>
+File: imagenes/plots_normalized/4.png Graphic file (type png)
+
+<use imagenes/plots_normalized/4.png>
+Package pdftex.def Info: imagenes/plots_normalized/4.png used on input line 209
+.
+(pdftex.def)             Requested size: 172.5pt x 129.37242pt.
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 206--211
+ []$ 
+ []
+
+<imagenes/plots_normalized/5.png, id=91, 578.16pt x 433.62pt>
+File: imagenes/plots_normalized/5.png Graphic file (type png)
+
+<use imagenes/plots_normalized/5.png>
+Package pdftex.def Info: imagenes/plots_normalized/5.png used on input line 219
+.
+(pdftex.def)             Requested size: 172.5pt x 129.37242pt.
+
+<imagenes/plots_normalized/6.png, id=92, 578.16pt x 433.62pt>
+File: imagenes/plots_normalized/6.png Graphic file (type png)
+
+<use imagenes/plots_normalized/6.png>
+Package pdftex.def Info: imagenes/plots_normalized/6.png used on input line 220
+.
+(pdftex.def)             Requested size: 172.5pt x 129.37242pt.
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 217--222
+ []$ 
+ []
+
+<imagenes/plots_normalized/7.png, id=93, 578.16pt x 433.62pt>
+File: imagenes/plots_normalized/7.png Graphic file (type png)
+
+<use imagenes/plots_normalized/7.png>
+Package pdftex.def Info: imagenes/plots_normalized/7.png used on input line 231
+.
+(pdftex.def)             Requested size: 172.5pt x 129.37242pt.
+
+<imagenes/plots_normalized/8.png, id=94, 578.16pt x 433.62pt>
+File: imagenes/plots_normalized/8.png Graphic file (type png)
+
+<use imagenes/plots_normalized/8.png>
+Package pdftex.def Info: imagenes/plots_normalized/8.png used on input line 232
+.
+(pdftex.def)             Requested size: 172.5pt x 129.37242pt.
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 229--234
+ []$ 
+ []
+
+<imagenes/plots_normalized/9.png, id=95, 578.16pt x 433.62pt>
+File: imagenes/plots_normalized/9.png Graphic file (type png)
+
+<use imagenes/plots_normalized/9.png>
+Package pdftex.def Info: imagenes/plots_normalized/9.png used on input line 242
+.
+(pdftex.def)             Requested size: 172.5pt x 129.37242pt.
+
+<imagenes/plots_normalized/10.png, id=96, 578.16pt x 433.62pt>
+File: imagenes/plots_normalized/10.png Graphic file (type png)
+
+<use imagenes/plots_normalized/10.png>
+Package pdftex.def Info: imagenes/plots_normalized/10.png used on input line 24
+3.
+(pdftex.def)             Requested size: 172.5pt x 129.37242pt.
+
+Overfull \hbox (20.00002pt too wide) in paragraph at lines 240--245
+ []$ 
+ []
+
+)
+Runaway argument?
+! File ended while scanning use of \language@active@arg".
+<inserted text> 
+                \par 
+l.27 \input{experimentacion.tex}
+                                
+? 
+(./apendice.tex [13 <./imagenes/plots_normalized/1.png> <./imagenes/plots_norma
+lized/2.png>] [14 <./imagenes/plots_normalized/3.png> <./imagenes/plots_normali
+zed/4.png> <./imagenes/plots_normalized/5.png> <./imagenes/plots_normalized/6.p
+ng> <./imagenes/plots_normalized/7.png> <./imagenes/plots_normalized/8.png>]
+Overfull \vbox (126.91103pt too high) has occurred while \output is active []
+
+
+[15 <./imagenes/plots_normalized/9.png> <./imagenes/plots_normalized/10.png>])
+[16] (./referencias.tex
+Overfull \hbox (219.63899pt too wide) in paragraph at lines 6--8
+\OT1/cmr/m/n/10 Kis-ho-re Praha-llad, Alan W Black and Ra-vis-hank-har Mo-sur h
+ttps://www.cs.cmu.edu/ awb/papers/ICASSP2006/0100853.pdf 
+ []
+
+) [17] (./informe.aux
 LaTeX Info: Redefining \. on input line 6.
 LaTeX Info: Redefining \% on input line 6.
-) ) 
+)
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
 Here is how much of TeX's memory you used:
- 2742 strings out of 494891
- 35870 string characters out of 6179039
- 111526 words of memory out of 5000000
- 5996 multiletter control sequences out of 15000+600000
+ 2908 strings out of 494891
+ 40224 string characters out of 6179039
+ 104575 words of memory out of 5000000
+ 6138 multiletter control sequences out of 15000+600000
  6232 words of font info for 23 fonts, out of 8000000 for 9000
  40 hyphenation exceptions out of 8191
- 37i,8n,30p,867b,384s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></u
-sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/sha
-re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texl
-ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type
-1/public/amsfonts/cm/cmtt10.pfb>
-Output written on informe.pdf (10 pages, 588384 bytes).
+ 37i,11n,30p,627b,384s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texl
+ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmtt10.pfb>
+Output written on informe.pdf (18 pages, 1266291 bytes).
 PDF statistics:
- 73 PDF objects out of 1000 (max. 8388607)
- 48 compressed objects within 1 object stream
+ 158 PDF objects out of 1000 (max. 8388607)
+ 75 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 21 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 156 words of extra memory for PDF output out of 10000 (max. 10000000)
 

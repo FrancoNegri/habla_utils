@@ -1,0 +1,12 @@
+Perdón por la demora! Se juntaron varios deadlines esta semana, estoy casi sin dormir!
+
+Buenísimo, ahora sí tiene sentido esta alineación. Como vos decís, le pega bastante bien a la mayoría de los fonos, pero tiene varios errores feos, que seguramente explican por qué el habla sintetizada no suena del todo bien.
+
+Propuesta: 
+Con las transcripciones pudiste generar los textgrids, o sea que los tiempos de comienzo/fin de cada fono los tenés bien identificados en los archivos lab (no?).
+También tenemos, en los archivos que te pasé, los tiempos *correctos* de cada fono (alineados a mano por un experto).
+¿Te parecería viable sobreescribir (pisar) los tiempos de los archivos lab con esos tiempos correctos, y después retomar a partir de ahí el entrenamiento del sintetizador?
+
+(¿Se entiende lo que propongo?)
+
+Abz
