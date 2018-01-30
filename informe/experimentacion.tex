@@ -28,7 +28,7 @@ Una vez que completaban esta información, y presionavan el boton de guardar, se
 
 \includegraphics[scale=0.5]{estudio_online/estudio2.png}
 
-Una vez que precionan el boton de "entendido!" les es presentado un audio, que pueden escuchar un maximo de 2 veces, una caja de texto libre donde escribir lo que interpretaron del mismo y una caja de texto libre donde escribir la nacionalidad que concideran es el hablante.
+Una vez que precionan el boton de ``entendido!'' les es presentado un audio, que pueden escuchar un maximo de 2 veces, una caja de texto libre donde escribir lo que interpretaron del mismo y una caja de texto libre donde escribir la nacionalidad que concideran es el hablante.
 
 \includegraphics[scale=0.5]{estudio_online/estudio3.png}
 
@@ -163,15 +163,15 @@ Analizando mas detenidamente los datos obtenidos pudimos observar algunas fallas
 \begin{itemize}
 	\item Los participantes escribieron de manera diferente cuando no entendieron un segmento del audio.
 		\begin{itemize}
-		\item Muchos de ellos escribieron: "...", "...." o simplemente omitían la palabra.
-		\item En casos menos comunes: "***", "???", "blablabla".
+		\item Muchos de ellos escribieron: ``...'', ``....'' o simplemente omitían la palabra.
+		\item En casos menos comunes: ``***'', ``???'', ``blablabla''.
 		\end{itemize}
-	\item En casos donde no comprendieron ninguna palabra del audio escribieron cosas como "no entendi nada", "nada", dejaron el campo vacío, etc.
+	\item En casos donde no comprendieron ninguna palabra del audio escribieron cosas como ``no entendi nada'', ``nada'', dejaron el campo vacío, etc.
 	%\item Faltas ortografias del estilo: "grunion" en vez de "gruñón" que podría deberse a un teclado
 	\item Utilización de signos de puntuación en las oraciones:
 		\begin{itemize}
-		\item Puntos finales para expresar el final de la oración o expresiones como "(?)".
-		\item En un caso extremo, un participante el participante transcribió ""tu estrecho posavasos", grito la fechoría", cuando el utternace original solo decía "tu estrecho portavasos gritó la fechoría".
+		\item Puntos finales para expresar el final de la oración o expresiones como ``(?)''.
+		\item En un caso extremo, un participante el participante transcribió `` ``tu estrecho posavasos'', grito la fechoría'', cuando el utternace original solo decía ``tu estrecho portavasos gritó la fechoría''.
 		\end{itemize}
 	\item Omición de acentos en palabras que no resultaban ambiguas.
 \end{itemize}
@@ -181,11 +181,11 @@ Para tener datos mas precisos, decidimos realizar una limpieza de los datos dond
 Los cambios fueron:
 
 \begin{itemize}
-\item corregir "ni" por "\~{n} " en la palabra grunion.
+\item corregir ``ni'' por ``\~{n} '' en la palabra grunion.
 \item Remoción de todos los signos de puntuación. 
-\item Remoción de expresiones como "blabla" o cualquier otra que exprese ininteligibilidad de una palabra u oración.
-\item Correción de acentos en palabras no ambiguas: "botón", "prefirió", "recorrió", "chupetín", "riñón", "grúñón".
-\item Las palabras que presentan ambibalencia, como : "concluyó" no fueron modificadas ya que concluyó/concluyo son validas.
+\item Remoción de expresiones como ``blabla'' o cualquier otra que exprese ininteligibilidad de una palabra u oración.
+\item Correción de acentos en palabras no ambiguas: ``botón'', ``prefirió'', ``recorrió'', ``chupetín'', ``riñón'', ``grúñón''.
+\item Las palabras que presentan ambibalencia, como : ``concluyó'' no fueron modificadas ya que concluyó/concluyo son validas.
 %otros ejemplos: apoyo, enfrío
 \end{itemize}
 
@@ -252,18 +252,18 @@ Con esta estandaricación de los datos, trataremos de darles un peso intuitivo q
 Por ejemplo, tomando una de las fraces utilizadas en la experimentación: 
 
 \begin{itemize}
-	\item "Las acongojadas cotorras sonrieron a mi círculo"
+	\item ``Las acongojadas cotorras sonrieron a mi círculo''
 \end{itemize}
 
 Podemos observar que:
 
 \begin{itemize}
-	\item Distancia 0: "Las acongojadas cotorras sonrieron a mi círculo"
-	\item Distancia 10: "Las acontojadas culturas sonrieron en semicírculo"
-	\item Distancia 20: "Plaza sombreada con sombrero sonrieron en mi círculo"
-	\item Distancia 30: "sonrieron en mi círculo"
-	\item Distancia 40: "círculo"
-	\item Distancia 48: ""
+	\item Distancia 0: ``Las acongojadas cotorras sonrieron a mi círculo''
+	\item Distancia 10: ``Las acontojadas culturas sonrieron en semicírculo''
+	\item Distancia 20: ``Plaza sombreada con sombrero sonrieron en mi círculo''
+	\item Distancia 30: ``sonrieron en mi círculo''
+	\item Distancia 40: ``círculo''
+	\item Distancia 48: ``''
 \end{itemize}
 
 A partir de esto, para este trabajo vamos a tomar que una distancia de Levinshtein
@@ -277,16 +277,116 @@ A partir de esto, para este trabajo vamos a tomar que una distancia de Levinshte
 
 Con este baseline, podemos decir que en el rango de $30\%$ a $50\%$ todos los utternaces menos el 3 presentan un buen grado de inteligibilidad.
 
-Dentro de este rango, los errores mas comunes varían desde falta de acentos en palabras como "concluyó" ambiguas hasta faltas de inteligibilidad en palabras con cierta complegidad como "aguileña" o "gruñon".
+Dentro de este rango, los errores mas comunes varían desde falta de acentos en palabras como ``concluyó'' ambiguas hasta faltas de inteligibilidad en palabras con cierta complegidad como ``aguileña'' o ``gruñon''.
 
-Para el utternace 3: "este enjoyado juez comprará nuestro corchete" observamos que la mayoría de los participantes cometieron errores al transcribir la palabra "juez" que confundieron de manera sistematica con palabras sonoramente similares como "fue", y "enjoyado" que transcribieron como "enfollado", "enrollado" y la conjugación exacta del verbo comprar.
+Para el utternace 3: ``este enjoyado juez comprará nuestro corchete'' observamos que la mayoría de los participantes cometieron errores al transcribir la palabra ``juez'' que confundieron de manera sistematica con palabras sonoramente similares como ``fue'', y ``enjoyado'' que transcribieron como ``enfollado'', ``enrollado'' y la conjugación exacta del verbo comprar.
 
 Pasado el $50\%$ de mezcla de ingles, se puede observar una caida drastica en la inteligibilidad, mayormente en el utternace $2, 4, 5, 6, 8$y $9$. Tambien vemos que la variablidad aumenta drasticamente, por ejemplo, en el utternace $4$ con $60\%$ un participante fue capaz de transcribir con distancia $2$ el audio. Así mismo con $70\%$ dos participantes fueron capaces de transcribir el audio con una distancia menor $10$.
 
 
 \subsection{Analisis de Nacionalidad}
 
-En lo de elegir una nacionalidad:
-Sinonimos: EEUU-EstadosUnidos, España-España (sur)
-Cosas no muy especificas: "anglo", "Inglés/Estado Unidense", "Hablante nativo de inglés"
-Cosas raras: "Brasiltiño", ".?", "robolandia"
+
+En esta sección analizaremos los resultados de las nacionalidades que los participantes atribuyeron a la voz.
+
+Dado que en esta instancia se le le permitió a los participantes ingresar texto libre las respuestas resultaron bastante heterogeneas. Los participantes tomaron la consigna de manera diferente, pudiendo encontrarse respuestas que no pueden ser atribuidos exactamente a una nacionalidad. Ejemplo de alguas respuestas: Latino, Anglo, Robot, España (sur).
+
+Concideramos que las respuestas de la indole ``robot'', ``es una voz artificial'', no son validas ya que no aportan información para esta investigación.
+
+Por esta razón, en esta instancia decidimos agrupar las respuestas en cuatro grupos logicos:
+
+\begin{itemize}
+	\item Hispanohablante: Latino, Argentino, Español, Uruguayo, Centroamericano, Boliviano, Mexicano, Colombiano
+	\item Angloparlante: Estadounidense, Ingles, Irlandes, Canadiense, Anglo
+	\item No sabe/No contesta: Robot, no se
+	\item Otro: Ruso, Brasiltiño
+\end{itemize}
+
+Con estas agrupaciones, presentamos las nacionalidades atribuidas a la voz generada para cada punto de la interpolación.
+
+\begin{figure}[htp]
+\begin{center}$
+\begin{array}{lll}
+\includegraphics[width=.5\textwidth]{imagenes/nacionalidades/1.png}&
+\includegraphics[width=.5\textwidth]{imagenes/nacionalidades/2.png}
+\end{array}$
+\end{center}
+\caption{Utternace 1,2}
+\label{pics:blablabla}
+\end{figure}
+
+
+\begin{figure}[htp]
+\begin{center}$
+\begin{array}{lll}
+\includegraphics[width=.5\textwidth]{imagenes/nacionalidades/3.png}&
+\includegraphics[width=.5\textwidth]{imagenes/nacionalidades/4.png}
+\end{array}$
+\end{center}
+\caption{Utternace 3,4}
+\label{pics:blablabla}
+\end{figure}
+
+
+\begin{figure}[htp]
+\begin{center}$
+\begin{array}{lll}
+\includegraphics[width=.5\textwidth]{imagenes/nacionalidades/5.png}&
+\includegraphics[width=.5\textwidth]{imagenes/nacionalidades/6.png}
+\end{array}$
+\end{center}
+\caption{Utternace 5,6}
+\label{pics:blablabla}
+\end{figure}
+
+
+\begin{figure}[htp]
+\begin{center}$
+\begin{array}{lll}
+\includegraphics[width=.5\textwidth]{imagenes/nacionalidades/7.png}&
+\includegraphics[width=.5\textwidth]{imagenes/nacionalidades/8.png}
+\end{array}$
+\end{center}
+\caption{Utternace 7,8}
+\label{pics:blablabla}
+\end{figure}
+
+
+\begin{figure}[htp]
+\begin{center}$
+\begin{array}{lll}
+\includegraphics[width=.5\textwidth]{imagenes/nacionalidades/9.png}&
+\includegraphics[width=.5\textwidth]{imagenes/nacionalidades/10.png}
+\end{array}$
+\end{center}
+\caption{Utternace 9,10}
+\label{pics:blablabla}
+\end{figure}
+
+De estos resultados podemos observar que con $30\%$ de interpolación de ingles, los participantes coinciden en que la voz puede atribuirse a una persona de habla nativa española.
+
+Para una mezcla de $40\%$ ingles, puede verse que no hay una decición concluyente con respecto a la nacionalidad del hablante. Por ejemplo en el utternace 3 el $80\%$ de los participantes coincide que la voz pertenece a un hablante de habla hispana, mientras que en el utternace 9 el $60.00\%$ de los participantes concidera que la voz pertenece a un hablante de habla anglosajona.
+
+Esta gran disparidad de resultados entre distintos utternaces se puede atribuir a las caracteristicas particulares de cada utternace. En particular el utternace 9: ``Ese gruñón perro prometió a esos cuñados'' contiene una /r bibrante que resulta muy notoria al pronunciarse con una intensidad menor a la esperada y es atribuida, en general, a un hablante extrangero.
+%perro vibrante múltiple alveolar sonora
+
+Bajo esta supocición observamos que los otros utternaces que presentan este fonema:
+
+\begin{itemize}
+\item Utternace 1: ``Mi montaña aguileña recorrió la esquina'' 
+\item Utternace 6: ``Su profundo riñón apoyó a Julio''
+\item Utternace 7: ``El frío churrasco oyó lo de polonia''
+\item Utternace 8: ``Las acongojadas cotorras sonrieron a mi círculo''
+\end{itemize}
+
+Tambien presentan un mayor porcentaje de atribuciones a nacionalidad anglosajona.
+
+Con $50\%$ y $60\%$ de ingles los resultados son similares. obtenemos que aproximadamente en el $50\%$ de los utternaces, mas de la mitad de los participantes concideraron que la voz pertenecía a un anglosajon hablando castellano. Para estos grados de interpolación tambien podemos observar que en un $80\%$ de los utternaces al menos un $20\%$ de los participantes atribuyen la nacionalidad del hablante a un no nativo no anglosajon hablando castellano.
+
+Con $70\%$ de interpolación, en el $80\%$ de los utternaces se puede apreciar que al menos $50\%$ de los participantes dijo que el hablante era de origen anglosajon. Mas aún, en el $40\%$ de los utternaces el $75\%$ de los participantes coincidió que la voz era de angloparlante. Tambien podemos ver que para este grado de interpolación en el $70\%$ de los utternaces ningun participante concidera que la voz sea de habla hispana. En el $30\%$ restante, $25\%$ de los participantes o menos concideran que la voz pertenezca a un hispanohablante.
+
+%grafico general mostrando como crece el grado de ingles?
+
+
+
+%conclucion mas general: aunque en muchos casos los participantes atribuyeron a la voz como un extrangero no anglosajon, tambien tener en cuenta que se esta intentando identificar la nacionalidad de un hablante con tan solo con una oración como referencia.
