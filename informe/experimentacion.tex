@@ -51,8 +51,11 @@ Las oraciones presentadas fueron:
 
 \subsection{Resultados}
 
-Se encuestaron 109 participantes, con los que se obtuvieron 352 resultados.
+Para el analisis de resultados partiremos realizando una introducción donde mostremos la demografía de los participantes. Luego un analisis mas exaustivo de la inteligibilidad y otro de la nacionalidad atribuida a la voz generada. Por ultimo intentaremos analizar ambos ejes juntos para intentar determinar el mejor grado de ingles/inteligibilidad.
 
+\subsubsection{Datos demograficos}
+
+Se encuestaron $109$ participantes, con los que se obtuvieron $352$ resultados.
 
 A continuación presentaremos los datos demograficos de los participantes:
 
@@ -107,9 +110,13 @@ Presentamos aquí los resultados obtenidos sin ningun tipo de modificación:
 \includegraphics[width=.5\textwidth]{imagenes/plots_raw/2.png}
 \end{array}$
 \end{center}
-\caption{Figure caption}
+\caption{Utternace 1 y 2}
 \label{pics:blablabla}
 \end{figure}
+
+\clearpage
+
+Como puede verse en la mayoría de los utternaces se puede observar que hasta el $50\%$ de mezcla castellano-ingles, se conserva el un buen grado de inteligibilidad, rondando la distancia de Levenshtein al rededor de $10$ a $20$ caracteres. Pasados el $60\%$ de ingles, se observa una disminución bruzca en la inteligibilidad, llegando a una distancia de 45 caracteres.
 
 \begin{figure}[htp]
 \begin{center}$
@@ -118,47 +125,11 @@ Presentamos aquí los resultados obtenidos sin ningun tipo de modificación:
 \includegraphics[width=.5\textwidth]{imagenes/plots_raw/4.png}
 \end{array}$
 \end{center}
-\caption{Figure caption}
+\caption{Utternace 3 y 4}
 \label{pics:blablabla}
 \end{figure}
 
-\begin{figure}[htp]
-\begin{center}$
-\begin{array}{lll}
-\includegraphics[width=.5\textwidth]{imagenes/plots_raw/5.png}&
-\includegraphics[width=.5\textwidth]{imagenes/plots_raw/6.png}
-\end{array}$
-\end{center}
-
-\caption{Figure caption}
-\label{pics:blablabla}
-\end{figure}
-
-\begin{figure}[htp]
-\begin{center}$
-\begin{array}{lll}
-\includegraphics[width=.5\textwidth]{imagenes/plots_raw/7.png}&
-\includegraphics[width=.5\textwidth]{imagenes/plots_raw/8.png}
-\end{array}$
-\end{center}
-
-\caption{Figure caption}
-\label{pics:blablabla}
-\end{figure}
-\begin{figure}[htp]
-\begin{center}$
-\begin{array}{lll}
-\includegraphics[width=.5\textwidth]{imagenes/plots_raw/9.png}\quad
-\includegraphics[width=.5\textwidth]{imagenes/plots_raw/10.png}
-\end{array}$
-\end{center}
-\caption{Figure caption}
-\label{pics:blablabla}
-\end{figure}
-
-Como puede verse en la mayoría de los utternaces se puede observar que hasta el $50\%$ de mezcla castellano-ingles, se conserva el un buen grado de inteligibilidad, rondando la distancia de Levenshtein al rededor de $10$ a $20$ caracteres. Pasados el $60\%$ de ingles, se observa una disminución bruzca en la inteligibilidad, llegando a una distancia de 45 caracteres.
-
-Analizando mas detenidamente los datos obtenidos pudimos observar algunas fallas que podrían generar ruido en el analisis, tales como:
+Analizando mas detenidamente los datos obtenidos pudimos observar algunas fallas sistematicas que podrían generar ruido en el analisis, tales como:
 
 \begin{itemize}
 	\item Los participantes escribieron de manera diferente cuando no entendieron un segmento del audio.
@@ -176,19 +147,53 @@ Analizando mas detenidamente los datos obtenidos pudimos observar algunas fallas
 	\item Omición de acentos en palabras que no resultaban ambiguas.
 \end{itemize}
 
+\begin{figure}[htp]
+\begin{center}$
+\begin{array}{lll}
+\includegraphics[width=.5\textwidth]{imagenes/plots_raw/5.png}&
+\includegraphics[width=.5\textwidth]{imagenes/plots_raw/6.png}
+\end{array}$
+\end{center}
+
+\caption{Utternace 5 y 6}
+\label{pics:blablabla}
+\end{figure}
+
+\begin{figure}[htp]
+\begin{center}$
+\begin{array}{lll}
+\includegraphics[width=.5\textwidth]{imagenes/plots_raw/7.png}&
+\includegraphics[width=.5\textwidth]{imagenes/plots_raw/8.png}
+\end{array}$
+\end{center}
+\caption{Utternace 7 y 8}
+\label{pics:blablabla}
+\end{figure}
+
 Para tener datos mas precisos, decidimos realizar una limpieza de los datos donde concideramos que no era disruptiva.
 
 Los cambios fueron:
 
 \begin{itemize}
-\item corregir ``ni'' por ``\~{n} '' en la palabra grunion.
+\item corregir ``ni'' por ``ñ '' en la palabra grunion.
 \item Remoción de todos los signos de puntuación. 
 \item Remoción de expresiones como ``blabla'' o cualquier otra que exprese ininteligibilidad de una palabra u oración.
 \item Correción de acentos en palabras no ambiguas: ``botón'', ``prefirió'', ``recorrió'', ``chupetín'', ``riñón'', ``grúñón''.
 \item Las palabras que presentan ambibalencia, como : ``concluyó'' no fueron modificadas ya que concluyó/concluyo son validas.
 %otros ejemplos: apoyo, enfrío
 \end{itemize}
+\begin{figure}[htp]
+\begin{center}$
+\begin{array}{lll}
+\includegraphics[width=.5\textwidth]{imagenes/plots_raw/9.png}\quad
+\includegraphics[width=.5\textwidth]{imagenes/plots_raw/10.png}
+\end{array}$
+\end{center}
+\caption{Utternace 9 y 10}
+\label{pics:blablabla}
+\end{figure}
 
+\clearpage
 Habiendo realizado estas correcciones, ahora las distancias de Levinshtein se ven así: 
 
 \begin{figure}[htp]
@@ -198,7 +203,7 @@ Habiendo realizado estas correcciones, ahora las distancias de Levinshtein se ve
 \includegraphics[width=.5\textwidth]{imagenes/plots_normalized/2.png}
 \end{array}$
 \end{center}
-\caption{Figure caption}
+\caption{Utternace 1 y 2 Normalizados}
 \label{pics:blablabla}
 \end{figure}
 
@@ -209,7 +214,7 @@ Habiendo realizado estas correcciones, ahora las distancias de Levinshtein se ve
 \includegraphics[width=.5\textwidth]{imagenes/plots_normalized/4.png}
 \end{array}$
 \end{center}
-\caption{Figure caption}
+\caption{Utternace 3 y 4 Normalizados}
 \label{pics:blablabla}
 \end{figure}
 
@@ -221,7 +226,7 @@ Habiendo realizado estas correcciones, ahora las distancias de Levinshtein se ve
 \end{array}$
 \end{center}
 
-\caption{Figure caption}
+\caption{Utternace 5 y 6 Normalizados}
 \label{pics:blablabla}
 \end{figure}
 
@@ -233,7 +238,7 @@ Habiendo realizado estas correcciones, ahora las distancias de Levinshtein se ve
 \end{array}$
 \end{center}
 
-\caption{Figure caption}
+\caption{Utternace 7 y 8 Normalizados}
 \label{pics:blablabla}
 \end{figure}
 \begin{figure}[htp]
@@ -243,13 +248,13 @@ Habiendo realizado estas correcciones, ahora las distancias de Levinshtein se ve
 \includegraphics[width=.5\textwidth]{imagenes/plots_normalized/10.png}
 \end{array}$
 \end{center}
-\caption{Figure caption}
+\caption{Utternace 9 y 10 Normalizados}
 \label{pics:blablabla}
 \end{figure}
 
 Con esta estandaricación de los datos, trataremos de darles un peso intuitivo que nos permitan sistematizar el analisis.
 
-Por ejemplo, tomando una de las fraces utilizadas en la experimentación: 
+Por ejemplo, tomando el utternace $8$ de las fraces utilizadas en la experimentación: 
 
 \begin{itemize}
 	\item ``Las acongojadas cotorras sonrieron a mi círculo''
@@ -275,15 +280,59 @@ A partir de esto, para este trabajo vamos a tomar que una distancia de Levinshte
 	\item Distancia 40-: Inteligibilidad nula
 \end{itemize}
 
-Con este baseline, podemos decir que en el rango de $30\%$ a $50\%$ todos los utternaces menos el 3 presentan un buen grado de inteligibilidad.
 
-Dentro de este rango, los errores mas comunes varían desde falta de acentos en palabras como ``concluyó'' ambiguas hasta faltas de inteligibilidad en palabras con cierta complegidad como ``aguileña'' o ``gruñon''.
+Con este baseline, podemos ver que para una interpolación de ingles de $30\%$ 96 de los $106$ participantes comprendieron de manera adecuada el texto con una inteligibilidad alta. Los 10 restantes obtuvieron una inteligibilidad media. 
+
+Para la interpolación $40\%$ ingles - $60\%$ castellano, de un total de $67$ participantes, $57$ obtuvieron una inteligibilidad alta, $2$ una inteligibilidad media, $5$ una baja y 3 una inteligibilidad nula.
+
+Para la interpolación $50\%$ ingles - $50\%$ castellano, de un total de $75$ participantes, $57$ obtuvieron transcribir el audio demostrando una buena inteligibilidad, mientras que $14$ tuvieron una inteligibilidad media y $4$ una inteligibilidad baja.
+
+Para todas las interpolaciones enunciadas previamente, los errores mas comunes varían desde falta de acentos en palabras como ``concluyó'' ambiguas hasta faltas de inteligibilidad en palabras con cierta complegidad como ``aguileña'' o ``gruñon''.
 
 Para el utternace 3: ``este enjoyado juez comprará nuestro corchete'' observamos que la mayoría de los participantes cometieron errores al transcribir la palabra ``juez'' que confundieron de manera sistematica con palabras sonoramente similares como ``fue'', y ``enjoyado'' que transcribieron como ``enfollado'', ``enrollado'' y la conjugación exacta del verbo comprar.
 
-Pasado el $50\%$ de mezcla de ingles, se puede observar una caida drastica en la inteligibilidad, mayormente en el utternace $2, 4, 5, 6, 8$y $9$. Tambien vemos que la variablidad aumenta drasticamente, por ejemplo, en el utternace $4$ con $60\%$ un participante fue capaz de transcribir con distancia $2$ el audio. Así mismo con $70\%$ dos participantes fueron capaces de transcribir el audio con una distancia menor $10$.
+Para los grados de interpolación $60\%$ ingles - $40\%$ castellano y $70\%$ ingles - $30\%$ castellano, se pueden observar un aumento notable de la variabilidad en las respuestas. Para el primero, de las $70$ respuestas obtenidas, $40$ participantes lograron transcribir con un buen grado de inteligibilidad los audios, $6$ obtuvieron una inteligibilidad media, y $24$ transcribieron el audio con una inteligibilidad baja o nula.
+
+Para $70\%$ ingles - $30\%$ castellano, la diferencia es todavía mas marcada, de los $68$ resultados obtenidos, $28$ obtuvieron lograron transcribir el audio con un buen grado de inteligibilidad, $8$ con un grado medio y $32$ con un grado bajo o nulo de inteligibilidad.
+
+Consideramos estos resultados tan dispares pueden deberse a dos motivos:
+
+El primero, caracteristicas particulares de los participantes y sus capacidades para dicernir palabras incluso cuando presentan defectos en la pronunciación del hablante. En particular, el utternace $4$ muestra como para un mismo audio, con caracteristicas similares $2$ participantes de los 9 que realizaron la transcripción, obtuvieron distancias $2$ y $6$ en sus transcripciones.
+
+El segundo motivo puede deberse a caracteristicas particulares de los utternaces o del modelo utilizado para generar la voz: el utternace $10$, donde el $6$ de los $8$ participantes obtuvieron una buena transcripcion del audio, y el utternace $8$, donde todos los participantes transcribieron el audio con inteligibildiad baja o nula, parecen demostrar esto. O bien la dificultad de los utternaces es variable o, lo que es todavía mas probable, llegado cierto punto en la interpolación, algunos fonemas empiezan a ``romperse'' o se alejan demasiado del fonema castellano correcto y terminan por disminuir la claridad de la voz.
 
 
+%Agregar:
+% python levinshteinFor.py 0
+% Alta int: 96
+% Media int: 10
+% Baja int: 0
+% nula: 4
+% python levinshteinFor.py 1
+% Alta int: 57
+% Media int: 2
+% Baja int: 5
+% nula: 3
+% porque nula? ver esto
+\recordar
+% python levinshteinFor.py 2
+% Alta int: 57
+% Media int: 14
+% Baja int: 4
+% nula: 0
+% python levinshteinFor.py 3
+% Alta int: 40
+% Media int: 6
+% Baja int: 11
+% nula: 13
+% python levinshteinFor.py 4
+% Alta int: 28
+% Media int: 8
+% Baja int: 20
+% nula: 12
+
+
+\clearpage
 \subsection{Analisis de Nacionalidad}
 
 
@@ -311,10 +360,11 @@ Con estas agrupaciones, presentamos las nacionalidades atribuidas a la voz gener
 \includegraphics[width=.5\textwidth]{imagenes/nacionalidades/2.png}
 \end{array}$
 \end{center}
-\caption{Utternace 1,2}
+\caption{Utternace 1 y 2}
 \label{pics:blablabla}
 \end{figure}
 
+De estos resultados podemos observar que con $30\%$ de interpolación de ingles, los participantes coinciden en que la voz puede atribuirse a una persona de habla nativa española.
 
 \begin{figure}[htp]
 \begin{center}$
@@ -323,47 +373,9 @@ Con estas agrupaciones, presentamos las nacionalidades atribuidas a la voz gener
 \includegraphics[width=.5\textwidth]{imagenes/nacionalidades/4.png}
 \end{array}$
 \end{center}
-\caption{Utternace 3,4}
+\caption{Utternace 3 y 4}
 \label{pics:blablabla}
 \end{figure}
-
-
-\begin{figure}[htp]
-\begin{center}$
-\begin{array}{lll}
-\includegraphics[width=.5\textwidth]{imagenes/nacionalidades/5.png}&
-\includegraphics[width=.5\textwidth]{imagenes/nacionalidades/6.png}
-\end{array}$
-\end{center}
-\caption{Utternace 5,6}
-\label{pics:blablabla}
-\end{figure}
-
-
-\begin{figure}[htp]
-\begin{center}$
-\begin{array}{lll}
-\includegraphics[width=.5\textwidth]{imagenes/nacionalidades/7.png}&
-\includegraphics[width=.5\textwidth]{imagenes/nacionalidades/8.png}
-\end{array}$
-\end{center}
-\caption{Utternace 7,8}
-\label{pics:blablabla}
-\end{figure}
-
-
-\begin{figure}[htp]
-\begin{center}$
-\begin{array}{lll}
-\includegraphics[width=.5\textwidth]{imagenes/nacionalidades/9.png}&
-\includegraphics[width=.5\textwidth]{imagenes/nacionalidades/10.png}
-\end{array}$
-\end{center}
-\caption{Utternace 9,10}
-\label{pics:blablabla}
-\end{figure}
-
-De estos resultados podemos observar que con $30\%$ de interpolación de ingles, los participantes coinciden en que la voz puede atribuirse a una persona de habla nativa española.
 
 Para una mezcla de $40\%$ ingles, puede verse que no hay una decición concluyente con respecto a la nacionalidad del hablante. Por ejemplo en el utternace 3 el $80\%$ de los participantes coincide que la voz pertenece a un hablante de habla hispana, mientras que en el utternace 9 el $60.00\%$ de los participantes concidera que la voz pertenece a un hablante de habla anglosajona.
 
@@ -381,12 +393,110 @@ Bajo esta supocición observamos que los otros utternaces que presentan este fon
 
 Tambien presentan un mayor porcentaje de atribuciones a nacionalidad anglosajona.
 
+\begin{figure}[htp]
+\begin{center}$
+\begin{array}{lll}
+\includegraphics[width=.5\textwidth]{imagenes/nacionalidades/5.png}&
+\includegraphics[width=.5\textwidth]{imagenes/nacionalidades/6.png}
+\end{array}$
+\end{center}
+\caption{Utternace 5 y 6}
+\label{pics:blablabla}
+\end{figure}
+
 Con $50\%$ y $60\%$ de ingles los resultados son similares. obtenemos que aproximadamente en el $50\%$ de los utternaces, mas de la mitad de los participantes concideraron que la voz pertenecía a un anglosajon hablando castellano. Para estos grados de interpolación tambien podemos observar que en un $80\%$ de los utternaces al menos un $20\%$ de los participantes atribuyen la nacionalidad del hablante a un no nativo no anglosajon hablando castellano.
+
+\begin{figure}[htp]
+\begin{center}$
+\begin{array}{lll}
+\includegraphics[width=.5\textwidth]{imagenes/nacionalidades/7.png}&
+\includegraphics[width=.5\textwidth]{imagenes/nacionalidades/8.png}
+\end{array}$
+\end{center}
+\caption{Utternace 7 y 8}
+\label{pics:blablabla}
+\end{figure}
 
 Con $70\%$ de interpolación, en el $80\%$ de los utternaces se puede apreciar que al menos $50\%$ de los participantes dijo que el hablante era de origen anglosajon. Mas aún, en el $40\%$ de los utternaces el $75\%$ de los participantes coincidió que la voz era de angloparlante. Tambien podemos ver que para este grado de interpolación en el $70\%$ de los utternaces ningun participante concidera que la voz sea de habla hispana. En el $30\%$ restante, $25\%$ de los participantes o menos concideran que la voz pertenezca a un hispanohablante.
 
+\begin{figure}[htp]
+\begin{center}$
+\begin{array}{lll}
+\includegraphics[width=.5\textwidth]{imagenes/nacionalidades/9.png}&
+\includegraphics[width=.5\textwidth]{imagenes/nacionalidades/10.png}
+\end{array}$
+\end{center}
+\caption{Utternace 9 y 10}
+\label{pics:blablabla}
+\end{figure}
+
 %grafico general mostrando como crece el grado de ingles?
 
-
-
 %conclucion mas general: aunque en muchos casos los participantes atribuyeron a la voz como un extrangero no anglosajon, tambien tener en cuenta que se esta intentando identificar la nacionalidad de un hablante con tan solo con una oración como referencia.
+
+Hasta ahora analizamos los dos ejes de nuestra hipotesis por separado (por un lado, inteligibilidad, por otro, nacionalidad atribuida a la voz). En el ultimo apartado de la investigación buscaremos sacar concluciones al componer ambos ejes en un mismo analisis.
+
+\subsection{Resultados Generales de la experimentación}
+
+Del analisis de los graficos se desprende que dependiendo del grado inteligibilidad/probabilidad de que un participante reconozca la voz como inglesa, es posible elegir un grado diferente de interpolación ingles castellano.
+
+Segun el experimento realizado, es posible generar una voz que sea identificada con probabilidad $0.6$ como una voz anglosajona, pero a cambio estaremos sacrificando inteligibilidad, llegando al caso donde el oyente no comprenda nada de lo que se le dijo. 
+
+\begin{figure}[htp]
+\begin{center}$
+\begin{array}{lll}
+\includegraphics[width=.5\textwidth]{imagenes/nacVsPlot/1.png}&
+\includegraphics[width=.5\textwidth]{imagenes/nacVsPlot/2.png}
+\end{array}$
+\end{center}
+\caption{Utternace 1 y 2}
+\label{pics:blablabla}
+\end{figure}
+
+\begin{figure}[htp]
+\begin{center}$
+\begin{array}{lll}
+\includegraphics[width=.5\textwidth]{imagenes/nacVsPlot/3.png}&
+\includegraphics[width=.5\textwidth]{imagenes/nacVsPlot/4.png}
+\end{array}$
+\end{center}
+\caption{Utternace 3 y 4}
+\label{pics:blablabla}
+\end{figure}
+
+\begin{figure}[htp]
+\begin{center}$
+\begin{array}{lll}
+\includegraphics[width=.5\textwidth]{imagenes/nacVsPlot/5.png}&
+\includegraphics[width=.5\textwidth]{imagenes/nacVsPlot/6.png}
+\end{array}$
+\end{center}
+\caption{Utternace 5 y 6}
+\label{pics:blablabla}
+\end{figure}
+
+\begin{figure}[htp]
+\begin{center}$
+\begin{array}{lll}
+\includegraphics[width=.5\textwidth]{imagenes/nacVsPlot/7.png}&
+\includegraphics[width=.5\textwidth]{imagenes/nacVsPlot/8.png}
+\end{array}$
+\end{center}
+\caption{Utternace 7 y 8}
+\label{pics:blablabla}
+\end{figure}
+
+\begin{figure}[htp]
+\begin{center}$
+\begin{array}{lll}
+\includegraphics[width=.5\textwidth]{imagenes/nacVsPlot/9.png}&
+\includegraphics[width=.5\textwidth]{imagenes/nacVsPlot/10.png}
+\end{array}$
+\end{center}
+\caption{Utternace 9 y 10}
+\label{pics:blablabla}
+\end{figure}
+
+
+
+
