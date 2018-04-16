@@ -1,13 +1,17 @@
 
 En la siguiente aparatado intentaremos validar dos hipótesis: que el modelo generado realmente puede ser identificado como un hablante extranjero de habla inglesa y al mismo tiempo que este posee un grado de inteligibilidad aceptable.
 
-Para eso se condujo una encuesta perceptual donde, dado un participante, se le presentó un audio con una oración semánticamente impredecible, fonéticamente balanceada y con distintos grados de mezcla de español e ingles, se le pidió que la transcribiera y que intentara identificar la nacionalidad del mismo.
+Para eso se condujo una encuesta perceptual donde a cada participante, se le presentó un audio con una oración semánticamente impredecible, fonéticamente balanceada y con distintos grados de mezcla de español e ingles y se le pidió que la transcribiera y que intentara identificar la nacionalidad del hablante.
 
-Para la experimentación, se generaron diez oraciones distintas variando el nivel de mezcla de los modelos generados entre $30\%$ de ingles - $70\%$ castellano hasta $70\%$ de ingles - $30\%$ de castellano.
+La encuesta se realizó a través de internet, con el mismo set de instrucciones para todos los participantes y pidiendo como requerimiento la utilización de auriculares. Cada participante podía contestar un máximo $5$ veces (otorgándoles siempre audios distintos).
 
-Los utternaces utilizados fueron generados de manera algorítmica tomando palabras de manera aleatoria de una lista de sustantivos, adjetivos y verbos y realizando correcciones donde fuera necesario para mantener el balanceo fonético.
+La misma se llevó a cavo desde el $18$ de octubre de $2017$ hasta el primero de diciembre del mismo año, tiempo durante el cual fue publicada en distintas redes sociales y listas de emails de la facultad.
 
-\begin{enumerate}
+Los utternaces utilizados fueron generados tomando palabras de manera aleatoria de una lista de sustantivos, adjetivos y verbos y realizando correcciones donde fuera necesario para mantener el balanceo fonético.
+
+Los utternaces utilizados fueron:
+
+\begin{itemize}
 \item Utternace 1: Mi montaña aguileña recorrió la esquina
 \item Utternace 2: Aquel fuerte vidrio prefirió aquel botón
 \item Utternace 3: Este enjoyado juez comprará nuestro corchete
@@ -18,16 +22,13 @@ Los utternaces utilizados fueron generados de manera algorítmica tomando palabr
 \item Utternace 8: Las acongojadas cotorras sonrieron a mi círculo
 \item Utternace 9: Ese gruñón perro prometió a esos cuñados
 \item Utternace 10: El nudillo Argentino perdió su vaso
-\end{enumerate}
+\end{itemize}
 
-
-La encuesta se realizó a través de internet, con el mismo set de instrucciones para todos los participantes y pidiendo como requerimiento la utilización de auriculares. Cada participante podía contestar un máximo $5$ veces (otorgándoles siempre audios distintos).
-
-La misma se llevó a cavo desde el $18$ de octubre de $2017$ hasta el primero de diciembre del mismo año, tiempo durante el cual fue publicada en distintas redes sociales y listas de emails de la facultad.
+Para cada uno de estos diez utternaces se varió el nivel de mezcla entre $30\%$ de ingles - $70\%$ castellano hasta $70\%$ de ingles - $30\%$ de castellano, $10\%$ a la vez.
 
 \subsection{Interface}
 
-A continuación se presenta la interfase que utilizamos para realizar la encuesta junto con las decisiones de diseño que fueron tomadas a lo largo de la misma. 
+A continuación se presenta la interfase utilizada para realizar la encuesta junto con las decisiones de diseño mas relevantes tomadas a lo largo de su creación. 
 
 Al entrar en la pagina de la encuesta todos los participantes fueron presentados con la siguiente pantalla principal:
 
@@ -35,9 +36,9 @@ Al entrar en la pagina de la encuesta todos los participantes fueron presentados
 \includegraphics[scale=0.4]{estudio_online/estudio1.png}
 \end{center}
 
-Con el objetivo de no influir el las respuestas de los participantes participantes, se procuró darles a los participantes la información indispensable para completar la encuesta. En ningún momento se especifica que buscábamos con este estudio.
+Con el objetivo de no influir el las respuestas de los participantes participantes, se procuró darles a los participantes la información indispensable para completar la encuesta. En ningún momento de la encueta se especifica el objetivo del estudio.
 
-Con la intención de que los resultados fueran lo menos variables posibles, se le pidió a cada participante que realizara la encuesta con auriculares y en un lugar silencioso.
+Con la intención de estandarizar los resultados, fue requerimento obligatorio  utilizar auriculares para la encuesta. Tambien se le pidió a cada participante que la realizara en un lugar silencioso.
 
 Además, le pedimos a cada participante que indique su genero, su edad y la provincia en la que transcurrido la mayor parte de su infancia.
 
@@ -53,13 +54,13 @@ Una vez presionado el botón de ``entendido!'' se les presentaba un audio, que p
 \includegraphics[scale=0.4]{estudio_online/estudio3.png}
 \end{center}
 
-Una vez que la respuesta era guardada, si el participante todavía no había contestado 5 veces, se le preguntaba si quería continuar transcribiendo otro audio, o de caso contrario se le presentaba un mensaje donde se le indicaba que ya podía cerrar la encuesta.
+Una vez que la respuesta era guardada, se le preguntaba si quería continuar transcribiendo otro audio, o de caso de haber contestado cinco veces, se le presentaba un mensaje donde se le indicaba que ya podía cerrar la encuesta.
 
 \pagebreak
 
 \subsection{Resultados}
 
-A modo de introducción, comenzaremos mostrando los datos demográficos de los participantes. Continuaremos con un análisis mas exhaustivo de la inteligibilidad y por otro lado de la nacionalidad atribuida. Por ultimo para contestar compondremos estos dos ejes para intentar contestar la hipótesis original.
+A modo de introducción, comenzaremos esta sección mostrando los datos demográficos obtenidos. Mas adelante, continuaremos con un análisis mas exhaustivo de inteligibilidad y por separado se realizará otro analisis respecto a la nacionalidad atribuida a los utternaces. Por ultimo para evaluar la hipotesis original, compondremos estos dos ejes para dilucidar su grado de validez.
 
 \subsubsection{Datos demográficos}
 
@@ -116,9 +117,7 @@ Presentamos aquí los resultados obtenidos sin ningún tipo de modificación:
 \label{pics:blablabla}
 \end{figure}
 
-\clearpage
-
-Como puede verse en la mayoría de los utternaces se puede observar que hasta el $50\%$ de mezcla castellano-ingles, se conserva el un buen grado de inteligibilidad, rondando la distancia de Levenshtein al rededor de $10$ a $20$ caracteres. Pasados el $60\%$ de ingles, se observa una disminución brusca en la inteligibilidad, llegando a una distancia de $45$ caracteres.
+Como puede verse en la mayoría de los utternaces se puede observar que hasta el $50\%$ de mezcla castellano-ingles, se conserva el un buen grado de inteligibilidad, rondando una distancia que varía entre $10$ y $20$ caracteres. Pasados el $60\%$ de ingles, en la mayoría de los utternaces se observa una disminución brusca en la inteligibilidad, llegando a una distancia de $45$ caracteres.
 
 \begin{figure}[htp]
 \begin{center}$
@@ -130,24 +129,23 @@ Como puede verse en la mayoría de los utternaces se puede observar que hasta el
 \caption{Utternace 3 y 4}
 \label{pics:blablabla}
 \end{figure}
-\clearpage
 
-Analizando detenidamente las transcripciones obtenidas observamos algunas fallas sistemáticas que podrían generar ruido en el análisis, tales como:
+Analizando detenidamente las transcripciones obtenidas pudimos observar algunas fallas sistemáticas que podrían generar ruido en el análisis, tales como:
 
 \begin{itemize}
-	\item Los participantes escribieron de manera diferente cuando no entendieron un segmento del audio.
+	\item Los participantes escribieron de manera diferente las secciones del utternace que no comprendieron.
 		\begin{itemize}
 		\item Muchos de ellos escribieron: ``...'', ``....'' o simplemente omitieron la palabra.
 		\item En casos menos comunes: ``***'', ``???'', ``blablabla''.
 		\end{itemize}
-	\item En casos donde no comprendieron ninguna palabra del audio escribieron cosas como ``no entendí nada'', ``nada'', dejaron el campo vacío, etc.
+	\item En casos donde no comprendieron ningun segmento del utternace, es comun observar expresiones como ``no entendí nada'', ``nada'', ``'', etc.
 	%\item Faltas ortografias del estilo: "grunion" en vez de "gruñón" que podría deberse a un teclado
-	\item Utilización de signos de puntuación en las oraciones:
+	\item Utilización de signos de puntuación:
 		\begin{itemize}
 		\item Puntos finales para expresar el final de la oración o expresiones como ``(?)''.
 		\item En un caso extremo, un participante el participante transcribió `` ``tu estrecho posavasos'', grito la fechoría'', cuando el Utternace original solo decía ``tu estrecho portavasos gritó la fechoría''.
 		\end{itemize}
-	\item Omisión de acentos y faltas ortográficas en palabras que no ambiguas.Ejemplo: ``grunion'' en vez de ``gruñón''
+	\item Omisión de acentos y faltas ortográficas en palabras que no presentan ambiguedades. Como por ejemplo: ``grunion'' en vez de ``gruñón''
 \end{itemize}
 
 \begin{figure}[htp]
@@ -180,12 +178,12 @@ Los cambios fueron:
 \begin{itemize}
 \item corregir ``ni'' por ``ñ '' en la palabra grunion.
 \item Remoción de todos los signos de puntuación. 
-\item Remoción de expresiones como ``blabla'', "no entendí" o cualquier otra que exprese ininteligibilidad de una palabra u oración.
+\item Remoción de oraciones como ``blabla'', ``no entendí'' o cualquier otra expresión que indique ininteligibilidad de una palabra u oración.
 \item Corrección de acentos en palabras no ambiguas: ``botón'', ``prefirió'', ``recorrió'', ``chupetín'', ``riñón'', ``gruñón''.
 %otros ejemplos: apoyo, enfrío
 \end{itemize}
 
-Aquellas palabras que presentan ambivalencia, como : ``concluyó'' no fueron modificadas ya que concluyó/concluyo son validas.
+Aquellas palabras que presentan ambivalencia, como : ``concluyó'' no fueron modificadas ya que concluyó/concluyo son validas. El participante podría haber interpretado la palabra con cualquiera de las dos connotaciones cambiando el significado de la interpretación.
 
 \begin{figure}[htp]
 \begin{center}$
@@ -198,9 +196,7 @@ Aquellas palabras que presentan ambivalencia, como : ``concluyó'' no fueron mod
 \label{pics:blablabla}
 \end{figure}
 
-
-Esta normalización no solamente ayudará a disminuir la propagación de los datos sino que nos permitirá entender de manera mas intuitiva que significa la distancia de Levenshtein en cada caso.
-
+Esperamos que esta normalización no solamente ayude a disminuir la propagación de los resultados, sino que ademas, nos permitirá interpretar de manera mas intuitiva el significado la distancia de Levenshtein en cada caso.
 
 \clearpage
 
@@ -214,7 +210,7 @@ Por ejemplo, tomando el Utternace $8$ de las frases utilizadas en la experimenta
 	\item ``Las acongojadas cotorras sonrieron a mi círculo''
 \end{itemize}
 
-Podemos observar que:
+Podemos observar las siguientes transcripciones extraidas de los resultados:
 
 \begin{itemize}
 	\item Distancia 0: ``Las acongojadas cotorras sonrieron a mi círculo''
@@ -245,7 +241,7 @@ A partir de esto, para este apartado vamos a tomar que una distancia de Levensht
 \label{pics:blablabla}
 \end{figure}
 
-Con este baseline, podemos ver que para una interpolación de ingles de $30\%$, $96$ de los $106$ participantes comprendieron de manera adecuada el texto con una inteligibilidad alta. Los $10$ restantes obtuvieron una inteligibilidad media. 
+Con este baseline, podemos ver que para una interpolación de ingles de $30\%$, $96$ de los $106$ participantes comprendieron de manera adecuada el texto con una inteligibilidad alta, mientras que los $10$ restantes obtuvieron una inteligibilidad media. 
 
 \begin{figure}[htp]
 \begin{center}$
@@ -258,7 +254,7 @@ Con este baseline, podemos ver que para una interpolación de ingles de $30\%$, 
 \label{pics:blablabla}
 \end{figure}
 
-Para la interpolación $40\%$ ingles - $60\%$ castellano, de un total de $67$ participantes, $57$ obtuvieron una inteligibilidad alta, $2$ una inteligibilidad media, $5$ una baja y 3 una inteligibilidad nula.
+Para la mezcla $40\%$ ingles - $60\%$ castellano, de un total de $67$ participantes, $57$ obtuvieron una inteligibilidad alta, $2$ una inteligibilidad media, $5$ una baja y 3 una inteligibilidad nula.
 
 
 \begin{figure}[htp]
@@ -276,10 +272,10 @@ Para la interpolación $40\%$ ingles - $60\%$ castellano, de un total de $67$ pa
 Para la interpolación $50\%$ ingles - $50\%$ castellano, de un total de $75$ participantes, $57$ obtuvieron transcribir el audio demostrando una buena inteligibilidad, mientras que $14$ tuvieron una inteligibilidad media y $4$ una inteligibilidad baja.
 
 
-Para todas las interpolaciones enunciadas previamente, los errores mas comunes varían desde falta de acentos en palabras como ``concluyó'' ambiguas hasta faltas de inteligibilidad en palabras con cierta complejidad como ``aguileña'' o ``gruñón''.
+Para todas las interpolaciones enunciadas previamente, los errores mas comunes varían desde falta de acentos en palabras como ``concluyó'' hasta faltas de inteligibilidad en palabras con cierta complegidad fonetica como ``aguileña'' o ``gruñón''.
 
 
-Para el Utternace $3$: ``este enjoyado juez comprará nuestro corchete'' observamos que la mayoría de los participantes cometieron errores al transcribir la palabra ``juez'' que confundieron de manera sistemática con palabras sonoramente similares como ``fue'', y ``enjoyado'' que transcribieron como ``enfollado'', ``enrollado'' y la conjugación exacta del verbo comprar.
+Como caso particular el Utternace $3$: ``este enjoyado juez comprará nuestro corchete'' podemos observar que la mayoría de los participantes cometieron errores al transcribir la palabra ``juez'' que confundieron de manera sistemática con palabras sonoramente similares como ``fue'', y ``enjoyado'' que transcribieron como ``enfollado'', ``enrollado'' y la conjugación exacta del verbo comprar.
 
 \begin{figure}[htp]
 \begin{center}$
@@ -293,7 +289,7 @@ Para el Utternace $3$: ``este enjoyado juez comprará nuestro corchete'' observa
 \end{figure}
 
 
-Para los grados de interpolación $60\%$ ingles - $40\%$ castellano y $70\%$ ingles - $30\%$ castellano, se pueden observar un aumento notable de la variabilidad en las respuestas. Para el primero, de las $70$ respuestas obtenidas, $40$ participantes lograron transcribir con un buen grado de inteligibilidad los audios, $6$ obtuvieron una inteligibilidad media, y $24$ transcribieron el audio con una inteligibilidad baja o nula.
+Para los grados de interpolación $60\%$ ingles - $40\%$ castellano y $70\%$ ingles - $30\%$ castellano, podemos observar un aumento notable de la variabilidad en las respuestas. Para el primero, de las $70$ respuestas obtenidas, $40$ participantes lograron transcribir con un buen grado de inteligibilidad los audios, $6$ obtuvieron una inteligibilidad media, y $24$ transcribieron el audio con una inteligibilidad baja o nula.
 
 
 Para $70\%$ ingles - $30\%$ castellano, la diferencia es todavía mas marcada, de los $68$ resultados obtenidos, $28$ lograron transcribir el audio con un buen grado de inteligibilidad, $8$ con un grado medio y $32$ con un grado bajo o nulo de inteligibilidad.
@@ -313,12 +309,13 @@ Para $70\%$ ingles - $30\%$ castellano, la diferencia es todavía mas marcada, d
 
 Consideramos estos resultados tan dispares pueden deberse a dos motivos:
 
+El primero es que existen características particulares de los participantes y sus capacidades para discernir palabras incluso cuando presentan defectos en la pronunciación del hablante. En particular, el Utternace $4$ muestra como para el mismo grado de interpolación, con características similares $2$ participantes de los 9 que realizaron la transcripción, obtuvieron distancias $2$ y $6$ en sus transcripciones.
 
-El primero, características particulares de los participantes y sus capacidades para discernir palabras incluso cuando presentan defectos en la pronunciación del hablante. En particular, el Utternace $4$ muestra como para un mismo audio, con características similares $2$ participantes de los 9 que realizaron la transcripción, obtuvieron distancias $2$ y $6$ en sus transcripciones.
+
+El segundo motivo puede deberse a que existen características particulares de los utternaces o del modelo utilizado para generar la voz que afectan la compreción del audio: el Utternace $10$, donde el $6$ de los $8$ participantes obtuvieron una buena transcripción del audio, y el Utternace $8$, donde todos los participantes transcribieron el audio con inteligibilidad baja o nula, parecen demostrar esto. O bien la dificultad de los utternaces es variable o, lo que es todavía mas probable, llegado cierto punto en la interpolación, algunos fonemas empiezan a ``romperse'' o se alejan demasiado del fonema castellano correcto y terminan por disminuir la claridad de la voz.
 
 
-El segundo motivo puede deberse a características particulares de los utternaces o del modelo utilizado para generar la voz: el Utternace $10$, donde el $6$ de los $8$ participantes obtuvieron una buena transcripción del audio, y el Utternace $8$, donde todos los participantes transcribieron el audio con inteligibilidad baja o nula, parecen demostrar esto. O bien la dificultad de los utternaces es variable o, lo que es todavía mas probable, llegado cierto punto en la interpolación, algunos fonemas empiezan a ``romperse'' o se alejan demasiado del fonema castellano correcto y terminan por disminuir la claridad de la voz.
-
+En conclución, en esta sección pudimos demostrar que fue posible generar una voz con cierto grado de inteligibilidad interpolando hasta un $50\%$ de ingles y $50\%$ de castellano. Pasado el $50\%$ de ingles, la variabilidad de las respuestas se vuelve mucho mas grande pudiendo haber participantes que comprenden el audio hasta algunos que no logran comprender segmentos aislados del mismo.
 
 %Agregar:
 % python levinshteinFor.py 0
@@ -352,10 +349,9 @@ El segundo motivo puede deberse a características particulares de los utternace
 \clearpage
 \subsubsection{Análisis de Nacionalidad}
 
+En esta sección analizaremos los resultados de las nacionalidades que los participantes de la encuesta atribuyeron a la voz.
 
-En esta sección analizaremos los resultados de las nacionalidades que los participantes atribuyeron a la voz.
-
-Dado que en esta instancia se le le permitió a los participantes ingresar texto libre las respuestas resultaron bastante heterogéneas. Los participantes tomaron la consigna de manera diferente, pudiendo encontrarse respuestas que no pueden ser atribuidos exactamente a una nacionalidad. Ejemplo de algunas respuestas: Latino, Anglo, Robot, España (sur).
+Dado que en esta instancia se le le permitió a los participantes ingresar texto libre las respuestas resultaron bastante heterogéneas. Los participantes tomaron la consigna de manera diferente, pudiendo encontrarse respuestas que no pueden ser atribuidas a una nacionalidad. Como ejemplo de algunas respuestas pueden encontrarse consas como: Latino, Anglo, Robot, España (sur).
 
 Consideramos que las respuestas de la índole ``robot'', ``es una voz artificial'', no son validas ya que no aportan información para esta investigación.
 

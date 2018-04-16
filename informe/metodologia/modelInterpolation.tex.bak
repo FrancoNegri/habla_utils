@@ -1,0 +1,11 @@
+Una vez generados ambos modelos con el mismo repertorio fonético procedemos a experimentar y evaular de manera informal la efectividad del método.
+
+Para ello tomamos el modelo generado por \textit{loc1\_pal} y lo interpolamos con \textit{CMU-ARCTIC-SLT} con diferentes pesos entre ellos.
+
+Para grados cercanos al $90\%$ de castellano - $10$ de ingles obtenemos los resultados esperables: las oraciones sintetizadas tienen un marcado acento castellano. Así mismo, en el otro extremo, $10\%$ de castellano - $90\%$ de ingles, la vos sintetizada, al ingual que lo que se describió en el apartado anterior, la voz presenta problemas foneticos graves, haciendo que las oraciones resultaran poco naturales y dificiles o imposibles de comprender. En el medio de la interpolación, $70\%$ de castellano - $30\%$ de ingles y $40\%$ de castellano - $60\%$ de ingles, podemos apreciar resulados mas cercanos a los esperados, pudiendo apreciar en las oraciones sintetizadas detalles distintivos como el fono /\textipa{R}/ mas suavizada, o pronunciación de vocales mas abiertas, pero aun conservando cierto grado de inteligibilidad.
+
+Dado que HTS modela de manera conjunta la acustica y la prosodia, tambien pudimos apreciar en las oraciones sintetizadas cierta prosodia no familiar que tambien podría ser adjudicada a un hablante extranjero.  
+
+Como un efecto colateral de la interpolación que pudimos apreciar es que cuanto mas cercano esta el grado de interpolación al modelo en castellano, las caracteristicas foneticas se asemejan mas a la de las oraciones del corpus \textit{loc1\_pal}, mientras que de manera analoga, cuanto mas grado de ingles tiene, la voz se asemeja a \textit{CMU-ARCTIC-SLT}. Si bien esto no es un defecto importante, con el motivo de cambiar el menor numero de variables en la experimentación sería deseable que la voz no presentara distintas caracteristicas para distintos grados de interpolación.
+
+Como una posible solución surge la posibilidad de utilizar Speaker-Adaptative Training sobre uno de los modelos.

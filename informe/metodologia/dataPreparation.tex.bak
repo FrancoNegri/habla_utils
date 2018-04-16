@@ -1,0 +1,71 @@
+\section{Introducción}
+
+Como introducción a este trabajo comenzaremos analizando las deciciones de metodología utilizadas a lo largo de la investigación, asi tambien como detalles teoricos como el mapeo de fonemas necesario para adaptar el repertorio fonemico del ingles al castellano, etc.
+
+En las siguiente secciones se detallaran distintos temas que fueron necesarios abordar para llevar a cabo esta tesis. En orden de aparición estos son:
+
+\begin{enumerate}
+\item Realizar un etiquetado fonémico de distintos corpus de audios.
+
+\item Realizar un mapeo entre los fonos del castellano y los del ingles. Estos serán necesarios en el paso siguiente donde será requerimiento indispensable tener modelados los mismos fonos para todos los modelos.
+
+\item Realizar el entrenamiento de los HMM+GMM. Para esto contaremos con el framework de modelado de HMMs HTS. 
+
+\item Utilizar las herramientas provistas por HTS para interpolar entre modelos y poder sintetizar habla con distintos grados de fonética y prosodia inglesa.
+
+\end{enumerate}
+
+Para finalizar el apartado teorico discutiremos algunos aspectos implementativos de HTS y las otras herramientas utilizadas en este trabajo.
+
+\section{Preparación De los datos}
+
+%Para este trabajo contamos con tres corpus de datos distintos:
+%\begin{itemize}
+%item \textit{}: $741$ oraciones, $48$ minutos de habla en castellano.
+%\item \textit{loc1\_pal}: $1593$ oraciones, $2$ horas y $26$ minutos de habla en castellano.
+%\item \textit{CMU-ARCTIC-SLT}: $1132$ oraciones, $56$ minutos de habla en ingles.
+%\end{itemize}
+%Para los tres corpus se contaba además con sus transcripciones grafemicas.
+
+
+Al comienzo de la investigación comenzamos con tan solo un corpus de datos, \textit{secyt-mujer}\cite{secytMujer}. Este esta compuesto por $741$ oraciones de Español Rioplatense, equivalentes a $48$ minutos de habla. 
+
+Como parte inicial del trabajo es indispensabe construir el etiquetado fonetico para el corpus. Estas consistirán principalmente de una lista de fonos donde se indica donde comienza y donde termina cada uno. La calidad de las oraciones que logremos sintetizar a posteriori dependerá fuertemente del etiquetado, por lo que es necesario prestar especial cuidado en que estas esten lo mejor alieneadamente posible con los audios, ya que estas son necesarias para entrenar los modelos de HMM+GMM, extrayendo de aquí tanto la información acustica para cada fono (cosas tales como al frecuencia principal, la duración, etc) como así también infromación contextual (como por ejemplo: como suena un fonema cuando está seguido de algun otro, al principio de una oración, si se encuentra en un diptongo). Por esto una mala transcripción se traducirá indefectiblemente en un mal modelo y malas oraciones sintetizadas.
+
+
+Realizamos varias pruebas de concepto utilizando HTS y este corpus, experimentando con diversos metodos para obtener el etiquetado fonetico. 
+
+La primera estrategia consistió en utilizar alineamiento automático utilizando EHMM alignment \cite{phoneticCapturing} utilizando Festival y Festvox. Estos programas tienen como ventaja que tanto la anotación del corpus como la generación de trazas foneticas (utilizadas para la sintesis) presentan el mismo repertorio fonetico. Esto es util ya que podemos garantizar que el entrenamiento y la sintesis están utilizando el mismo metodo de generación de trazas/oraciones.
+
+Aún así, los resultados preliminares con este metodo fueron bastante adversos: los audios generados resultaban poco inteligibles notandose claros defectos acústicos, El más notable siendo el fono /\textipa{r}/ que se asemejaba mas a /\textipa{R}/.
+
+Utilizando Praat para visualizar el alineamiento entre utternaces y audios, descubrimos que la alineación estaba desfasada algunas milesimas de segundo. Sospechamos que esto se debió a algún problema con la normalización de los audios.
+
+Dado que para el corpus contamos con las transcripciones fonéticas anotadas de manera manual, procedemos a implementar un híbrido con EHMM. En este híbrido tomamos las anotaciones hechas a mano para cada fonema y la información contextual y el repertorio fonético generado a partir del proceso de EHMM. De esta manera buscamos mejorar la alineación pero manteniendo el mismo repertorio fonetico y la misma meta-información brindada por el alineamiento automático.
+
+El modelo generado con estos utternaces mixtos resulto ser superior a los generados solo con alineamiento automático. Aún así los audios sintetizados todavía no alcanzan una calidad aceptable, realizando pruebas internas todavía notamos que el sonido resultaba metalico y las fraces poco inteligibles. Ademas se pudo percibir de manera informal otros detalles tales como que la voz original tenía un pitch mayor que la producida por los modelos, alrededor de un $10\%$.
+
+En este momento del trabajo obtenemos otro corpus de datos \textit{loc1\_pal}\cite{loc1pal} con $1593$ oraciones en Español Rioplatense con aproximadamente $2$ horas y $26$ minutos de habla. Con este nuevo conjunto de datos esperamos conseguir mejores resultados.
+
+Para este corpus no cotábamos con transcripciones fonéticas manuales por lo que nos vimos forzados a utilizar EHMM nuevamente. Aún así, los resultados fueron superiores a los conseguidos con \textit{secyt-mujer}. Los audios sintetizados resultaban inteligibles y con un marcado acento rioplatense. Tras algunas pruebas de concepto donde se experimentó con varios valores de GAMMA, rango de las frecuencias principales, y otros parámetros que consideramos podían afectar la calidad de la voz, logramos obtener resultados que superaban de manera significativa aquellos obtenidos previamente con el otro corpus. Por consiguiente concideramos que los audios generados habían alcanzado una buena calidad que serultaba ininteligible y aceptable para el objetivo de la investigación, por lo que decidimos utilizar uno de estos modelos para el resto del trabajo.
+
+%pag 28 htbook:
+%The single biggest problem in building context-dependent HMM systems is always data insuffi-
+%ciency. The more complex the model set, the more data is needed to make robust estimates of its
+
+Especulamos que la disparidad en la calidad de los resultados es causada principalmente por la cantidad de audios y horas de habla de cada corpus\cite{whyItSucked}. Consideramos que esto juega un papel predominante en la calidad de los TTS generados, aún cuando se utiliza un método de etiquetado puramente automático y propenso a errores sistemáticos en el alineamiento.
+
+%Finalmente necesitamos generar otra voz con un idioma diferente que nos permita interpolar con el modelo previamente detallado. Para esto utilizamos el corpus 
+Por otro lado entrenamos una voz en ingles \textit{CMU-ARCTIC-SLT}\cite{cmuArtic} con $1132$ oraciones en ingles y $56$ minutos de habla, disponible en la pagina de hts \cite{hts}. Ya que este corpus venía a modo de demo con hts, asumimos que los parametros de entrenamiento y las transcripciones foneticas ya habían sido seleccionadas de manera apropiada, por lo que no intentamos mejorar la calidad de las transcripciones foneticas mas allá de lo que la demo ofrecía.
+
+Para este trabajo todos los audios usarán sampling rate de $48$kHz, precisión de $16$bits, mono.
+
+El rango de extracción de frecuencia principal para  utilizado fue de $100$hz a $350$hz.
+
+Una lista extensiva de los parámetros utilizados para el entrenamiento se puede ver en el apéndice $3$.
+
+% hablar de intelibililidad como para ya ir adelantando el tema
+% Cosas para hablar:
+% 5 fonemas.
+%TODO: phonetically balanced?
+% desarrollar generacion de uternaces: secty alineaminento mixto: tiempos a mano, features automaticos.
