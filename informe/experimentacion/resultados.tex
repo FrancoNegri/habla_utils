@@ -48,14 +48,14 @@ En la figura \ref{resultadosGenerales} presentamos los resultados generales obte
 \begin{figure}
 \begin{center}$
 \begin{array}{lll}
-\includegraphics[width=.5\textwidth]{imagenes/plots_raw/general.png}
+\includegraphics[width=.7\textwidth]{imagenes/plots_raw/general.png}
 \end{array}$
 \end{center}
 \caption{Resultados Generales}
 \label{resultadosGenerales}
 \end{figure}
 
-Como puede observarse hasta el $50\%$ de mezcla castellano-ingles, la distancia entre el primer y tercer cuartil menor a $10$ caracteres, siendo la media de $5$ caracteres. Pasados el $60\%$ de ingles, se observa un aumento brusco el la distancia intercuartiles, la distancia entre el primer y tercer cuartil pasa a ser cercana a $20$ caracteres, y la media $10$ caracteres en el caso de $60\%$ ingles y $15$ en el caso del $70\%$.
+Como puede observarse hasta el $50\%$ de mezcla castellano-ingles, la distancia entre el primer y tercer cuartil menor a $10$ caracteres, siendo la media de $5$ caracteres. Pasados el $60\%$ de ingles, se observa un aumento brusco el la distancia intercuartiles, la distancia entre el primer y tercer cuartil pasa a ser cercana a $20$ caracteres, y la media $10$ caracteres en el caso de $60\%$ ingles y $15$ en el caso del $70\%$. En las proximas secciones intentaremos encontrar una explicación intuitiva a estos números.
 
 \section{Problemas en las transcripciones y normalización}
 
@@ -83,6 +83,24 @@ Esperamos que esta normalización no solamente ayude a disminuir la propagación
 
 \section{Datos normalizados}
 
+Podemos observar en la figura \ref{generalNormalizado} los nuevos resultados con los datos normalizados. Para $40\%$ y $50\%$ ingles . Para $60\%$ . Para $70\%$ .
+
+\begin{figure}
+\begin{center}$
+\begin{array}{lll}
+\includegraphics[width=.7\textwidth]{imagenes/plots_normalized/general.png}
+\end{array}$
+\end{center}
+\caption{General Normalizado}
+\label{generalNormalizado}
+\end{figure}
+
+Con este baseline, podemos ver que para una interpolación de ingles de $30\%$, $96$ de los $106$ participantes obtuvieron una distancia menor a los $10$ caracteres en la transcripción del texto, mientras que los $10$ restantes una distancia mayor a los 10 caracteres. Podemos ver además que la distancia entre el primer y tercer cuartil es menor a $5$ caracteres con una media cercana a $2$ 
+
+Para la mezcla $40\%$ ingles - $60\%$ castellano, de un total de $67$ participantes, $57$ anotaron una distancia de Levinshtein menor a diez caracteres, $7$ una distancia entre $10$ y $30$ caracteres y $3$ una distancia mayor a $30$. La distancia intercuartil es de aproximadamente diez caracteres, con una media muy similar a la mezcla $30\%$ ingles.
+
+Para la interpolación $50\%$ ingles - $50\%$ castellano, de un total de $75$ participantes, $57$ lograron transcribir el audio con una distancia menor a 10 caracteres, mientras que $14$ anotaron una distancia entre $10$ y $20$ caracteres y $4$ una distancia mayor a $20$. De manera similar que para $40\%$ la distancia intercuartil es de aproximadamente diez caracteres y la media es de $3$ caracteres.
+
 Con esta estandarización de los datos, trataremos de darles un peso intuitivo que nos permitan sistematizar el análisis.
 
 Por ejemplo, tomando la oración $8$ de las frases utilizadas en la experimentación: 
@@ -101,24 +119,6 @@ Podemos observar las siguientes transcripciones extraídas de los resultados:
 	\item Distancia 40: ``círculo''
 	\item Distancia 48: ``''
 \end{itemize}
-
-Con esto en mente, podemos observar en la figura \ref{generalNormalizado} los nuevos resultados con los datos normalizados. Para $40\%$ y $50\%$ ingles . Para $60\%$ . Para $70\%$ .
-
-\begin{figure}
-\begin{center}$
-\begin{array}{lll}
-\includegraphics[width=.5\textwidth]{imagenes/plots_normalized/general.png}
-\end{array}$
-\end{center}
-\caption{General Normalizado}
-\label{generalNormalizado}
-\end{figure}
-
-Con este baseline, podemos ver que para una interpolación de ingles de $30\%$, $96$ de los $106$ participantes obtuvieron una distancia menor a los $10$ caracteres en la transcripción del texto, mientras que los $10$ restantes una distancia mayor a los 10 caracteres. Podemos ver además que la distancia entre el primer y tercer cuartil es menor a $5$ caracteres con una media cercana a $2$ 
-
-Para la mezcla $40\%$ ingles - $60\%$ castellano, de un total de $67$ participantes, $57$ anotaron una distancia de Levinshtein menor a diez caracteres, $7$ una distancia entre $10$ y $30$ caracteres y $3$ una distancia mayor a $30$. La distancia intercuartil es de aproximadamente diez caracteres, con una media muy similar a la mezcla $30\%$ ingles.
-
-Para la interpolación $50\%$ ingles - $50\%$ castellano, de un total de $75$ participantes, $57$ lograron transcribir el audio con una distancia menor a 10 caracteres, mientras que $14$ anotaron una distancia entre $10$ y $20$ caracteres y $4$ una distancia mayor a $20$. De manera similar que para $40\%$ la distancia intercuartil es de aproximadamente diez caracteres y la media es de $3$ caracteres.
 
 Para todas las interpolaciones enunciadas previamente, los errores mas comunes varían desde falta de acentos en palabras como ``concluyó'' hasta faltas de inteligibilidad en palabras con cierta complejidad fonética como ``aguileña'' o ``gruñón''.
 
@@ -221,7 +221,7 @@ En conclusión, en esta sección pudimos demostrar que fue posible generar una v
 
 
 \clearpage
-\section{Análisis de Origen}
+\section{Análisis del Órigen Percibido}
 
 En esta sección analizaremos los resultados de las nacionalidades que los participantes de la encuesta atribuyeron a la voz.
 
