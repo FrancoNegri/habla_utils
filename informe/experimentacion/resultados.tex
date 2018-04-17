@@ -1,35 +1,33 @@
 
 A modo de introducción, comenzaremos esta sección mostrando los datos demográficos obtenidos. Mas adelante, continuaremos con un análisis mas exhaustivo de inteligibilidad y por separado se realizará otro análisis respecto a la nacionalidad atribuida a las oraciones. Por último para evaluar la hipótesis original, compondremos estos dos ejes para dilucidar su grado de validez.
 
-\subsection{Datos demográficos}
+\section{Datos demográficos}
 
 Se encuestaron $109$ participantes de los cuales se obtuvieron $352$ resultados.
 
-Del total de participantes, $49$ pertenecían al rango comprendido entre $18$ y $25$ años, $43$ estaban en el rango $26$-$35$. $17$ de los participantes eran mayores a $35$ años (fig. \ref{edadParticipantes}).
+Del total de participantes, $49$ pertenecían al rango comprendido entre $18$ y $25$ años, $43$ estaban en el rango $26$-$35$. $17$ de los participantes eran mayores a $35$ años (fig. \ref{genero}).
 
 \begin{figure}
-\begin{center}
-\includegraphics[scale=0.3]{datosDemograficos/edad.png}
-\end{center}
-\caption{Edad de los participantes}
-\label{edadParticipantes}
+\centering
+\begin{subfigure}{.5\textwidth}
+  \centering
+	\includegraphics[width=.3\linewidth]{datosDemograficos/genero.png}
+  \caption{A subfigure}
+  \label{fig:sub1}
+\end{subfigure}%
+\begin{subfigure}{.5\textwidth}
+  \centering
+	\includegraphics[width=.3\linewidth]{datosDemograficos/edad.png}
+  \caption{A subfigure}
+  \label{fig:sub2}
+\end{subfigure}
+\caption{A figure with two subfigures}
+\label{fig:test}
 \end{figure}
 
-
-Con respecto al genero de los participantes, $187$ respuestas fueron brindadas por participantes del genero femenino mientras que $163$respuestas fueron brindadas por participante del genero masculino (fig. \ref{generoParticipantes}).
-
-
-\begin{figure}
-\begin{center}
-\includegraphics[scale=0.3]{datosDemograficos/genero.png}
-\end{center}
-\caption{Genero}
-\label{generoParticipantes}
-\end{figure}
-
+Con respecto al genero de los participantes, $187$ respuestas fueron brindadas por participantes del genero femenino mientras que $163$respuestas fueron brindadas por participante del genero masculino (fig. \ref{edad}).
 
 En los datos referentes a la región en que cada participante pasó su infancia puede verse una predominancia de personas del Gran Buenos Aires con $45\%$, seguido por un $30\%$ que pasaron su infancia en la Capital Federal. Menos del $25\%$ pertenece al resto de las provincias Argentinas. Además, $10$ personas contestaron que se criaron fuera del país (fig. \ref{distTerritorial}).
-
 
 \begin{figure}
 \begin{center}
@@ -39,7 +37,7 @@ En los datos referentes a la región en que cada participante pasó su infancia 
 \label{distTerritorial}
 \end{figure}
 
-\subsection{Inteligibilidad}
+\section{Inteligibilidad}
 
 A continuación intentaremos medir la inteligibilidad de cada una de las oraciones en base a las respuestas obtenidas por los participantes. Para ello tomaremos la oración transcripta por los participantes y mediremos cuan lejos o cerca está de la oración original. 
 
@@ -59,7 +57,7 @@ En la figura \ref{resultadosGenerales} presentamos los resultados generales obte
 
 Como puede observarse hasta el $50\%$ de mezcla castellano-ingles, la distancia entre el primer y tercer cuartil menor a $10$ caracteres, siendo la media de $5$ caracteres. Pasados el $60\%$ de ingles, se observa un aumento brusco el la distancia intercuartiles, la distancia entre el primer y tercer cuartil pasa a ser cercana a $20$ caracteres, y la media $10$ caracteres en el caso de $60\%$ ingles y $15$ en el caso del $70\%$.
 
-\subsection{Problemas en las transcripciones y normalización}
+\section{Problemas en las transcripciones y normalización}
 
 Analizando detenidamente las transcripciones obtenidas pudimos observar algunas fallas sistemáticas que podrían generar ruido en el análisis, por ejemplo algunos de los participantes escribieron de manera diferente las secciones de la oración que no comprendieron. Por citar algunos ejemplos, muchos de ellos escribieron: ``...'', ``....'' o simplemente omitieron la palabra, mientras que una minoría escribió cosas como ``***'', ``???'', \textit{blablabla}. En los casos donde el participante no comprendió ningún segmento de la oración, es común observar expresiones como \textit{no entendí nada}, \textit{nada}, etc.
 
@@ -83,7 +81,7 @@ Esperamos que esta normalización no solamente ayude a disminuir la propagación
 
 \clearpage
 
-\subsection{Datos normalizados}
+\section{Datos normalizados}
 
 Con esta estandarización de los datos, trataremos de darles un peso intuitivo que nos permitan sistematizar el análisis.
 
@@ -223,7 +221,7 @@ En conclusión, en esta sección pudimos demostrar que fue posible generar una v
 
 
 \clearpage
-\subsection{Análisis de Origen}
+\section{Análisis de Origen}
 
 En esta sección analizaremos los resultados de las nacionalidades que los participantes de la encuesta atribuyeron a la voz.
 
@@ -314,7 +312,7 @@ También presentan un mayor porcentaje de atribuciones a nacionalidad anglosajon
 
 Hasta ahora analizamos los dos ejes de nuestra hipótesis por separado (por un lado, inteligibilidad, por otro, nacionalidad atribuida a la voz). En el ultimo apartado de la investigación buscaremos sacar conclusiones al componer ambos ejes en un mismo análisis.
 
-\subsection{Resultados Generales de la experimentación}
+\section{Resultados Generales de la experimentación}
 
 Por ultimo visualizamos mostraremos la distancia de Levenshtein superpuesto con con la probabilidad de un participante de reconocer la voz como un hablante anglosajón.
 
