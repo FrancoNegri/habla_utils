@@ -1,11 +1,11 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2017.8.1)  17 APR 2018 16:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.3.19)  24 APR 2018 21:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **tesis.tex
 (./tesis.tex
 LaTeX2e <2017-04-15>
-Babel <3.12> and hyphenation patterns for 6 language(s) loaded.
+Babel <3.12> and hyphenation patterns for 10 language(s) loaded.
 (./tesis.cls
 Document Class: tesis 1996/25/01 1.0g LaTeX document class (wm).
 \hours=\count79
@@ -29,13 +29,36 @@ File: bk11.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 \belowcaptionskip=\skip45
 \bibindent=\dimen102
 )
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
-Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
+(/usr/share/texlive/texmf-dist/tex/latex/caption/subcaption.sty
+Package: subcaption 2016/05/22 v1.1-161 Sub-captions (AR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2016/05/22 v1.7-166 caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 67.
 
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks14
 )
+\captionmargin=\dimen103
+\captionmargin@=\dimen104
+\captionwidth=\dimen105
+\caption@tempdima=\dimen106
+\caption@indent=\dimen107
+\caption@parindent=\dimen108
+\caption@hangindent=\dimen109
+)
+\c@ContinuedFloat=\count90
+)
+\c@subfigure=\count91
+\c@subtable=\count92
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
+
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
 
@@ -50,8 +73,8 @@ Package graphics Info: Driver file: pdftex.def on input line 99.
 (/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
 File: pdftex.def 2017/06/24 v1.0g Graphics/color driver for pdftex
 ))
-\Gin@req@height=\dimen103
-\Gin@req@width=\dimen104
+\Gin@req@height=\dimen110
+\Gin@req@width=\dimen111
 )
 (/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2015/03/17 v1.2c Input encoding file
@@ -386,11 +409,11 @@ File: babel.def 2017/06/29 3.12 Babel common definitions
 (/usr/share/texlive/texmf-dist/tex/generic/babel/switch.def
 File: switch.def 2017/06/29 3.12 Babel switching mechanism
 )
-\babel@savecnt=\count90
-\U@D=\dimen105
+\babel@savecnt=\count93
+\U@D=\dimen112
 )
 \es@quottoks=\toks17
-\es@quotdepth=\count91
+\es@quotdepth=\count94
 Package babel Info: Making " an active character on input line 561.
 Package babel Info: Making . an active character on input line 662.
 Package babel Info: Making < an active character on input line 707.
@@ -409,68 +432,57 @@ Package ifvtex Info: VTeX not detected.
 (/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
-\Gm@cnth=\count92
-\Gm@cntv=\count93
-\c@Gm@tempcnt=\count94
-\Gm@bindingoffset=\dimen106
-\Gm@wd@mp=\dimen107
-\Gm@odd@mp=\dimen108
-\Gm@even@mp=\dimen109
-\Gm@layoutwidth=\dimen110
-\Gm@layoutheight=\dimen111
-\Gm@layouthoffset=\dimen112
-\Gm@layoutvoffset=\dimen113
+\Gm@cnth=\count95
+\Gm@cntv=\count96
+\c@Gm@tempcnt=\count97
+\Gm@bindingoffset=\dimen113
+\Gm@wd@mp=\dimen114
+\Gm@odd@mp=\dimen115
+\Gm@even@mp=\dimen116
+\Gm@layoutwidth=\dimen117
+\Gm@layoutheight=\dimen118
+\Gm@layouthoffset=\dimen119
+\Gm@layoutvoffset=\dimen120
 \Gm@dimlist=\toks18
 )
+(/usr/share/texmf/tex/latex/tipa/tipa.sty
+Package: tipa 2002/08/08 TIPA version 1.1
 
-! LaTeX Error: File `tipa.sty' not found.
+(/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2017/04/05 v2.0i Standard LaTeX package
 
-Type X to quit or <RETURN> to proceed,
-or enter new name. (Default extension: sty)
-
-Enter file name: R
-
-! LaTeX Error: File `R.sty' not found.
-
-Type X to quit or <RETURN> to proceed,
-or enter new name. (Default extension: sty)
-
-Enter file name: 
+(/usr/share/texmf/tex/latex/tipa/t3enc.def
+File: t3enc.def 2001/12/31 T3 encoding
+Now handling font encoding T3 ...
+... no UTF-8 mapping file for font encoding T3
+)
+(/usr/share/texlive/texmf-dist/tex/latex/base/ot1enc.def
+File: ot1enc.def 2017/04/05 v2.0i Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding OT1 on input line 48.
+)))
 (/usr/share/texlive/texmf-dist/tex/latex/booktabs/booktabs.sty
 Package: booktabs 2016/04/27 v1.618033 publication quality tables
-\heavyrulewidth=\dimen114
-\lightrulewidth=\dimen115
-\cmidrulewidth=\dimen116
-\belowrulesep=\dimen117
-\belowbottomsep=\dimen118
-\aboverulesep=\dimen119
-\abovetopsep=\dimen120
-\cmidrulesep=\dimen121
-\cmidrulekern=\dimen122
-\defaultaddspace=\dimen123
-\@cmidla=\count95
-\@cmidlb=\count96
-\@aboverulesep=\dimen124
-\@belowrulesep=\dimen125
-\@thisruleclass=\count97
-\@lastruleclass=\count98
-\@thisrulewidth=\dimen126
+\heavyrulewidth=\dimen121
+\lightrulewidth=\dimen122
+\cmidrulewidth=\dimen123
+\belowrulesep=\dimen124
+\belowbottomsep=\dimen125
+\aboverulesep=\dimen126
+\abovetopsep=\dimen127
+\cmidrulesep=\dimen128
+\cmidrulekern=\dimen129
+\defaultaddspace=\dimen130
+\@cmidla=\count98
+\@cmidlb=\count99
+\@aboverulesep=\dimen131
+\@belowrulesep=\dimen132
+\@thisruleclass=\count100
+\@lastruleclass=\count101
+\@thisrulewidth=\dimen133
 )
 (/usr/share/texlive/texmf-dist/tex/latex/floatrow/floatrow.sty
 Package: floatrow 2008/08/02 v0.3b floatrow: float package extension
-
-(/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
-Package: caption3 2016/05/22 v1.7-166 caption3 kernel (AR)
-Package caption3 Info: TeX engine: e-TeX on input line 67.
-\captionmargin=\dimen127
-\captionmargin@=\dimen128
-\captionwidth=\dimen129
-\caption@tempdima=\dimen130
-\caption@indent=\dimen131
-\caption@parindent=\dimen132
-\caption@hangindent=\dimen133
-)
-\c@float@type=\count99
+\c@float@type=\count102
 \float@exts=\toks19
 \float@box=\box26
 \@floatcapt=\box27
@@ -488,18 +500,18 @@ Package floatrow Info: Modified rotfloat package code loaded on input line 473.
 \FBo@max=\skip49
 \FBc@max=\skip50
 \FBf@max=\skip51
-\c@FBl@b=\count100
-\floatbox@depth=\count101
-\c@FRobj=\count102
-\c@FRsobj=\count103
+\c@FBl@b=\count103
+\floatbox@depth=\count104
+\c@FRobj=\count105
+\c@FRsobj=\count106
 \Xhsize=\skip52
 \sXhsize=\skip53
 \Zhsize=\skip54
 \sZhsize=\skip55
 \flrow@rowbox=\box28
 \FR@Zunitlength=\dimen137
-\c@FBcnt=\count104
-\FPOScnt=\count105
+\c@FBcnt=\count107
+\FPOScnt=\count108
 \LTleft=\skip56
 \LTright=\skip57
 \LTleft=\skip58
@@ -508,12 +520,6 @@ Package floatrow Info: Modified rotfloat package code loaded on input line 473.
 ) (./tesis.aux
 LaTeX Info: Redefining \. on input line 6.
 LaTeX Info: Redefining \% on input line 6.
-
-
-LaTeX Warning: Label `pics:blablabla' multiply defined.
-
-
-LaTeX Warning: Label `pics:blablabla' multiply defined.
 
 
 LaTeX Warning: Label `pics:blablabla' multiply defined.
@@ -545,18 +551,30 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 15.
 LaTeX Font Info:    ... okay on input line 15.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 15.
 LaTeX Font Info:    ... okay on input line 15.
- (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 15.
+LaTeX Font Info:    Try loading font information for T3+cmr on input line 15.
+ (/usr/share/texmf/tex/latex/tipa/t3cmr.fd
+File: t3cmr.fd 2001/12/31 TIPA font definitions
+)
+LaTeX Font Info:    ... okay on input line 15.
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: floatrow package is loaded.
+Package caption Info: float package is loaded.
+Package caption Info: floatrow package is loaded.
+Package caption Info: End \AtBeginDocument code.
+
+(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count106
+\scratchcounter=\count109
 \scratchdimen=\dimen138
 \scratchbox=\box29
-\nofMPsegments=\count107
-\nofMParguments=\count108
+\nofMPsegments=\count110
+\nofMParguments=\count111
 \everyMPshowfont=\toks22
-\MPscratchCnt=\count109
+\MPscratchCnt=\count112
 \MPscratchDim=\dimen139
-\MPnumerator=\count110
-\makeMPintoPDFobject=\count111
+\MPnumerator=\count113
+\makeMPintoPDFobject=\count114
 \everyMPtoPDFconversion=\toks23
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
@@ -647,8 +665,6 @@ LaTeX Info: Redefining \% on input line 15.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package caption Info: Begin \AtBeginDocument code.
-Package caption Info: End \AtBeginDocument code.
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/color.sty
 Package: color 2016/07/10 v1.1e Standard LaTeX Color (DPC)
 
@@ -702,142 +718,62 @@ Cap\'{\i }tulo 1.
 (./metodologia/introduccion.tex [1
 
 ])
-LaTeX Info: Redefining \. on input line 54.
-LaTeX Info: Redefining \% on input line 54.
+LaTeX Info: Redefining \. on input line 53.
+LaTeX Info: Redefining \% on input line 53.
  [2]
 Cap\'{\i }tulo 2.
-(./metodologia/dataPreparation.tex
-! Undefined control sequence.
-l.21 ..., El más notable siendo el fono /\textipa
-                                                  {r}/ que se asemejaba mas ...
-
-? R
-OK, entering \nonstopmode...
-! Undefined control sequence.
-l.21 ...xtipa{r}/ que se asemejaba mas a /\textipa
-                                                  {R}/.
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-[3
+(./metodologia/dataPreparation.tex [3
 
 ]
+LaTeX Info: Redefining \. on input line 67.
+LaTeX Info: Redefining \% on input line 67.
+ [4]) (./metodologia/phoneMaping.tex
 ! Undefined control sequence.
-l.57 \idemSectyYMitrol
-                      
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-) (./metodologia/phoneMaping.tex
-LaTeX Info: Redefining \. on input line 5.
-LaTeX Info: Redefining \% on input line 5.
- [4]
-LaTeX Info: Redefining \. on input line 135.
-LaTeX Info: Redefining \% on input line 135.
- [5]
-! Undefined control sequence.
-l.136 ... Así,  para el fono ny (ñ o \textltailn
-                                                   en ipa) colapsamos las ap...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-<imagenes_investigacion/consonantes1.png, id=62, 351.3125pt x 178.6675pt>
+l.64 \verEnElCorpus
+                   
+? 
+LaTeX Info: Redefining \. on input line 66.
+LaTeX Info: Redefining \% on input line 66.
+[5]
+<imagenes_investigacion/consonantes1.png, id=63, 351.3125pt x 178.6675pt>
 File: imagenes_investigacion/consonantes1.png Graphic file (type png)
 <use imagenes_investigacion/consonantes1.png>
 Package pdftex.def Info: imagenes_investigacion/consonantes1.png  used on input
- line 139. on input line 139.
-Package pdftex.def Info: Requested size: 175.6558pt x 89.33353pt on input line 
-139.
-<imagenes_investigacion/consonantes2.png, id=63, 342.27875pt x 202.7575pt>
+ line 134. on input line 134.
+Package pdftex.def Info: Requested size: 210.78911pt x 107.20131pt on input lin
+e 134.
+<imagenes_investigacion/consonantes2.png, id=64, 342.27875pt x 202.7575pt>
 File: imagenes_investigacion/consonantes2.png Graphic file (type png)
 <use imagenes_investigacion/consonantes2.png>
 Package pdftex.def Info: imagenes_investigacion/consonantes2.png  used on input
- line 140. on input line 140.
-Package pdftex.def Info: Requested size: 171.13895pt x 101.3785pt on input line
- 140.
-! Undefined control sequence.
-l.145 ...brante múltiple alveolar sordo /\textipa
-                                                  {r}/ y dado que el fono /\...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
+ line 135. on input line 135.
+Package pdftex.def Info: Requested size: 205.36882pt x 121.65543pt on input lin
+e 135.
+LaTeX Info: Redefining \. on input line 136.
+LaTeX Info: Redefining \% on input line 136.
+ [6]) (./metodologia/modelInterpolation.tex
+LaTeX Info: Redefining \. on input line 9.
+LaTeX Info: Redefining \% on input line 9.
+ [7 <./imagenes_investigacion/consonantes1.png> <./imagenes_investigacion/conso
+nantes2.png>])
+(./metodologia/speakerAdaptativeTraining.tex) (./metodologia/herramientas.tex
+LaTeX Info: Redefining \. on input line 12.
+LaTeX Info: Redefining \% on input line 12.
 
-! Undefined control sequence.
-l.145 ...\textipa{r}/ y dado que el fono /\textipa
-                                                  {R}/ ya estaba siendo util...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.145 ...n tomamos la mitad de los fonos /\textipa
-                                                  {R}/ y los remplazamos con...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.145 ...xtipa{R}/ y los remplazamos con /\textipa
-                                                  {r}/. Un problema similar ...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-LaTeX Info: Redefining \. on input line 146.
-LaTeX Info: Redefining \% on input line 146.
-[6 <./imagenes_investigacion/consonantes1.png> <./imagenes_investigacion/conson
-antes2.png>]) (./metodologia/modelInterpolation.tex
-! Undefined control sequence.
-l.5 ...detalles distintivos como el fono /\textipa
-                                                  {R}/ mas suavizada, o pron...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-) (./metodologia/speakerAdaptativeTraining.tex
-LaTeX Info: Redefining \. on input line 2.
-LaTeX Info: Redefining \% on input line 2.
- [7])
-(./metodologia/herramientas.tex
-<imagenes/hmm.png, id=70, 708.6475pt x 426.59375pt>
+[8]
+<imagenes/hmm.png, id=74, 708.6475pt x 426.59375pt>
 File: imagenes/hmm.png Graphic file (type png)
 <use imagenes/hmm.png>
 Package pdftex.def Info: imagenes/hmm.png  used on input line 20. on input line
  20.
 Package pdftex.def Info: Requested size: 354.32289pt x 213.29634pt on input lin
 e 20.
-LaTeX Info: Redefining \. on input line 24.
-LaTeX Info: Redefining \% on input line 24.
- [8]
+
 ! Undefined control sequence.
 l.27 \explicar
               
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-<imagenes/hmmContext.png, id=74, 602.25pt x 461.725pt>
+? 
+<imagenes/hmmContext.png, id=75, 602.25pt x 461.725pt>
 File: imagenes/hmmContext.png Graphic file (type png)
 <use imagenes/hmmContext.png>
 Package pdftex.def Info: imagenes/hmmContext.png  used on input line 32. on inp
@@ -847,7 +783,7 @@ e 32.
 LaTeX Info: Redefining \. on input line 36.
 LaTeX Info: Redefining \% on input line 36.
 [9 <./imagenes/hmm.png>]
-<imagenes/arbolDeDesicionTesis.png, id=79, 879.285pt x 580.1675pt>
+<imagenes/arbolDeDesicionTesis.png, id=80, 879.285pt x 580.1675pt>
 File: imagenes/arbolDeDesicionTesis.png Graphic file (type png)
 <use imagenes/arbolDeDesicionTesis.png>
 Package pdftex.def Info: imagenes/arbolDeDesicionTesis.png  used on input line 
@@ -860,208 +796,81 @@ LaTeX Info: Redefining \% on input line 60.
 ! Undefined control sequence.
 l.67 \enganchar
                
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
+? 
 )
-LaTeX Info: Redefining \. on input line 70.
-LaTeX Info: Redefining \% on input line 70.
+LaTeX Info: Redefining \. on input line 69.
+LaTeX Info: Redefining \% on input line 69.
  [11 <./imagenes/arbolDeDesicionTesis.png>]
-LaTeX Info: Redefining \. on input line 70.
-LaTeX Info: Redefining \% on input line 70.
+LaTeX Info: Redefining \. on input line 69.
+LaTeX Info: Redefining \% on input line 69.
  [12
 
 ]
 Cap\'{\i }tulo 3.
 (./experimentacion/experimentacion.tex [13]
-<estudio_online/estudio1.png, id=92, 677.53125pt x 469.755pt>
+<estudio_online/estudio1.png, id=93, 677.53125pt x 469.755pt>
 File: estudio_online/estudio1.png Graphic file (type png)
 <use estudio_online/estudio1.png>
-Package pdftex.def Info: estudio_online/estudio1.png  used on input line 45. on
- input line 45.
+Package pdftex.def Info: estudio_online/estudio1.png  used on input line 47. on
+ input line 47.
 Package pdftex.def Info: Requested size: 406.52188pt x 281.85518pt on input lin
-e 45.
-LaTeX Info: Redefining \. on input line 54.
-LaTeX Info: Redefining \% on input line 54.
+e 47.
+LaTeX Info: Redefining \. on input line 56.
+LaTeX Info: Redefining \% on input line 56.
  [14 <./estudio_online/estudio1.png>]
-<estudio_online/estudio2.png, id=96, 648.4225pt x 319.1925pt>
+<estudio_online/estudio2.png, id=97, 648.4225pt x 319.1925pt>
 File: estudio_online/estudio2.png Graphic file (type png)
 <use estudio_online/estudio2.png>
-Package pdftex.def Info: estudio_online/estudio2.png  used on input line 59. on
- input line 59.
+Package pdftex.def Info: estudio_online/estudio2.png  used on input line 61. on
+ input line 61.
 Package pdftex.def Info: Requested size: 389.0565pt x 191.51697pt on input line
- 59.
-<estudio_online/estudio3.png, id=97, 666.49pt x 519.9425pt>
+ 61.
+<estudio_online/estudio3.png, id=98, 666.49pt x 519.9425pt>
 File: estudio_online/estudio3.png Graphic file (type png)
 <use estudio_online/estudio3.png>
-Package pdftex.def Info: estudio_online/estudio3.png  used on input line 69. on
- input line 69.
+Package pdftex.def Info: estudio_online/estudio3.png  used on input line 71. on
+ input line 71.
 Package pdftex.def Info: Requested size: 399.89708pt x 311.96791pt on input lin
-e 69.
-LaTeX Info: Redefining \. on input line 74.
-LaTeX Info: Redefining \% on input line 74.
+e 71.
+LaTeX Info: Redefining \. on input line 76.
+LaTeX Info: Redefining \% on input line 76.
  [15 <./estudio_online/estudio2.png>]
-<estudio_online/estudio4.png, id=102, 643.40375pt x 353.32pt>
+<estudio_online/estudio4.png, id=103, 643.40375pt x 353.32pt>
 File: estudio_online/estudio4.png Graphic file (type png)
 <use estudio_online/estudio4.png>
-Package pdftex.def Info: estudio_online/estudio4.png  used on input line 79. on
- input line 79.
+Package pdftex.def Info: estudio_online/estudio4.png  used on input line 81. on
+ input line 81.
 Package pdftex.def Info: Requested size: 386.04523pt x 211.99364pt on input lin
-e 79.
+e 81.
 )
-LaTeX Info: Redefining \. on input line 73.
-LaTeX Info: Redefining \% on input line 73.
+LaTeX Info: Redefining \. on input line 72.
+LaTeX Info: Redefining \% on input line 72.
  [16 <./estudio_online/estudio3.png>]
-LaTeX Info: Redefining \. on input line 73.
-LaTeX Info: Redefining \% on input line 73.
+LaTeX Info: Redefining \. on input line 72.
+LaTeX Info: Redefining \% on input line 72.
 
 [17 <./estudio_online/estudio4.png>] (./experimentacion/resultados.tex
 
 LaTeX Warning: Reference `genero' on page 18 undefined on input line 8.
 
-
-! LaTeX Error: Environment subfigure undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.12 \begin{subfigure}
-                      {.5\textwidth}
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-! Missing number, treated as zero.
-<to be read again> 
-                   }
-l.12 \begin{subfigure}{.5\textwidth}
-                                    
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-! Illegal unit of measure (pt inserted).
-<to be read again> 
-                   }
-l.12 \begin{subfigure}{.5\textwidth}
-                                    
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
-
-<datosDemograficos/genero.png, id=109, 602.25pt x 372.39125pt>
+<datosDemograficos/genero.png, id=110, 602.25pt x 372.39125pt>
 File: datosDemograficos/genero.png Graphic file (type png)
 <use datosDemograficos/genero.png>
 Package pdftex.def Info: datosDemograficos/genero.png  used on input line 14. o
 n input line 14.
-Package pdftex.def Info: Requested size: 128.0387pt x 79.17044pt on input line 
-14.
-
-! LaTeX Error: \begin{figure} on input line 10 ended by \end{subfigure}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.17 \end{subfigure}
-                    %
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! LaTeX Error: Environment subfigure undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.18 \begin{subfigure}
-                      {.5\textwidth}
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-! Missing number, treated as zero.
-<to be read again> 
-                   }
-l.18 \begin{subfigure}{.5\textwidth}
-                                    
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-! Illegal unit of measure (pt inserted).
-<to be read again> 
-                   }
-l.18 \begin{subfigure}{.5\textwidth}
-                                    
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
-
-<datosDemograficos/edad.png, id=110, 602.25pt x 372.39125pt>
+Package pdftex.def Info: Requested size: 85.35696pt x 52.7765pt on input line 1
+4.
+<datosDemograficos/edad.png, id=111, 602.25pt x 372.39125pt>
 File: datosDemograficos/edad.png Graphic file (type png)
 <use datosDemograficos/edad.png>
 Package pdftex.def Info: datosDemograficos/edad.png  used on input line 20. on 
 input line 20.
-Package pdftex.def Info: Requested size: 128.0387pt x 79.17044pt on input line 
-20.
-
-! Package floatrow Error: Caption(s) lost.
-
-See the floatrow package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.21   \caption{A subfigure}
-                            
-If you do not understand this error, please take look
-at `floatrow' and `caption' package documentations.
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: \begin{figure} on input line 10 ended by \end{subfigure}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.23 \end{subfigure}
-                    
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! Package floatrow Error: Caption(s) lost.
-
-See the floatrow package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.24 \caption{A figure with two subfigures}
-                                           
-If you do not understand this error, please take look
-at `floatrow' and `caption' package documentations.
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
+Package pdftex.def Info: Requested size: 85.35696pt x 52.7765pt on input line 2
+0.
 
 LaTeX Warning: Reference `edad' on page 18 undefined on input line 28.
 
-<datosDemograficos/infancia.png, id=111, 341.1144pt x 339.669pt>
+<datosDemograficos/infancia.png, id=112, 341.1144pt x 339.669pt>
 File: datosDemograficos/infancia.png Graphic file (type png)
 <use datosDemograficos/infancia.png>
 Package pdftex.def Info: datosDemograficos/infancia.png  used on input line 34.
@@ -1072,7 +881,7 @@ LaTeX Info: Redefining \. on input line 39.
 LaTeX Info: Redefining \% on input line 39.
 [18 <./datosDemograficos/genero.png (PNG copy)> <./datosDemograficos/edad.png (
 PNG copy)>]
-<imagenes/plots_raw/general.png, id=116, 462.528pt x 346.896pt>
+<imagenes/plots_raw/general.png, id=117, 462.528pt x 346.896pt>
 File: imagenes/plots_raw/general.png Graphic file (type png)
 <use imagenes/plots_raw/general.png>
 Package pdftex.def Info: imagenes/plots_raw/general.png  used on input line 51.
@@ -1082,66 +891,83 @@ e 51.
 LaTeX Info: Redefining \. on input line 57.
 LaTeX Info: Redefining \% on input line 57.
  [19 <./datosDemograficos/infancia.png>]
-LaTeX Info: Redefining \. on input line 74.
-LaTeX Info: Redefining \% on input line 74.
+LaTeX Info: Redefining \. on input line 70.
+LaTeX Info: Redefining \% on input line 70.
  [20 <./imagenes/plots_raw/general.png>]
-LaTeX Info: Redefining \. on input line 82.
-LaTeX Info: Redefining \% on input line 82.
+LaTeX Info: Redefining \. on input line 84.
+LaTeX Info: Redefining \% on input line 84.
  [21]
-<imagenes/plots_normalized/general.png, id=129, 462.528pt x 346.896pt>
+<imagenes/plots_normalized/general.png, id=130, 462.528pt x 346.896pt>
 File: imagenes/plots_normalized/general.png Graphic file (type png)
 <use imagenes/plots_normalized/general.png>
 Package pdftex.def Info: imagenes/plots_normalized/general.png  used on input l
-ine 91. on input line 91.
+ine 93. on input line 93.
 Package pdftex.def Info: Requested size: 298.75264pt x 224.07703pt on input lin
-e 91.
-LaTeX Info: Redefining \. on input line 118.
-LaTeX Info: Redefining \% on input line 118.
+e 93.
+LaTeX Info: Redefining \. on input line 120.
+LaTeX Info: Redefining \% on input line 120.
  [22
 
  <./imagenes/plots_normalized/general.png>]
-<imagenes/plots_normalized/4.png, id=134, 462.528pt x 346.896pt>
-File: imagenes/plots_normalized/4.png Graphic file (type png)
-<use imagenes/plots_normalized/4.png>
-Package pdftex.def Info: imagenes/plots_normalized/4.png  used on input line 13
+<imagenes/plots_normalized/3.png, id=135, 462.528pt x 346.896pt>
+File: imagenes/plots_normalized/3.png Graphic file (type png)
+<use imagenes/plots_normalized/3.png>
+Package pdftex.def Info: imagenes/plots_normalized/3.png  used on input line 13
 8. on input line 138.
 Package pdftex.def Info: Requested size: 213.39568pt x 160.05048pt on input lin
 e 138.
-LaTeX Info: Redefining \. on input line 144.
-LaTeX Info: Redefining \% on input line 144.
- [23]
-<imagenes/plots_normalized/10.png, id=138, 462.528pt x 346.896pt>
-File: imagenes/plots_normalized/10.png Graphic file (type png)
-<use imagenes/plots_normalized/10.png>
-Package pdftex.def Info: imagenes/plots_normalized/10.png  used on input line 1
-50. on input line 150.
+<imagenes/plots_normalized/4.png, id=136, 462.528pt x 346.896pt>
+File: imagenes/plots_normalized/4.png Graphic file (type png)
+<use imagenes/plots_normalized/4.png>
+Package pdftex.def Info: imagenes/plots_normalized/4.png  used on input line 13
+9. on input line 139.
 Package pdftex.def Info: Requested size: 213.39568pt x 160.05048pt on input lin
-e 150.
-<imagenes/plots_normalized/8.png, id=139, 462.528pt x 346.896pt>
-File: imagenes/plots_normalized/8.png Graphic file (type png)
-<use imagenes/plots_normalized/8.png>
-Package pdftex.def Info: imagenes/plots_normalized/8.png  used on input line 15
-1. on input line 151.
-Package pdftex.def Info: Requested size: 213.39568pt x 160.05048pt on input lin
-e 151.
+e 139.
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 148--153
+Overfull \hbox (10.0pt too wide) in paragraph at lines 136--141
  []$ 
  []
 
-LaTeX Info: Redefining \. on input line 223.
-LaTeX Info: Redefining \% on input line 223.
-[24 <./imagenes/plots_normalized/4.png> <./imagenes/plots_normalized/10.png> <.
-/imagenes/plots_normalized/8.png>]
-<imagenes/nacionalidades/general.png, id=146, 602.25pt x 372.39125pt>
+LaTeX Info: Redefining \. on input line 145.
+LaTeX Info: Redefining \% on input line 145.
+[23]
+<imagenes/plots_normalized/10.png, id=140, 462.528pt x 346.896pt>
+File: imagenes/plots_normalized/10.png Graphic file (type png)
+<use imagenes/plots_normalized/10.png>
+Package pdftex.def Info: imagenes/plots_normalized/10.png  used on input line 1
+51. on input line 151.
+Package pdftex.def Info: Requested size: 213.39568pt x 160.05048pt on input lin
+e 151.
+<imagenes/plots_normalized/8.png, id=141, 462.528pt x 346.896pt>
+File: imagenes/plots_normalized/8.png Graphic file (type png)
+<use imagenes/plots_normalized/8.png>
+Package pdftex.def Info: imagenes/plots_normalized/8.png  used on input line 15
+2. on input line 152.
+Package pdftex.def Info: Requested size: 213.39568pt x 160.05048pt on input lin
+e 152.
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 149--154
+ []$ 
+ []
+
+LaTeX Info: Redefining \. on input line 224.
+LaTeX Info: Redefining \% on input line 224.
+[24 <./imagenes/plots_normalized/3.png> <./imagenes/plots_normalized/4.png> <./
+imagenes/plots_normalized/10.png> <./imagenes/plots_normalized/8.png>]
+Overfull \hbox (2.05377pt too wide) in paragraph at lines 236--237
+[]\OT1/cmr/m/n/10.95 Hispanoparlate: ``La-tino'', ``Ar-gen-tino'', ``Es-pa~nol'
+', ``Uru-gua-yo'', ``Cen-troa-me-ri-cano'',
+ []
+
+<imagenes/nacionalidades/general.png, id=149, 602.25pt x 372.39125pt>
 File: imagenes/nacionalidades/general.png Graphic file (type png)
 <use imagenes/nacionalidades/general.png>
 Package pdftex.def Info: imagenes/nacionalidades/general.png  used on input lin
-e 246. on input line 246.
-Package pdftex.def Info: Requested size: 213.39568pt x 131.95264pt on input lin
-e 246.
-LaTeX Info: Redefining \. on input line 259.
-LaTeX Info: Redefining \% on input line 259.
+e 247. on input line 247.
+Package pdftex.def Info: Requested size: 298.75264pt x 184.73483pt on input lin
+e 247.
+LaTeX Info: Redefining \. on input line 258.
+LaTeX Info: Redefining \% on input line 258.
 
 Overfull \vbox (1.31665pt too high) has occurred while \output is active []
 
@@ -1149,14 +975,14 @@ Overfull \vbox (1.31665pt too high) has occurred while \output is active []
 [25
 
  <./imagenes/nacionalidades/general.png (PNG copy)>]
-<imagenes/nacionalidades/3.png, id=150, 602.25pt x 372.39125pt>
+<imagenes/nacionalidades/3.png, id=153, 602.25pt x 372.39125pt>
 File: imagenes/nacionalidades/3.png Graphic file (type png)
 <use imagenes/nacionalidades/3.png>
 Package pdftex.def Info: imagenes/nacionalidades/3.png  used on input line 269.
  on input line 269.
 Package pdftex.def Info: Requested size: 213.39568pt x 131.95264pt on input lin
 e 269.
-<imagenes/nacionalidades/9.png, id=151, 602.25pt x 372.39125pt>
+<imagenes/nacionalidades/9.png, id=154, 602.25pt x 372.39125pt>
 File: imagenes/nacionalidades/9.png Graphic file (type png)
 <use imagenes/nacionalidades/9.png>
 Package pdftex.def Info: imagenes/nacionalidades/9.png  used on input line 270.
@@ -1168,185 +994,167 @@ Overfull \hbox (20.0pt too wide) in paragraph at lines 267--272
  []$ 
  []
 
-! Undefined control sequence.
-l.277 ... a esos cuñados'' contiene una /\textipa
-                                                  {r}/ que resulta muy notor...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.277 ... la esperada (mas similar a una /\textipa
-                                                  {R}/) y es atribuida, en g...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-<imagenes/nacionalidades/1.png, id=152, 602.25pt x 372.39125pt>
+<imagenes/nacionalidades/1.png, id=155, 602.25pt x 372.39125pt>
 File: imagenes/nacionalidades/1.png Graphic file (type png)
 <use imagenes/nacionalidades/1.png>
-Package pdftex.def Info: imagenes/nacionalidades/1.png  used on input line 292.
- on input line 292.
-Package pdftex.def Info: Requested size: 213.39568pt x 131.95264pt on input lin
-e 292.
-<imagenes/nacionalidades/6.png, id=153, 602.25pt x 372.39125pt>
-File: imagenes/nacionalidades/6.png Graphic file (type png)
-<use imagenes/nacionalidades/6.png>
-Package pdftex.def Info: imagenes/nacionalidades/6.png  used on input line 293.
+Package pdftex.def Info: imagenes/nacionalidades/1.png  used on input line 293.
  on input line 293.
 Package pdftex.def Info: Requested size: 213.39568pt x 131.95264pt on input lin
 e 293.
+<imagenes/nacionalidades/6.png, id=156, 602.25pt x 372.39125pt>
+File: imagenes/nacionalidades/6.png Graphic file (type png)
+<use imagenes/nacionalidades/6.png>
+Package pdftex.def Info: imagenes/nacionalidades/6.png  used on input line 294.
+ on input line 294.
+Package pdftex.def Info: Requested size: 213.39568pt x 131.95264pt on input lin
+e 294.
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 290--295
+Overfull \hbox (20.0pt too wide) in paragraph at lines 291--296
  []$ 
  []
 
-LaTeX Info: Redefining \. on input line 299.
-LaTeX Info: Redefining \% on input line 299.
+LaTeX Info: Redefining \. on input line 300.
+LaTeX Info: Redefining \% on input line 300.
 [26 <./imagenes/nacionalidades/3.png (PNG copy)> <./imagenes/nacionalidades/9.p
 ng (PNG copy)>]
-<imagenes/nacionalidades/7.png, id=157, 602.25pt x 372.39125pt>
+<imagenes/nacionalidades/7.png, id=160, 602.25pt x 372.39125pt>
 File: imagenes/nacionalidades/7.png Graphic file (type png)
 <use imagenes/nacionalidades/7.png>
-Package pdftex.def Info: imagenes/nacionalidades/7.png  used on input line 305.
+Package pdftex.def Info: imagenes/nacionalidades/7.png  used on input line 304.
+ on input line 304.
+Package pdftex.def Info: Requested size: 213.39568pt x 131.95264pt on input lin
+e 304.
+<imagenes/nacionalidades/8.png, id=161, 602.25pt x 372.39125pt>
+File: imagenes/nacionalidades/8.png Graphic file (type png)
+<use imagenes/nacionalidades/8.png>
+Package pdftex.def Info: imagenes/nacionalidades/8.png  used on input line 305.
  on input line 305.
 Package pdftex.def Info: Requested size: 213.39568pt x 131.95264pt on input lin
 e 305.
-<imagenes/nacionalidades/8.png, id=158, 602.25pt x 372.39125pt>
-File: imagenes/nacionalidades/8.png Graphic file (type png)
-<use imagenes/nacionalidades/8.png>
-Package pdftex.def Info: imagenes/nacionalidades/8.png  used on input line 306.
- on input line 306.
-Package pdftex.def Info: Requested size: 213.39568pt x 131.95264pt on input lin
-e 306.
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 303--308
+Overfull \hbox (20.0pt too wide) in paragraph at lines 302--307
  []$ 
  []
 
-<imagenes/nacVsPlot/1.png, id=159, 578.16pt x 433.62pt>
+<imagenes/nacVsPlot/1.png, id=162, 578.16pt x 433.62pt>
 File: imagenes/nacVsPlot/1.png Graphic file (type png)
 <use imagenes/nacVsPlot/1.png>
-Package pdftex.def Info: imagenes/nacVsPlot/1.png  used on input line 323. on i
+Package pdftex.def Info: imagenes/nacVsPlot/1.png  used on input line 322. on i
+nput line 322.
+Package pdftex.def Info: Requested size: 213.39568pt x 160.04651pt on input lin
+e 322.
+<imagenes/nacVsPlot/2.png, id=163, 578.16pt x 433.62pt>
+File: imagenes/nacVsPlot/2.png Graphic file (type png)
+<use imagenes/nacVsPlot/2.png>
+Package pdftex.def Info: imagenes/nacVsPlot/2.png  used on input line 323. on i
 nput line 323.
 Package pdftex.def Info: Requested size: 213.39568pt x 160.04651pt on input lin
 e 323.
-<imagenes/nacVsPlot/2.png, id=160, 578.16pt x 433.62pt>
-File: imagenes/nacVsPlot/2.png Graphic file (type png)
-<use imagenes/nacVsPlot/2.png>
-Package pdftex.def Info: imagenes/nacVsPlot/2.png  used on input line 324. on i
-nput line 324.
-Package pdftex.def Info: Requested size: 213.39568pt x 160.04651pt on input lin
-e 324.
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 321--326
+Overfull \hbox (20.0pt too wide) in paragraph at lines 320--325
  []$ 
  []
 
-LaTeX Info: Redefining \. on input line 330.
-LaTeX Info: Redefining \% on input line 330.
+LaTeX Info: Redefining \. on input line 329.
+LaTeX Info: Redefining \% on input line 329.
 [27 <./imagenes/nacionalidades/1.png (PNG copy)> <./imagenes/nacionalidades/6.p
 ng (PNG copy)> <./imagenes/nacionalidades/7.png (PNG copy)> <./imagenes/naciona
 lidades/8.png (PNG copy)>]
-<imagenes/nacVsPlot/3.png, id=165, 578.16pt x 433.62pt>
+<imagenes/nacVsPlot/3.png, id=168, 578.16pt x 433.62pt>
 File: imagenes/nacVsPlot/3.png Graphic file (type png)
 <use imagenes/nacVsPlot/3.png>
-Package pdftex.def Info: imagenes/nacVsPlot/3.png  used on input line 338. on i
+Package pdftex.def Info: imagenes/nacVsPlot/3.png  used on input line 337. on i
+nput line 337.
+Package pdftex.def Info: Requested size: 213.39568pt x 160.04651pt on input lin
+e 337.
+<imagenes/nacVsPlot/4.png, id=169, 578.16pt x 433.62pt>
+File: imagenes/nacVsPlot/4.png Graphic file (type png)
+<use imagenes/nacVsPlot/4.png>
+Package pdftex.def Info: imagenes/nacVsPlot/4.png  used on input line 338. on i
 nput line 338.
 Package pdftex.def Info: Requested size: 213.39568pt x 160.04651pt on input lin
 e 338.
-<imagenes/nacVsPlot/4.png, id=166, 578.16pt x 433.62pt>
-File: imagenes/nacVsPlot/4.png Graphic file (type png)
-<use imagenes/nacVsPlot/4.png>
-Package pdftex.def Info: imagenes/nacVsPlot/4.png  used on input line 339. on i
-nput line 339.
-Package pdftex.def Info: Requested size: 213.39568pt x 160.04651pt on input lin
-e 339.
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 336--341
+Overfull \hbox (20.0pt too wide) in paragraph at lines 335--340
  []$ 
  []
 
-<imagenes/nacVsPlot/5.png, id=167, 578.16pt x 433.62pt>
+<imagenes/nacVsPlot/5.png, id=170, 578.16pt x 433.62pt>
 File: imagenes/nacVsPlot/5.png Graphic file (type png)
 <use imagenes/nacVsPlot/5.png>
-Package pdftex.def Info: imagenes/nacVsPlot/5.png  used on input line 355. on i
+Package pdftex.def Info: imagenes/nacVsPlot/5.png  used on input line 354. on i
+nput line 354.
+Package pdftex.def Info: Requested size: 213.39568pt x 160.04651pt on input lin
+e 354.
+<imagenes/nacVsPlot/6.png, id=171, 578.16pt x 433.62pt>
+File: imagenes/nacVsPlot/6.png Graphic file (type png)
+<use imagenes/nacVsPlot/6.png>
+Package pdftex.def Info: imagenes/nacVsPlot/6.png  used on input line 355. on i
 nput line 355.
 Package pdftex.def Info: Requested size: 213.39568pt x 160.04651pt on input lin
 e 355.
-<imagenes/nacVsPlot/6.png, id=168, 578.16pt x 433.62pt>
-File: imagenes/nacVsPlot/6.png Graphic file (type png)
-<use imagenes/nacVsPlot/6.png>
-Package pdftex.def Info: imagenes/nacVsPlot/6.png  used on input line 356. on i
-nput line 356.
-Package pdftex.def Info: Requested size: 213.39568pt x 160.04651pt on input lin
-e 356.
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 353--358
+Overfull \hbox (20.0pt too wide) in paragraph at lines 352--357
  []$ 
  []
 
-LaTeX Info: Redefining \. on input line 362.
-LaTeX Info: Redefining \% on input line 362.
+LaTeX Info: Redefining \. on input line 361.
+LaTeX Info: Redefining \% on input line 361.
 [28 <./imagenes/nacVsPlot/1.png> <./imagenes/nacVsPlot/2.png> <./imagenes/nacVs
 Plot/3.png> <./imagenes/nacVsPlot/4.png>]
-<imagenes/nacVsPlot/7.png, id=176, 578.16pt x 433.62pt>
+<imagenes/nacVsPlot/7.png, id=179, 578.16pt x 433.62pt>
 File: imagenes/nacVsPlot/7.png Graphic file (type png)
 <use imagenes/nacVsPlot/7.png>
-Package pdftex.def Info: imagenes/nacVsPlot/7.png  used on input line 366. on i
+Package pdftex.def Info: imagenes/nacVsPlot/7.png  used on input line 365. on i
+nput line 365.
+Package pdftex.def Info: Requested size: 213.39568pt x 160.04651pt on input lin
+e 365.
+<imagenes/nacVsPlot/8.png, id=180, 578.16pt x 433.62pt>
+File: imagenes/nacVsPlot/8.png Graphic file (type png)
+<use imagenes/nacVsPlot/8.png>
+Package pdftex.def Info: imagenes/nacVsPlot/8.png  used on input line 366. on i
 nput line 366.
 Package pdftex.def Info: Requested size: 213.39568pt x 160.04651pt on input lin
 e 366.
-<imagenes/nacVsPlot/8.png, id=177, 578.16pt x 433.62pt>
-File: imagenes/nacVsPlot/8.png Graphic file (type png)
-<use imagenes/nacVsPlot/8.png>
-Package pdftex.def Info: imagenes/nacVsPlot/8.png  used on input line 367. on i
-nput line 367.
-Package pdftex.def Info: Requested size: 213.39568pt x 160.04651pt on input lin
-e 367.
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 364--369
+Overfull \hbox (20.0pt too wide) in paragraph at lines 363--368
  []$ 
  []
 
-<imagenes/nacVsPlot/9.png, id=178, 578.16pt x 433.62pt>
+<imagenes/nacVsPlot/9.png, id=181, 578.16pt x 433.62pt>
 File: imagenes/nacVsPlot/9.png Graphic file (type png)
 <use imagenes/nacVsPlot/9.png>
-Package pdftex.def Info: imagenes/nacVsPlot/9.png  used on input line 377. on i
-nput line 377.
+Package pdftex.def Info: imagenes/nacVsPlot/9.png  used on input line 376. on i
+nput line 376.
 Package pdftex.def Info: Requested size: 213.39568pt x 160.04651pt on input lin
-e 377.
-<imagenes/nacVsPlot/10.png, id=179, 578.16pt x 433.62pt>
+e 376.
+<imagenes/nacVsPlot/10.png, id=182, 578.16pt x 433.62pt>
 File: imagenes/nacVsPlot/10.png Graphic file (type png)
 <use imagenes/nacVsPlot/10.png>
-Package pdftex.def Info: imagenes/nacVsPlot/10.png  used on input line 378. on 
-input line 378.
+Package pdftex.def Info: imagenes/nacVsPlot/10.png  used on input line 377. on 
+input line 377.
 Package pdftex.def Info: Requested size: 213.39568pt x 160.04651pt on input lin
-e 378.
+e 377.
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 375--380
+Overfull \hbox (20.0pt too wide) in paragraph at lines 374--379
  []$ 
  []
 
 )
-LaTeX Info: Redefining \. on input line 77.
-LaTeX Info: Redefining \% on input line 77.
+LaTeX Info: Redefining \. on input line 76.
+LaTeX Info: Redefining \% on input line 76.
  [29 <./imagenes/nacVsPlot/5.png> <./imagenes/nacVsPlot/6.png> <./imagenes/nacV
 sPlot/7.png> <./imagenes/nacVsPlot/8.png> <./imagenes/nacVsPlot/9.png> <./image
 nes/nacVsPlot/10.png>]
-LaTeX Info: Redefining \. on input line 78.
-LaTeX Info: Redefining \% on input line 78.
+LaTeX Info: Redefining \. on input line 77.
+LaTeX Info: Redefining \% on input line 77.
  [30
 
 ]
 Cap\'{\i }tulo 4.
 (./final/final.tex) [31]
-LaTeX Info: Redefining \. on input line 81.
-LaTeX Info: Redefining \% on input line 81.
+LaTeX Info: Redefining \. on input line 80.
+LaTeX Info: Redefining \% on input line 80.
  [32
 
 ]
@@ -1373,8 +1181,8 @@ ar Mo-sur
  []
 
 ) [35]
-LaTeX Info: Redefining \. on input line 84.
-LaTeX Info: Redefining \% on input line 84.
+LaTeX Info: Redefining \. on input line 83.
+LaTeX Info: Redefining \% on input line 83.
  [36
 
 ] (./tesis.aux
@@ -1389,13 +1197,13 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 4789 strings out of 494869
- 70187 string characters out of 6178914
- 143847 words of memory out of 5000000
- 7966 multiletter control sequences out of 15000+600000
- 9850 words of font info for 34 fonts, out of 8000000 for 9000
- 40 hyphenation exceptions out of 8191
- 41i,12n,38p,1410b,421s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 6335 strings out of 494796
+ 91030 string characters out of 6177331
+ 150664 words of memory out of 5000000
+ 9499 multiletter control sequences out of 15000+600000
+ 10611 words of font info for 36 fonts, out of 8000000 for 9000
+ 85 hyphenation exceptions out of 8191
+ 42i,12n,41p,1410b,516s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/tex
@@ -1403,11 +1211,12 @@ live/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/t
 exmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-di
 st/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/font
 s/type1/public/amsfonts/cm/cmsl10.pfb></usr/share/texlive/texmf-dist/fonts/type
-1/public/amsfonts/cm/cmti10.pfb>
-Output written on tesis.pdf (46 pages, 1143067 bytes).
+1/public/amsfonts/cm/cmti10.pfb></usr/share/texmf/fonts/type1/fkr/tipa/tipa10.p
+fb>
+Output written on tesis.pdf (46 pages, 1166786 bytes).
 PDF statistics:
- 241 PDF objects out of 1000 (max. 8388607)
- 132 compressed objects within 2 object streams
+ 247 PDF objects out of 1000 (max. 8388607)
+ 135 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 176 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 181 words of extra memory for PDF output out of 10000 (max. 10000000)
 
