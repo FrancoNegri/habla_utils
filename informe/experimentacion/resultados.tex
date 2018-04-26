@@ -83,7 +83,7 @@ Esperamos que esta limpieza nos ayude a disminuir la varianza de los resultados,
 
 \clearpage
 
-\section{Datos normalizados}
+\section{Datos normalizados} \label{datosNormalizados}
 
 Podemos observar en la figura \ref{generalNormalizado} los nuevos resultados con los datos normalizados. Para $40\%$ y $50\%$ ingles . Para $60\%$ . Para $70\%$ .
 
@@ -124,7 +124,9 @@ Podemos observar las siguientes transcripciones extraídas de los resultados:
 
 Para todas las interpolaciones enunciadas previamente, los errores mas comunes varían desde falta de acentos en palabras como ``concluyó'' hasta faltas de inteligibilidad en palabras con cierta complejidad fonética como ``aguileña'' o ``gruñón''.
 
-Como caso particular la oración $3$: ``este enjoyado juez comprará nuestro corchete'' podemos observar que la mayoría de los participantes cometieron errores al transcribir la palabra ``juez'' que confundieron de manera sistemática con palabras sonoramente similares como ``fue'', y ``enjoyado'' que transcribieron como ``enfollado'', ``enrollado'' y la conjugación exacta del verbo comprar.
+Como caso particular la oración $3$: ``este enjoyado juez comprará nuestro corchete'' podemos observar que la mayoría de los participantes cometieron errores al transcribir la palabra ``juez'' que confundieron de manera sistemática con palabras sonoramente similares como ``fue''. Y ``enjoyado'' que transcribieron como ``enfollado'', ``enrollado'', y la conjugación del verbo ``comprar'' que transcribieron como ``comprando'' o ``comprar''.
+
+Buscando una explicación a estos errores y revisando el mapeo de fonemas que realizamos previamente, descubrimos que el mapeo de /hh/ a /g/ era erroneo. Esto produjo que palabras como ``gato'' sonaran mas como ``jato'' (/hh/ /a/ /t/ /o/) \revisarFonos. Adicionalmente descubrimos que ningun fono del ingles estaba siendo mapeado al fono /x/. Esto produjo que cuando el sintetizador interpola entre entre el fono del castellano y el fono inexistente del ingles (que hts toma como ruido blanco), el resultado fuera una mezcla entre ruido y /x/. Al ser la /x/ ruido blanco (consonante fricativa), no pudimos reconocer el error en las instancias preliminares de evaluación. Esto explicaría porque algunos participantes tuvieron problemas transcribiendo la palabra ``juez''.
 
 Para los grados de interpolación $60\%$ ingles - $40\%$ castellano y $70\%$ ingles - $30\%$ castellano, podemos observar un aumento notable de la variabilidad en las respuestas. Para el primero, de las $70$ respuestas obtenidas, $40$ participantes lograron transcribir el audio con una distancia menor a diez caracteres, $6$ obtuvieron anotaron una distancia entre $10$ y $20$ caracteres, y $24$ transcribieron el audio con distancia mayor a veinte caracteres. La distancia entre el primer y tercer cuartil pasa a ser de $20$ caracteres con una media igual a $10$.
 
@@ -143,7 +145,7 @@ Consideramos que este salto en la distancia intercuartil puede deberse a dos mot
 \label{oracionCuatro}
 \end{figure}
 
-El segundo motivo puede deberse a que existen características particulares de las oraciones o del modelo utilizado para generar la voz que afectan la comprensión del audio: la oración $10$ con $70\%$ de interpolación de ingles - $30\%$ de castellano, en la cual $6$ de los $8$ participantes obtuvieron una buena transcripción del audio con distancia menor a $15$, y la oración $8$, donde, para ese mismo grado de interpolación, todos los participantes transcribieron el audio con distancia de Levinshtein mayor a $20$, parecen demostrar esto. O bien la dificultad de las oraciones es variable o, lo que es todavía mas probable, llegado cierto punto en la interpolación, algunos fonemas empiezan a ``romperse'' o se alejan demasiado del fonema castellano correcto y terminan por disminuir la claridad de la voz.
+El segundo motivo puede deberse a que existen características particulares de las oraciones o del modelo utilizado para generar la voz que afectan la comprensión del audio: la oración $10$ ``El nudillo Argentino perdió su vaso'' con $70\%$ de interpolación de ingles - $30\%$ de castellano, en la cual $6$ de los $8$ participantes obtuvieron una buena transcripción del audio con distancia menor a $15$ \footnote{Incluso teniendo en cuenta que esta oración se ve afectada por el mapeo incorrecto de la /g/ como fue discutido previamente}, y la oración $8$ ``Las acongojadas cotorras sonrieron a mi círculo'', donde, para ese mismo grado de interpolación, todos los participantes transcribieron el audio con distancia de Levinshtein mayor a $20$, parecen demostrar esto. O bien la dificultad de las oraciones es variable o, lo que es todavía mas probable, llegado cierto punto en la interpolación, algunos fonemas empiezan a ``romperse'' o se alejan demasiado del fonema castellano correcto y terminan por disminuir la claridad de la voz.
 
 \begin{figure}
 \begin{center}$
