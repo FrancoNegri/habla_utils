@@ -1,0 +1,384 @@
+EST_File utterance
+DataType ascii
+version 2
+EST_Header_End
+Features max_id 168 ; type Text ; iform "\"La soprano entonó con frescura el himno de la alegría\"" ; filename prompt-utt/loc1_pal584.utt ; fileid loc1_pal584 ; 
+Stream_Items
+1 id _1 ; name La ; whitespace "" ; prepunctuation "" ; 
+2 id _2 ; name soprano ; whitespace " " ; prepunctuation "" ; 
+3 id _3 ; name entonó ; whitespace " " ; prepunctuation "" ; 
+4 id _4 ; name con ; whitespace " " ; prepunctuation "" ; 
+5 id _5 ; name frescura ; whitespace " " ; prepunctuation "" ; 
+6 id _6 ; name el ; whitespace " " ; prepunctuation "" ; 
+7 id _7 ; name himno ; whitespace " " ; prepunctuation "" ; 
+8 id _8 ; name de ; whitespace " " ; prepunctuation "" ; 
+9 id _9 ; name la ; whitespace " " ; prepunctuation "" ; 
+10 id _10 ; name alegría ; whitespace " " ; prepunctuation "" ; 
+11 id _20 ; name alegría ; pbreak B ; pos nil ; 
+12 id _19 ; name la ; pbreak NB ; pos nil ; 
+13 id _18 ; name de ; pbreak NB ; pos nil ; 
+14 id _17 ; name himno ; pbreak NB ; pos nil ; 
+15 id _16 ; name el ; pbreak NB ; pos nil ; 
+16 id _15 ; name frescura ; pbreak NB ; pos nil ; 
+17 id _14 ; name con ; pbreak NB ; pos nil ; 
+18 id _13 ; name entonó ; pbreak NB ; pos nil ; 
+19 id _12 ; name soprano ; pbreak NB ; pos nil ; 
+20 id _11 ; name La ; pbreak NB ; pos nil ; 
+21 id _22 ; name syl ; stress 0 ; 
+22 id _25 ; name syl ; stress 0 ; 
+23 id _28 ; name syl ; stress 1 ; 
+24 id _32 ; name syl ; stress 0 ; 
+25 id _35 ; name syl ; stress 0 ; 
+26 id _38 ; name syl ; stress 0 ; 
+27 id _41 ; name syl ; stress 1 ; 
+28 id _44 ; name syl ; stress 0 ; 
+29 id _48 ; name syl ; stress 0 ; 
+30 id _53 ; name syl ; stress 1 ; 
+31 id _56 ; name syl ; stress 0 ; 
+32 id _59 ; name syl ; stress 0 ; 
+33 id _62 ; name syl ; stress 1 ; 
+34 id _65 ; name syl ; stress 0 ; 
+35 id _68 ; name syl ; stress 0 ; 
+36 id _71 ; name syl ; stress 0 ; 
+37 id _74 ; name syl ; stress 0 ; 
+38 id _76 ; name syl ; stress 0 ; 
+39 id _79 ; name syl ; stress 1 ; 
+40 id _83 ; name syl ; stress 0 ; 
+41 id _164 ; name # ; end 0.15 ; 
+42 id _165 ; name # ; end 0.6 ; 
+43 id _85 ; name # ; dur_factor 2.29236 ; end 0.875 ; 
+44 id _163 ; name # ; end 0.91 ; 
+45 id _23 ; name l ; dur_factor 1.01792 ; end 0.995 ; 
+46 id _24 ; name a ; dur_factor -0.411363 ; end 1.065 ; 
+47 id _26 ; name s ; dur_factor 0.283216 ; end 1.165 ; 
+48 id _27 ; name o ; dur_factor -0.53871 ; end 1.235 ; 
+49 id _29 ; name p ; dur_factor -0.169407 ; end 1.325 ; 
+50 id _30 ; name r ; dur_factor -0.266373 ; end 1.415 ; 
+51 id _31 ; name a1 ; dur_factor -0.399961 ; end 1.46 ; 
+52 id _33 ; name n ; dur_factor -0.0364498 ; end 1.515 ; 
+53 id _34 ; name o ; dur_factor -0.104661 ; end 1.595 ; 
+54 id _36 ; name e ; dur_factor -0.0275874 ; end 1.625 ; 
+55 id _37 ; name n ; dur_factor 0.125367 ; end 1.715 ; 
+56 id _39 ; name t ; dur_factor -0.809946 ; end 1.77 ; 
+57 id _40 ; name o ; dur_factor -0.422454 ; end 1.845 ; 
+58 id _42 ; name n ; dur_factor 0.300171 ; end 1.915 ; 
+59 id _43 ; name o1 ; dur_factor -0.104661 ; end 1.99 ; 
+60 id _45 ; name k ; dur_factor -0.0932071 ; end 2.07 ; 
+61 id _46 ; name o ; dur_factor -0.515231 ; end 2.14 ; 
+62 id _47 ; name n ; dur_factor -0.655177 ; end 2.22 ; 
+63 id _49 ; name f ; dur_factor -0.565798 ; end 2.325 ; 
+64 id _50 ; name r ; dur_factor -0.263 ; end 2.385 ; 
+65 id _51 ; name e ; dur_factor 0.00932826 ; end 2.445 ; 
+66 id _52 ; name s ; dur_factor -0.397768 ; end 2.53 ; 
+67 id _54 ; name k ; dur_factor 0.250319 ; end 2.635 ; 
+68 id _55 ; name u1 ; dur_factor -0.132885 ; end 2.725 ; 
+69 id _57 ; name r ; dur_factor -0.299663 ; end 2.8 ; 
+70 id _58 ; name a ; dur_factor 0.166575 ; end 2.91 ; 
+71 id _60 ; name e ; dur_factor -0.196147 ; end 3.005 ; 
+72 id _61 ; name l ; dur_factor 0.0765851 ; end 3.105 ; 
+73 id _63 ; name i1 ; dur_factor -0.11812 ; end 3.18 ; 
+74 id _64 ; name m ; dur_factor -0.197917 ; end 3.195 ; 
+75 id _66 ; name n ; dur_factor -0.612112 ; end 3.36 ; 
+76 id _67 ; name o ; dur_factor -0.175447 ; end 3.435 ; 
+77 id _69 ; name d ; dur_factor -0.0611927 ; end 3.495 ; 
+78 id _70 ; name e ; dur_factor -0.328671 ; end 3.54 ; 
+79 id _72 ; name l ; dur_factor -0.244623 ; end 3.605 ; 
+80 id _73 ; name a ; dur_factor -0.507325 ; end 3.72 ; 
+81 id _75 ; name a ; dur_factor -0.419764 ; end 3.745 ; 
+82 id _77 ; name l ; dur_factor -0.273189 ; end 3.795 ; 
+83 id _78 ; name e ; dur_factor -0.37316 ; end 3.895 ; 
+84 id _80 ; name g ; dur_factor -0.173922 ; end 3.935 ; 
+85 id _81 ; name r ; dur_factor -0.173922 ; end 3.97 ; 
+86 id _82 ; name i1 ; dur_factor 0.719282 ; end 4.155 ; 
+87 id _84 ; name a ; dur_factor 1.18705 ; end 4.325 ; 
+88 id _166 ; name # ; end 4.475 ; 
+89 id _167 ; name # ; end 4.625 ; 
+90 id _86 ; name # ; dur_factor 1.18705 ; end 4.835 ; 
+91 id _87 ; name Accented ; 
+92 id _88 ; name Accented ; 
+93 id _89 ; name Accented ; 
+94 id _90 ; name Accented ; 
+95 id _91 ; name Accented ; 
+96 id _113 ; f0 110 ; pos 3.10826 ; 
+97 id _111 ; f0 121.702 ; pos 2.96895 ; 
+98 id _112 ; f0 112.615 ; pos 2.97895 ; 
+99 id _110 ; f0 123.702 ; pos 2.80261 ; 
+100 id _109 ; f0 113.702 ; pos 2.79261 ; 
+101 id _107 ; f0 125.141 ; pos 2.34715 ; 
+102 id _108 ; f0 116.244 ; pos 2.35715 ; 
+103 id _106 ; f0 127.141 ; pos 2.21343 ; 
+104 id _105 ; f0 117.141 ; pos 2.20343 ; 
+105 id _103 ; f0 127.419 ; pos 1.97013 ; 
+106 id _104 ; f0 118.444 ; pos 1.98013 ; 
+107 id _102 ; f0 129.419 ; pos 1.82297 ; 
+108 id _101 ; f0 119.419 ; pos 1.81297 ; 
+109 id _99 ; f0 130.628 ; pos 1.40901 ; 
+110 id _100 ; f0 121.719 ; pos 1.41901 ; 
+111 id _98 ; f0 132.628 ; pos 1.27317 ; 
+112 id _97 ; f0 122.628 ; pos 1.26317 ; 
+113 id _95 ; f0 133.715 ; pos 0.90973 ; 
+114 id _96 ; f0 124.632 ; pos 0.91973 ; 
+115 id _94 ; f0 135.715 ; pos 0.744155 ; 
+116 id _93 ; f0 125.715 ; pos 0.734155 ; 
+117 id _92 ; f0 130 ; pos 0.429236 ; 
+118 id _168 ; name BB ; 
+End_of_Stream_Items
+Relations
+Relation Token ; "(" ")" ; 
+11 20 1 0 0 0
+1 1 0 11 2 0
+12 19 2 0 0 0
+2 2 0 12 3 1
+13 18 3 0 0 0
+3 3 0 13 4 2
+14 17 4 0 0 0
+4 4 0 14 5 3
+15 16 5 0 0 0
+5 5 0 15 6 4
+16 15 6 0 0 0
+6 6 0 16 7 5
+17 14 7 0 0 0
+7 7 0 17 8 6
+18 13 8 0 0 0
+8 8 0 18 9 7
+19 12 9 0 0 0
+9 9 0 19 10 8
+20 11 10 0 0 0
+10 10 0 20 0 9
+End_of_Relation
+Relation Word ; "(" ")" ; 
+1 20 0 0 2 0
+2 19 0 0 3 1
+3 18 0 0 4 2
+4 17 0 0 5 3
+5 16 0 0 6 4
+6 15 0 0 7 5
+7 14 0 0 8 6
+8 13 0 0 9 7
+9 12 0 0 10 8
+10 11 0 0 0 9
+End_of_Relation
+Relation Syllable ; "(" ")" ; 
+1 21 0 0 2 0
+2 22 0 0 3 1
+3 23 0 0 4 2
+4 24 0 0 5 3
+5 25 0 0 6 4
+6 26 0 0 7 5
+7 27 0 0 8 6
+8 28 0 0 9 7
+9 29 0 0 10 8
+10 30 0 0 11 9
+11 31 0 0 12 10
+12 32 0 0 13 11
+13 33 0 0 14 12
+14 34 0 0 15 13
+15 35 0 0 16 14
+16 36 0 0 17 15
+17 37 0 0 18 16
+18 38 0 0 19 17
+19 39 0 0 20 18
+20 40 0 0 0 19
+End_of_Relation
+Relation Segment ; "(" ")" ; 
+1 41 0 0 2 0
+2 42 0 0 3 1
+3 43 0 0 4 2
+4 44 0 0 5 3
+5 45 0 0 6 4
+6 46 0 0 7 5
+7 47 0 0 8 6
+8 48 0 0 9 7
+9 49 0 0 10 8
+10 50 0 0 11 9
+11 51 0 0 12 10
+12 52 0 0 13 11
+13 53 0 0 14 12
+14 54 0 0 15 13
+15 55 0 0 16 14
+16 56 0 0 17 15
+17 57 0 0 18 16
+18 58 0 0 19 17
+19 59 0 0 20 18
+20 60 0 0 21 19
+21 61 0 0 22 20
+22 62 0 0 23 21
+23 63 0 0 24 22
+24 64 0 0 25 23
+25 65 0 0 26 24
+26 66 0 0 27 25
+27 67 0 0 28 26
+28 68 0 0 29 27
+29 69 0 0 30 28
+30 70 0 0 31 29
+31 71 0 0 32 30
+32 72 0 0 33 31
+33 73 0 0 34 32
+34 74 0 0 35 33
+35 75 0 0 36 34
+36 76 0 0 37 35
+37 77 0 0 38 36
+38 78 0 0 39 37
+39 79 0 0 40 38
+40 80 0 0 41 39
+41 81 0 0 42 40
+42 82 0 0 43 41
+43 83 0 0 44 42
+44 84 0 0 45 43
+45 85 0 0 46 44
+46 86 0 0 47 45
+47 87 0 0 48 46
+48 88 0 0 49 47
+49 89 0 0 50 48
+50 90 0 0 0 49
+End_of_Relation
+Relation SylStructure ; "(" ")" ; 
+12 45 11 0 13 0
+13 46 0 0 0 12
+11 21 1 12 0 0
+1 20 0 11 2 0
+17 47 14 0 18 0
+18 48 0 0 0 17
+14 22 2 17 15 0
+19 49 15 0 20 0
+20 50 0 0 21 19
+21 51 0 0 0 20
+15 23 0 19 16 14
+22 52 16 0 23 0
+23 53 0 0 0 22
+16 24 0 22 0 15
+2 19 0 14 3 1
+27 54 24 0 28 0
+28 55 0 0 0 27
+24 25 3 27 25 0
+29 56 25 0 30 0
+30 57 0 0 0 29
+25 26 0 29 26 24
+31 58 26 0 32 0
+32 59 0 0 0 31
+26 27 0 31 0 25
+3 18 0 24 4 2
+34 60 33 0 35 0
+35 61 0 0 36 34
+36 62 0 0 0 35
+33 28 4 34 0 0
+4 17 0 33 5 3
+40 63 37 0 41 0
+41 64 0 0 42 40
+42 65 0 0 43 41
+43 66 0 0 0 42
+37 29 5 40 38 0
+44 67 38 0 45 0
+45 68 0 0 0 44
+38 30 0 44 39 37
+46 69 39 0 47 0
+47 70 0 0 0 46
+39 31 0 46 0 38
+5 16 0 37 6 4
+49 71 48 0 50 0
+50 72 0 0 0 49
+48 32 6 49 0 0
+6 15 0 48 7 5
+53 73 51 0 54 0
+54 74 0 0 0 53
+51 33 7 53 52 0
+55 75 52 0 56 0
+56 76 0 0 0 55
+52 34 0 55 0 51
+7 14 0 51 8 6
+58 77 57 0 59 0
+59 78 0 0 0 58
+57 35 8 58 0 0
+8 13 0 57 9 7
+61 79 60 0 62 0
+62 80 0 0 0 61
+60 36 9 61 0 0
+9 12 0 60 10 8
+67 81 63 0 0 0
+63 37 10 67 64 0
+68 82 64 0 69 0
+69 83 0 0 0 68
+64 38 0 68 65 63
+70 84 65 0 71 0
+71 85 0 0 72 70
+72 86 0 0 0 71
+65 39 0 70 66 64
+73 87 66 0 0 0
+66 40 0 73 0 65
+10 11 0 63 0 9
+End_of_Relation
+Relation IntEvent ; "(" ")" ; 
+1 91 0 0 2 0
+2 92 0 0 3 1
+3 93 0 0 4 2
+4 94 0 0 5 3
+5 95 0 0 0 4
+End_of_Relation
+Relation Intonation ; "(" ")" ; 
+6 91 1 0 0 0
+1 23 0 6 2 0
+7 92 2 0 0 0
+2 27 0 7 3 1
+8 93 3 0 0 0
+3 30 0 8 4 2
+9 94 4 0 0 0
+4 33 0 9 5 3
+10 95 5 0 0 0
+5 39 0 10 0 4
+End_of_Relation
+Relation Target ; "(" ")" ; 
+18 117 1 0 0 0
+1 43 0 18 2 0
+19 116 2 0 0 0
+2 48 0 19 3 1
+20 115 3 0 0 0
+3 49 0 20 4 2
+21 113 4 0 22 0
+22 114 0 0 0 21
+4 51 0 21 5 3
+23 112 5 0 0 0
+5 57 0 23 6 4
+24 111 6 0 0 0
+6 58 0 24 7 5
+25 109 7 0 26 0
+26 110 0 0 0 25
+7 59 0 25 8 6
+27 108 8 0 0 0
+8 66 0 27 9 7
+28 107 9 0 0 0
+9 67 0 28 10 8
+29 105 10 0 30 0
+30 106 0 0 0 29
+10 68 0 29 11 9
+31 104 11 0 0 0
+11 72 0 31 12 10
+32 103 12 0 0 0
+12 73 0 32 13 11
+33 101 13 0 34 0
+34 102 0 0 0 33
+13 74 0 33 14 12
+35 100 14 0 0 0
+14 83 0 35 15 13
+36 99 15 0 0 0
+15 84 0 36 16 14
+37 97 16 0 38 0
+38 98 0 0 0 37
+16 86 0 37 17 15
+39 96 17 0 0 0
+17 87 0 39 0 16
+End_of_Relation
+Relation Phrase ; ()
+2 20 1 0 3 0
+3 19 0 0 4 2
+4 18 0 0 5 3
+5 17 0 0 6 4
+6 16 0 0 7 5
+7 15 0 0 8 6
+8 14 0 0 9 7
+9 13 0 0 10 8
+10 12 0 0 11 9
+11 11 0 0 0 10
+1 118 0 2 0 0
+End_of_Relation
+End_of_Relations
+End_of_Utterance
