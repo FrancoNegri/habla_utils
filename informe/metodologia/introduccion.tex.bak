@@ -11,7 +11,7 @@
 %Además pretenderemos evaluar la efectividad de técnicas de speaker adaptation cuando se utilizan corpus de distintas nacionalidades con repertorios fonéticos disimiles (para este caso de estudio: castellano e inglés)
 
 \reescribir
-\noindent Como principal fuente de información utilizaremos la disertación doctoral \textit{Simultaneous Modeling of phonetic and prosodic parameters, and characteristic conversion for hmm-based text-to-speech systems} del Profesor Tadashi Kitamura, Nagoya Institute of Technology\cite{phoneticAndProsodic}, donde se describe de manera detallada las desiciones de diseño utilizadas en HTS, así como el modelado de parámetros para la construcción de HMMs, el modelado de cada fonema utilizando Mel-Cepstral, etc.
+\noindent Como principal fuente de información utilizaremos la disertación doctoral \textit{Simultaneous Modeling of phonetic and prosodic parameters, and characteristic conversion for hmm-based text-to-speech systems} del Profesor Tadashi Kitamura, Nagoya Institute of Technology\cite{phoneticAndProsodic}, donde se describe de manera detallada las desiciones de diseño utilizadas en HTS, así como el modelado de parametros para la construccion de HMMs, el modelado de cada fonema utilizando Mel-Cepstral, etc.
 
 \noindent Como introducción a este trabajo comenzaremos analizando las decisiones de metodología utilizadas a lo largo de la investigación, como así también detalles teóricos como el mapeo de fonemas necesario para adaptar el repertorio fonético del inglés al castellano, etc.
 
@@ -26,7 +26,7 @@
 
 \item Utilizar las herramientas provistas por HTS para interpolar entre modelos y poder sintetizar habla con distintos grados de fonética y prosodia inglesa.
 
-\item Por último se detallaran aspectos técnicos del trabajo, así como especificaciones de como modela el sonido HTS, Festival y Festvox etc. 
+\item Por último se detallaran aspectos tecicos del trabajo, así como especificaciones de como modela el sonido HTS, Festival y Festvox etc. 
 
 \end{enumerate}
 
