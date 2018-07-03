@@ -1,35 +1,30 @@
+\noindent Un sistema de Text To Speech (TTS) es aquel que genera habla artificial a partir de un texto de entrada. En la actualidad estos sistemas se encuentran incluidos en diversas aplicaciones domesticas: navegación por GPS, asistentes personales inteligentes (como es el caso de SIRI), ayuda para personas no videntes, traducción automática, etc.
 
-\noindent Un sistema de Text To Speech (TTS) es aquel que genera habla artificial a partir de un texto de entrada. En la actualidad estos sistemas se encuentran incluidos en muchas aplicaciones domesticas, como por ejemplo navegación por GPS, asistentes personales inteligentes (como es el caso de SIRI), ayuda para personas no videntes, traducción automática, etc.
+\noindent En las últimas décadas se han visto grandes progresos en este campo. sAlgunos sistemas son capaces de modelar con cierto grado de efectividad cuestiones tales como la el acento, el tono y la entonación de un hablante (es decir, su prosodia). Por otro lado tambien se ha visto un progreso en modelar emociones, o las intenciones discursivas (Cuestiones prosodicas que pueden darnos a entender que una oración es una pregunta, una orden, etc). 
 
-\noindent En las últimas décadas se han visto grandes progresos en este campo, siendo capaces de modelar con cierto grado de efectividad cuestiones tales como la prosodia del hablante, sus emociones, etc. Si bien actualmente se considera que el estado del arte para la síntesis es el entrenamiento con redes neuronales profundas (DNN), una técnica todavía utilizada es la que utiliza Modelos Ocultos de Markov mas modelos de Mezcla de Gaussianas (HMM+GMM) que, a partir de un corpus de datos de entrenamiento, extrae información acústica y genera un modelo probabilístico que permita sintetizar habla. 
+\noindent Actualmente se considera que el estado del arte para la síntesis de voz es el entrenamiento con redes neuronales profundas (DNN). Aún así para este trabajo decidimos utilizar Modelos Ocultos de Markov mas modelos de Mezcla de Gaussianas (HMM+GMM) que, a partir de un corpus de datos de entrenamiento, extrae información acústica y genera un modelo probabilístico que permita sintetizar habla. Para esto utilizaremos HTS\cite{hts}, un framework de entrenamiento y sintesis de voz basado en HMM+GMM.
 
-\noindent Consideramos que este método, si bien no nos permitirá obtener la mejor voz posible, nos permitirá entender mejor los features con los que trabajamos y por lo tanto modificarlos según consideremos conveniente, algo que puede volverse mas complicado cuando se esta trabajando con redes neuronales profundas.
+\noindent Consideramos que este método, si bien no nos permitirá obtener la mejor voz posible, nos permitirá entender mejor los features con los que trabajamos y por lo tanto modificarlos según consideremos conveniente.
 
-\noindent En este trabajo de tesis se estudia una manera posible de generar un TTS basado en HMMs capaz de sintetizar habla en español con acento extranjero. Las razones por las que podría querer diseñarse un sistema con estas características varían \expandir desde un punto de vista puramente técnico, ya que un sistema así permitiría la utilización de corpus de entrenamiento de hablantes no nativos para la generación de una nueva voz, pasando por cuestiones lingüísticas, como es poder vislumbrar el limite en que un acento deja de parecernos local para pasar a ser extranjero y cuestiones psicológicas: lograr distintos efectos sobre el usuario, quien podría reaccionar distinto ante diferentes acentos.
+\noindent En este trabajo de tesis se estudia una manera posible de generar un TTS basado en HMMs capaz de sintetizar habla en español con acento extranjero. Existen muchos motivos por los que podría construirse un sistema cone estas características. Por ejemplo en investigaciones de carácter lingüístico, podría querer utilizarse para vislumbrar limites en que un acento deja de parecernos local para pasar a sonar extranjero. Por otro lado en investigaciones de carácter psicológico, podría querer utilizarse para medir la confianza que deposita un oyente sobre hablantes de distinta nacionalidad: por poner un ejemplo, al pedir indicaciones de como llegar a algún lugar uno no deposita el mismo nivel de confianza si la persona que responde suena oriundo de la localidad que a alguien que suena extranjero. Por ultimo un sistema así podría quererse construir por temas puramente técnicos ya que permitiría generar una voz en castellano, por ejemplo, combinando una voz previamente construida en algún otro idioma y un pequeño corpus de datos en castellano.
 
-posibles temas de psicolgia del hablante, expandir
-
-\calzarMasAdelante
-%Además pretenderemos evaluar la efectividad de técnicas de speaker adaptation cuando se utilizan corpus de distintas nacionalidades con repertorios fonéticos disimiles (para este caso de estudio: castellano e inglés)
-
-\reescribir
-\noindent Como principal fuente de información utilizaremos la disertación doctoral \textit{Simultaneous Modeling of phonetic and prosodic parameters, and characteristic conversion for hmm-based text-to-speech systems} del Profesor Tadashi Kitamura, Nagoya Institute of Technology\cite{phoneticAndProsodic}, donde se describe de manera detallada las desiciones de diseño utilizadas en HTS, así como el modelado de parámetros para la construcción de HMMs, el modelado de cada fonema utilizando Mel-Cepstral, etc.
+\noindent Como principal fuente de información utilizaremos la disertación doctoral \textit{Simultaneous Modeling of phonetic and prosodic parameters, and characteristic conversion for hmm-based text-to-speech systems} del Profesor Tadashi Kitamura, Nagoya Institute of Technology \cite{phoneticAndProsodic}, donde se describe de manera detallada las desiciones de diseño utilizadas en HTS, así como el modelado de parámetros para la construcción de HMMs, el modelado de cada fonema utilizando Mel-Cepstral, etc.
 
 \noindent Como introducción a este trabajo comenzaremos analizando las decisiones de metodología utilizadas a lo largo de la investigación, como así también detalles teóricos como el mapeo de fonemas necesario para adaptar el repertorio fonético del inglés al castellano, etc.
 
 \noindent En las siguiente secciones se detallarán distintos temas que fueron necesarios abordar para llevar a cabo esta tesis. En orden de aparición estos son:
 
-\begin{enumerate}
-\item Realizar un etiquetado fonético de distintos corpus de audios.
+\begin{itemize}
+\item Comenzando en la sección \ref{dataPrepartion} se presentan las técnicas utilizadas para el etiquetado fonético de los distintos corpus sobre los que trabajaremos.
 
-\item Realizar un mapeo entre los fonos del castellano y los del inglés. Estos serán necesarios en el paso siguiente donde será requerimiento indispensable tener modelados los mismos fonos para todos los modelos.
+\item En la sección \ref{phoneMaping} se presentará un mapeo entre los fonos del castellano y los del inglés.
 
-\item Realizar el entrenamiento de los HMM+GMM. Para esto contaremos con el framework de modelado de HMMs HTS. 
+\item En la sección \ref{modelInterpolation} y \ref{speakerAdaptativeTraining} presentamos las herramientas provistas por HTS para combinar modelos y poder sintetizar habla con distintos grados de mezcla fonética y prosódica de inglés-castellano.
 
-\item Utilizar las herramientas provistas por HTS para interpolar entre modelos y poder sintetizar habla con distintos grados de fonética y prosodia inglesa.
+\item En la sección \ref{herramientas} se detallaran aspectos técnicos del trabajo, así como especificaciones de como modela el audio HTS, estructuras utilizadas durante el entrenamiento y otras herramientas utilizadas. 
 
-\item Por último se detallaran aspectos técnicos del trabajo, así como especificaciones de como modela el sonido HTS, Festival y Festvox etc. 
+\item Por ultimo, en todo el capitulo \ref{evaluacionPerceptual}, intentaremos validar que el sistema construido realmente cumple con las caracteristicas deseadas, exponiendose en la sección \ref{interfaz} los aspectos metodologicos de la evaluación y en las subsiguientes secciones los resultados obtenidos.
 
-\end{enumerate}
+\end{itemize}
 
-\noindent En el transcurso de este trabajo se espera además evaluar la prosodia y la fonética del modelo generado con estas características, como así también evaluar su inteligibilidad. 
+%\noindent En el transcurso de este trabajo se espera además evaluar la prosodia y la fonética del modelo generado con estas características, como así también evaluar su inteligibilidad. 

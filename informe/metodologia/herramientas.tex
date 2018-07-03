@@ -25,7 +25,7 @@ Primero tendremos que generar un archivo \textit{txt.done.data} donde estén los
 
 \end{tcolorbox}
 
-En este trabajo utilizamos Festival $2.4$\cite{festivalDownload}, Festvox $2.7$\cite{festvoxDownload} y speech\_tools $2.4$\cite{speechToolDownload} para la generación de transcripciones foneticas. Para poder utilizarlos agregamos las siguientes variables de entorno en nuestro PATH:
+En este trabajo utilizamos Festival $2.4$\cite{festivalDownload}, Festvox $2.7$\cite{festvoxDownload} y speech\_tools $2.4$\cite{speechToolDownload} para la generación de transcripciones fonéticas. Para poder utilizarlos agregamos las siguientes variables de entorno en nuestro PATH:
 
 \begin{tcolorbox}
 export PATH=/project/festival/bin:\$PATH
@@ -95,7 +95,6 @@ En la carpeta utt gen/prompt-utt se habrán generado los .utt necesarios para la
 
 \subsection{HTS}
 
-\faltaContarComoPasarDeUTTAOtroFormato
 
 HTS es un framework de entrenamiento y síntesis de sistemas TTS basado en HMMs que modela simultáneamente la duración, el espectro (mel-cepstrum) y la frecuencia principal ($f0$) de utilizando una combinación de HMMs:
 
@@ -149,23 +148,43 @@ En las primeras iteraciones del desarrollo no contábamos con la información ac
 
 \subsection{Entrenamiento} \label{entrenamientoHTS}
 
+Desde un punto de vista puramente tecnico, utilizar HTS para entrenar un modelo es bastante sencillo.
+
+Asumiendo que todos los paquetes necesarios fueron instalados, es posible entrenar una nueva voz adaptando la demo disponible en la pagina de descargas de HTS.
+
+Para ello, reemplazar los audios en la carpeta data/raw con aquellos aquellos que se quieran utilizar y los utts correspondientes previamente generados. 
+
+Además como adelantamos en la sección anterior, será necesario indicarle a HTS que información contextual se utilizará para la clusterización, por lo que es necesario modificar el archivo data/questions/questions\_qst001.hed con la información contextual apropiada para una voz en castellano. En el apéndice \ref{apendiceQuestions} se presenta el archivo utilizado para Loc1\_pal.
+
+Una vez finalizadas estas modificaciones, en la carpeta data/ de la demo puede iniciarse el pre entrenamiento de la siguiente manera:
+
+\begin{tcolorbox}
+make
+\end{tcolorbox}
+
+Que extraerá features del audio y construirá los archivos de entrenamiento a partir de los mismos entre otras cosas.
+
+Finalmente para dar comienzo al entrenamiento, ejecutar en la carpeta raíz.
+
+\begin{tcolorbox}
+perl scripts/Training.pl scripts/Config.pm > train.log 2> err.log
+\end{tcolorbox}
+
+Una vez que se complete el entrenamiento, será posible encontrar en la carpeta X el modelo generado (.htsvoice).
+
 Para este trabajo todos los audios usarán sampling rate de $48$kHz, precisión de $16$bits, mono. 
 
 Además HTS nos pide que explicitemos un rango de extracción para frecuencia fundamental. Tanto para SECYT como para Loc1-Pal el rango utilizado fue desde $100$hz hasta $350$hz, mientras que para CMU-ARCTIC el rango de extracción fue desde $110$kHz hasta $280$kHz.
 
-Una lista extensiva de los parámetros utilizados para el entrenamiento se puede ver en el apéndice $3$.
+Estos parámetros y muchos otros pueden ser configurados fácilmente corriendo
 
-Detalles técnicos...
-%HTS también brinda la posibilidad de realizar speaker-adaptive training. Esta técnica permite tomar un modelo ya entrenado y adaptarlo para asimilar características de un nuevo hablante. Esta técnica nace de la idea que construir un corpus de datos es costoso tanto en espacio de almacenamiento, tiempo de grabación y etiquetado, por lo que resulta mas económico generar una nueva voz sintética a partir de un modelo bien generado y adaptándolo luego con características del nuevo corpus.
-\detallesTecnicos
+\begin{tcolorbox}
+./configure
+\end{tcolorbox}
 
-%Dentro del adaptative training existen varias técnicas, en este trabajo utilizaremos offline supervised adaptation, que tiene como requisito adicional conocer los oraciones del segundo corpus. 
+en la carpeta raíz del proyecto.
 
-% Cosas para hablar:
-% contextual factors: cuales son, para que sirven.
-% arboles de decición.
-% questions
-% expandir sobre hmms
+En la próxima sección detallaremos como utilizar varios .htsvoice generados para mezclar y sintetizar una nueva voz.
 
 \subsection{HTS\_engine} \label{interpolationTeory}
 
@@ -183,6 +202,10 @@ A grandes rasgos la interpolación consistirá en tomar los vectores generados a
 
 Una vez obtenido el nuevo HMM es generado el proceso de síntesis puede ocurrir como para cualquier otro modelo, ilustrado en la etapa de síntesis de la figura.
 
-Detalles técnicos...
+El proceso de síntesis es bastante simple. Asumiendo que todos todas las dependencias fueron instaladas de manera correcta, con el siguiente comando, es posible utilizar los modelos generados en \textit{cmu\_us\_arctic\_slt.htsvoice} y \textit{models/loc1\_pal.htsvoice} para interpolar con peso $0.7$ y $0.3$ respectivamente, generar un nuevo modelo y sintetizar la oración presente en el archivo in.lab.
 
-\detalllesTecnicos
+\begin{tcolorbox}
+hts\_engine -m models/cmu\_us\_arctic\_slt.htsvoice -m models/loc1\_pal.htsvoice -i 2 0.7 0.3 -ow out.wav in.lab
+\end{tcolorbox}
+
+Esta herramienta permite además modificar el pitch, duración del audio y otros aspectos de la síntesis. La documentación completa puede encontrarse en http://hts-engine.sourceforge.net/.

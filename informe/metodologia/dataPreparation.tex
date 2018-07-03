@@ -1,10 +1,8 @@
-\section{Preparación de los datos}
-
-El objetivo de esta sección es dar una introducción a los corpus utilizados, especificando las características que consideremos pertinentes y la teoría referente a las metodologías utilizadas para su procesamiento. Los detalles implementativos serán descriptos más adelante en el capitulo \ref{herramientas}.
+El objetivo de esta sección es dar una introducción a los corpus utilizados, junto con la teoría referente a las metodologías utilizadas para su procesamiento. Los detalles implementativos serán descriptos más adelante en el capitulo \ref{herramientas}.
 
 \subsection{Primer corpus en castellano}
 
-Al comienzo de la investigación comenzamos con un solo corpus de datos, \textit{secyt-mujer}\cite{secytMujer}. El mismo está compuesto por $741$ oraciones cortas declarativas habladas por una locutora profesional en español rioplatense, equivalentes a $48$ minutos de habla.
+Al inicio de la investigación comenzamos con un solo corpus de datos, \textit{secyt-mujer}\cite{secytMujer}. El mismo está compuesto por $741$ oraciones cortas declarativas habladas por una locutora profesional en español rioplatense, equivalentes a $48$ minutos de habla.
 
 A continuación tres ejemplos de las oraciones articuladas por la locutora:
 
@@ -14,9 +12,9 @@ A continuación tres ejemplos de las oraciones articuladas por la locutora:
 
 \indent\indent \textit{Al atardecer se puso su disfraz juglaresco.}
 
-Como parte inicial del trabajo es indispensable construir el etiquetado fonético para el corpus. Estos etiquetados consistirán principalmente de una lista de fonos dónde se indica donde comienza y donde termina cada uno en el audio. La calidad de las oraciones que logremos sintetizar a posteriori dependerá fuertemente del etiquetado, por lo que es necesario prestar especial cuidado en que las transcripciones estén lo mejor alineadamente posible con los audios. Las transcripciones serán necesarias para entrenar los modelos de HMM+GMM, extrayendo de aquí tanto la información acústica para cada fono (cosas tales como la frecuencia principal, la duración, etc) como así también información contextual (por ejemplo: como suena un fonema cuando está seguido de algún otro, al principio de una oración, si se encuentra en un diptongo). Por esto una mala transcripción se traducirá indefectiblemente en un mal modelo y malas oraciones sintetizadas.
+Como parte inicial del trabajo es indispensable construir el etiquetado fonético para el corpus. Estos etiquetados consistirán principalmente en una lista de fonos dónde se indica cuando comienza y termina cada uno en el audio. La calidad de las oraciones que logremos sintetizar a posteriori dependerá fuertemente del etiquetado, por lo que es necesario prestar especial cuidado en que las transcripciones estén lo mejor alineadamente posible con los audios. Las transcripciones serán necesarias para entrenar los modelos de HMM+GMM, extrayendo tanto la información acústica para cada fono (cosas tales como la frecuencia principal, la duración, etc), como así también información contextual (por ejemplo: como suena un fonema cuando está seguido de algún otro, al principio de una oración, si se encuentra en un diptongo). Por ende, una mala transcripción se traducirá indefectiblemente en un mal modelo y malas oraciones sintetizadas.
 
-Realizamos varias pruebas de concepto utilizando HTS y este corpus, experimentando con diversos métodos para obtener el etiquetado fonético. 
+LLevamos a cabo varias pruebas de concepto utilizando HTS en este corpus, experimentando con diversos métodos para obtener el etiquetado fonético. 
 
 La primera estrategia consistió en utilizar alineamiento automático con EHMM alignment \cite{phoneticCapturing} empleando Festival y Festvox. Estos programas tienen como ventaja que tanto la anotación del corpus como la generación de oraciones utilizadas para la síntesis presentan el mismo repertorio fonético. Esto es útil ya que podemos garantizar que el entrenamiento y la síntesis están utilizando el mismo método de generación de trazas/oraciones.
 
