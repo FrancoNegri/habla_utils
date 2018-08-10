@@ -1,7 +1,7 @@
 
-Como ya adelantamos brevemente en el apartado anterior, para la generación de oraciones para la síntesis utilizamos Festvox y Festival. Al igual que con las transcripciones fonéticas, estas herramientas nos permitirán traducir oraciones grafémicas (texto) a una lista de fonos y metadata utilizados por HTK para sintetizar audio.
+Como ya adelantamos brevemente en la sección anterior, utilizamos Festvox y Festival para la generación de transcripciones foneticas necesarias para la síntesis de audios. A diferencia de las transcripciones fonéticas de los corpus, estas transcripciones no se corresponden con ningun audio y son utilizadas por HTS para generar los audios. De alguna manera, actúan como una partitura para la generación acustica, indicandole a HTS que fonema debe sintetizar.
 
-El primer desafío que se presenta es que estos repertorios fonéticos no tienen un mapeo directo entre el inglés y el castellano: por ejemplo con el repertorio Fonético de Festvox en castellano, existen tres fonos distintos para la /i/, decisión que proviene de la necesidad de poder diferenciar la /i/ acentuada de la no acentuada  y de aquella presente en los diptongos: /ia/, /ie/, /io/, /iu/. La tabla \ref{fig:foneRep} muestra los repertorios utilizados por festvox para la generación de transcripciones fonéticas de castellano e ingles.
+Se presenta aquí un desafío, ya que los repertorios foneticos de estas partituras no tienen una correspondencia directa entre inglés y castellano. Por ejemplo con el repertorio fonético de Festvox en castellano, existen tres fonos distintos para la /i/, decisión que proviene de la necesidad de poder diferenciar la /i/ acentuada de la no acentuada  y de aquella presente en los diptongos /ia/, /ie/, /io/, /iu/. La Tabla \ref{fig:foneRep} muestra los repertorios utilizados por Festvox para la generación de transcripciones fonéticas de castellano (con $31$ fonos) e inglés (con $40$ fonos).
 
 \begin{table}
 \centering
@@ -62,15 +62,19 @@ Inglés \\
 \label{fig:foneRep}
 \end{table}
 
-%De aquí surgen varios problemas. El primero es que Festival utiliza el mismo símbolo para dos fonos distintos. De esta manera, la /g/ en castellano suena mucho mas disminuida que la /g/ del repertorio inglés, aunque ambas sean descritas como un fono oclusivo velar sonoro. Acá la cagué esto no era así =(.
-%\buscarEjemplosEl -> esta medio mal
+El objetivo de esta sección será entonces generar una traducción de los fonos del inglés al castellano que nos permita junto con una partitura en castellano y un corpus en inglés, sintetizar audio en castellano.
 
-De esto, surge el siguiente problema: cómo sintetizar oraciones en castellano utilizando un repertorio fonético en inglés, donde incluso la cantidad de fonos es diferente. La manera que encontramos de abordar esto fue confeccionar una tabla donde cada fono del castellano estuviera mapeado a uno del inglés. En otras palabras, antes del entrenamiento del modelo, tomamos los fonos generados por festival para el corpus en inglés y los reemplazamos con fonos del castellano de la manera ilustrada en la tabla 2.
+%De esto, surge el siguiente problema: cómo sintetizar oraciones en castellano utilizando un repertorio fonético en inglés, donde incluso la cantidad de fonos es diferente.
+
+La solución que consideramos pertinente fue confeccionar una tabla donde cada fono del repertorio del castellano estuviera mapeado a uno del repertorio del inglés. Por ejemplo el fono /ae/ (alice) del inglés lo traducimos al fono /a/ (amigo) del castellano. De la misma manera, el fono /ao/ del inglés (for) pasa a ser el fono /o/ (gato) del castellano. En la Tabla \ref{mapeoFonetico} se presenta una lista exhaustiva de los reemplazos foneticos utilizados.
+
+Utilizamos esta traducción antes del entrenamiento del modelo: Tomamos los fonos generados por festival para el corpus en inglés y los traducimos a fonos del castellano. De esta manera, conseguimos un modelo entrenado con un corpus en inglés que utiliza los simbolos del castellano.
 
 \begin{table}
 \centering
 %\setlength{\tabcolsep}{6pt} % default value is 6pt
 \caption{Mapeo Fonético}
+\label{mapeoFonetico}
 \begin{minipage}[t]{0.3\textwidth}
 \begin{tabular}[t]{c|c}
 \toprule
@@ -134,28 +138,28 @@ z & - \\
 \end{minipage}
 \end{table}
 
-\footnotetext{El mapeo de /hh/ a /g/ en castellano resultó ser incorrecto. El fono /g/ existe tanto en castellano (gato) como en ingles (glad). Notamos este error recién al hacer la evaluación perceptual, como se describe en la sección \ref{datosNormalizados}}
+\footnotetext{El mapeo de /hh/ a /g/ en castellano resultó ser incorrecto. El fono /g/ existe tanto en castellano (gato) como en inglés (glad). Notamos este error recién al hacer la evaluación perceptual, como se describe en la Sección \ref{datosNormalizados}.}
 
-Por otro lado para varios fonos tuvimos que hacer reglas especiales ya que no contábamos con ningún fono del inglés lo suficientemente similar. Así,  para el fono ny (ñ o \textltailn, en ipa) colapsamos las apariciones del fono /n/ seguido de /i/. Si bien esta solución puede parecer algo forzada, ya que estamos generando de manera casera fonos a partir de otros, consideramos que esto se aproxima en cierta medida a la manera real en la que un hablante no nativo aprende un idioma con una carga fonética diferente al suyo. Citando un extracto del trabajo \textit{Transcription of Spanish and Spanish-Influenced English, Brian Goldstein, Temple University}\cite{spanishInfluencedEnglish}:
+Por otro lado, para varios fonos tuvimos que hacer reglas especiales ya que no contábamos con ningún fono del inglés lo suficientemente similar. Así,  para el fono ny (ñ o \textltailn, en ipa) colapsamos las apariciones del fono /n/ seguido de /i/. Si bien esta solución puede parecer algo forzada, ya que estamos generando de manera casera un fono a partir de otros dos, consideramos que esto se aproxima en cierta medida a la manera real en la que un hablante no nativo aprende un idioma con una carga fonética diferente al suyo. Citando un extracto del trabajo \textit{Transcription of Spanish and Spanish-Influenced English, Brian Goldstein, Temple University} \cite{spanishInfluencedEnglish}:
 
 \begin{center}
 \includegraphics[scale=0.6]{imagenes_investigacion/consonantes1.png}
 \includegraphics[scale=0.6]{imagenes_investigacion/consonantes2.png}
 \end{center}
 
-Visto desde nuestra perspectiva, una persona que aprende una nueva lengua, realiza una aproximación entre los fonos conocidos y los fonos `objetivo' de la nueva lengua.
+Es decir, visto desde nuestra perspectiva, una persona que aprende una nueva lengua, realiza una aproximación entre los fonos conocidos y los fonos `objetivo' de la nueva lengua. Esta perspectiva nos alienta a realizar mapeos que no resultan del todo exactos, mapeando por ejemplo el fono /w/ (\textit{twentieth}) del inglés al fono /u0/ (\textit{cuatrimestre}) del castellano o el fono /uw/ (\textit{two}) por el fono /u/ (\textit{cumplió}).
 
-Esta perspectiva nos alienta a realizar mapeos que no resultan del todo exacto, mapenado por ejemplo el fono /w/ (\textit{twentieth}) del ingles al fono /u0/ (\textit{ahuyentar}) del castellano o el fono /uw/ (\textit{two}) por el fono /u/ (\textit{cumplió}).
+Un mapeo que podría resultar controversial es el del fono /jh/ (\textit{danger}) del inglés por el /ll/ (\textit{billete}) del castellano, porque existen otras posibilidades: podría mapearse a /sh/ (ash), por ejemplo. Sin embargo, consideramos que el mapeo elegido es el que más se acerca a la pronunciación de las locutoras de las grabaciones.
 
-Un mapeo que podría resultar controversial es del fono /jh/ (\textit{danger}) del ingles por el /ll/ (\textit{billete}) del castellano. Si bien esta decisión no puede resultar ser la mejor, por ejemplo /ll/ podría ser mapeado a /sh/ (\textit{ash}), consideramos que para este primer trabajo resulta suficientemente buena.
+De manera similar, el inglés carece del fono vibrante múltiple alveolar sordo /\textipa{r}/ (\textit{perro}) y dado que el fono /\textipa{R}/(\textit{pero})  ya está siendo utilizado, no podemos mapearlo a este. Es importante destacar aquí que no podemos dejar sin cubrir ningún fono del castellano ya que entonces el modelo generado no sintetizaría correctamente las oraciones en castellano. 
 
-De manera similar el inglés carece del fono vibrante múltiple alveolar sordo /\textipa{r}/ (\textit{perro}) y dado que el fono /\textipa{R}/(\textit{pero})  ya estaba siendo utilizado, no podíamos realizar un mapeo tan directo. Como solución tomamos la mitad de los fonos /\textipa{R}/ y los reemplazamos con /\textipa{r}/. 
+Para aclarar este punto supongamos que dejamos el fono /\textipa{r}/ sin cubrir por ningún fono del ingles. Entrenamos el modelo con el corpus de ingles, reemplazando los simbolos del ingles por los del castellano. Ahora le damos para sintetizar una partitura con simbolos en castellano donde se encunetra presente el fono /\textipa{r}/. El modelo no tendrá manera de inferir el sonido correcto para este simbolo, resultando en una sintesis erronea o de baja calidad. 
 
+Una solución que encontramos para este problema es mapear con cada ocurrencia de /\textipa{R}/ en ingles mapear con equiprobabilidad a /\textipa{R}/ o a /\textipa{r}/ en castellano. De esta manera ambos simbolos del castellano quedan cubiertos por el simbolo más similar del inglés.
 
-Aquellos fonos que consideramos suficientemente disímiles del castellano, como es el caso de la /sh/, /z/, etc los mapeamos a caracteres que no interfirieran para el entrenamiento ya que no los utilizaremos para la síntesis de oraciones en castellano.
+Aquellos fonos del inglés que consideramos suficientemente disímiles del castellano, como es el caso de la /sh/ y /z/ los mapeamos a caracteres que no interfirieran para el entrenamiento ya que no los utilizaremos para la síntesis de oraciones en castellano.
 
-
-Con este mapeo, podemos utilizar solamente el corpus en ingles para sintetizar oraciones en castellano, aunque como es de esperar, dado que el corpus de entrenamiento es tan distinto de las oraciones que queremos sintetizar (Por cuestiones como que las combinaciones de fonos del ingles y el castellano son diferentes, las reglas prosódicas y las acentuaciones vocálicas difieren entre los idiomas) los audios sintetizados resultan incomprensibles.
+Con este mapeo, podemos utilizar el corpus en inglés para sintetizar oraciones con partituras en castellano. Sin embargo, como es de esperar, los audios sintetizados resultan incomprensibles, por cuestiones como que las combinaciones de fonos del inglés y el castellano son muy distintas, así como las reglas prosódicas y las acentuaciones de las palabras, entre otras marcadas diferencias.
 
 % mapeo utilizado mostrar.
 % el etiquetado de cmu\_arctic es en inglés y mapeando al castellano.

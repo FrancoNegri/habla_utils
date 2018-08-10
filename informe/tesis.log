@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.3.19)  3 JUL 2018 20:13
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.3.19)  9 AUG 2018 22:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -803,50 +803,119 @@ Package floatrow Info: Modified rotfloat package code loaded on input line 473.
 \LTleft=\skip58
 \LTright=\skip59
 \flrow@types=\toks35
-) (./tesis.aux
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/multicol.sty
+Package: multicol 2017/04/11 v1.8q multicolumn formatting (FMi)
+\c@tracingmulticols=\count131
+\mult@box=\box46
+\multicol@leftmargin=\dimen179
+\c@unbalance=\count132
+\c@collectmore=\count133
+\doublecol@number=\count134
+\multicoltolerance=\count135
+\multicolpretolerance=\count136
+\full@width=\dimen180
+\page@free=\dimen181
+\premulticols=\dimen182
+\postmulticols=\dimen183
+\multicolsep=\skip60
+\multicolbaselineskip=\skip61
+\partial@page=\box47
+\last@line=\box48
+\maxbalancingoverflow=\dimen184
+\mult@rightbox=\box49
+\mult@grightbox=\box50
+\mult@gfirstbox=\box51
+\mult@firstbox=\box52
+\@tempa=\box53
+\@tempa=\box54
+\@tempa=\box55
+\@tempa=\box56
+\@tempa=\box57
+\@tempa=\box58
+\@tempa=\box59
+\@tempa=\box60
+\@tempa=\box61
+\@tempa=\box62
+\@tempa=\box63
+\@tempa=\box64
+\@tempa=\box65
+\@tempa=\box66
+\@tempa=\box67
+\@tempa=\box68
+\@tempa=\box69
+\c@columnbadness=\count137
+\c@finalcolumnbadness=\count138
+\last@try=\dimen185
+\multicolovershoot=\dimen186
+\multicolundershoot=\dimen187
+\mult@nat@firstbox=\box70
+\colbreak@box=\box71
+\mc@col@check@num=\count139
+)
+(/usr/share/texlive/texmf-dist/tex/latex/supertabular/supertabular.sty
+Package: supertabular 2004/02/20 v4.1e the supertabular environment
+\c@tracingst=\count140
+\ST@wd=\dimen188
+\ST@rightskip=\skip62
+\ST@leftskip=\skip63
+\ST@parfillskip=\skip64
+\ST@pageleft=\dimen189
+\ST@headht=\dimen190
+\ST@tailht=\dimen191
+\ST@pagesofar=\dimen192
+\ST@pboxht=\dimen193
+\ST@lineht=\dimen194
+\ST@stretchht=\dimen195
+\ST@prevht=\dimen196
+\ST@toadd=\dimen197
+\ST@dimen=\dimen198
+\ST@pbox=\box72
+)
+(./tesis.aux
 LaTeX Info: Redefining \. on input line 7.
 LaTeX Info: Redefining \% on input line 7.
 )
 \openout1 = `tesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 17.
-LaTeX Font Info:    Try loading font information for T3+cmr on input line 17.
-
-(/usr/share/texmf/tex/latex/tipa/t3cmr.fd
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 19.
+LaTeX Font Info:    Try loading font information for T3+cmr on input line 19.
+ (/usr/share/texmf/tex/latex/tipa/t3cmr.fd
 File: t3cmr.fd 2001/12/31 TIPA font definitions
 )
-LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    ... okay on input line 19.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: floatrow package is loaded.
 Package caption Info: float package is loaded.
 Package caption Info: floatrow package is loaded.
 Package caption Info: listings package is loaded.
+Package caption Info: supertabular package is loaded.
 Package caption Info: End \AtBeginDocument code.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count131
-\scratchdimen=\dimen179
-\scratchbox=\box46
-\nofMPsegments=\count132
-\nofMParguments=\count133
+\scratchcounter=\count141
+\scratchdimen=\dimen256
+\scratchbox=\box73
+\nofMPsegments=\count142
+\nofMParguments=\count143
 \everyMPshowfont=\toks36
-\MPscratchCnt=\count134
-\MPscratchDim=\dimen180
-\MPnumerator=\count135
-\makeMPintoPDFobject=\count136
+\MPscratchCnt=\count144
+\MPscratchDim=\dimen257
+\MPnumerator=\count145
+\makeMPintoPDFobject=\count146
 \everyMPtoPDFconversion=\toks37
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
@@ -900,8 +969,8 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-LaTeX Info: Redefining \. on input line 17.
-LaTeX Info: Redefining \% on input line 17.
+LaTeX Info: Redefining \. on input line 19.
+LaTeX Info: Redefining \% on input line 19.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -937,7 +1006,7 @@ LaTeX Info: Redefining \% on input line 17.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-\c@lstlisting=\count137
+\c@lstlisting=\count147
 ABD: EveryShipout initializing macros (./caratula.tex
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <10.95> on input line 9.
@@ -984,165 +1053,186 @@ Cap\'{\i }tulo 1.
 (./metodologia/introduccion.tex [1
 
 ])
-LaTeX Info: Redefining \. on input line 55.
-LaTeX Info: Redefining \% on input line 55.
+LaTeX Info: Redefining \. on input line 57.
+LaTeX Info: Redefining \% on input line 57.
  [2]
 Cap\'{\i }tulo 2.
 (./metodologia/dataPreparation.tex [3
 
 ]
-LaTeX Info: Redefining \. on input line 60.
-LaTeX Info: Redefining \% on input line 60.
+LaTeX Info: Redefining \. on input line 56.
+LaTeX Info: Redefining \% on input line 56.
  [4]) (./metodologia/phoneMaping.tex
 LaTeX Info: Redefining \. on input line 64.
 LaTeX Info: Redefining \% on input line 64.
 
 [5]
-LaTeX Info: Redefining \. on input line 136.
-LaTeX Info: Redefining \% on input line 136.
+LaTeX Info: Redefining \. on input line 140.
+LaTeX Info: Redefining \% on input line 140.
  [6]
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <9> on input line 137.
+(Font)              <9> on input line 141.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 137.
+(Font)              <5> on input line 141.
 <imagenes_investigacion/consonantes1.png, id=69, 351.3125pt x 178.6675pt>
 File: imagenes_investigacion/consonantes1.png Graphic file (type png)
 <use imagenes_investigacion/consonantes1.png>
 Package pdftex.def Info: imagenes_investigacion/consonantes1.png  used on input
- line 142. on input line 142.
+ line 146. on input line 146.
 Package pdftex.def Info: Requested size: 210.78911pt x 107.20131pt on input lin
-e 142.
+e 146.
 <imagenes_investigacion/consonantes2.png, id=70, 342.27875pt x 202.7575pt>
 File: imagenes_investigacion/consonantes2.png Graphic file (type png)
 <use imagenes_investigacion/consonantes2.png>
 Package pdftex.def Info: imagenes_investigacion/consonantes2.png  used on input
- line 143. on input line 143.
+ line 147. on input line 147.
 Package pdftex.def Info: Requested size: 205.36882pt x 121.65543pt on input lin
-e 143.
-LaTeX Info: Redefining \. on input line 148.
-LaTeX Info: Redefining \% on input line 148.
+e 147.
+LaTeX Info: Redefining \. on input line 151.
+LaTeX Info: Redefining \% on input line 151.
  [7 <./imagenes_investigacion/consonantes1.png> <./imagenes_investigacion/conso
 nantes2.png>]) (./metodologia/modelInterpolation.tex
-LaTeX Info: Redefining \. on input line 8.
-LaTeX Info: Redefining \% on input line 8.
+LaTeX Info: Redefining \. on input line 6.
+LaTeX Info: Redefining \% on input line 6.
  [8])
 (./metodologia/speakerAdaptativeTraining.tex) (./metodologia/herramientas.tex
-LaTeX Info: Redefining \. on input line 8.
-LaTeX Info: Redefining \% on input line 8.
+LaTeX Info: Redefining \. on input line 6.
+LaTeX Info: Redefining \% on input line 6.
 
 [9]
-LaTeX Info: Redefining \. on input line 75.
-LaTeX Info: Redefining \% on input line 75.
+LaTeX Info: Redefining \. on input line 62.
+LaTeX Info: Redefining \% on input line 62.
  [10]
 <imagenes/hmm.png, id=87, 708.6475pt x 426.59375pt>
 File: imagenes/hmm.png Graphic file (type png)
 <use imagenes/hmm.png>
-Package pdftex.def Info: imagenes/hmm.png  used on input line 102. on input lin
-e 102.
+Package pdftex.def Info: imagenes/hmm.png  used on input line 100. on input lin
+e 100.
 Package pdftex.def Info: Requested size: 354.32289pt x 213.29634pt on input lin
-e 102.
-LaTeX Info: Redefining \. on input line 109.
-LaTeX Info: Redefining \% on input line 109.
- [11 <./imagenes/hmm.png>]
+e 100.
+LaTeX Info: Redefining \. on input line 105.
+LaTeX Info: Redefining \% on input line 105.
+ [11]
 <imagenes/hmmContext.png, id=91, 602.25pt x 461.725pt>
 File: imagenes/hmmContext.png Graphic file (type png)
 <use imagenes/hmmContext.png>
-Package pdftex.def Info: imagenes/hmmContext.png  used on input line 113. on in
-put line 113.
+Package pdftex.def Info: imagenes/hmmContext.png  used on input line 111. on in
+put line 111.
 Package pdftex.def Info: Requested size: 301.12425pt x 230.86194pt on input lin
-e 113.
-LaTeX Info: Redefining \. on input line 131.
-LaTeX Info: Redefining \% on input line 131.
- [12 <./imagenes/hmmContext.png>]
+e 111.
+LaTeX Info: Redefining \. on input line 117.
+LaTeX Info: Redefining \% on input line 117.
+ [12 <./imagenes/hmm.png>]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 125.
+
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 125.
+
+! Undefined control sequence.
+<recently read> \TODO 
+                      
+l.125 	\item \TODO
+                  
+? R
+OK, entering \nonstopmode...
+! Undefined control sequence.
+<recently read> \TODO 
+                      
+l.129 	\item \TODO
+                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
 <imagenes/arbolDeDesicionTesis.png, id=95, 879.285pt x 580.1675pt>
 File: imagenes/arbolDeDesicionTesis.png Graphic file (type png)
 <use imagenes/arbolDeDesicionTesis.png>
 Package pdftex.def Info: imagenes/arbolDeDesicionTesis.png  used on input line 
-140. on input line 140.
+144. on input line 144.
 Package pdftex.def Info: Requested size: 351.70778pt x 232.06288pt on input lin
-e 140.
-LaTeX Info: Redefining \. on input line 157.
-LaTeX Info: Redefining \% on input line 157.
- [13 <./imagenes/arbolDeDesicionTesis.png>]
-<imagenes/speakerInterpolation.png, id=99, 496.85625pt x 597.23125pt>
+e 144.
+LaTeX Info: Redefining \. on input line 149.
+LaTeX Info: Redefining \% on input line 149.
+[13 <./imagenes/hmmContext.png>]
+
+LaTeX Warning: Reference `apendiceQuestions' on page 14 undefined on input line
+ 157.
+
+LaTeX Info: Redefining \. on input line 164.
+LaTeX Info: Redefining \% on input line 164.
+[14 <./imagenes/arbolDeDesicionTesis.png>]
+<imagenes/speakerInterpolation.png, id=103, 496.85625pt x 597.23125pt>
 File: imagenes/speakerInterpolation.png Graphic file (type png)
 <use imagenes/speakerInterpolation.png>
 Package pdftex.def Info: imagenes/speakerInterpolation.png  used on input line 
-197. on input line 197.
+191. on input line 191.
 Package pdftex.def Info: Requested size: 198.73897pt x 238.88826pt on input lin
-e 197.
-LaTeX Info: Redefining \. on input line 202.
-LaTeX Info: Redefining \% on input line 202.
- [14])
-Overfull \hbox (54.79626pt too wide) in paragraph at lines 211--73
-\OT1/cmr/m/n/10.95 tos de la s^^S^^Pnte-sis. La do-cu-men-ta-ci^^Son com-ple-ta
- pue-de en-con-trar-se en http://hts-engine.sourceforge.net/.
- []
-
-LaTeX Info: Redefining \. on input line 73.
-LaTeX Info: Redefining \% on input line 73.
-[15 <./imagenes/speakerInterpolation.png>]
-LaTeX Info: Redefining \. on input line 73.
-LaTeX Info: Redefining \% on input line 73.
- [16
+e 191.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 192.
+LaTeX Info: Redefining \. on input line 196.
+LaTeX Info: Redefining \% on input line 196.
+ [15])
+LaTeX Info: Redefining \. on input line 75.
+LaTeX Info: Redefining \% on input line 75.
+ [16 <./imagenes/speakerInterpolation.png>]
+Cap\'{\i }tulo 3.
+(./experimentacion/experimentacion.tex [17
 
 ]
-Cap\'{\i }tulo 3.
-(./experimentacion/experimentacion.tex [17]
-<estudio_online/estudio1.png, id=114, 677.53125pt x 469.755pt>
+<estudio_online/estudio1.png, id=115, 677.53125pt x 469.755pt>
 File: estudio_online/estudio1.png Graphic file (type png)
 <use estudio_online/estudio1.png>
-Package pdftex.def Info: estudio_online/estudio1.png  used on input line 41. on
- input line 41.
+Package pdftex.def Info: estudio_online/estudio1.png  used on input line 44. on
+ input line 44.
 Package pdftex.def Info: Requested size: 406.52188pt x 281.85518pt on input lin
-e 41.
-LaTeX Info: Redefining \. on input line 48.
-LaTeX Info: Redefining \% on input line 48.
- [18 <./estudio_online/estudio1.png>]
-<estudio_online/estudio2.png, id=118, 648.4225pt x 319.1925pt>
+e 44.
+<estudio_online/estudio2.png, id=116, 648.4225pt x 319.1925pt>
 File: estudio_online/estudio2.png Graphic file (type png)
 <use estudio_online/estudio2.png>
-Package pdftex.def Info: estudio_online/estudio2.png  used on input line 51. on
- input line 51.
+Package pdftex.def Info: estudio_online/estudio2.png  used on input line 54. on
+ input line 54.
 Package pdftex.def Info: Requested size: 389.0565pt x 191.51697pt on input line
- 51.
-<estudio_online/estudio3.png, id=119, 666.49pt x 519.9425pt>
+ 54.
+LaTeX Info: Redefining \. on input line 59.
+LaTeX Info: Redefining \% on input line 59.
+ [18]
+LaTeX Info: Redefining \. on input line 61.
+LaTeX Info: Redefining \% on input line 61.
+ [19 <./estudio_online/estudio1.png> <./estudio_online/estudio2.png>]
+<estudio_online/estudio3.png, id=123, 666.49pt x 519.9425pt>
 File: estudio_online/estudio3.png Graphic file (type png)
 <use estudio_online/estudio3.png>
-Package pdftex.def Info: estudio_online/estudio3.png  used on input line 61. on
- input line 61.
+Package pdftex.def Info: estudio_online/estudio3.png  used on input line 64. on
+ input line 64.
 Package pdftex.def Info: Requested size: 399.89708pt x 311.96791pt on input lin
-e 61.
-LaTeX Info: Redefining \. on input line 66.
-LaTeX Info: Redefining \% on input line 66.
- [19 <./estudio_online/estudio2.png>]
-<estudio_online/estudio4.png, id=123, 643.40375pt x 353.32pt>
-File: estudio_online/estudio4.png Graphic file (type png)
-<use estudio_online/estudio4.png>
-Package pdftex.def Info: estudio_online/estudio4.png  used on input line 71. on
- input line 71.
-Package pdftex.def Info: Requested size: 321.70108pt x 176.65956pt on input lin
-e 71.
+e 64.
 )
-LaTeX Info: Redefining \. on input line 76.
-LaTeX Info: Redefining \% on input line 76.
- [20 <./estudio_online/estudio3.png> <./estudio_online/estudio4.png>] (./experi
-mentacion/resultados.tex
+LaTeX Info: Redefining \. on input line 78.
+LaTeX Info: Redefining \% on input line 78.
+ [20 <./estudio_online/estudio3.png>]
+(./experimentacion/resultados.tex
 <datosDemograficos/genero.png, id=127, 602.25pt x 372.39125pt>
 File: datosDemograficos/genero.png Graphic file (type png)
 <use datosDemograficos/genero.png>
 Package pdftex.def Info: datosDemograficos/genero.png  used on input line 12. o
 n input line 12.
-Package pdftex.def Info: Requested size: 213.39568pt x 131.95264pt on input lin
+Package pdftex.def Info: Requested size: 213.39568pt x 115.82152pt on input lin
 e 12.
-<datosDemograficos/edad.png, id=128, 602.25pt x 372.39125pt>
+<datosDemograficos/edad.png, id=129, 602.25pt x 372.39125pt>
 File: datosDemograficos/edad.png Graphic file (type png)
 <use datosDemograficos/edad.png>
 Package pdftex.def Info: datosDemograficos/edad.png  used on input line 18. on 
 input line 18.
-Package pdftex.def Info: Requested size: 213.39568pt x 131.95264pt on input lin
+Package pdftex.def Info: Requested size: 213.39568pt x 115.82152pt on input lin
 e 18.
-<datosDemograficos/infancia.png, id=129, 341.1144pt x 339.669pt>
+<datosDemograficos/infancia.png, id=131, 341.1144pt x 339.669pt>
 File: datosDemograficos/infancia.png Graphic file (type png)
 <use datosDemograficos/infancia.png>
 Package pdftex.def Info: datosDemograficos/infancia.png  used on input line 32.
@@ -1153,237 +1243,4053 @@ LaTeX Info: Redefining \. on input line 37.
 LaTeX Info: Redefining \% on input line 37.
  [21 <./datosDemograficos/genero.png (PNG copy)> <./datosDemograficos/edad.png 
 (PNG copy)>]
-<imagenes/plots_raw/general.png, id=135, 462.528pt x 346.896pt>
+<imagenes/plots_raw/general.png, id=139, 462.528pt x 346.896pt>
 File: imagenes/plots_raw/general.png Graphic file (type png)
 <use imagenes/plots_raw/general.png>
 Package pdftex.def Info: imagenes/plots_raw/general.png  used on input line 50.
  on input line 50.
-Package pdftex.def Info: Requested size: 298.75264pt x 224.07703pt on input lin
+Package pdftex.def Info: Requested size: 298.75264pt x 205.69801pt on input lin
 e 50.
 LaTeX Info: Redefining \. on input line 56.
 LaTeX Info: Redefining \% on input line 56.
-
-[22 <./datosDemograficos/infancia.png>]
+ [22 <./datosDemograficos/infancia.png>]
 LaTeX Info: Redefining \. on input line 69.
 LaTeX Info: Redefining \% on input line 69.
  [23 <./imagenes/plots_raw/general.png>]
 LaTeX Info: Redefining \. on input line 83.
 LaTeX Info: Redefining \% on input line 83.
-[24]
-<imagenes/plots_normalized/general.png, id=147, 462.528pt x 346.896pt>
+ [24]
+<imagenes/plots_normalized/general.png, id=153, 462.528pt x 346.896pt>
 File: imagenes/plots_normalized/general.png Graphic file (type png)
 <use imagenes/plots_normalized/general.png>
 Package pdftex.def Info: imagenes/plots_normalized/general.png  used on input l
 ine 92. on input line 92.
-Package pdftex.def Info: Requested size: 298.75264pt x 224.07703pt on input lin
+Package pdftex.def Info: Requested size: 298.75264pt x 205.69801pt on input lin
 e 92.
 LaTeX Info: Redefining \. on input line 132.
 LaTeX Info: Redefining \% on input line 132.
  [25
 
  <./imagenes/plots_normalized/general.png>]
-LaTeX Info: Redefining \. on input line 174.
-LaTeX Info: Redefining \% on input line 174.
+LaTeX Info: Redefining \. on input line 172.
+LaTeX Info: Redefining \% on input line 172.
  [26]
-<imagenes/plots_normalized/3.png, id=155, 462.528pt x 346.896pt>
+<imagenes/plots_normalized/3.png, id=163, 462.528pt x 346.896pt>
 File: imagenes/plots_normalized/3.png Graphic file (type png)
 <use imagenes/plots_normalized/3.png>
 Package pdftex.def Info: imagenes/plots_normalized/3.png  used on input line 19
-2. on input line 192.
-Package pdftex.def Info: Requested size: 213.39568pt x 160.05048pt on input lin
-e 192.
-<imagenes/plots_normalized/4.png, id=156, 462.528pt x 346.896pt>
+0. on input line 190.
+Package pdftex.def Info: Requested size: 213.39568pt x 148.23581pt on input lin
+e 190.
+<imagenes/plots_normalized/4.png, id=165, 462.528pt x 346.896pt>
 File: imagenes/plots_normalized/4.png Graphic file (type png)
 <use imagenes/plots_normalized/4.png>
 Package pdftex.def Info: imagenes/plots_normalized/4.png  used on input line 19
-3. on input line 193.
-Package pdftex.def Info: Requested size: 213.39568pt x 160.05048pt on input lin
-e 193.
+1. on input line 191.
+Package pdftex.def Info: Requested size: 213.39568pt x 148.23581pt on input lin
+e 191.
 
-Overfull \hbox (10.0pt too wide) in paragraph at lines 190--195
+Overfull \hbox (10.0pt too wide) in paragraph at lines 188--193
  []$ 
  []
 
-LaTeX Info: Redefining \. on input line 199.
-LaTeX Info: Redefining \% on input line 199.
+LaTeX Info: Redefining \. on input line 197.
+LaTeX Info: Redefining \% on input line 197.
 [27]
-<imagenes/plots_normalized/10.png, id=161, 462.528pt x 346.896pt>
+! Undefined control sequence.
+<argument> ...rrecto de la /g/ \argentinoNoTieneG 
+                                                  como fue discutido previam...
+l.198 ...oNoTieneG como fue discutido previamente}
+                                                  , y la oración $8$ \otroE...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.198 ...viamente}, y la oración $8$ \otroEjemplo
+                                                  ``Las acongojadas cotorras...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+<imagenes/plots_normalized/10.png, id=171, 462.528pt x 346.896pt>
 File: imagenes/plots_normalized/10.png Graphic file (type png)
 <use imagenes/plots_normalized/10.png>
 Package pdftex.def Info: imagenes/plots_normalized/10.png  used on input line 2
-05. on input line 205.
-Package pdftex.def Info: Requested size: 213.39568pt x 160.05048pt on input lin
-e 205.
-<imagenes/plots_normalized/8.png, id=162, 462.528pt x 346.896pt>
+03. on input line 203.
+Package pdftex.def Info: Requested size: 213.39568pt x 148.23581pt on input lin
+e 203.
+<imagenes/plots_normalized/8.png, id=173, 462.528pt x 346.896pt>
 File: imagenes/plots_normalized/8.png Graphic file (type png)
 <use imagenes/plots_normalized/8.png>
 Package pdftex.def Info: imagenes/plots_normalized/8.png  used on input line 20
-6. on input line 206.
-Package pdftex.def Info: Requested size: 213.39568pt x 160.05048pt on input lin
-e 206.
+4. on input line 204.
+Package pdftex.def Info: Requested size: 213.39568pt x 148.23581pt on input lin
+e 204.
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 203--208
+Overfull \hbox (20.0pt too wide) in paragraph at lines 201--206
  []$ 
  []
 
-LaTeX Info: Redefining \. on input line 214.
-LaTeX Info: Redefining \% on input line 214.
+LaTeX Info: Redefining \. on input line 213.
+LaTeX Info: Redefining \% on input line 213.
 [28 <./imagenes/plots_normalized/3.png> <./imagenes/plots_normalized/4.png> <./
 imagenes/plots_normalized/10.png> <./imagenes/plots_normalized/8.png>]
-LaTeX Info: Redefining \. on input line 215.
-LaTeX Info: Redefining \% on input line 215.
- [29]
-Overfull \hbox (2.05377pt too wide) in paragraph at lines 227--228
-[]\OT1/cmr/m/n/10.95 Hispanoparlate: ``La-tino'', ``Ar-gen-tino'', ``Es-pa~nol'
-', ``Uru-gua-yo'', ``Cen-troa-me-ri-cano'',
+Overfull \hbox (7.83293pt too wide) in paragraph at lines 218--219
+[]\OT1/cmr/m/n/10.95 Hispanoparlante: ``La-tino'', ``Ar-gen-tino'', ``Es-pa~nol
+'', ``Uru-gua-yo'', ``Cen-troa-me-ri-cano'',
  []
 
-<imagenes/nacionalidades/general.png, id=173, 602.25pt x 372.39125pt>
+<imagenes/nacionalidades/general.png, id=186, 602.25pt x 372.39125pt>
 File: imagenes/nacionalidades/general.png Graphic file (type png)
 <use imagenes/nacionalidades/general.png>
 Package pdftex.def Info: imagenes/nacionalidades/general.png  used on input lin
-e 238. on input line 238.
-Package pdftex.def Info: Requested size: 298.75264pt x 184.73483pt on input lin
-e 238.
-LaTeX Info: Redefining \. on input line 249.
-LaTeX Info: Redefining \% on input line 249.
-[30
-
- <./imagenes/nacionalidades/general.png (PNG copy)>]
-<imagenes/estadistica/spanish.jpg, id=177, 481.8pt x 481.8pt>
+e 229. on input line 229.
+Package pdftex.def Info: Requested size: 298.75264pt x 163.5627pt on input line
+ 229.
+LaTeX Info: Redefining \. on input line 239.
+LaTeX Info: Redefining \% on input line 239.
+[29 <./imagenes/nacionalidades/general.png (PNG copy)>]
+<imagenes/estadistica/spanish.jpg, id=192, 481.8pt x 481.8pt>
 File: imagenes/estadistica/spanish.jpg Graphic file (type jpg)
 <use imagenes/estadistica/spanish.jpg>
 Package pdftex.def Info: imagenes/estadistica/spanish.jpg  used on input line 2
-63. on input line 263.
-Package pdftex.def Info: Requested size: 213.39568pt x 213.38947pt on input lin
-e 263.
-<imagenes/estadistica/english.jpg, id=178, 481.8pt x 481.8pt>
+53. on input line 253.
+Package pdftex.def Info: Requested size: 213.39568pt x 194.48686pt on input lin
+e 253.
+<imagenes/estadistica/english.jpg, id=194, 481.8pt x 481.8pt>
 File: imagenes/estadistica/english.jpg Graphic file (type jpg)
 <use imagenes/estadistica/english.jpg>
 Package pdftex.def Info: imagenes/estadistica/english.jpg  used on input line 2
-75. on input line 275.
-Package pdftex.def Info: Requested size: 213.39568pt x 213.38947pt on input lin
-e 275.
-LaTeX Info: Redefining \. on input line 280.
-LaTeX Info: Redefining \% on input line 280.
- [31 <./imagenes/estadistica/spanish.jpg>]
-<imagenes/nacionalidades/9.png, id=182, 602.25pt x 372.39125pt>
+65. on input line 265.
+Package pdftex.def Info: Requested size: 213.39568pt x 194.48686pt on input lin
+e 265.
+LaTeX Info: Redefining \. on input line 270.
+LaTeX Info: Redefining \% on input line 270.
+ [30 <./imagenes/estadistica/spanish.jpg>]
+<imagenes/nacionalidades/9.png, id=200, 602.25pt x 372.39125pt>
 File: imagenes/nacionalidades/9.png Graphic file (type png)
 <use imagenes/nacionalidades/9.png>
-Package pdftex.def Info: imagenes/nacionalidades/9.png  used on input line 292.
- on input line 292.
-Package pdftex.def Info: Requested size: 298.75264pt x 184.73483pt on input lin
-e 292.
-LaTeX Info: Redefining \. on input line 298.
-LaTeX Info: Redefining \% on input line 298.
- [32 <./imagenes/estadistica/english.jpg>]
-<imagenes/nacionalidades/1.png, id=186, 602.25pt x 372.39125pt>
+Package pdftex.def Info: imagenes/nacionalidades/9.png  used on input line 282.
+ on input line 282.
+Package pdftex.def Info: Requested size: 298.75264pt x 163.5627pt on input line
+ 282.
+LaTeX Info: Redefining \. on input line 291.
+LaTeX Info: Redefining \% on input line 291.
+ [31 <./imagenes/estadistica/english.jpg> <./imagenes/nacionalidades/9.png (PNG
+ copy)>]
+<imagenes/nacionalidades/1.png, id=207, 602.25pt x 372.39125pt>
 File: imagenes/nacionalidades/1.png Graphic file (type png)
 <use imagenes/nacionalidades/1.png>
-Package pdftex.def Info: imagenes/nacionalidades/1.png  used on input line 317.
- on input line 317.
-Package pdftex.def Info: Requested size: 213.39568pt x 131.95264pt on input lin
-e 317.
-<imagenes/nacionalidades/7.png, id=187, 602.25pt x 372.39125pt>
+Package pdftex.def Info: imagenes/nacionalidades/1.png  used on input line 307.
+ on input line 307.
+Package pdftex.def Info: Requested size: 213.39568pt x 106.74786pt on input lin
+e 307.
+<imagenes/nacionalidades/7.png, id=209, 602.25pt x 372.39125pt>
 File: imagenes/nacionalidades/7.png Graphic file (type png)
 <use imagenes/nacionalidades/7.png>
-Package pdftex.def Info: imagenes/nacionalidades/7.png  used on input line 318.
- on input line 318.
-Package pdftex.def Info: Requested size: 213.39568pt x 131.95264pt on input lin
-e 318.
-
-Overfull \hbox (20.0pt too wide) in paragraph at lines 315--320
- []$ 
- []
-
-LaTeX Info: Redefining \. on input line 326.
-LaTeX Info: Redefining \% on input line 326.
-[33 <./imagenes/nacionalidades/9.png (PNG copy)> <./imagenes/nacionalidades/1.p
-ng (PNG copy)> <./imagenes/nacionalidades/7.png (PNG copy)>]
-<imagenes/nacionalidades/6.png, id=192, 602.25pt x 372.39125pt>
+Package pdftex.def Info: imagenes/nacionalidades/7.png  used on input line 312.
+ on input line 312.
+Package pdftex.def Info: Requested size: 213.39568pt x 106.74786pt on input lin
+e 312.
+<imagenes/nacionalidades/6.png, id=211, 602.25pt x 372.39125pt>
 File: imagenes/nacionalidades/6.png Graphic file (type png)
 <use imagenes/nacionalidades/6.png>
-Package pdftex.def Info: imagenes/nacionalidades/6.png  used on input line 330.
- on input line 330.
-Package pdftex.def Info: Requested size: 213.39568pt x 131.95264pt on input lin
-e 330.
-<imagenes/nacionalidades/8.png, id=193, 602.25pt x 372.39125pt>
+Package pdftex.def Info: imagenes/nacionalidades/6.png  used on input line 327.
+ on input line 327.
+Package pdftex.def Info: Requested size: 213.39568pt x 106.74786pt on input lin
+e 327.
+<imagenes/nacionalidades/8.png, id=213, 602.25pt x 372.39125pt>
 File: imagenes/nacionalidades/8.png Graphic file (type png)
 <use imagenes/nacionalidades/8.png>
-Package pdftex.def Info: imagenes/nacionalidades/8.png  used on input line 331.
- on input line 331.
-Package pdftex.def Info: Requested size: 213.39568pt x 131.95264pt on input lin
-e 331.
+Package pdftex.def Info: imagenes/nacionalidades/8.png  used on input line 332.
+ on input line 332.
+Package pdftex.def Info: Requested size: 213.39568pt x 106.74786pt on input lin
+e 332.
+LaTeX Info: Redefining \. on input line 341.
+LaTeX Info: Redefining \% on input line 341.
+ [32 <./imagenes/nacionalidades/1.png (PNG copy)> <./imagenes/nacionalidades/7.
+png (PNG copy)> <./imagenes/nacionalidades/6.png (PNG copy)> <./imagenes/nacion
+alidades/8.png (PNG copy)>]
+! Undefined control sequence.
+l.343 ...de la caja) y la distancia media \revisar
+                                                   (línea interior que atra...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 328--333
- []$ 
- []
-
-<imagenes/nacVsPlot/general.png, id=194, 462.528pt x 346.896pt>
+<imagenes/nacVsPlot/general.png, id=223, 462.528pt x 346.896pt>
 File: imagenes/nacVsPlot/general.png Graphic file (type png)
 <use imagenes/nacVsPlot/general.png>
-Package pdftex.def Info: imagenes/nacVsPlot/general.png  used on input line 347
-. on input line 347.
-Package pdftex.def Info: Requested size: 298.75264pt x 224.07703pt on input lin
-e 347.
-LaTeX Info: Redefining \. on input line 353.
-LaTeX Info: Redefining \% on input line 353.
-[34 <./imagenes/nacionalidades/6.png (PNG copy)> <./imagenes/nacionalidades/8.p
-ng (PNG copy)>])
-LaTeX Info: Redefining \. on input line 80.
-LaTeX Info: Redefining \% on input line 80.
- [35 <./imagenes/nacVsPlot/general.png>]
-LaTeX Info: Redefining \. on input line 81.
-LaTeX Info: Redefining \% on input line 81.
- [36
+Package pdftex.def Info: imagenes/nacVsPlot/general.png  used on input line 348
+. on input line 348.
+Package pdftex.def Info: Requested size: 298.75264pt x 200.18425pt on input lin
+e 348.
+)
+LaTeX Info: Redefining \. on input line 82.
+LaTeX Info: Redefining \% on input line 82.
+ [33 <./imagenes/nacVsPlot/general.png>]
+LaTeX Info: Redefining \. on input line 82.
+LaTeX Info: Redefining \% on input line 82.
+ [34]
+Cap\'{\i }tulo 4.
+(./final/final.tex) [35
 
 ]
-Cap\'{\i }tulo 4.
-(./final/final.tex) [37]
-LaTeX Info: Redefining \. on input line 84.
-LaTeX Info: Redefining \% on input line 84.
- [38
+LaTeX Info: Redefining \. on input line 86.
+LaTeX Info: Redefining \% on input line 86.
+ [36
 
 ]
 Cap\'{\i }tulo 5.
 (./final/apendice.tex
-! Undefined control sequence.
-l.4 \agregar
-            
-? R
-OK, entering \nonstopmode...
-) (./final/referencias.tex [39]
-LaTeX Info: Redefining \. on input line 1.
-LaTeX Info: Redefining \% on input line 1.
- [40
+! You can't use `macro parameter character #' in restricted horizontal mode.
+<recently read> ##
+                  
+l.21 #
+      Oración& Transcripción\\
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
 
-]
-Underfull \hbox (badness 1762) in paragraph at lines 10--12
-\OT1/cmr/m/n/10.95 TIONS FOR CON-VER-SA-TIO-NAL SPEECH SYNT-HE-SIS, Kis-ho-re P
-raha-llad,
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 64--64
+[]\OT1/cmr/m/n/6 1| 
  []
 
-) [41]
-LaTeX Info: Redefining \. on input line 87.
-LaTeX Info: Redefining \% on input line 87.
- [42
 
-] (./tesis.aux
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 64--64
+[]\OT1/cmr/m/n/6 30| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 66--66
+[]\OT1/cmr/m/n/6 1| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 66--66
+[]\OT1/cmr/m/n/6 30| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 68--68
+[]\OT1/cmr/m/n/6 1| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 68--68
+[]\OT1/cmr/m/n/6 30| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 70--70
+[]\OT1/cmr/m/n/6 1| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 70--70
+[]\OT1/cmr/m/n/6 30| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 72--72
+[]\OT1/cmr/m/n/6 1| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 72--72
+[]\OT1/cmr/m/n/6 30| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 74--74
+[]\OT1/cmr/m/n/6 1| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 74--74
+[]\OT1/cmr/m/n/6 30| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 76--76
+[]\OT1/cmr/m/n/6 1| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 76--76
+[]\OT1/cmr/m/n/6 40| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 78--78
+[]\OT1/cmr/m/n/6 1| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 78--78
+[]\OT1/cmr/m/n/6 40| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 80--80
+[]\OT1/cmr/m/n/6 1| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 80--80
+[]\OT1/cmr/m/n/6 40| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 82--82
+[]\OT1/cmr/m/n/6 1| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 82--82
+[]\OT1/cmr/m/n/6 40| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 84--84
+[]\OT1/cmr/m/n/6 1| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 84--84
+[]\OT1/cmr/m/n/6 40| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 86--86
+[]\OT1/cmr/m/n/6 1| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 86--86
+[]\OT1/cmr/m/n/6 40| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 88--88
+[]\OT1/cmr/m/n/6 1| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 88--88
+[]\OT1/cmr/m/n/6 40| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 90--90
+[]\OT1/cmr/m/n/6 1| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 90--90
+[]\OT1/cmr/m/n/6 50| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 92--92
+[]\OT1/cmr/m/n/6 1| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 92--92
+[]\OT1/cmr/m/n/6 50| 
+ []
+
+
+Underfull \hbox (badness 5726) in paragraph at lines 92--92
+[]\OT1/cmr/m/n/6 EEUU ha-blan-do
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 94--94
+[]\OT1/cmr/m/n/6 1| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 94--94
+[]\OT1/cmr/m/n/6 50| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 96--96
+[]\OT1/cmr/m/n/6 1| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 96--96
+[]\OT1/cmr/m/n/6 50| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 98--98
+[]\OT1/cmr/m/n/6 1| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 98--98
+[]\OT1/cmr/m/n/6 50| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 100--100
+[]\OT1/cmr/m/n/6 1| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 100--100
+[]\OT1/cmr/m/n/6 50| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 102--102
+[]\OT1/cmr/m/n/6 1| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 102--102
+[]\OT1/cmr/m/n/6 50| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 104--104
+[]\OT1/cmr/m/n/6 1| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 104--104
+[]\OT1/cmr/m/n/6 50| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 106--106
+[]\OT1/cmr/m/n/6 1| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 106--106
+[]\OT1/cmr/m/n/6 60| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 108--108
+[]\OT1/cmr/m/n/6 1| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 108--108
+[]\OT1/cmr/m/n/6 60| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 110--110
+[]\OT1/cmr/m/n/6 1| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 110--110
+[]\OT1/cmr/m/n/6 60| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 112--112
+[]\OT1/cmr/m/n/6 1| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 112--112
+[]\OT1/cmr/m/n/6 60| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 114--114
+[]\OT1/cmr/m/n/6 1| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 114--114
+[]\OT1/cmr/m/n/6 60| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 116--116
+[]\OT1/cmr/m/n/6 1| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 116--116
+[]\OT1/cmr/m/n/6 60| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 118--118
+[]\OT1/cmr/m/n/6 1| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 118--118
+[]\OT1/cmr/m/n/6 60| 
+ []
+
+
+Overfull \hbox (7.47581pt too wide) in paragraph at lines 62--119
+ [] 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 120--120
+[]\OT1/cmr/m/n/6 1| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 120--120
+[]\OT1/cmr/m/n/6 60| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 122--122
+[]\OT1/cmr/m/n/6 1| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 122--122
+[]\OT1/cmr/m/n/6 60| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 124--124
+[]\OT1/cmr/m/n/6 1| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 124--124
+[]\OT1/cmr/m/n/6 70| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 126--126
+[]\OT1/cmr/m/n/6 1| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 126--126
+[]\OT1/cmr/m/n/6 70| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 128--128
+[]\OT1/cmr/m/n/6 1| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 128--128
+[]\OT1/cmr/m/n/6 70| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 130--130
+[]\OT1/cmr/m/n/6 1| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 130--130
+[]\OT1/cmr/m/n/6 70| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 132--132
+[]\OT1/cmr/m/n/6 1| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 132--132
+[]\OT1/cmr/m/n/6 70| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 134--134
+[]\OT1/cmr/m/n/6 1| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 134--134
+[]\OT1/cmr/m/n/6 70| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 136--136
+[]\OT1/cmr/m/n/6 1| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 136--136
+[]\OT1/cmr/m/n/6 70| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 138--138
+[]\OT1/cmr/m/n/6 2| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 138--138
+[]\OT1/cmr/m/n/6 30| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 140--140
+[]\OT1/cmr/m/n/6 2| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 140--140
+[]\OT1/cmr/m/n/6 30| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 142--142
+[]\OT1/cmr/m/n/6 2| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 142--142
+[]\OT1/cmr/m/n/6 30| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 144--144
+[]\OT1/cmr/m/n/6 2| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 144--144
+[]\OT1/cmr/m/n/6 30| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 146--146
+[]\OT1/cmr/m/n/6 2| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 146--146
+[]\OT1/cmr/m/n/6 30| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 148--148
+[]\OT1/cmr/m/n/6 2| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 148--148
+[]\OT1/cmr/m/n/6 30| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 150--150
+[]\OT1/cmr/m/n/6 2| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 150--150
+[]\OT1/cmr/m/n/6 40| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 152--152
+[]\OT1/cmr/m/n/6 2| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 152--152
+[]\OT1/cmr/m/n/6 40| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 154--154
+[]\OT1/cmr/m/n/6 2| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 154--154
+[]\OT1/cmr/m/n/6 40| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 156--156
+[]\OT1/cmr/m/n/6 2| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 156--156
+[]\OT1/cmr/m/n/6 40| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 158--158
+[]\OT1/cmr/m/n/6 2| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 158--158
+[]\OT1/cmr/m/n/6 40| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 160--160
+[]\OT1/cmr/m/n/6 2| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 160--160
+[]\OT1/cmr/m/n/6 40| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 162--162
+[]\OT1/cmr/m/n/6 2| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 162--162
+[]\OT1/cmr/m/n/6 40| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 164--164
+[]\OT1/cmr/m/n/6 2| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 164--164
+[]\OT1/cmr/m/n/6 50| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 166--166
+[]\OT1/cmr/m/n/6 2| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 166--166
+[]\OT1/cmr/m/n/6 50| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 168--168
+[]\OT1/cmr/m/n/6 2| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 168--168
+[]\OT1/cmr/m/n/6 50| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 170--170
+[]\OT1/cmr/m/n/6 2| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 170--170
+[]\OT1/cmr/m/n/6 50| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 172--172
+[]\OT1/cmr/m/n/6 2| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 172--172
+[]\OT1/cmr/m/n/6 50| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 174--174
+[]\OT1/cmr/m/n/6 2| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 174--174
+[]\OT1/cmr/m/n/6 50| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 174--175
+[]\OT1/cmr/m/n/6 Aquel fuer-te vi-drio per-ci-bi^^So
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 176--176
+[]\OT1/cmr/m/n/6 2| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 176--176
+[]\OT1/cmr/m/n/6 60| 
+ []
+
+
+Overfull \hbox (7.47581pt too wide) in paragraph at lines 119--177
+ [] 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 178--178
+[]\OT1/cmr/m/n/6 2| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 178--178
+[]\OT1/cmr/m/n/6 60| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 180--180
+[]\OT1/cmr/m/n/6 2| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 180--180
+[]\OT1/cmr/m/n/6 60| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 182--182
+[]\OT1/cmr/m/n/6 2| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 182--182
+[]\OT1/cmr/m/n/6 60| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 184--184
+[]\OT1/cmr/m/n/6 2| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 184--184
+[]\OT1/cmr/m/n/6 60| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 186--186
+[]\OT1/cmr/m/n/6 2| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 186--186
+[]\OT1/cmr/m/n/6 70| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 188--188
+[]\OT1/cmr/m/n/6 2| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 188--188
+[]\OT1/cmr/m/n/6 70| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 190--190
+[]\OT1/cmr/m/n/6 2| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 190--190
+[]\OT1/cmr/m/n/6 70| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 192--192
+[]\OT1/cmr/m/n/6 2| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 192--192
+[]\OT1/cmr/m/n/6 70| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 194--194
+[]\OT1/cmr/m/n/6 2| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 194--194
+[]\OT1/cmr/m/n/6 70| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 196--196
+[]\OT1/cmr/m/n/6 2| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 196--196
+[]\OT1/cmr/m/n/6 70| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 198--198
+[]\OT1/cmr/m/n/6 3| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 198--198
+[]\OT1/cmr/m/n/6 30| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 200--200
+[]\OT1/cmr/m/n/6 3| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 200--200
+[]\OT1/cmr/m/n/6 30| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 202--202
+[]\OT1/cmr/m/n/6 3| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 202--202
+[]\OT1/cmr/m/n/6 30| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 204--204
+[]\OT1/cmr/m/n/6 3| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 204--204
+[]\OT1/cmr/m/n/6 30| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 206--206
+[]\OT1/cmr/m/n/6 3| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 206--206
+[]\OT1/cmr/m/n/6 30| 
+ []
+
+
+Underfull \hbox (badness 5548) in paragraph at lines 206--207
+[]\OT1/cmr/m/n/6 Este en-ro-lla-do fue com-pra-do
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 208--208
+[]\OT1/cmr/m/n/6 3| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 208--208
+[]\OT1/cmr/m/n/6 30| 
+ []
+
+
+Underfull \hbox (badness 6675) in paragraph at lines 208--209
+[]\OT1/cmr/m/n/6 este en-jo-ya-do juez com-prar^^Sa
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 210--210
+[]\OT1/cmr/m/n/6 3| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 210--210
+[]\OT1/cmr/m/n/6 30| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 212--212
+[]\OT1/cmr/m/n/6 3| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 212--212
+[]\OT1/cmr/m/n/6 30| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 214--214
+[]\OT1/cmr/m/n/6 3| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 214--214
+[]\OT1/cmr/m/n/6 30| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 216--216
+[]\OT1/cmr/m/n/6 3| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 216--216
+[]\OT1/cmr/m/n/6 30| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 218--218
+[]\OT1/cmr/m/n/6 3| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 218--218
+[]\OT1/cmr/m/n/6 30| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 220--220
+[]\OT1/cmr/m/n/6 3| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 220--220
+[]\OT1/cmr/m/n/6 40| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 222--222
+[]\OT1/cmr/m/n/6 3| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 222--222
+[]\OT1/cmr/m/n/6 40| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 224--224
+[]\OT1/cmr/m/n/6 3| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 224--224
+[]\OT1/cmr/m/n/6 40| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 226--226
+[]\OT1/cmr/m/n/6 3| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 226--226
+[]\OT1/cmr/m/n/6 40| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 228--228
+[]\OT1/cmr/m/n/6 3| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 228--228
+[]\OT1/cmr/m/n/6 40| 
+ []
+
+
+Underfull \hbox (badness 6675) in paragraph at lines 228--229
+[]\OT1/cmr/m/n/6 este en-jo-ya-do juez com-prar^^Sa
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 230--230
+[]\OT1/cmr/m/n/6 3| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 230--230
+[]\OT1/cmr/m/n/6 50| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 232--232
+[]\OT1/cmr/m/n/6 3| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 232--232
+[]\OT1/cmr/m/n/6 50| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 234--234
+[]\OT1/cmr/m/n/6 3| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 234--234
+[]\OT1/cmr/m/n/6 50| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 236--236
+[]\OT1/cmr/m/n/6 3| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 236--236
+[]\OT1/cmr/m/n/6 50| 
+ []
+
+
+Overfull \hbox (20.63794pt too wide) in paragraph at lines 236--236
+[]\OT1/cmr/m/n/6 Colombiano/Venezolano| 
+ []
+
+
+Underfull \hbox (badness 7468) in paragraph at lines 236--237
+[]\OT1/cmr/m/n/6 Este en-fo-lla-do fue en-con-trar
+ []
+
+
+Overfull \hbox (7.47581pt too wide) in paragraph at lines 177--237
+ [] 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 238--238
+[]\OT1/cmr/m/n/6 3| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 238--238
+[]\OT1/cmr/m/n/6 50| 
+ []
+
+
+Underfull \hbox (badness 6608) in paragraph at lines 238--239
+[]\OT1/cmr/m/n/6 Este en-ro-lla-do fue en-con-trar
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 240--240
+[]\OT1/cmr/m/n/6 3| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 240--240
+[]\OT1/cmr/m/n/6 60| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 242--242
+[]\OT1/cmr/m/n/6 3| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 242--242
+[]\OT1/cmr/m/n/6 60| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 244--244
+[]\OT1/cmr/m/n/6 3| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 244--244
+[]\OT1/cmr/m/n/6 60| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 246--246
+[]\OT1/cmr/m/n/6 3| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 246--246
+[]\OT1/cmr/m/n/6 60| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 248--248
+[]\OT1/cmr/m/n/6 3| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 248--248
+[]\OT1/cmr/m/n/6 60| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 250--250
+[]\OT1/cmr/m/n/6 3| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 250--250
+[]\OT1/cmr/m/n/6 60| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 252--252
+[]\OT1/cmr/m/n/6 3| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 252--252
+[]\OT1/cmr/m/n/6 60| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 254--254
+[]\OT1/cmr/m/n/6 3| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 254--254
+[]\OT1/cmr/m/n/6 60| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 256--256
+[]\OT1/cmr/m/n/6 3| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 256--256
+[]\OT1/cmr/m/n/6 60| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 258--258
+[]\OT1/cmr/m/n/6 3| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 258--258
+[]\OT1/cmr/m/n/6 60| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 258--258
+[]\OT1/cmr/m/n/6 americano
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 260--260
+[]\OT1/cmr/m/n/6 3| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 260--260
+[]\OT1/cmr/m/n/6 60| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 262--262
+[]\OT1/cmr/m/n/6 3| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 262--262
+[]\OT1/cmr/m/n/6 70| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 262--263
+[]\OT1/cmr/m/n/6 este en-fo-lla-do fues-con cue-ro
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 264--264
+[]\OT1/cmr/m/n/6 3| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 264--264
+[]\OT1/cmr/m/n/6 70| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 264--264
+[]\OT1/cmr/m/n/6 Hablante na-ti-vo
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 266--266
+[]\OT1/cmr/m/n/6 3| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 266--266
+[]\OT1/cmr/m/n/6 70| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 268--268
+[]\OT1/cmr/m/n/6 3| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 268--268
+[]\OT1/cmr/m/n/6 70| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 270--270
+[]\OT1/cmr/m/n/6 3| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 270--270
+[]\OT1/cmr/m/n/6 70| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 272--272
+[]\OT1/cmr/m/n/6 4| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 272--272
+[]\OT1/cmr/m/n/6 30| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 274--274
+[]\OT1/cmr/m/n/6 4| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 274--274
+[]\OT1/cmr/m/n/6 30| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 276--276
+[]\OT1/cmr/m/n/6 4| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 276--276
+[]\OT1/cmr/m/n/6 30| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 278--278
+[]\OT1/cmr/m/n/6 4| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 278--278
+[]\OT1/cmr/m/n/6 30| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 280--280
+[]\OT1/cmr/m/n/6 4| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 280--280
+[]\OT1/cmr/m/n/6 30| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 282--282
+[]\OT1/cmr/m/n/6 4| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 282--282
+[]\OT1/cmr/m/n/6 30| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 284--284
+[]\OT1/cmr/m/n/6 4| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 284--284
+[]\OT1/cmr/m/n/6 30| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 286--286
+[]\OT1/cmr/m/n/6 4| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 286--286
+[]\OT1/cmr/m/n/6 30| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 288--288
+[]\OT1/cmr/m/n/6 4| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 288--288
+[]\OT1/cmr/m/n/6 30| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 290--290
+[]\OT1/cmr/m/n/6 4| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 290--290
+[]\OT1/cmr/m/n/6 30| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 292--292
+[]\OT1/cmr/m/n/6 4| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 292--292
+[]\OT1/cmr/m/n/6 40| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 294--294
+[]\OT1/cmr/m/n/6 4| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 294--294
+[]\OT1/cmr/m/n/6 40| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 296--296
+[]\OT1/cmr/m/n/6 4| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 296--296
+[]\OT1/cmr/m/n/6 40| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 298--298
+[]\OT1/cmr/m/n/6 4| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 298--298
+[]\OT1/cmr/m/n/6 40| 
+ []
+
+
+Overfull \hbox (7.47581pt too wide) in paragraph at lines 237--299
+ [] 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 300--300
+[]\OT1/cmr/m/n/6 4| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 300--300
+[]\OT1/cmr/m/n/6 40| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 302--302
+[]\OT1/cmr/m/n/6 4| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 302--302
+[]\OT1/cmr/m/n/6 50| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 304--304
+[]\OT1/cmr/m/n/6 4| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 304--304
+[]\OT1/cmr/m/n/6 50| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 306--306
+[]\OT1/cmr/m/n/6 4| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 306--306
+[]\OT1/cmr/m/n/6 50| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 308--308
+[]\OT1/cmr/m/n/6 4| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 308--308
+[]\OT1/cmr/m/n/6 50| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 310--310
+[]\OT1/cmr/m/n/6 4| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 310--310
+[]\OT1/cmr/m/n/6 50| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 312--312
+[]\OT1/cmr/m/n/6 4| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 312--312
+[]\OT1/cmr/m/n/6 50| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 314--314
+[]\OT1/cmr/m/n/6 4| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 314--314
+[]\OT1/cmr/m/n/6 50| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 316--316
+[]\OT1/cmr/m/n/6 4| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 316--316
+[]\OT1/cmr/m/n/6 50| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 318--318
+[]\OT1/cmr/m/n/6 4| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 318--318
+[]\OT1/cmr/m/n/6 60| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 320--320
+[]\OT1/cmr/m/n/6 4| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 320--320
+[]\OT1/cmr/m/n/6 60| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 322--322
+[]\OT1/cmr/m/n/6 4| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 322--322
+[]\OT1/cmr/m/n/6 60| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 324--324
+[]\OT1/cmr/m/n/6 4| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 324--324
+[]\OT1/cmr/m/n/6 60| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 326--326
+[]\OT1/cmr/m/n/6 4| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 326--326
+[]\OT1/cmr/m/n/6 60| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 328--328
+[]\OT1/cmr/m/n/6 4| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 328--328
+[]\OT1/cmr/m/n/6 70| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 330--330
+[]\OT1/cmr/m/n/6 4| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 330--330
+[]\OT1/cmr/m/n/6 70| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 332--332
+[]\OT1/cmr/m/n/6 4| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 332--332
+[]\OT1/cmr/m/n/6 70| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 334--334
+[]\OT1/cmr/m/n/6 4| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 334--334
+[]\OT1/cmr/m/n/6 70| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 336--336
+[]\OT1/cmr/m/n/6 4| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 336--336
+[]\OT1/cmr/m/n/6 70| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 338--338
+[]\OT1/cmr/m/n/6 4| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 338--338
+[]\OT1/cmr/m/n/6 70| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 340--340
+[]\OT1/cmr/m/n/6 4| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 340--340
+[]\OT1/cmr/m/n/6 70| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 340--340
+[]\OT1/cmr/m/n/6 Hablante na-ti-vo
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 342--342
+[]\OT1/cmr/m/n/6 4| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 342--342
+[]\OT1/cmr/m/n/6 70| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 342--342
+[]\OT1/cmr/m/n/6 americana
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 344--344
+[]\OT1/cmr/m/n/6 4| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 344--344
+[]\OT1/cmr/m/n/6 70| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 346--346
+[]\OT1/cmr/m/n/6 5| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 346--346
+[]\OT1/cmr/m/n/6 30| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 348--348
+[]\OT1/cmr/m/n/6 5| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 348--348
+[]\OT1/cmr/m/n/6 30| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 350--350
+[]\OT1/cmr/m/n/6 5| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 350--350
+[]\OT1/cmr/m/n/6 30| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 352--352
+[]\OT1/cmr/m/n/6 5| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 352--352
+[]\OT1/cmr/m/n/6 30| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 354--354
+[]\OT1/cmr/m/n/6 5| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 354--354
+[]\OT1/cmr/m/n/6 30| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 356--356
+[]\OT1/cmr/m/n/6 5| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 356--356
+[]\OT1/cmr/m/n/6 30| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 358--358
+[]\OT1/cmr/m/n/6 5| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 358--358
+[]\OT1/cmr/m/n/6 40| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 360--360
+[]\OT1/cmr/m/n/6 5| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 360--360
+[]\OT1/cmr/m/n/6 40| 
+ []
+
+
+Overfull \hbox (7.47581pt too wide) in paragraph at lines 299--361
+ [] 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 362--362
+[]\OT1/cmr/m/n/6 5| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 362--362
+[]\OT1/cmr/m/n/6 40| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 364--364
+[]\OT1/cmr/m/n/6 5| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 364--364
+[]\OT1/cmr/m/n/6 40| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 366--366
+[]\OT1/cmr/m/n/6 5| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 366--366
+[]\OT1/cmr/m/n/6 40| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 368--368
+[]\OT1/cmr/m/n/6 5| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 368--368
+[]\OT1/cmr/m/n/6 40| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 370--370
+[]\OT1/cmr/m/n/6 5| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 370--370
+[]\OT1/cmr/m/n/6 50| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 372--372
+[]\OT1/cmr/m/n/6 5| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 372--372
+[]\OT1/cmr/m/n/6 50| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 374--374
+[]\OT1/cmr/m/n/6 5| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 374--374
+[]\OT1/cmr/m/n/6 50| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 376--376
+[]\OT1/cmr/m/n/6 5| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 376--376
+[]\OT1/cmr/m/n/6 50| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 378--378
+[]\OT1/cmr/m/n/6 5| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 378--378
+[]\OT1/cmr/m/n/6 50| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 380--380
+[]\OT1/cmr/m/n/6 5| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 380--380
+[]\OT1/cmr/m/n/6 50| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 382--382
+[]\OT1/cmr/m/n/6 5| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 382--382
+[]\OT1/cmr/m/n/6 50| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 384--384
+[]\OT1/cmr/m/n/6 5| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 384--384
+[]\OT1/cmr/m/n/6 50| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 386--386
+[]\OT1/cmr/m/n/6 5| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 386--386
+[]\OT1/cmr/m/n/6 50| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 388--388
+[]\OT1/cmr/m/n/6 5| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 388--388
+[]\OT1/cmr/m/n/6 60| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 390--390
+[]\OT1/cmr/m/n/6 5| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 390--390
+[]\OT1/cmr/m/n/6 60| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 392--392
+[]\OT1/cmr/m/n/6 5| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 392--392
+[]\OT1/cmr/m/n/6 60| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 394--394
+[]\OT1/cmr/m/n/6 5| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 394--394
+[]\OT1/cmr/m/n/6 60| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 396--396
+[]\OT1/cmr/m/n/6 5| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 396--396
+[]\OT1/cmr/m/n/6 60| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 398--398
+[]\OT1/cmr/m/n/6 5| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 398--398
+[]\OT1/cmr/m/n/6 60| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 400--400
+[]\OT1/cmr/m/n/6 5| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 400--400
+[]\OT1/cmr/m/n/6 60| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 400--400
+[]\OT1/cmr/m/n/6 Ingl^^Ses/Es-ta-do
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 402--402
+[]\OT1/cmr/m/n/6 5| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 402--402
+[]\OT1/cmr/m/n/6 60| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 404--404
+[]\OT1/cmr/m/n/6 5| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 404--404
+[]\OT1/cmr/m/n/6 70| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 406--406
+[]\OT1/cmr/m/n/6 5| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 406--406
+[]\OT1/cmr/m/n/6 70| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 408--408
+[]\OT1/cmr/m/n/6 5| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 408--408
+[]\OT1/cmr/m/n/6 70| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 410--410
+[]\OT1/cmr/m/n/6 5| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 410--410
+[]\OT1/cmr/m/n/6 70| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 412--412
+[]\OT1/cmr/m/n/6 5| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 412--412
+[]\OT1/cmr/m/n/6 70| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 414--414
+[]\OT1/cmr/m/n/6 5| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 414--414
+[]\OT1/cmr/m/n/6 70| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 416--416
+[]\OT1/cmr/m/n/6 5| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 416--416
+[]\OT1/cmr/m/n/6 70| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 418--418
+[]\OT1/cmr/m/n/6 5| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 418--418
+[]\OT1/cmr/m/n/6 70| 
+ []
+
+
+Overfull \hbox (7.47581pt too wide) in paragraph at lines 361--419
+ [] 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 420--420
+[]\OT1/cmr/m/n/6 6| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 420--420
+[]\OT1/cmr/m/n/6 30| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 422--422
+[]\OT1/cmr/m/n/6 6| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 422--422
+[]\OT1/cmr/m/n/6 30| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 424--424
+[]\OT1/cmr/m/n/6 6| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 424--424
+[]\OT1/cmr/m/n/6 30| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 426--426
+[]\OT1/cmr/m/n/6 6| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 426--426
+[]\OT1/cmr/m/n/6 30| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 428--428
+[]\OT1/cmr/m/n/6 6| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 428--428
+[]\OT1/cmr/m/n/6 30| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 430--430
+[]\OT1/cmr/m/n/6 6| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 430--430
+[]\OT1/cmr/m/n/6 30| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 432--432
+[]\OT1/cmr/m/n/6 6| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 432--432
+[]\OT1/cmr/m/n/6 30| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 434--434
+[]\OT1/cmr/m/n/6 6| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 434--434
+[]\OT1/cmr/m/n/6 30| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 436--436
+[]\OT1/cmr/m/n/6 6| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 436--436
+[]\OT1/cmr/m/n/6 40| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 438--438
+[]\OT1/cmr/m/n/6 6| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 438--438
+[]\OT1/cmr/m/n/6 40| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 440--440
+[]\OT1/cmr/m/n/6 6| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 440--440
+[]\OT1/cmr/m/n/6 40| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 442--442
+[]\OT1/cmr/m/n/6 6| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 442--442
+[]\OT1/cmr/m/n/6 40| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 444--444
+[]\OT1/cmr/m/n/6 6| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 444--444
+[]\OT1/cmr/m/n/6 40| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 446--446
+[]\OT1/cmr/m/n/6 6| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 446--446
+[]\OT1/cmr/m/n/6 40| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 448--448
+[]\OT1/cmr/m/n/6 6| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 448--448
+[]\OT1/cmr/m/n/6 40| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 450--450
+[]\OT1/cmr/m/n/6 6| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 450--450
+[]\OT1/cmr/m/n/6 40| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 452--452
+[]\OT1/cmr/m/n/6 6| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 452--452
+[]\OT1/cmr/m/n/6 40| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 454--454
+[]\OT1/cmr/m/n/6 6| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 454--454
+[]\OT1/cmr/m/n/6 40| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 456--456
+[]\OT1/cmr/m/n/6 6| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 456--456
+[]\OT1/cmr/m/n/6 50| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 458--458
+[]\OT1/cmr/m/n/6 6| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 458--458
+[]\OT1/cmr/m/n/6 50| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 460--460
+[]\OT1/cmr/m/n/6 6| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 460--460
+[]\OT1/cmr/m/n/6 50| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 462--462
+[]\OT1/cmr/m/n/6 6| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 462--462
+[]\OT1/cmr/m/n/6 50| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 464--464
+[]\OT1/cmr/m/n/6 6| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 464--464
+[]\OT1/cmr/m/n/6 50| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 466--466
+[]\OT1/cmr/m/n/6 6| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 466--466
+[]\OT1/cmr/m/n/6 50| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 468--468
+[]\OT1/cmr/m/n/6 6| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 468--468
+[]\OT1/cmr/m/n/6 50| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 468--468
+[]\OT1/cmr/m/n/6 espa~nol cen-
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 470--470
+[]\OT1/cmr/m/n/6 6| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 470--470
+[]\OT1/cmr/m/n/6 50| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 472--472
+[]\OT1/cmr/m/n/6 6| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 472--472
+[]\OT1/cmr/m/n/6 50| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 474--474
+[]\OT1/cmr/m/n/6 6| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 474--474
+[]\OT1/cmr/m/n/6 50| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 476--476
+[]\OT1/cmr/m/n/6 6| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 476--476
+[]\OT1/cmr/m/n/6 60| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 478--478
+[]\OT1/cmr/m/n/6 6| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 478--478
+[]\OT1/cmr/m/n/6 60| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 480--480
+[]\OT1/cmr/m/n/6 6| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 480--480
+[]\OT1/cmr/m/n/6 60| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 482--482
+[]\OT1/cmr/m/n/6 6| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 482--482
+[]\OT1/cmr/m/n/6 60| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 484--484
+[]\OT1/cmr/m/n/6 6| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 484--484
+[]\OT1/cmr/m/n/6 60| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 486--486
+[]\OT1/cmr/m/n/6 6| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 486--486
+[]\OT1/cmr/m/n/6 60| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 488--488
+[]\OT1/cmr/m/n/6 6| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 488--488
+[]\OT1/cmr/m/n/6 70| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 490--490
+[]\OT1/cmr/m/n/6 6| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 490--490
+[]\OT1/cmr/m/n/6 70| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 492--492
+[]\OT1/cmr/m/n/6 6| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 492--492
+[]\OT1/cmr/m/n/6 70| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 494--494
+[]\OT1/cmr/m/n/6 6| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 494--494
+[]\OT1/cmr/m/n/6 70| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 496--496
+[]\OT1/cmr/m/n/6 6| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 496--496
+[]\OT1/cmr/m/n/6 70| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 498--498
+[]\OT1/cmr/m/n/6 6| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 498--498
+[]\OT1/cmr/m/n/6 70| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 500--500
+[]\OT1/cmr/m/n/6 6| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 500--500
+[]\OT1/cmr/m/n/6 70| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 502--502
+[]\OT1/cmr/m/n/6 7| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 502--502
+[]\OT1/cmr/m/n/6 30| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 504--504
+[]\OT1/cmr/m/n/6 7| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 504--504
+[]\OT1/cmr/m/n/6 30| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 506--506
+[]\OT1/cmr/m/n/6 7| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 506--506
+[]\OT1/cmr/m/n/6 30| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 508--508
+[]\OT1/cmr/m/n/6 7| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 508--508
+[]\OT1/cmr/m/n/6 30| 
+ []
+
+
+Overfull \hbox (7.47581pt too wide) in paragraph at lines 419--509
+ [] 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 510--510
+[]\OT1/cmr/m/n/6 7| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 510--510
+[]\OT1/cmr/m/n/6 30| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 512--512
+[]\OT1/cmr/m/n/6 7| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 512--512
+[]\OT1/cmr/m/n/6 40| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 514--514
+[]\OT1/cmr/m/n/6 7| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 514--514
+[]\OT1/cmr/m/n/6 40| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 516--516
+[]\OT1/cmr/m/n/6 7| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 516--516
+[]\OT1/cmr/m/n/6 40| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 518--518
+[]\OT1/cmr/m/n/6 7| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 518--518
+[]\OT1/cmr/m/n/6 40| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 520--520
+[]\OT1/cmr/m/n/6 7| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 520--520
+[]\OT1/cmr/m/n/6 40| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 522--522
+[]\OT1/cmr/m/n/6 7| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 522--522
+[]\OT1/cmr/m/n/6 40| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 524--524
+[]\OT1/cmr/m/n/6 7| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 524--524
+[]\OT1/cmr/m/n/6 40| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 526--526
+[]\OT1/cmr/m/n/6 7| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 526--526
+[]\OT1/cmr/m/n/6 40| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 528--528
+[]\OT1/cmr/m/n/6 7| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 528--528
+[]\OT1/cmr/m/n/6 40| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 530--530
+[]\OT1/cmr/m/n/6 7| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 530--530
+[]\OT1/cmr/m/n/6 40| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 532--532
+[]\OT1/cmr/m/n/6 7| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 532--532
+[]\OT1/cmr/m/n/6 40| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 534--534
+[]\OT1/cmr/m/n/6 7| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 534--534
+[]\OT1/cmr/m/n/6 50| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 536--536
+[]\OT1/cmr/m/n/6 7| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 536--536
+[]\OT1/cmr/m/n/6 50| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 538--538
+[]\OT1/cmr/m/n/6 7| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 538--538
+[]\OT1/cmr/m/n/6 50| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 540--540
+[]\OT1/cmr/m/n/6 7| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 540--540
+[]\OT1/cmr/m/n/6 50| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 542--542
+[]\OT1/cmr/m/n/6 7| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 542--542
+[]\OT1/cmr/m/n/6 50| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 544--544
+[]\OT1/cmr/m/n/6 7| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 544--544
+[]\OT1/cmr/m/n/6 50| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 546--546
+[]\OT1/cmr/m/n/6 7| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 546--546
+[]\OT1/cmr/m/n/6 50| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 548--548
+[]\OT1/cmr/m/n/6 7| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 548--548
+[]\OT1/cmr/m/n/6 50| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 550--550
+[]\OT1/cmr/m/n/6 7| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 550--550
+[]\OT1/cmr/m/n/6 50| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 552--552
+[]\OT1/cmr/m/n/6 7| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 552--552
+[]\OT1/cmr/m/n/6 60| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 554--554
+[]\OT1/cmr/m/n/6 7| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 554--554
+[]\OT1/cmr/m/n/6 60| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 556--556
+[]\OT1/cmr/m/n/6 7| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 556--556
+[]\OT1/cmr/m/n/6 60| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 558--558
+[]\OT1/cmr/m/n/6 7| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 558--558
+[]\OT1/cmr/m/n/6 60| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 560--560
+[]\OT1/cmr/m/n/6 7| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 560--560
+[]\OT1/cmr/m/n/6 60| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 560--560
+[]\OT1/cmr/m/n/6 Estados Uni-dos
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 560--560
+\OT1/cmr/m/n/6 (goo-gle trans-la-
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 562--562
+[]\OT1/cmr/m/n/6 7| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 562--562
+[]\OT1/cmr/m/n/6 60| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 564--564
+[]\OT1/cmr/m/n/6 7| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 564--564
+[]\OT1/cmr/m/n/6 70| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 566--566
+[]\OT1/cmr/m/n/6 7| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 566--566
+[]\OT1/cmr/m/n/6 70| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 568--568
+[]\OT1/cmr/m/n/6 7| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 568--568
+[]\OT1/cmr/m/n/6 70| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 570--570
+[]\OT1/cmr/m/n/6 7| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 570--570
+[]\OT1/cmr/m/n/6 70| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 572--572
+[]\OT1/cmr/m/n/6 7| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 572--572
+[]\OT1/cmr/m/n/6 70| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 574--574
+[]\OT1/cmr/m/n/6 7| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 574--574
+[]\OT1/cmr/m/n/6 70| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 576--576
+[]\OT1/cmr/m/n/6 7| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 576--576
+[]\OT1/cmr/m/n/6 70| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 578--578
+[]\OT1/cmr/m/n/6 8| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 578--578
+[]\OT1/cmr/m/n/6 30| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 580--580
+[]\OT1/cmr/m/n/6 8| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 580--580
+[]\OT1/cmr/m/n/6 30| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 582--582
+[]\OT1/cmr/m/n/6 8| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 582--582
+[]\OT1/cmr/m/n/6 30| 
+ []
+
+
+Overfull \hbox (7.47581pt too wide) in paragraph at lines 509--583
+ [] 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 584--584
+[]\OT1/cmr/m/n/6 8| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 584--584
+[]\OT1/cmr/m/n/6 30| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 586--586
+[]\OT1/cmr/m/n/6 8| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 586--586
+[]\OT1/cmr/m/n/6 30| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 588--588
+[]\OT1/cmr/m/n/6 8| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 588--588
+[]\OT1/cmr/m/n/6 30| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 590--590
+[]\OT1/cmr/m/n/6 8| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 590--590
+[]\OT1/cmr/m/n/6 40| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 592--592
+[]\OT1/cmr/m/n/6 8| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 592--592
+[]\OT1/cmr/m/n/6 40| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 594--594
+[]\OT1/cmr/m/n/6 8| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 594--594
+[]\OT1/cmr/m/n/6 40| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 596--596
+[]\OT1/cmr/m/n/6 8| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 596--596
+[]\OT1/cmr/m/n/6 40| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 598--598
+[]\OT1/cmr/m/n/6 8| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 598--598
+[]\OT1/cmr/m/n/6 40| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 600--600
+[]\OT1/cmr/m/n/6 8| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 600--600
+[]\OT1/cmr/m/n/6 50| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 602--602
+[]\OT1/cmr/m/n/6 8| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 602--602
+[]\OT1/cmr/m/n/6 50| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 604--604
+[]\OT1/cmr/m/n/6 8| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 604--604
+[]\OT1/cmr/m/n/6 50| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 606--606
+[]\OT1/cmr/m/n/6 8| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 606--606
+[]\OT1/cmr/m/n/6 50| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 608--608
+[]\OT1/cmr/m/n/6 8| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 608--608
+[]\OT1/cmr/m/n/6 50| 
+ []
+
+
+Overfull \hbox (13.7547pt too wide) in paragraph at lines 608--608
+[]\OT1/cmr/m/n/6 Ingles/estadounidense| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 610--610
+[]\OT1/cmr/m/n/6 8| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 610--610
+[]\OT1/cmr/m/n/6 50| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 612--612
+[]\OT1/cmr/m/n/6 8| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 612--612
+[]\OT1/cmr/m/n/6 50| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 614--614
+[]\OT1/cmr/m/n/6 8| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 614--614
+[]\OT1/cmr/m/n/6 60| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 616--616
+[]\OT1/cmr/m/n/6 8| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 616--616
+[]\OT1/cmr/m/n/6 60| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 618--618
+[]\OT1/cmr/m/n/6 8| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 618--618
+[]\OT1/cmr/m/n/6 60| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 620--620
+[]\OT1/cmr/m/n/6 8| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 620--620
+[]\OT1/cmr/m/n/6 60| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 622--622
+[]\OT1/cmr/m/n/6 8| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 622--622
+[]\OT1/cmr/m/n/6 60| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 624--624
+[]\OT1/cmr/m/n/6 8| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 624--624
+[]\OT1/cmr/m/n/6 60| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 626--626
+[]\OT1/cmr/m/n/6 8| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 626--626
+[]\OT1/cmr/m/n/6 60| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 626--626
+[]\OT1/cmr/m/n/6 No his-pa-no-ha-
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 628--628
+[]\OT1/cmr/m/n/6 8| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 628--628
+[]\OT1/cmr/m/n/6 60| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 630--630
+[]\OT1/cmr/m/n/6 8| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 630--630
+[]\OT1/cmr/m/n/6 60| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 632--632
+[]\OT1/cmr/m/n/6 8| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 632--632
+[]\OT1/cmr/m/n/6 70| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 634--634
+[]\OT1/cmr/m/n/6 8| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 634--634
+[]\OT1/cmr/m/n/6 70| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 636--636
+[]\OT1/cmr/m/n/6 8| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 636--636
+[]\OT1/cmr/m/n/6 70| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 638--638
+[]\OT1/cmr/m/n/6 8| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 638--638
+[]\OT1/cmr/m/n/6 70| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 640--640
+[]\OT1/cmr/m/n/6 8| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 640--640
+[]\OT1/cmr/m/n/6 70| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 642--642
+[]\OT1/cmr/m/n/6 9| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 642--642
+[]\OT1/cmr/m/n/6 30| 
+ []
+
+
+Overfull \hbox (7.47581pt too wide) in paragraph at lines 583--643
+ [] 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 644--644
+[]\OT1/cmr/m/n/6 9| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 644--644
+[]\OT1/cmr/m/n/6 30| 
+ []
+
+
+Underfull \hbox (badness 6510) in paragraph at lines 644--645
+[]\OT1/cmr/m/n/6 Ese gru~n^^Son Pro-me-ti^^So a sus
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 646--646
+[]\OT1/cmr/m/n/6 9| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 646--646
+[]\OT1/cmr/m/n/6 30| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 648--648
+[]\OT1/cmr/m/n/6 9| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 648--648
+[]\OT1/cmr/m/n/6 30| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 650--650
+[]\OT1/cmr/m/n/6 9| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 650--650
+[]\OT1/cmr/m/n/6 30| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 652--652
+[]\OT1/cmr/m/n/6 9| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 652--652
+[]\OT1/cmr/m/n/6 30| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 654--654
+[]\OT1/cmr/m/n/6 9| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 654--654
+[]\OT1/cmr/m/n/6 30| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 656--656
+[]\OT1/cmr/m/n/6 9| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 656--656
+[]\OT1/cmr/m/n/6 40| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 658--658
+[]\OT1/cmr/m/n/6 9| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 658--658
+[]\OT1/cmr/m/n/6 40| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 660--660
+[]\OT1/cmr/m/n/6 9| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 660--660
+[]\OT1/cmr/m/n/6 40| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 662--662
+[]\OT1/cmr/m/n/6 9| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 662--662
+[]\OT1/cmr/m/n/6 40| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 664--664
+[]\OT1/cmr/m/n/6 9| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 664--664
+[]\OT1/cmr/m/n/6 40| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 666--666
+[]\OT1/cmr/m/n/6 9| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 666--666
+[]\OT1/cmr/m/n/6 50| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 668--668
+[]\OT1/cmr/m/n/6 9| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 668--668
+[]\OT1/cmr/m/n/6 50| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 670--670
+[]\OT1/cmr/m/n/6 9| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 670--670
+[]\OT1/cmr/m/n/6 50| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 672--672
+[]\OT1/cmr/m/n/6 9| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 672--672
+[]\OT1/cmr/m/n/6 50| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 674--674
+[]\OT1/cmr/m/n/6 9| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 674--674
+[]\OT1/cmr/m/n/6 50| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 676--676
+[]\OT1/cmr/m/n/6 9| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 676--676
+[]\OT1/cmr/m/n/6 50| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 678--678
+[]\OT1/cmr/m/n/6 9| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 678--678
+[]\OT1/cmr/m/n/6 60| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 678--679
+[]\OT1/cmr/m/n/6 Ese gru~non pro-me-tio esos
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 680--680
+[]\OT1/cmr/m/n/6 9| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 680--680
+[]\OT1/cmr/m/n/6 60| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 682--682
+[]\OT1/cmr/m/n/6 9| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 682--682
+[]\OT1/cmr/m/n/6 60| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 684--684
+[]\OT1/cmr/m/n/6 9| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 684--684
+[]\OT1/cmr/m/n/6 60| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 686--686
+[]\OT1/cmr/m/n/6 9| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 686--686
+[]\OT1/cmr/m/n/6 60| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 688--688
+[]\OT1/cmr/m/n/6 9| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 688--688
+[]\OT1/cmr/m/n/6 60| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 690--690
+[]\OT1/cmr/m/n/6 9| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 690--690
+[]\OT1/cmr/m/n/6 70| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 692--692
+[]\OT1/cmr/m/n/6 9| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 692--692
+[]\OT1/cmr/m/n/6 70| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 694--694
+[]\OT1/cmr/m/n/6 9| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 694--694
+[]\OT1/cmr/m/n/6 70| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 696--696
+[]\OT1/cmr/m/n/6 9| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 696--696
+[]\OT1/cmr/m/n/6 70| 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 698--698
+[]\OT1/cmr/m/n/6 9| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 698--698
+[]\OT1/cmr/m/n/6 70| 
+ []
+
+
+Overfull \hbox (7.47581pt too wide) in paragraph at lines 643--699
+ [] 
+ []
+
+
+Overfull \hbox (0.82117pt too wide) in paragraph at lines 700--700
+[]\OT1/cmr/m/n/6 9| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 700--700
+[]\OT1/cmr/m/n/6 70| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 702--702
+[]\OT1/cmr/m/n/6 10| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 702--702
+[]\OT1/cmr/m/n/6 30| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 704--704
+[]\OT1/cmr/m/n/6 10| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 704--704
+[]\OT1/cmr/m/n/6 30| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 706--706
+[]\OT1/cmr/m/n/6 10| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 706--706
+[]\OT1/cmr/m/n/6 30| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 708--708
+[]\OT1/cmr/m/n/6 10| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 708--708
+[]\OT1/cmr/m/n/6 30| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 710--710
+[]\OT1/cmr/m/n/6 10| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 710--710
+[]\OT1/cmr/m/n/6 30| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 712--712
+[]\OT1/cmr/m/n/6 10| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 712--712
+[]\OT1/cmr/m/n/6 30| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 714--714
+[]\OT1/cmr/m/n/6 10| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 714--714
+[]\OT1/cmr/m/n/6 40| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 716--716
+[]\OT1/cmr/m/n/6 10| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 716--716
+[]\OT1/cmr/m/n/6 40| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 718--718
+[]\OT1/cmr/m/n/6 10| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 718--718
+[]\OT1/cmr/m/n/6 40| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 720--720
+[]\OT1/cmr/m/n/6 10| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 720--720
+[]\OT1/cmr/m/n/6 40| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 722--722
+[]\OT1/cmr/m/n/6 10| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 722--722
+[]\OT1/cmr/m/n/6 40| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 724--724
+[]\OT1/cmr/m/n/6 10| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 724--724
+[]\OT1/cmr/m/n/6 40| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 726--726
+[]\OT1/cmr/m/n/6 10| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 726--726
+[]\OT1/cmr/m/n/6 50| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 728--728
+[]\OT1/cmr/m/n/6 10| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 728--728
+[]\OT1/cmr/m/n/6 50| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 730--730
+[]\OT1/cmr/m/n/6 10| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 730--730
+[]\OT1/cmr/m/n/6 50| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 732--732
+[]\OT1/cmr/m/n/6 10| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 732--732
+[]\OT1/cmr/m/n/6 50| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 734--734
+[]\OT1/cmr/m/n/6 10| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 734--734
+[]\OT1/cmr/m/n/6 50| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 736--736
+[]\OT1/cmr/m/n/6 10| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 736--736
+[]\OT1/cmr/m/n/6 50| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 738--738
+[]\OT1/cmr/m/n/6 10| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 738--738
+[]\OT1/cmr/m/n/6 50| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 740--740
+[]\OT1/cmr/m/n/6 10| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 740--740
+[]\OT1/cmr/m/n/6 60| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 742--742
+[]\OT1/cmr/m/n/6 10| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 742--742
+[]\OT1/cmr/m/n/6 60| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 744--744
+[]\OT1/cmr/m/n/6 10| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 744--744
+[]\OT1/cmr/m/n/6 60| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 746--746
+[]\OT1/cmr/m/n/6 10| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 746--746
+[]\OT1/cmr/m/n/6 60| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 748--748
+[]\OT1/cmr/m/n/6 10| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 748--748
+[]\OT1/cmr/m/n/6 60| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 748--748
+[]\OT1/cmr/m/n/6 amerciano
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 750--750
+[]\OT1/cmr/m/n/6 10| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 750--750
+[]\OT1/cmr/m/n/6 70| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 752--752
+[]\OT1/cmr/m/n/6 10| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 752--752
+[]\OT1/cmr/m/n/6 70| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 754--754
+[]\OT1/cmr/m/n/6 10| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 754--754
+[]\OT1/cmr/m/n/6 70| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 756--756
+[]\OT1/cmr/m/n/6 10| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 756--756
+[]\OT1/cmr/m/n/6 70| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 758--758
+[]\OT1/cmr/m/n/6 10| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 758--758
+[]\OT1/cmr/m/n/6 70| 
+ []
+
+
+Overfull \hbox (2.92708pt too wide) in paragraph at lines 758--758
+[]\OT1/cmr/m/n/6 Computadorlandia| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 760--760
+[]\OT1/cmr/m/n/6 10| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 760--760
+[]\OT1/cmr/m/n/6 70| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 762--762
+[]\OT1/cmr/m/n/6 10| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 762--762
+[]\OT1/cmr/m/n/6 70| 
+ []
+
+
+Overfull \hbox (7.47581pt too wide) in paragraph at lines 699--763
+ [] 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 764--764
+[]\OT1/cmr/m/n/6 10| 
+ []
+
+
+Overfull \hbox (4.48778pt too wide) in paragraph at lines 764--764
+[]\OT1/cmr/m/n/6 70| 
+ []
+
+
+Overfull \hbox (7.47581pt too wide) in paragraph at lines 763--767
+ [] 
+ []
+
+[37]
+LaTeX Info: Redefining \. on input line 767.
+LaTeX Info: Redefining \% on input line 767.
+ [38]
+LaTeX Info: Redefining \. on input line 767.
+LaTeX Info: Redefining \% on input line 767.
+ [39]
+LaTeX Info: Redefining \. on input line 767.
+LaTeX Info: Redefining \% on input line 767.
+ [40]
+LaTeX Info: Redefining \. on input line 767.
+LaTeX Info: Redefining \% on input line 767.
+ [41]) (./final/referencias.tex
+LaTeX Info: Redefining \. on input line 1.
+LaTeX Info: Redefining \% on input line 1.
+ [42]
+! Missing $ inserted.
+<inserted text> 
+                $
+l.13 ...hts.sp.nitech.ac.jp/archives/2.3/HTS-demo_
+                                                  CMU-ARCTIC-ADAPT.tar.bz2
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+! LaTeX Error: Command \item invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.14 \bibitem{speakerSim}
+                          Speaker Similarity Evaluation Of Foreign-accented ...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.14 \bibitem{speakerSim}
+                          Speaker Similarity Evaluation Of Foreign-accented ...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.14 \bibitem{speakerSim}
+                          Speaker Similarity Evaluation Of Foreign-accented ...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Command \item invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.15 \bibitem{phoneticAndProsodic}
+                                   Simultaneous Modeling of phonetic and pro...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.15 \bibitem{phoneticAndProsodic}
+                                   Simultaneous Modeling of phonetic and pro...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.15 \bibitem{phoneticAndProsodic}
+                                   Simultaneous Modeling of phonetic and pro...
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 13--15
+[]\OT1/cmr/m/n/10.95 http://hts.sp.nitech.ac.jp/archives/2.3/HTS-demo$[]\OML/cm
+m/m/it/10.95 MU \OMS/cmsy/m/n/10.95 ^^@ \OML/cmm/m/it/10.95 ARCTIC \OMS/cmsy/m/
+n/10.95 ^^@
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 13--15
+\OML/cmm/m/it/10.95 ADAPT:tar:bz\OT1/cmr/m/n/10.95 2\OML/cmm/m/it/10.95 Speaker
+SimilarityEvaluationOfForeign \OMS/cmsy/m/n/10.95 ^^@
+ []
+
+
+Overfull \hbox (63.7443pt too wide) in paragraph at lines 13--15
+\OML/cmm/m/it/10.95 accentedSpeechSynthesisUsingHmm \OMS/cmsy/m/n/10.95 ^^@ \OM
+L/cmm/m/it/10.95 basedSpeakerAdaptation; MirjamWester; ReimaKarhila[][]$ 
+ []
+
+! Extra }, or forgotten \endgroup.
+\par ...m \@noitemerr {\@@par }\fi \else {\@@par }
+                                                  \fi 
+l.15 \bibitem{phoneticAndProsodic}
+                                   Simultaneous Modeling of phonetic and pro...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+[43
+
+])
+LaTeX Info: Redefining \. on input line 89.
+LaTeX Info: Redefining \% on input line 89.
+ [44] (./tesis.aux
 LaTeX Info: Redefining \. on input line 7.
 LaTeX Info: Redefining \% on input line 7.
 )
 
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 17352 strings out of 494796
- 311906 string characters out of 6177331
- 353829 words of memory out of 5000000
- 20313 multiletter control sequences out of 15000+600000
+ 17330 strings out of 494796
+ 313378 string characters out of 6177331
+ 555788 words of memory out of 5000000
+ 20282 multiletter control sequences out of 15000+600000
  11523 words of font info for 39 fonts, out of 8000000 for 9000
  85 hyphenation exceptions out of 8191
- 54i,15n,73p,1410b,959s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 54i,15n,73p,1410b,530s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/tex
@@ -1394,12 +5300,13 @@ s/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1
 /public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
 amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
 /cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl
-10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb
-></usr/share/texmf/fonts/type1/fkr/tipa/tipa10.pfb>
-Output written on tesis.pdf (52 pages, 994856 bytes).
+10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
+></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr
+/share/texmf/fonts/type1/fkr/tipa/tipa10.pfb>
+Output written on tesis.pdf (54 pages, 1026212 bytes).
 PDF statistics:
- 269 PDF objects out of 1000 (max. 8388607)
- 163 compressed objects within 2 object streams
+ 312 PDF objects out of 1000 (max. 8388607)
+ 187 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 158 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 255 words of extra memory for PDF output out of 10000 (max. 10000000)
 

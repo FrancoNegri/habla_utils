@@ -12,6 +12,8 @@
 \raggedbottom
 \usepackage{tcolorbox}
 \usepackage{floatrow}
+\usepackage{multicol}
+\usepackage{supertabular}
 \floatplacement{figure}{H}
 \floatplacement{table}{H}
 \begin{document}
@@ -52,25 +54,25 @@
 \chapter{Introducción}
 \input{metodologia/introduccion.tex}
 %Metodología
-\chapter{Materiales y Métodos}
+\chapter{Materiales y métodos}
 
 \section{Preparación de los datos}\label{dataPrepartion}
 \input{metodologia/dataPreparation.tex}
 
-\section{Repertorio Fonético y Mapeo de Fonemas}\label{phoneMaping}
+\section{Repertorio fonético y mapeo de fonemas}\label{phoneMaping}
 \input{metodologia/phoneMaping.tex}
 
-\section{Interpolación Entre Modelos}\label{modelInterpolation}
+\section{Interpolación entre modelos}\label{modelInterpolation}
 \input{metodologia/modelInterpolation.tex}
 
-\section{Speaker-Adaptative Training}\label{speakerAdaptativeTraining}
+\section{Speaker-Adaptive Training}\label{speakerAdaptativeTraining}
 \input{metodologia/speakerAdaptativeTraining.tex}
 
 \section{Herramientas} \label{herramientas}
 \input{metodologia/herramientas.tex}
 \pagebreak
 %Experimentación
-\chapter{Evaluación Perceptual}\label{evaluacionPerceptual}
+\chapter{Evaluación perceptual}\label{evaluacionPerceptual}
 \input{experimentacion/experimentacion.tex}
 \pagebreak
 
@@ -78,7 +80,7 @@
 \input{experimentacion/resultados.tex}
 \pagebreak
 
-\chapter{Concluciones y Trabajo Futuro}
+\chapter{Conclusiones y trabajo futuro}
 \input{final/final.tex}
 \pagebreak
 \chapter{Apendice}
