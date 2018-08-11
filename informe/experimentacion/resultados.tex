@@ -187,24 +187,21 @@ Consideramos que este salto en la distancia intercuartil puede deberse a dos mot
 \begin{figure}
 \begin{center}$
 \begin{array}{lll}
-\includegraphics[trim={0 0 0 0.9cm},clip,width=.5\textwidth]{imagenes/plots_normalized/3.png}
-\includegraphics[trim={0 0 0 0.9cm},clip,width=.5\textwidth]{imagenes/plots_normalized/4.png}
+\includegraphics[trim={0 0 0 1.25cm},clip,width=.5\textwidth]{imagenes/plots_normalized/3.png}
+\includegraphics[trim={0 0 0 1.25cm},clip,width=.5\textwidth]{imagenes/plots_normalized/4.png}
 \end{array}$
 \end{center}
-\caption{Oración 4 Normalizada}
+\caption{Oraciones 3 y 4 Normalizadas}
 \label{oracionCuatro}
 \end{figure}
 
-El segundo motivo puede deberse a que existen características particulares de las oraciones o del modelo utilizado para generar la voz que afectan la comprensión del audio: la oración $10$ ``El nudillo Argentino perdió su vaso'' con $70\%$ de interpolación de inglés + $30\%$ de castellano, en la cual $6$ de los $8$ participantes obtuvieron una buena transcripción del audio con distancia menor a $15$ \footnote{Incluso teniendo en cuenta que esta oración se ve afectada por el mapeo incorrecto de la /g/ \argentinoNoTieneG como fue discutido previamente}, y la oración $8$ \otroEjemplo``Las acongojadas cotorras sonrieron a mi círculo'', donde, para ese mismo grado de interpolación, todos los participantes transcribieron el audio con distancia de Levenshtein mayor a $20$, parecen demostrar esto. O bien la dificultad de las oraciones es variable o, lo que es todavía mas probable, llegado cierto punto en la interpolación, algunos fonemas empiezan a ``romperse'' o se alejan demasiado del fonema castellano correcto y terminan por disminuir la claridad de la voz.
+El segundo motivo puede deberse a que existen características particulares de las oraciones o del modelo utilizado para generar la voz que afectan la comprensión del audio: la oración $10$ ``El nudillo Argentino perdió su vaso'' con $70\%$ de interpolación de inglés + $30\%$ de castellano, en la cual $6$ de los $8$ participantes obtuvieron una buena transcripción del audio con distancia menor a $15$ , y para la oración $3$\footnote{Tener en cuenta que ambas oraciones se encuentran afectadas por el mismo mapeo incorrecto de la /x/ como fue discutido previamente}, con ese mismo grado de interpolación, todos los participantes transcribieron el audio con distancia de Levenshtein mayor a $15$, parecen demostrar esto. O bien la dificultad de las oraciones es variable o, lo que es todavía mas probable, llegado cierto punto en la interpolación, algunos fonemas empiezan a ``romperse'' o se alejan demasiado del fonema castellano correcto y terminan por disminuir la claridad de la voz.
 
 \begin{figure}
-\begin{center}$
-\begin{array}{lll}
-\includegraphics[trim={0 0 0 0.9cm},clip,width=.5\textwidth]{imagenes/plots_normalized/10.png}&
-\includegraphics[trim={0 0 0 0.9cm},clip,width=.5\textwidth]{imagenes/plots_normalized/8.png}
-\end{array}$
+\begin{center}
+\includegraphics[trim={0 0 0 1.25cm},clip,width=.5\textwidth]{imagenes/plots_normalized/10.png}
 \end{center}
-\caption{Oraciones 10 y 8 Normalizadas}
+\caption{Oración 10 normalizada}
 \label{pics:blablabla}
 \end{figure}
 
@@ -279,7 +276,7 @@ Observando las oraciones una por una, podemos ver algunas discrepancias con los 
 \begin{figure}
 \begin{center}$
 \begin{array}{lll}
-\includegraphics[trim={0 0 0 1.5cm},clip,width=.7\textwidth]{imagenes/nacionalidades/9.png}
+\includegraphics[trim={0 0 0 2.3cm},clip,width=.7\textwidth]{imagenes/nacionalidades/9.png}
 \end{array}$
 \end{center}
 \caption{Interploación de inglés vs Respuestas de los participantes, oración 9}
@@ -340,7 +337,7 @@ Hasta ahora analizamos los dos ejes de nuestra hipótesis por separado (por un l
 
 \section{Resultados generales de la experimentación}
 
-En la Figura \ref{resultadosGeneralesNacVsPlot} presentamos los resultados comparando las distancias de Levenshtein con los porcentajes de participantes que determinaron que el hablante fuera anglosajón. Al igual que en el Apartado \ref{SeccionInteligibilidad}, en el eje $x$ presentamos los grados de interpolación de inglés, yendo desde $30\%$ hasta $70\%$. El eje $y$ del lado izquierdo representa la distancia de Levenshtein  entre la oración objetivo y aquella transcripta por cada participante. Cada uno de los boxplots describe la distancia mínima obtenida y la distancia máxima (los bigotes), como así también el primer y tercer cuartil (el piso y el techo de la caja) y la distancia media \revisar (línea interior que atraviesa la caja). Adicionalmente podemos observar con círculos vacíos los outliers de la muestra. En el eje $y$ del lado derecho, presentamos el porcentaje de participantes que atribuyeron la voz a un hablante anglosajón indicado mediante puntos verdes en el gráfico. 
+En la Figura \ref{resultadosGeneralesNacVsPlot} presentamos los resultados comparando las distancias de Levenshtein con los porcentajes de participantes que determinaron que el hablante fuera anglosajón. Al igual que en el Apartado \ref{SeccionInteligibilidad}, en el eje $x$ presentamos los grados de interpolación de inglés, yendo desde $30\%$ hasta $70\%$. El eje $y$ del lado izquierdo representa la distancia de Levenshtein  entre la oración objetivo y aquella transcripta por cada participante. Cada uno de los boxplots describe la distancia mínima obtenida y la distancia máxima (los bigotes), como así también el primer y tercer cuartil (el piso y el techo de la caja) y la mediana (línea interior que atraviesa la caja). Adicionalmente podemos observar con círculos vacíos los outliers de la muestra. En el eje $y$ del lado derecho, presentamos el porcentaje de participantes que atribuyeron la voz a un hablante anglosajón indicado mediante puntos verdes en el gráfico. 
 
 \begin{figure}
 \begin{center}$

@@ -1,9 +1,13 @@
+En este trabajo tuvimos como objetivo generar un sistema de generación de habla en castellano con acento extranjero.
+
+Para esto entrenamos sistemas de habla con corpus en castellano e ingles y luego interpolamos entre ellos para obtener distintas mezclas. A travez de pruebas internas consideramos que los audios sintetizados por estas mezclas se aproximaban al objetivo deseado.
+
+Por ultimo, desarrollamos una encuesta online que nos permitiera probar de manera experimental que el sistema realmente cumplía con nuestro objetivo. Se presentaba a los participantes con audios sintetizados con distintas mezclas de modelos y debían determinar la nacionalidad del hablante y dar una transcripción de lo escuchado.
+
+La experimentación concluyó que existía evidencia estadistica significativa entre el porcentaje de ingles en la interpolación del sistema utilizado y la cantidad de participantes que determinaban que el origen de la persona era inglesa.
+
+Ademas la experimentación conluyó que existía evidencia estadistica significativa entre el porcentaje de ingles en la interpolación del sistema utilizado y el empeoramiento de las transcripciones.
+
 Como trabajo futuro queda corregir los problemas en el mapeo fonético encontrados en la fase de experimentación.
 
 Como fue discutido en la sección de experimentación, una interpolación general puede producir que ciertos fonemas se alejen demasiado del fonema real del castellano, disminuyendo la inteligibilidad de la voz sintetizada. Un posible camino a seguir es realizar una interpolación controlada que permita regular cada fonema por separado. Para fonemas que puedan resultar problemáticos como el caso de la /r/ vibrante el grado de interpolación podría dejarse más cercano al castellano, mientras que para fonemas con comportamientos más similares el grado de interpolación podría llevarse más cerca del modelo ingles.
-
-
-
-%expandir
-
-% cambiar la velocidad para mejor ininteligencia?
