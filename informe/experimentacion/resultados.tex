@@ -3,7 +3,7 @@
 
 \section{Datos demográficos}
 
-Se encuestaron $109$ participantes de los cuales se obtuvieron $352$ resultados. Del total de participantes, $49$ pertenecían al rango comprendido entre $18$ y $25$ años, $43$ estaban en el rango $26$-$35$. $17$ de los participantes eran mayores a $35$ años (fig. \ref{genero}).
+Se encuestaron $109$ participantes de los cuales se obtuvieron $352$ resultados. Como puede verse en la Figura \ref{genero} del total de participantes, $49$ pertenecían al rango comprendido entre $18$ y $25$ años, $43$ estaban en el rango $26$-$35$. $17$ de los participantes eran mayores a $35$ años.
 
 \begin{figure}
 \centering
@@ -23,9 +23,9 @@ Se encuestaron $109$ participantes de los cuales se obtuvieron $352$ resultados.
 \label{edad}
 \end{figure}
 
-Con respecto al género de los participantes, $187$ respuestas fueron brindadas por participantes del género femenino mientras que $163$ respuestas fueron brindadas por participante del género masculino (fig. \ref{edad}).
+Con respecto al género de los participantes (Figura \ref{edad}), $187$ respuestas fueron brindadas por participantes del género femenino mientras que $163$ respuestas fueron brindadas por participante del género masculino .
 
-Con respecto de la región en que cada participante pasó su infancia puede verse una predominancia de personas del Gran Buenos Aires con $45\%$, seguido por un $30\%$ que pasaron su infancia en la Capital Federal. Menos del $25\%$ pertenece al resto de las provincias Argentinas. Además, $10$ personas contestaron que se criaron fuera del país (fig. \ref{distTerritorial}).
+Con respecto de la región en que cada participante pasó su infancia puede verse en la Figura \ref{distTerritorial} una predominancia de personas del Gran Buenos Aires con $45\%$, seguido por un $30\%$ que pasaron su infancia en Capital Federal. Menos del $25\%$ pertenece al resto de las provincias Argentinas. Además, $10$ personas contestaron que se criaron fuera del país.
 
 \begin{figure}
 \begin{center}
@@ -37,11 +37,11 @@ Con respecto de la región en que cada participante pasó su infancia puede vers
 
 \section{Análisis de la inteligibilidad}\label{SeccionInteligibilidad}
 
-A continuación intentaremos medir la inteligibilidad de cada una de las oraciones en base a las respuestas obtenidas por los participantes. Para ello tomaremos la oración transcripta por los participantes y mediremos cuán lejos o cerca está de la oración original. 
+A continuación intentaremos medir la inteligibilidad de cada una de las oraciones en base a las respuestas obtenidas en la encuesta. Para ello tomaremos la oración transcripta por los participantes y mediremos cuán lejos o cerca está de la oración original. 
 
-Para esto utilizaremos la distancia de Levenshtein, que consiste en calcular la menor cantidad posible de inserciones, remociones o reemplazos de caracteres que son requeridos para transformar la oración transcripta por un participante en la oración objetivo. Así por ejemplo, para transformar \textit{cosa} en \textit{cal} se requieren $3$ transformaciones: reemplazar \textit{o} por \textit{a} final, reemplazar \textit{s} por \textit{l} y remover la \textit{a}. Por lo tanto, la distancia de Levenshtein entre estas dos palabras es de $3$. Además, se considerará un reemplazo cualquier acento, por lo que \textit{á} y \textit{a} tendrán distancia $1$ pero no así el reemplazo de mayúsculas y minúsculas, por lo que \textit{a} y \textit{A} tendrán distancia $0$.
+Para esto utilizaremos un concepto denominado \textit{distancia de Levenshtein}. La distancia de Levenshtein consiste en calcular la menor cantidad posible de inserciones, remociones o reemplazos de caracteres que son requeridos para transformar una oración en otra. Así por ejemplo, para transformar \textit{cosa} en \textit{cal} se requieren $3$ transformaciones: reemplazar \textit{o} por \textit{a} final, reemplazar \textit{s} por \textit{l} y remover la \textit{a}. Por lo tanto, la distancia de Levenshtein entre estas dos palabras es de $3$. Además, se considerará un reemplazo cualquier acento, por lo que \textit{á} y \textit{a} tendrán distancia $1$ pero no así el reemplazo de mayúsculas y minúsculas, por lo que \textit{a} y \textit{A} tendrán distancia $0$.
 
-En la Figura \ref{resultadosGenerales} presentamos los resultados generales obtenidos sin ningún tipo de modificación a las transcripciones ingresadas por los sujetos. En el eje $x$ presentamos los grados de interpolación de inglés-castellano, que irán desde $30\%$ inglés + $70\%$ castellano (desde ahora, $30\%$ inglés) hasta $70\%$ inglés + $30\%$ castellano (desde ahora, $70\%$ inglés). En el eje $y$ presentamos la distancia de Levenshtein entre la oración objetivo y aquella transcripta por cada participante. Cada uno de los boxplots describe la distancia mínima obtenida y la distancia máxima (los bigotes), como así también el primer y tercer cuartil (el piso y el techo de la caja) y la mediana (línea interior que atraviesa la caja). Adicionalmente podemos observar con círculos vacíos los outliers de la muestra.
+En la Figura \ref{resultadosGenerales} presentamos los resultados generales obtenidos sin ningún tipo de modificación a las transcripciones ingresadas por los sujetos. En el eje $x$ presentamos los grados de interpolación de inglés-castellano, que varía entre $30\%$ inglés + $70\%$ castellano (desde ahora, $30\%$ inglés) y $70\%$ inglés + $30\%$ castellano (desde ahora, $70\%$ inglés). En el eje $y$ presentamos la distancia de Levenshtein entre la oración objetivo y aquella transcripta por cada participante. Cada uno de los boxplots describe la distancia mínima obtenida y la distancia máxima (los bigotes), como así también el primer y tercer cuartil (el piso y el techo de la caja) y la mediana (línea interior que atraviesa la caja). Adicionalmente podemos observar con círculos vacíos los outliers de la muestra.
 
 
 \begin{figure}
@@ -54,20 +54,18 @@ En la Figura \ref{resultadosGenerales} presentamos los resultados generales obte
 \label{resultadosGenerales}
 \end{figure}
 
-Como puede observarse hasta el $50\%$ de interpolación de inglés, la distancia entre el primer y tercer cuartil es menor a $10$ caracteres, siendo la mediana de $5$. Pasados el $60\%$ de inglés, se observa un aumento brusco en la distancia intercuartiles, la distancia entre el primer y tercer cuartil pasa a ser cercana a $20$ caracteres, y la mediana $10$ caracteres en el caso de $60\%$ inglés y $15$ en el caso del $70\%$. En las próximas secciones intentaremos encontrar una explicación intuitiva a estos números.
+Como puede observarse hasta el $50\%$ de inglés en la interpolación, la distancia entre el primer y tercer cuartil es menor a $10$ caracteres, siendo la mediana de $5$. Pasados el $60\%$ de inglés, se observa un aumento brusco en la distancia intercuartiles, la distancia entre el primer y tercer cuartil pasa a ser cercana a $20$ caracteres, y la mediana $10$ caracteres en el caso de $60\%$ inglés y $15$ en el caso del $70\%$. En las próximas secciones intentaremos encontrar una explicación intuitiva a estos números.
 
-\section{Problemas en las transcripciones y normalización}
+\section{Problemas en las transcripciones y normalización}\label{transcriptProblemsAndNorm}
 
-Analizando detenidamente las transcripciones obtenidas pudimos observar algunas fallas sistemáticas que podrían generar ruido en el análisis. Por ejemplo algunos de los participantes escribieron de manera diferente las secciones de la oración que no comprendieron. Por citar algunos ejemplos, muchos de ellos escribieron: ``...'' o simplemente omitieron la palabra, mientras que una minoría escribió cosas como ``***'', ``???'', ``\textit{blablabla}''. En los casos donde el participante no comprendió ningún segmento de la oración, es común observar expresiones como ``\textit{no entendí nada}'', ``\textit{nada}'', etc.
+Analizando detenidamente las transcripciones obtenidas podemos observar algunas fallas sistemáticas que podrían generar ruido en el análisis. Por ejemplo algunos de los participantes escribieron de manera diferente las secciones de la oración que no comprendieron. Por citar algunos ejemplos, muchos de ellos escribieron: ``...'' o simplemente omitieron la palabra, mientras que una minoría escribió cosas como ``***'', ``???'', ``\textit{blablabla}''. En los casos donde el participante no comprendió ningún segmento de la oración, es común observar expresiones como ``\textit{no entendí nada}'', ``\textit{nada}'', etc.
 
 Por otra parte, es común la utilización innecesaria de signos de puntuación. Estos varían desde puntos finales para expresar el final de la oración hasta expresiones de confusión tales como ``(?)''. En un caso, un participante transcribió \textit{``tu estrecho posavasos'', grito la fechoría}, cuando la oración original solo decía \textit{tu estrecho portavasos gritó la fechoría}.
-También pueden verse omisiones de acentos y faltas ortográficas en palabras que no presentan ambigüedades, como por ejemplo: ``grunion'' en vez de ``gruñón''.
+También pueden verse omisiones de acentos y faltas ortográficas en palabras que no presentan ambigüedades, como por ejemplo: ``\textit{grunion}'' en vez de ``\textit{gruñón}''.
 
-Todas estas expresiones y modismos tienen como consecuencia directa que la distancia de Levenshtein se vea afectada. Por ejemplo, un participante que haya escrito ``\textit{no entendí nada}'' como respuesta devolverá una distancia distinta de aquel que simplemente dejó el campo vacío, cuando en realidad expresan el mismo grado de compresión del texto.
+Todas estas expresiones, modismos, y faltas ortográficas tienen un efecto directo y negativo sobre lo que estamos intentando medir. Así, por ejemplo, un participante que haya transcripto ``\textit{no entendí nada}'' en su respuesta devolverá una distancia de Levenshtein distinta de aquel que simplemente dejó el campo vacío, cuando en realidad estas dos respuestas expresan el mismo grado de comprensión del texto.
 
-Con el objetivo de reducir esta variabilidad en la muestra, se decidió realizar una limpieza de los datos. Buscamos uniformizar los datos para un mejor análisis, intentando mantener siempre el espíritu de la respuesta dada por el participante. Así, consideramos que si un participante escribió ``...'' en medio de una oración, lo que quiso decir es que no comprendió parte de la misma. Habría sido igual que en su lugar hubiese escrito la cadena vacía.
-
-De esta manera consideramos que los siguientes cambios no presentan alteraciones graves en las respuestas de los participantes:
+Con el objetivo de reducir la variabilidad en la muestra, decidimos realizar una limpieza de los datos. Intentando mantener el espíritu de las transcripciones, buscamos uniformizarlas para poder realizar un mejor análisis. Así, consideramos que si un participante escribió ``...'' en medio de una oración, su intención era la darnos a entender que no comprendió parte de la misma. Para nuestro análisis, esto sería equivalente a no haber escrito nada. Bajo este razonamiento, consideramos que los siguientes cambios no presentan alteraciones graves en las respuestas de los participantes:
 
 \begin{itemize}
 	\item Corrección de ``ni'' por ``ñ'' en la palabra \textit{grunion}.
@@ -76,15 +74,13 @@ De esta manera consideramos que los siguientes cambios no presentan alteraciones
 	\item Corrección de acentos en palabras no ambiguas: \textit{botón}, \textit{prefirió}, \textit{recorrió}, \textit{chupetín}, \textit{riñón}, \textit{gruñón}.
 \end{itemize}
 
-Aquellas palabras que presentan alguna ambivalencia, como \textit{concluyo}, no fueron modificadas, ya que tanto \textit{concluyó} como \textit{concluyo} son válidas. El participante podría haber interpretado la palabra con cualquiera de las dos connotaciones, cambiando el significado de la interpretación y su distancia de Levenshtein.
+Aquellas palabras que presentan ambigüedad, como \textit{concluyo}, no fueron modificadas, ya que tanto \textit{concluyó} como \textit{concluyo} son válidas. El participante podría haber interpretado la palabra con cualquiera de las dos connotaciones, cambiando el significado de la interpretación y su distancia de Levenshtein.
 
 Confiamos en que esta limpieza nos ayudaría a disminuir el error de los resultados y también, nos permitiría interpretar de manera más intuitiva el significado de la distancia de Levenshtein en cada caso.
 
-\clearpage
-
 \section{Análisis de la inteligibilidad con los datos normalizados} \label{datosNormalizados}
 
-De manera similar que en la sección anterior, en la Figura \ref{generalNormalizado} presentamos los resultados esta vez con los datos normalizados.
+Al igual que en la Sección \ref{SeccionInteligibilidad}, en la Figura \ref{generalNormalizado} presentamos los resultados de la muestra, luego de la normalización.
 
 \begin{figure}
 \begin{center}$
@@ -104,11 +100,13 @@ Para la interpolación $50\%$ de inglés, de un total de $75$ participantes, $57
 
 %Estadistica
 \subsection{Análisis estadístico}
-Con el objetivo de ver qué tan estadísticamente significativas son las diferencias en inteligibilidad entre los saltos de interpolación, procedemos ahora a hacer un análisis estadístico sobre los datos. 
 
-Para este análisis primero evaluamos usar el Student's two-sample t-test. Este test nos pide como requerimiento que las muestras tengan una distribución normal. Para probar esto aplicamos el test de Shapiro sobre los datos normalizados.
+En la siguiente sección, realizaremos un análisis estadístico con el objetivo de vislumbrar cuan estadísticamente significativas son las diferencias en inteligibilidad entre los saltos de interpolación.
+
+En primera instancia evaluamos usar el Student's two-sample t-test para este análisis. Este test pide como requerimiento que las muestras tengan una distribución normal. Para probar esto aplicamos el test de Shapiro sobre los datos normalizados.
 
 \begin{table}
+\centering
 \begin{tabular}[t]{| c | c | c |}
 \hline
 Interpolación & p-valor & W \\
@@ -130,9 +128,10 @@ $60\%$ & 0.00215 & 0.93804\\
 \label{fig:resultadosShapiro}
 \end{table}
 
-Como puede verse en la Tabla \ref{fig:resultadosShapiro} los $5$ tests dan $p<0.01$, entonces rechazamos la hipotesis nula de normalidad, y concluimos que los datos no siguen una distribución normal. Por este motivo descartamos la posibilidad de usar el Student's two-sample t-test y procedemos a utilizar el test no paramétrico Mann-Whitney-Wilcoxon, que solo pide como requerimiento que las observaciones de ambos grupos sean independientes. Cabe recordar que por diseño, nuestras observaciones cumplen este requerimiento, ya que el sistema siempre asignaba audios con diferentes oraciones a un mismo participante, por lo que aunque contestaran más de una vez, las respuestas resultaban independientes entre sí.
+Como puede verse en la Tabla \ref{fig:resultadosShapiro} los $5$ tests dan $p<0.01$, entonces rechazamos la hipótesis nula de normalidad, y concluimos que los datos no siguen una distribución normal. Descartamos la posibilidad de usar el Student's two-sample t-test y procedemos a utilizar el test no paramétrico Mann-Whitney-Wilcoxon, con restricciones mas laxas. Este test pide como único requerimiento que las observaciones de ambos grupos sean independientes. Cabe recordar que, por diseño, nuestras observaciones cumplen con este requerimiento, ya que el sistema siempre asignaba audios con diferentes oraciones a un mismo participante, por lo que aunque contestaran más de una vez, las respuestas eran independientes entre sí.
 
 \begin{table}
+\centering
 \begin{tabular}[t]{| c | c | c |}
 \hline
 Interpolaciones & p-valor & W \\
@@ -151,11 +150,10 @@ $60\%$ vs. $70\%$ & 0.07083 & 1956 \\
 \label{tabla:Whitney}
 \end{table}
 
-Como se ve en la Tabla \ref{tabla:Whitney} la diferencia en distancia de Levinshtein entre $30\%$ y $40\%$ de interpolación de inglés no es estadísticamente significativa $(p=0.1367)$. Así tampoco lo es para el salto de $40\%$ a $50\%$ de interpolación de inglés $(p=0.1148)$. En cambio, al pasar de $50\%$ a $60\%$ la diferencia es significativa $(p=0.0051)$, lo cual  significa que en este salto la inteligibilidad se deteriora más sensiblemente que en los saltos anteriores. Por último, de $60\%$ a $70\%$ la diferencia de distancias de Levinshtein es aproximadamente significativa $(p<0.1)$.
+Como se ve en la Tabla \ref{tabla:Whitney} la diferencia en distancia de Levinshtein entre $30\%$ y $40\%$ de interpolación de inglés no es estadísticamente significativa $(p=0.1367)$. Así tampoco lo es para el salto de $40\%$ a $50\%$ de interpolación de inglés $(p=0.1148)$. En cambio, al pasar de $50\%$ a $60\%$ la diferencia es significativa $(p=0.0051)$, lo cual se interpreta como que para este salto la inteligibilidad se deteriora más sensiblemente que para los saltos anteriores. Por último, de $60\%$ a $70\%$ la diferencia de distancias de Levinshtein es aproximadamente significativa $(p<0.1)$.
 
-%Fin Estadistica
-\subsection{Análisis por oración}
-Tras aplicar la normalización de los datos descripta en la Sección 3.5, tratamos ahora de encontrar una interpretación intuitiva para las distancias de Levenshtein obtenidas. Por ejemplo, tomando la oración $8$ de las frases utilizadas en la experimentación:
+\subsection{Análisis por oración}\label{analisisPorOracion}
+Tras aplicar la normalización de los datos descripta en la Sección \ref{transcriptProblemsAndNorm}, tratamos ahora de encontrar una interpretación intuitiva para las distancias de Levenshtein obtenidas. Por ejemplo, tomando la oración $8$ de las frases utilizadas en la experimentación:
 
 \begin{itemize}
 	\item ``Las acongojadas cotorras sonrieron a mi círculo''
@@ -174,38 +172,45 @@ Podemos observar las siguientes transcripciones extraídas de los resultados:
 
 Para todas las interpolaciones enunciadas previamente, los errores más comunes varían desde falta de acentos en palabras como ``concluyó'' hasta faltas de inteligibilidad en palabras con cierta complejidad fonética como ``aguileña'' o ``gruñón''. En el Apéndice \ref{transcripcionesParticipantes} listamos todas las transcripciones ingresadas por los participantes del estudio.
 
-Como caso particular, en la oración $3$, ``este enjoyado juez comprará nuestro corchete'', observamos que la mayoría de los participantes cometieron errores al transcribir la palabra ``juez'', que confundieron de manera sistemática con palabras sonoramente similares como ``fue'', ``enjoyado'', que transcribieron como ``enfollado'' o ``enrollado'', y la conjugación del verbo ``comprar'' que transcribieron como ``comprando'' o ``comprar''.
+Como caso particular, en la oración $3$ (Figura \ref{boxplot:fig3}), ``este enjoyado juez comprará nuestro corchete'', observamos que la mayoría de los participantes cometieron errores al transcribir la palabra ``juez'', que confundieron de manera sistemática con palabras sonoramente similares como ``fue'', ``enjoyado'', que transcribieron como ``enfollado'' o ``enrollado'', y la conjugación del verbo ``comprar'' que transcribieron como ``comprando'' o ``comprar''.
 
-Buscando una explicación a estos errores y revisando el mapeo de fonemas que realizamos previamente, descubrimos que el mapeo de /hh/ a /g/ era erróneo. Esto produjo que palabras como ``gato'' sonaran más como ``jato'' (/hh/ /a/ /t/ /o/). Adicionalmente descubrimos que ningún fono del inglés estaba siendo mapeado al fono /x/, correspondiente al grafema j en castellano. Esto produjo que cuando el sintetizador interpola entre el fono del castellano y el fono inexistente del inglés (que HTS toma como ruido blanco), el resultado fuera una mezcla entre ruido y /x/. Al ser la /x/ ruido blanco (consonante fricativa), no pudimos reconocer el error en las instancias preliminares de evaluación. Esto explicaría por qué algunos participantes tuvieron problemas transcribiendo la palabra ``juez''.
+Buscando una explicación a estos errores y revisando el mapeo de fonos realizado previamente, descubrimos que el mapeo de /hh/ a /g/ es erróneo. Esto produjo que palabras como ``gato'' sonaran más como ``jato'' (/hh/ /a/ /t/ /o/). Adicionalmente descubrimos que ningún fono del inglés estaba siendo mapeado al fono /x/, correspondiente al grafema j en castellano. Esto produjo que cuando el sintetizador interpola entre el fono del castellano y el fono inexistente del inglés (que HTS toma como ruido blanco), el resultado fuera una mezcla entre ruido y /x/. Al ser la /x/ ruido blanco (consonante fricativa), no pudimos reconocer el error en las instancias preliminares de evaluación. Esto explicaría por qué algunos participantes tuvieron problemas transcribiendo la palabra ``juez''.
 
-Para los grados de interpolación $60\%$ y $70\%$ inglés, podemos observar un aumento notable de la variabilidad en las respuestas. Para el primero, de las $70$ respuestas obtenidas, $40$ participantes lograron transcribir el audio con una distancia menor a $10$ caracteres, $6$ obtuvieron anotaron una distancia entre $10$ y $20$ caracteres, y $24$ transcribieron el audio con distancia mayor a $20$ caracteres. La distancia entre el primer y tercer cuartil pasa a ser de $20$ caracteres con una mediana igual a $10$.
+Continuando con el análisis, para la interpolación de $60\%$ inglés, podemos observar un aumento notable de la variabilidad en las respuestas. Para el primero, de las $70$ respuestas obtenidas, $40$ participantes transcribieron el audio con una distancia menor a $10$ caracteres, $6$ anotaron una distancia entre $10$ y $20$ caracteres, y $24$ transcribieron el audio con distancia mayor a $20$ caracteres. Además, podemos ver en la Figura \ref{boxplot:fig3} que la distancia entre el primer y tercer cuartil es muy marcada, siendo de $20$ caracteres con una mediana igual a $10$.
 
-Para $70\%$ inglés, la diferencia es todavía más marcada, de los $68$ resultados obtenidos, $28$ lograron transcribir el audio con un buen grado de inteligibilidad, $8$ con un grado medio y $32$ con un grado bajo o nulo de inteligibilidad. La distancia intercuartil se mantiene similar a la de mezcla $60\%$ inglés, aproximadamente $20$ caracteres, pero vemos un salto en la mediana que ahora es de $20$ caracteres.
-
-Consideramos que este salto en la distancia intercuartil puede deberse a dos motivos: El primero es que existen características particulares de los participantes y sus capacidades para discernir palabras, incluso cuando presentan defectos en la pronunciación del hablante. En particular, la oración $4$ (ver Figura \ref{oracionCuatro}) muestra cómo para el $70\%$ de inglés + $30\%$ de español en la interpolación, $2$ participantes de los $9$ que realizaron la transcripción, obtuvieron distancias $2$ y $6$ en sus transcripciones.
+Consideramos que este salto tan marcado en la distancia intercuartil puede deberse a que existen características particulares de los participantes y sus capacidades para discernir palabras, incluso cuando presentan defectos en la pronunciación del hablante. Para reforzar esa hipótesis puede verse en la figura \ref{boxplot:fig4} como en la oración $4$ para la interpolación de $70\%$ inglés, $2$ participantes de los $9$ que realizaron la transcripción, obtuvieron distancias $2$ y $6$ en sus transcripciones.
 
 \begin{figure}
-\begin{center}$
-\begin{array}{lll}
-\includegraphics[trim={0 0 0 1.25cm},clip,width=.5\textwidth]{imagenes/plots_normalized/3.png}
-\includegraphics[trim={0 0 0 1.25cm},clip,width=.5\textwidth]{imagenes/plots_normalized/4.png}
-\end{array}$
-\end{center}
-\caption{Oraciones 3 y 4 Normalizadas}
+\centering
+\begin{subfigure}{.5\textwidth}
+  \centering
+	\includegraphics[trim={0 0 0 1.26cm},clip,width=1\textwidth]{imagenes/plots_normalized/3.png}
+  \caption{Oración 3}
+  \label{boxplot:fig3}
+\end{subfigure}%
+\begin{subfigure}{.5\textwidth}
+  \centering
+	\includegraphics[trim={0 0 0 1.26cm},clip,width=1\textwidth]{imagenes/plots_normalized/4.png}
+  \caption{Oración 4}
+  \label{boxplot:fig4}
+\end{subfigure}
+\caption{Distancia de Levenshtein para distintos grados de interpolación con datos normalizados}
 \label{oracionCuatro}
 \end{figure}
 
-El segundo motivo puede deberse a que existen características particulares de las oraciones o del modelo utilizado para generar la voz que afectan la comprensión del audio: la oración $10$ ``El nudillo Argentino perdió su vaso'' con $70\%$ de interpolación de inglés + $30\%$ de castellano, en la cual $6$ de los $8$ participantes obtuvieron una buena transcripción del audio con distancia menor a $15$ , y para la oración $3$\footnote{Tener en cuenta que ambas oraciones se encuentran afectadas por el mismo mapeo incorrecto de la /x/ como fue discutido previamente}, con ese mismo grado de interpolación, todos los participantes transcribieron el audio con distancia de Levenshtein mayor a $15$, parecen demostrar esto. O bien la dificultad de las oraciones es variable o, lo que es todavía mas probable, llegado cierto punto en la interpolación, algunos fonemas empiezan a ``romperse'' o se alejan demasiado del fonema castellano correcto y terminan por disminuir la claridad de la voz.
+%El segundo motivo puede deberse a que existen características particulares de las oraciones o del sintetizador generado que afectan la comprensión del audio:
+
+Además, comparando la oración $10$ (Figura \ref{boxplot:fig10}) ``El nudillo Argentino perdió su vaso'' con las anteriores, podemos apreciar que parecerían haber características particulares en las oraciones o en el modelo generado que afectan la comprensión de los audios. Para esta oración, con $70\%$ de inglés en la interpolación, $6$ de los $8$ participantes obtuvieron una transcripción del audio con distancia menor a $15$, tanto que para la oración $3$\footnote{Tener en cuenta que ambas oraciones se encuentran afectadas por el mismo mapeo incorrecto de la /x/ como fue discutido previamente}, con ese mismo grado de interpolación, todos los participantes transcribieron el audio con distancia de Levenshtein mayor a $15$. Esto parecería indicar que o bien la dificultad de las oraciones es variable o, lo que es todavía mas probable, llegado cierto punto en la interpolación, algunos fonos empiezan a ``romperse'' o se alejan demasiado del fono del castellano correcto y terminan por disminuir la claridad de la voz.
 
 \begin{figure}
 \begin{center}
 \includegraphics[trim={0 0 0 1.25cm},clip,width=.5\textwidth]{imagenes/plots_normalized/10.png}
 \end{center}
-\caption{Oración 10 normalizada}
-\label{pics:blablabla}
+\caption{Distancia de Levenshtein para distintos grados de interpolación con datos normalizados oración 10}
+\label{boxplot:fig10}
 \end{figure}
 
-En conclusión, en esta sección pudimos demostrar que fue posible generar una voz con una distancia menor a $10$ caracteres hasta un $50\%$ de inglés + $50\%$ de castellano. Pasado el $50\%$ de inglés, la variabilidad de las respuestas se vuelve mucho más grande, pudiendo haber participantes que anotan una buena distancia de Levenshtein ($10$ caracteres o menos) hasta algunos que no logran comprender ni siquiera segmentos aislados del mismo (más de $30$ caracteres).
+En esta sección analizamos distintos problemas y particularidades en las oraciones que nos permitieron descubrir errores implementativos y teorizar sobre las características del modelo generado. Pudimos ver que la comprensión de una misma oración puede variar mucho dependiendo del oyente. También pudimos ver que, incluso utilizando el mismo grado de interpolación, no todas las oraciones presentan la misma dificultad a la hora de ser interpretadas.
 
 \section{Análisis del origen percibido}
 
@@ -243,7 +248,7 @@ Por otro lado, tanto para el conjunto ``Otro'' como para ``NS/NC'' podemos aprec
 
 Para darle peso estadístico a las afirmaciones realizadas en el apartado anterior, intentaremos analizar si las tendencias descendentes/ascendentes de las proporciones de sujetos que percibieron a los audios como español/inglés responden a un relación lineal con respecto al nivel de interpolación de inglés. Para eso, buscaremos ajustar un modelo lineal sobre los datos.
 
-Como primer análisis, ajustamos un modelo lineal para la atribución del audio a una persona de habla hispana. Nuestra variable independiente será el porcentaje de interpolacion de inglés en el modelo y como variable dependiente tendremos el porcentaje de sujetos que percibieron el audio como un hablante español.
+Como primer análisis, ajustamos un modelo lineal para la atribución del audio a una persona de habla hispana. Nuestra variable independiente será el porcentaje de interpolación de inglés en el modelo y como variable dependiente tendremos el porcentaje de sujetos que percibieron el audio como un hablante español.
 
 \begin{figure}
 \begin{center}
@@ -267,7 +272,7 @@ Como segundo análisis, ajustamos otro modelo lineal para la percepción de atri
 
 En la Figura \ref{stadisticEnglish} puede verse que el modelo lineal ajustado explica satisfactoriamente los datos, con un nivel elevado de significancia estadística $(p<0.05)$.
 
-De esto podemos concluir que existe evidencia estadística que indica que aumentar el grado de interpolación resulta en más participantes reconociéndolo como una persona de habla inglésa y no como un hablante oriundo de un país de habla hispana.
+De esto podemos concluir que existe evidencia estadística que indica que aumentar el grado de interpolación resulta en más participantes reconociéndolo como una persona de habla inglesa y no como un hablante oriundo de un país de habla hispana.
 
 \subsection{Análisis por oración}
 
@@ -279,14 +284,14 @@ Observando las oraciones una por una, podemos ver algunas discrepancias con los 
 \includegraphics[trim={0 0 0 2.3cm},clip,width=.7\textwidth]{imagenes/nacionalidades/9.png}
 \end{array}$
 \end{center}
-\caption{Interploación de inglés vs Respuestas de los participantes, oración 9}
+\caption{Interpolación de inglés vs Respuestas de los participantes, oración 9}
 \label{tresNueve}
 \end{figure}
 
-Buscando una explicación para este fenómeno, postulamos que esta gran diferencia entre los resultados se podría atribuir a las características particulares de cada oración. En particular la oración $9$ contiene una /\textipa{r}/ (\textit{perro}) que resulta muy notorio al pronunciarse con una intensidad menor a la esperada (más similar a una /\textipa{R}/ (\textit{pero})) y puede ser atribuida, entre otras causas, a un hablante Anglosajón con dificultades en la dicción de fonemas extranjeros.
+Buscando una explicación para este fenómeno, postulamos que esta gran diferencia entre los resultados se podría atribuir a las características particulares de cada oración. En particular la oración $9$ contiene una /\textipa{r}/ (\textit{perro}) que resulta muy notoria al pronunciarse con una intensidad menor a la esperada (más similar a una /\textipa{R}/ (\textit{pero})) y puede ser atribuida, entre otras causas, a un hablante Anglosajón con dificultades en la dicción de fonos extranjeros.
 %perro vibrante múltiple alveolar sonora
 
-Bajo esta suposición buscamos en qué otras oraciones se presenta este fonema:
+Bajo esta suposición buscamos en qué otras oraciones se presenta este fono:
 
 \begin{itemize}
 \item Oración $1$: ``Mi montaña aguileña recorrió la esquina'' 

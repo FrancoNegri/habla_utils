@@ -1,9 +1,15 @@
-Como trabajo futuro queda corregir los problemas en el mapeo fonetico encontrados en la fase de experimentación.
+En este trabajo tuvimos como objetivo generar un sistema de generación de habla en castellano con acento extranjero inglés.
 
-Como fue discutido en la sección de experimentación, una interpolación general puede producir que ciertos fonemas se alejen demasiado del fonema real del castellano, disminuyendo la inteligibilidad de la voz sintetizada. Un posible camino a seguir es realizar una interpolación controlada que permita regular cada fonema por separado. Para fonemas que puedan resultar problemáticos como el caso de la /r/ vibrante el grado de interpolación podría dejarse más cercano al castellano, mientras que para fonemas con comportamientos más similares el grado de interpolación podría llevarse más cerca del modelo ingles.
+Para esto entrenamos sistemas de habla con corpus en castellano e inglés, realizamos un mapeo fonetico entre ambos para que fueran compatibles y luego interpolamos entre ellos para obtener distintas pronunciaciones.
 
+Una vez que concideramos que la calidad del sistema era lo suficientemente buena, desarrollamos una encuesta online que nos permitiera probar de manera experimental que el sistema realmente cumplía con el objetivo del trabajo. Se presentaba a los participantes con audios sintetizados con distintos grados de interpolación de inglés y castellano y debían determinar la nacionalidad del hablante y dar una transcripción de lo escuchado.
 
+A travez de analisis estadisticos y perceptuales de los datos pudimos concluir que existe evidencia significativa entre el porcentaje de inglés utilizado en la interpolación y la cantidad de participantes que determinan que el origen del hablante es Anglosajón.
 
-%expandir
+Ademas, pudimos concluir que existe evidencia estadistica significativa entre el porcentaje de inglés utilizado en la interpolación y el empeoramiento de la calidad de las transcripciones de los participantes.
 
-% cambiar la velocidad para mejor ininteligencia?
+Como fue discutido en la Sección \ref{analisisPorOracion} queda pendiente solucionar los problemas encontrados en el mapeo fonético. Se esperaría que un mapeo sin estos errores genere mejores resultados.
+
+En esa misma sección también se discutió brebemente como no todas las oraciones presentan la misma dificultad para ser comprendidas, y que esto podía deberse a que no todos los fonos pueden interpolarse de la misma manera (alguno se rompen mas rapido que otros, por decirlo de alguna manera). Una posible extensión a este trabajo sería generar una interpolación controlada que permita regular cada fono por separado. Para fonos que puedan resultar problemáticos como el caso de la /r/ vibrante el grado de interpolación podría dejarse más cercano al castellano, mientras que para fonos con comportamientos más similares el grado de interpolación podría llevarse más cerca del modelo inglés.
+
+Por ultimo, queda como trabajo futuro probar si la tecnica descripta a lo largo de este trabajo es transferible a otros idiomas. Un interrogante valido es si es posible construir el sistema inverso, es decir, un sistema que sintetice habla en inglés con acento castellano/latino. Para esto, podría utilizarse una implementación similar a la propuesta en este trabajo: generar un mapeo de fonos donde todo fono del ingles este cubierto por alguno del castellano, utilizar esto para entrenar un HMM en castellano que utilice los fonos del inglés y luego interpolar entre con este modelo y uno en inglés para obtener distintas mezclas.

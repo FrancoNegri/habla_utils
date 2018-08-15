@@ -1,11 +1,11 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.8.11)  11 AUG 2018 16:37
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.3.19)  15 AUG 2018 12:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **tesis.tex
 (./tesis.tex
 LaTeX2e <2017-04-15>
-Babel <3.12> and hyphenation patterns for 84 language(s) loaded.
+Babel <3.12> and hyphenation patterns for 10 language(s) loaded.
 (./tesis.cls
 Document Class: tesis 1996/25/01 1.0g LaTeX document class (wm).
 \hours=\count79
@@ -505,19 +505,27 @@ File: listings.cfg 2015/06/04 1.6 listings configuration
 ))
 Package: listings 2015/06/04 1.6 (Carsten Heinz)
 
+(/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count110
+\float@exts=\toks20
+\float@box=\box28
+\@float@everytoks=\toks21
+\@floatcapt=\box29
+)
 (/usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcolorbox.sty
 Package: tcolorbox 2017/07/05 version 4.10 text color boxes
 
 (/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
 (/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
-\pgfutil@everybye=\toks20
+\pgfutil@everybye=\toks22
 \pgfutil@tempdima=\dimen138
 \pgfutil@tempdimb=\dimen139
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-lists.t
 ex)) (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
-\pgfutil@abb=\box28
+\pgfutil@abb=\box30
 (/usr/share/texlive/texmf-dist/tex/latex/ms/everyshi.sty
 Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
 ))
@@ -532,12 +540,12 @@ Package: pgf 2015/08/07 v3.0.1a (rcs-revision 1.15)
 Package: pgfsys 2014/07/09 v3.0.1a (rcs-revision 1.48)
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
-\pgfkeys@pathtoks=\toks21
-\pgfkeys@temptoks=\toks22
+\pgfkeys@pathtoks=\toks23
+\pgfkeys@temptoks=\toks24
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.code.t
 ex
-\pgfkeys@tmptoks=\toks23
+\pgfkeys@tmptoks=\toks25
 ))
 \pgf@x=\dimen140
 \pgf@y=\dimen141
@@ -549,13 +557,13 @@ ex
 \pgf@yc=\dimen147
 \w@pgf@writea=\write3
 \r@pgf@reada=\read1
-\c@pgf@counta=\count110
-\c@pgf@countb=\count111
-\c@pgf@countc=\count112
-\c@pgf@countd=\count113
-\t@pgf@toka=\toks24
-\t@pgf@tokb=\toks25
-\t@pgf@tokc=\toks26
+\c@pgf@counta=\count111
+\c@pgf@countb=\count112
+\c@pgf@countc=\count113
+\c@pgf@countd=\count114
+\t@pgf@toka=\toks26
+\t@pgf@tokb=\toks27
+\t@pgf@tokc=\toks28
  (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
 File: pgf.cfg 2008/05/14  (rcs-revision 1.7)
 )
@@ -571,8 +579,8 @@ File: pgfsys-common-pdf.def 2013/10/10  (rcs-revision 1.13)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.
 tex
 File: pgfsyssoftpath.code.tex 2013/09/09  (rcs-revision 1.9)
-\pgfsyssoftpath@smallbuffer@items=\count114
-\pgfsyssoftpath@bigbuffer@items=\count115
+\pgfsyssoftpath@smallbuffer@items=\count115
+\pgfsyssoftpath@bigbuffer@items=\count116
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.
 tex
@@ -602,11 +610,11 @@ Package: pgfcore 2010/04/11 v3.0.1a (rcs-revision 1.7)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
 \pgfmath@dimen=\dimen148
-\pgfmath@count=\count116
-\pgfmath@box=\box29
-\pgfmath@toks=\toks27
-\pgfmath@stack@operand=\toks28
-\pgfmath@stack@operation=\toks29
+\pgfmath@count=\count117
+\pgfmath@box=\box31
+\pgfmath@toks=\toks29
+\pgfmath@stack@operand=\toks30
+\pgfmath@stack@operation=\toks31
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code
@@ -626,7 +634,7 @@ tex)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerari
 thmetics.code.tex)))
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
-\c@pgfmathroundto@lastzeros=\count117
+\c@pgfmathroundto@lastzeros=\count118
 ))
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.te
 x
@@ -661,10 +669,10 @@ File: pgfcorepathusage.code.tex 2014/11/02  (rcs-revision 1.24)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.te
 x
 File: pgfcorescopes.code.tex 2015/05/08  (rcs-revision 1.46)
-\pgfpic=\box30
-\pgf@hbox=\box31
-\pgf@layerbox@main=\box32
-\pgf@picture@serial@count=\count118
+\pgfpic=\box32
+\pgf@hbox=\box33
+\pgf@layerbox@main=\box34
+\pgf@picture@serial@count=\count119
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.c
 ode.tex
@@ -697,7 +705,7 @@ File: pgfcorearrows.code.tex 2015/05/14  (rcs-revision 1.43)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
 File: pgfcoreshade.code.tex 2013/07/15  (rcs-revision 1.15)
 \pgf@max=\dimen172
-\pgf@sys@shading@range@num=\count119
+\pgf@sys@shading@range@num=\count120
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
 File: pgfcoreimage.code.tex 2013/07/15  (rcs-revision 1.18)
@@ -705,7 +713,7 @@ File: pgfcoreimage.code.tex 2013/07/15  (rcs-revision 1.18)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.
 tex
 File: pgfcoreexternal.code.tex 2014/07/09  (rcs-revision 1.21)
-\pgfexternal@startupbox=\box33
+\pgfexternal@startupbox=\box35
 ))
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.te
 x
@@ -721,7 +729,7 @@ File: pgfcorepatterns.code.tex 2013/11/07  (rcs-revision 1.5)
 )))
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
 File: pgfmoduleshapes.code.tex 2014/03/21  (rcs-revision 1.35)
-\pgfnodeparttextbox=\box34
+\pgfnodeparttextbox=\box36
 ) (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
 File: pgfmoduleplot.code.tex 2015/08/03  (rcs-revision 1.13)
 )
@@ -736,8 +744,8 @@ Package: pgfcomp-version-0-65 2007/07/03 v3.0.1a (rcs-revision 1.7)
 Package: pgfcomp-version-1-18 2007/07/23 v3.0.1a (rcs-revision 1.1)
 )) (/usr/share/texlive/texmf-dist/tex/latex/tools/verbatim.sty
 Package: verbatim 2014/10/28 v1.5q LaTeX2e package for verbatim enhancements
-\every@verbatim=\toks30
-\verbatim@line=\toks31
+\every@verbatim=\toks32
+\verbatim@line=\toks33
 \verbatim@in@stream=\read2
 )
 (/usr/share/texlive/texmf-dist/tex/latex/environ/environ.sty
@@ -746,87 +754,65 @@ Package: environ 2014/05/04 v0.3 A new way to define environments
 (/usr/share/texlive/texmf-dist/tex/latex/trimspaces/trimspaces.sty
 Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
 )
-\@envbody=\toks32
+\@envbody=\toks34
 )
 (/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2017/01/02 v2.4 e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count120
+\etb@tempcnta=\count121
 )
-\tcb@titlebox=\box35
-\tcb@upperbox=\box36
-\tcb@lowerbox=\box37
-\tcb@phantombox=\box38
-\c@tcbbreakpart=\count121
-\c@tcblayer=\count122
-\tcolorbox@number=\count123
-\tcb@temp=\box39
-\tcb@temp=\box40
+\tcb@titlebox=\box37
+\tcb@upperbox=\box38
+\tcb@lowerbox=\box39
+\tcb@phantombox=\box40
+\c@tcbbreakpart=\count122
+\c@tcblayer=\count123
+\tcolorbox@number=\count124
 \tcb@temp=\box41
 \tcb@temp=\box42
+\tcb@temp=\box43
+\tcb@temp=\box44
 \tcb@out=\write4
 \tcb@record@out=\write5
 )
 (/usr/share/texlive/texmf-dist/tex/latex/floatrow/floatrow.sty
 Package: floatrow 2008/08/02 v0.3b floatrow: float package extension
-\c@float@type=\count124
-\float@exts=\toks33
-\float@box=\box43
-\@floatcapt=\box44
-Package floatrow Info: Modified float package code loaded on input line 455.
-Package floatrow Info: Modified rotfloat package code loaded on input line 473.
 
-\FR@everyfloat=\toks34
-\flrow@foot=\insert199
-\FB@wd=\dimen175
-\FBo@wd=\dimen176
-\FBc@wd=\dimen177
-\FBo@ht=\skip46
-\FBc@ht=\skip47
-\FBf@ht=\skip48
-\FBo@max=\skip49
-\FBc@max=\skip50
-\FBf@max=\skip51
-\c@FBl@b=\count125
-\floatbox@depth=\count126
-\c@FRobj=\count127
-\c@FRsobj=\count128
-\Xhsize=\skip52
-\sXhsize=\skip53
-\Zhsize=\skip54
-\sZhsize=\skip55
-\flrow@rowbox=\box45
-\FR@Zunitlength=\dimen178
-\c@FBcnt=\count129
-\FPOScnt=\count130
-\LTleft=\skip56
-\LTright=\skip57
-\LTleft=\skip58
-\LTright=\skip59
-\flrow@types=\toks35
-)
-(/usr/share/texlive/texmf-dist/tex/latex/tools/multicol.sty
+
+! Package floatrow Error: Do not use float package with floatrow.
+(floatrow)                The latter will be skipped.
+
+See the floatrow package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.33   \@namedef{opt@floatrow.sty}{}\endinput}
+                                              
+? R
+OK, entering \nonstopmode...
+) (/usr/share/texlive/texmf-dist/tex/latex/tools/multicol.sty
 Package: multicol 2017/04/11 v1.8q multicolumn formatting (FMi)
-\c@tracingmulticols=\count131
-\mult@box=\box46
-\multicol@leftmargin=\dimen179
-\c@unbalance=\count132
-\c@collectmore=\count133
-\doublecol@number=\count134
-\multicoltolerance=\count135
-\multicolpretolerance=\count136
-\full@width=\dimen180
-\page@free=\dimen181
-\premulticols=\dimen182
-\postmulticols=\dimen183
-\multicolsep=\skip60
-\multicolbaselineskip=\skip61
-\partial@page=\box47
-\last@line=\box48
-\maxbalancingoverflow=\dimen184
-\mult@rightbox=\box49
-\mult@grightbox=\box50
-\mult@gfirstbox=\box51
-\mult@firstbox=\box52
+\c@tracingmulticols=\count125
+\mult@box=\box45
+\multicol@leftmargin=\dimen175
+\c@unbalance=\count126
+\c@collectmore=\count127
+\doublecol@number=\count128
+\multicoltolerance=\count129
+\multicolpretolerance=\count130
+\full@width=\dimen176
+\page@free=\dimen177
+\premulticols=\dimen178
+\postmulticols=\dimen179
+\multicolsep=\skip46
+\multicolbaselineskip=\skip47
+\partial@page=\box46
+\last@line=\box47
+\maxbalancingoverflow=\dimen180
+\mult@rightbox=\box48
+\mult@grightbox=\box49
+\mult@gfirstbox=\box50
+\mult@firstbox=\box51
+\@tempa=\box52
 \@tempa=\box53
 \@tempa=\box54
 \@tempa=\box55
@@ -843,34 +829,33 @@ Package: multicol 2017/04/11 v1.8q multicolumn formatting (FMi)
 \@tempa=\box66
 \@tempa=\box67
 \@tempa=\box68
-\@tempa=\box69
-\c@columnbadness=\count137
-\c@finalcolumnbadness=\count138
-\last@try=\dimen185
-\multicolovershoot=\dimen186
-\multicolundershoot=\dimen187
-\mult@nat@firstbox=\box70
-\colbreak@box=\box71
-\mc@col@check@num=\count139
+\c@columnbadness=\count131
+\c@finalcolumnbadness=\count132
+\last@try=\dimen181
+\multicolovershoot=\dimen182
+\multicolundershoot=\dimen183
+\mult@nat@firstbox=\box69
+\colbreak@box=\box70
+\mc@col@check@num=\count133
 )
 (/usr/share/texlive/texmf-dist/tex/latex/supertabular/supertabular.sty
 Package: supertabular 2004/02/20 v4.1e the supertabular environment
-\c@tracingst=\count140
-\ST@wd=\dimen188
-\ST@rightskip=\skip62
-\ST@leftskip=\skip63
-\ST@parfillskip=\skip64
-\ST@pageleft=\dimen189
-\ST@headht=\dimen190
-\ST@tailht=\dimen191
-\ST@pagesofar=\dimen192
-\ST@pboxht=\dimen193
-\ST@lineht=\dimen194
-\ST@stretchht=\dimen195
-\ST@prevht=\dimen196
-\ST@toadd=\dimen197
-\ST@dimen=\dimen198
-\ST@pbox=\box72
+\c@tracingst=\count134
+\ST@wd=\dimen184
+\ST@rightskip=\skip48
+\ST@leftskip=\skip49
+\ST@parfillskip=\skip50
+\ST@pageleft=\dimen185
+\ST@headht=\dimen186
+\ST@tailht=\dimen187
+\ST@pagesofar=\dimen188
+\ST@pboxht=\dimen189
+\ST@lineht=\dimen190
+\ST@stretchht=\dimen191
+\ST@prevht=\dimen192
+\ST@toadd=\dimen193
+\ST@dimen=\dimen194
+\ST@pbox=\box71
 )
 (./tesis.aux
 LaTeX Info: Redefining \. on input line 7.
@@ -878,26 +863,25 @@ LaTeX Info: Redefining \% on input line 7.
 )
 \openout1 = `tesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 19.
-LaTeX Font Info:    Try loading font information for T3+cmr on input line 19.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 23.
+LaTeX Font Info:    Try loading font information for T3+cmr on input line 23.
  (/usr/share/texmf/tex/latex/tipa/t3cmr.fd
 File: t3cmr.fd 2001/12/31 TIPA font definitions
 )
-LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    ... okay on input line 23.
 Package caption Info: Begin \AtBeginDocument code.
-Package caption Info: floatrow package is loaded.
 Package caption Info: float package is loaded.
 Package caption Info: floatrow package is loaded.
 Package caption Info: listings package is loaded.
@@ -906,17 +890,17 @@ Package caption Info: End \AtBeginDocument code.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count141
-\scratchdimen=\dimen256
-\scratchbox=\box73
-\nofMPsegments=\count142
-\nofMParguments=\count143
-\everyMPshowfont=\toks36
-\MPscratchCnt=\count144
-\MPscratchDim=\dimen257
-\MPnumerator=\count145
-\makeMPintoPDFobject=\count146
-\everyMPtoPDFconversion=\toks37
+\scratchcounter=\count135
+\scratchdimen=\dimen195
+\scratchbox=\box72
+\nofMPsegments=\count136
+\nofMParguments=\count137
+\everyMPshowfont=\toks35
+\MPscratchCnt=\count138
+\MPscratchDim=\dimen196
+\MPnumerator=\count139
+\makeMPintoPDFobject=\count140
+\everyMPtoPDFconversion=\toks36
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
@@ -969,8 +953,8 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-LaTeX Info: Redefining \. on input line 19.
-LaTeX Info: Redefining \% on input line 19.
+LaTeX Info: Redefining \. on input line 23.
+LaTeX Info: Redefining \% on input line 23.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1006,7 +990,7 @@ LaTeX Info: Redefining \% on input line 19.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-\c@lstlisting=\count147
+\c@lstlisting=\count141
 ABD: EveryShipout initializing macros (./caratula.tex
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <10.95> on input line 9.
@@ -1050,50 +1034,50 @@ LaTeX Info: Redefining \% on input line 1.
 
 ]
 Cap\'{\i }tulo 1.
-(./metodologia/introduccion.tex [1
+(./metodologia/introduccion.tex) [1
 
-])
-LaTeX Info: Redefining \. on input line 57.
-LaTeX Info: Redefining \% on input line 57.
+]
+LaTeX Info: Redefining \. on input line 61.
+LaTeX Info: Redefining \% on input line 61.
  [2]
 Cap\'{\i }tulo 2.
 (./metodologia/dataPreparation.tex [3
 
 ]
-LaTeX Info: Redefining \. on input line 56.
-LaTeX Info: Redefining \% on input line 56.
+LaTeX Info: Redefining \. on input line 50.
+LaTeX Info: Redefining \% on input line 50.
  [4]) (./metodologia/phoneMaping.tex
 LaTeX Info: Redefining \. on input line 64.
 LaTeX Info: Redefining \% on input line 64.
 
 [5]
-LaTeX Info: Redefining \. on input line 140.
-LaTeX Info: Redefining \% on input line 140.
+LaTeX Info: Redefining \. on input line 138.
+LaTeX Info: Redefining \% on input line 138.
  [6]
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <9> on input line 141.
+(Font)              <9> on input line 139.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 141.
+(Font)              <5> on input line 139.
 <imagenes_investigacion/consonantes1.png, id=69, 351.3125pt x 178.6675pt>
 File: imagenes_investigacion/consonantes1.png Graphic file (type png)
 <use imagenes_investigacion/consonantes1.png>
 Package pdftex.def Info: imagenes_investigacion/consonantes1.png  used on input
- line 146. on input line 146.
+ line 145. on input line 145.
 Package pdftex.def Info: Requested size: 210.78911pt x 107.20131pt on input lin
-e 146.
+e 145.
 <imagenes_investigacion/consonantes2.png, id=70, 342.27875pt x 202.7575pt>
 File: imagenes_investigacion/consonantes2.png Graphic file (type png)
 <use imagenes_investigacion/consonantes2.png>
 Package pdftex.def Info: imagenes_investigacion/consonantes2.png  used on input
- line 147. on input line 147.
+ line 146. on input line 146.
 Package pdftex.def Info: Requested size: 205.36882pt x 121.65543pt on input lin
-e 147.
-LaTeX Info: Redefining \. on input line 151.
-LaTeX Info: Redefining \% on input line 151.
+e 146.
+LaTeX Info: Redefining \. on input line 150.
+LaTeX Info: Redefining \% on input line 150.
  [7 <./imagenes_investigacion/consonantes1.png> <./imagenes_investigacion/conso
 nantes2.png>]) (./metodologia/modelInterpolation.tex
-LaTeX Info: Redefining \. on input line 6.
-LaTeX Info: Redefining \% on input line 6.
+LaTeX Info: Redefining \. on input line 4.
+LaTeX Info: Redefining \% on input line 4.
  [8])
 (./metodologia/speakerAdaptativeTraining.tex) (./metodologia/herramientas.tex
 LaTeX Info: Redefining \. on input line 6.
@@ -1137,13 +1121,23 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
                       
 l.125 	\item \TODO
                   
-? 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
 ! Undefined control sequence.
 <recently read> \TODO 
                       
 l.129 	\item \TODO
                   
-? 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
 <imagenes/arbolDeDesicionTesis.png, id=95, 879.285pt x 580.1675pt>
 File: imagenes/arbolDeDesicionTesis.png Graphic file (type png)
 <use imagenes/arbolDeDesicionTesis.png>
@@ -1157,6 +1151,15 @@ LaTeX Info: Redefining \% on input line 149.
 
 LaTeX Warning: Reference `apendiceQuestions' on page 14 undefined on input line
  157.
+
+! Undefined control sequence.
+l.157 ...©ndice \ref{apendiceQuestions} \completar
+                                                   se presenta el archivo ut...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
 
 LaTeX Info: Redefining \. on input line 164.
 LaTeX Info: Redefining \% on input line 164.
@@ -1173,8 +1176,8 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 LaTeX Info: Redefining \. on input line 196.
 LaTeX Info: Redefining \% on input line 196.
  [15])
-LaTeX Info: Redefining \. on input line 75.
-LaTeX Info: Redefining \% on input line 75.
+LaTeX Info: Redefining \. on input line 78.
+LaTeX Info: Redefining \% on input line 78.
  [16 <./imagenes/speakerInterpolation.png>]
 Cap\'{\i }tulo 3.
 (./experimentacion/experimentacion.tex [17
@@ -1207,25 +1210,25 @@ Package pdftex.def Info: estudio_online/estudio3.png  used on input line 64. on
  input line 64.
 Package pdftex.def Info: Requested size: 399.89708pt x 311.96791pt on input lin
 e 64.
-)
-LaTeX Info: Redefining \. on input line 78.
-LaTeX Info: Redefining \% on input line 78.
- [20 <./estudio_online/estudio3.png>]
-(./experimentacion/resultados.tex
-<datosDemograficos/genero.png, id=127, 602.25pt x 372.39125pt>
+) (./experimentacion/resultados.tex
+<datosDemograficos/genero.png, id=124, 602.25pt x 372.39125pt>
 File: datosDemograficos/genero.png Graphic file (type png)
 <use datosDemograficos/genero.png>
 Package pdftex.def Info: datosDemograficos/genero.png  used on input line 12. o
 n input line 12.
 Package pdftex.def Info: Requested size: 213.39568pt x 115.82152pt on input lin
 e 12.
-<datosDemograficos/edad.png, id=129, 602.25pt x 372.39125pt>
+<datosDemograficos/edad.png, id=126, 602.25pt x 372.39125pt>
 File: datosDemograficos/edad.png Graphic file (type png)
 <use datosDemograficos/edad.png>
 Package pdftex.def Info: datosDemograficos/edad.png  used on input line 18. on 
 input line 18.
 Package pdftex.def Info: Requested size: 213.39568pt x 115.82152pt on input lin
 e 18.
+LaTeX Info: Redefining \. on input line 25.
+LaTeX Info: Redefining \% on input line 25.
+
+[20 <./estudio_online/estudio3.png>]
 <datosDemograficos/infancia.png, id=131, 341.1144pt x 339.669pt>
 File: datosDemograficos/infancia.png Graphic file (type png)
 <use datosDemograficos/infancia.png>
@@ -1233,170 +1236,163 @@ Package pdftex.def Info: datosDemograficos/infancia.png  used on input line 32.
  on input line 32.
 Package pdftex.def Info: Requested size: 272.89186pt x 271.73557pt on input lin
 e 32.
-LaTeX Info: Redefining \. on input line 37.
-LaTeX Info: Redefining \% on input line 37.
+LaTeX Info: Redefining \. on input line 41.
+LaTeX Info: Redefining \% on input line 41.
  [21 <./datosDemograficos/genero.png (PNG copy)> <./datosDemograficos/edad.png 
-(PNG copy)>]
-<imagenes/plots_raw/general.png, id=139, 462.528pt x 346.896pt>
+(PNG copy)> <./datosDemograficos/infancia.png>]
+<imagenes/plots_raw/general.png, id=140, 462.528pt x 346.896pt>
 File: imagenes/plots_raw/general.png Graphic file (type png)
 <use imagenes/plots_raw/general.png>
 Package pdftex.def Info: imagenes/plots_raw/general.png  used on input line 50.
  on input line 50.
 Package pdftex.def Info: Requested size: 298.75264pt x 205.69801pt on input lin
 e 50.
-LaTeX Info: Redefining \. on input line 56.
-LaTeX Info: Redefining \% on input line 56.
- [22 <./datosDemograficos/infancia.png>]
-LaTeX Info: Redefining \. on input line 69.
-LaTeX Info: Redefining \% on input line 69.
- [23 <./imagenes/plots_raw/general.png>]
-LaTeX Info: Redefining \. on input line 83.
-LaTeX Info: Redefining \% on input line 83.
- [24]
-<imagenes/plots_normalized/general.png, id=153, 462.528pt x 346.896pt>
+LaTeX Info: Redefining \. on input line 62.
+LaTeX Info: Redefining \% on input line 62.
+ [22 <./imagenes/plots_raw/general.png>]
+<imagenes/plots_normalized/general.png, id=147, 462.528pt x 346.896pt>
 File: imagenes/plots_normalized/general.png Graphic file (type png)
 <use imagenes/plots_normalized/general.png>
 Package pdftex.def Info: imagenes/plots_normalized/general.png  used on input l
-ine 92. on input line 92.
+ine 88. on input line 88.
 Package pdftex.def Info: Requested size: 298.75264pt x 205.69801pt on input lin
-e 92.
-LaTeX Info: Redefining \. on input line 132.
-LaTeX Info: Redefining \% on input line 132.
- [25
-
- <./imagenes/plots_normalized/general.png>]
-LaTeX Info: Redefining \. on input line 172.
-LaTeX Info: Redefining \% on input line 172.
- [26]
-<imagenes/plots_normalized/3.png, id=163, 462.528pt x 346.896pt>
+e 88.
+LaTeX Info: Redefining \. on input line 94.
+LaTeX Info: Redefining \% on input line 94.
+ [23]
+LaTeX Info: Redefining \. on input line 130.
+LaTeX Info: Redefining \% on input line 130.
+ [24 <./imagenes/plots_normalized/general.png>]
+LaTeX Info: Redefining \. on input line 169.
+LaTeX Info: Redefining \% on input line 169.
+ [25]
+<imagenes/plots_normalized/3.png, id=160, 462.528pt x 346.896pt>
 File: imagenes/plots_normalized/3.png Graphic file (type png)
 <use imagenes/plots_normalized/3.png>
-Package pdftex.def Info: imagenes/plots_normalized/3.png  used on input line 19
-0. on input line 190.
-Package pdftex.def Info: Requested size: 213.39568pt x 143.64111pt on input lin
-e 190.
-<imagenes/plots_normalized/4.png, id=165, 462.528pt x 346.896pt>
+Package pdftex.def Info: imagenes/plots_normalized/3.png  used on input line 18
+7. on input line 187.
+Package pdftex.def Info: Requested size: 213.39568pt x 143.5099pt on input line
+ 187.
+<imagenes/plots_normalized/4.png, id=162, 462.528pt x 346.896pt>
 File: imagenes/plots_normalized/4.png Graphic file (type png)
 <use imagenes/plots_normalized/4.png>
 Package pdftex.def Info: imagenes/plots_normalized/4.png  used on input line 19
-1. on input line 191.
-Package pdftex.def Info: Requested size: 213.39568pt x 143.64111pt on input lin
-e 191.
-
-Overfull \hbox (10.0pt too wide) in paragraph at lines 188--193
- []$ 
- []
-
-LaTeX Info: Redefining \. on input line 197.
-LaTeX Info: Redefining \% on input line 197.
-[27]
-<imagenes/plots_normalized/10.png, id=171, 462.528pt x 346.896pt>
+3. on input line 193.
+Package pdftex.def Info: Requested size: 213.39568pt x 143.5099pt on input line
+ 193.
+LaTeX Info: Redefining \. on input line 200.
+LaTeX Info: Redefining \% on input line 200.
+ [26]
+<imagenes/plots_normalized/10.png, id=167, 462.528pt x 346.896pt>
 File: imagenes/plots_normalized/10.png Graphic file (type png)
 <use imagenes/plots_normalized/10.png>
 Package pdftex.def Info: imagenes/plots_normalized/10.png  used on input line 2
-02. on input line 202.
+07. on input line 207.
 Package pdftex.def Info: Requested size: 213.39568pt x 143.64111pt on input lin
-e 202.
-LaTeX Info: Redefining \. on input line 213.
-LaTeX Info: Redefining \% on input line 213.
- [28 <./imagenes/plots_normalized/3.png> <./imagenes/plots_normalized/4.png> <.
+e 207.
+LaTeX Info: Redefining \. on input line 215.
+LaTeX Info: Redefining \% on input line 215.
+ [27 <./imagenes/plots_normalized/3.png> <./imagenes/plots_normalized/4.png> <.
 /imagenes/plots_normalized/10.png>]
-Overfull \hbox (7.83293pt too wide) in paragraph at lines 215--216
+Overfull \hbox (7.83293pt too wide) in paragraph at lines 220--221
 []\OT1/cmr/m/n/10.95 Hispanoparlante: ``La-tino'', ``Ar-gen-tino'', ``Es-pa~nol
 '', ``Uru-gua-yo'', ``Cen-troa-me-ri-cano'',
  []
 
-<imagenes/nacionalidades/general.png, id=182, 602.25pt x 372.39125pt>
+<imagenes/nacionalidades/general.png, id=179, 602.25pt x 372.39125pt>
 File: imagenes/nacionalidades/general.png Graphic file (type png)
 <use imagenes/nacionalidades/general.png>
 Package pdftex.def Info: imagenes/nacionalidades/general.png  used on input lin
-e 226. on input line 226.
+e 231. on input line 231.
 Package pdftex.def Info: Requested size: 298.75264pt x 163.5627pt on input line
- 226.
-LaTeX Info: Redefining \. on input line 238.
-LaTeX Info: Redefining \% on input line 238.
-[29 <./imagenes/nacionalidades/general.png (PNG copy)>]
-<imagenes/estadistica/spanish.jpg, id=188, 481.8pt x 481.8pt>
+ 231.
+LaTeX Info: Redefining \. on input line 241.
+LaTeX Info: Redefining \% on input line 241.
+[28 <./imagenes/nacionalidades/general.png (PNG copy)>]
+<imagenes/estadistica/spanish.jpg, id=185, 481.8pt x 481.8pt>
 File: imagenes/estadistica/spanish.jpg Graphic file (type jpg)
 <use imagenes/estadistica/spanish.jpg>
 Package pdftex.def Info: imagenes/estadistica/spanish.jpg  used on input line 2
-50. on input line 250.
+55. on input line 255.
 Package pdftex.def Info: Requested size: 213.39568pt x 194.48686pt on input lin
-e 250.
-<imagenes/estadistica/english.jpg, id=190, 481.8pt x 481.8pt>
+e 255.
+<imagenes/estadistica/english.jpg, id=187, 481.8pt x 481.8pt>
 File: imagenes/estadistica/english.jpg Graphic file (type jpg)
 <use imagenes/estadistica/english.jpg>
 Package pdftex.def Info: imagenes/estadistica/english.jpg  used on input line 2
-62. on input line 262.
+67. on input line 267.
 Package pdftex.def Info: Requested size: 213.39568pt x 194.48686pt on input lin
-e 262.
-LaTeX Info: Redefining \. on input line 267.
-LaTeX Info: Redefining \% on input line 267.
- [30 <./imagenes/estadistica/spanish.jpg>]
-<imagenes/nacionalidades/9.png, id=196, 602.25pt x 372.39125pt>
+e 267.
+LaTeX Info: Redefining \. on input line 272.
+LaTeX Info: Redefining \% on input line 272.
+ [29 <./imagenes/estadistica/spanish.jpg>]
+<imagenes/nacionalidades/9.png, id=193, 602.25pt x 372.39125pt>
 File: imagenes/nacionalidades/9.png Graphic file (type png)
 <use imagenes/nacionalidades/9.png>
-Package pdftex.def Info: imagenes/nacionalidades/9.png  used on input line 279.
- on input line 279.
+Package pdftex.def Info: imagenes/nacionalidades/9.png  used on input line 284.
+ on input line 284.
 Package pdftex.def Info: Requested size: 298.75264pt x 152.27083pt on input lin
-e 279.
-LaTeX Info: Redefining \. on input line 288.
-LaTeX Info: Redefining \% on input line 288.
- [31 <./imagenes/estadistica/english.jpg> <./imagenes/nacionalidades/9.png (PNG
+e 284.
+LaTeX Info: Redefining \. on input line 293.
+LaTeX Info: Redefining \% on input line 293.
+ [30 <./imagenes/estadistica/english.jpg> <./imagenes/nacionalidades/9.png (PNG
  copy)>]
-<imagenes/nacionalidades/1.png, id=203, 602.25pt x 372.39125pt>
+<imagenes/nacionalidades/1.png, id=200, 602.25pt x 372.39125pt>
 File: imagenes/nacionalidades/1.png Graphic file (type png)
 <use imagenes/nacionalidades/1.png>
-Package pdftex.def Info: imagenes/nacionalidades/1.png  used on input line 304.
- on input line 304.
-Package pdftex.def Info: Requested size: 213.39568pt x 106.74786pt on input lin
-e 304.
-<imagenes/nacionalidades/7.png, id=205, 602.25pt x 372.39125pt>
-File: imagenes/nacionalidades/7.png Graphic file (type png)
-<use imagenes/nacionalidades/7.png>
-Package pdftex.def Info: imagenes/nacionalidades/7.png  used on input line 309.
+Package pdftex.def Info: imagenes/nacionalidades/1.png  used on input line 309.
  on input line 309.
 Package pdftex.def Info: Requested size: 213.39568pt x 106.74786pt on input lin
 e 309.
-<imagenes/nacionalidades/6.png, id=207, 602.25pt x 372.39125pt>
+<imagenes/nacionalidades/7.png, id=202, 602.25pt x 372.39125pt>
+File: imagenes/nacionalidades/7.png Graphic file (type png)
+<use imagenes/nacionalidades/7.png>
+Package pdftex.def Info: imagenes/nacionalidades/7.png  used on input line 314.
+ on input line 314.
+Package pdftex.def Info: Requested size: 213.39568pt x 106.74786pt on input lin
+e 314.
+<imagenes/nacionalidades/6.png, id=204, 602.25pt x 372.39125pt>
 File: imagenes/nacionalidades/6.png Graphic file (type png)
 <use imagenes/nacionalidades/6.png>
-Package pdftex.def Info: imagenes/nacionalidades/6.png  used on input line 324.
- on input line 324.
-Package pdftex.def Info: Requested size: 213.39568pt x 106.74786pt on input lin
-e 324.
-<imagenes/nacionalidades/8.png, id=209, 602.25pt x 372.39125pt>
-File: imagenes/nacionalidades/8.png Graphic file (type png)
-<use imagenes/nacionalidades/8.png>
-Package pdftex.def Info: imagenes/nacionalidades/8.png  used on input line 329.
+Package pdftex.def Info: imagenes/nacionalidades/6.png  used on input line 329.
  on input line 329.
 Package pdftex.def Info: Requested size: 213.39568pt x 106.74786pt on input lin
 e 329.
-LaTeX Info: Redefining \. on input line 338.
-LaTeX Info: Redefining \% on input line 338.
- [32 <./imagenes/nacionalidades/1.png (PNG copy)> <./imagenes/nacionalidades/7.
+<imagenes/nacionalidades/8.png, id=206, 602.25pt x 372.39125pt>
+File: imagenes/nacionalidades/8.png Graphic file (type png)
+<use imagenes/nacionalidades/8.png>
+Package pdftex.def Info: imagenes/nacionalidades/8.png  used on input line 334.
+ on input line 334.
+Package pdftex.def Info: Requested size: 213.39568pt x 106.74786pt on input lin
+e 334.
+LaTeX Info: Redefining \. on input line 343.
+LaTeX Info: Redefining \% on input line 343.
+ [31 <./imagenes/nacionalidades/1.png (PNG copy)> <./imagenes/nacionalidades/7.
 png (PNG copy)> <./imagenes/nacionalidades/6.png (PNG copy)> <./imagenes/nacion
 alidades/8.png (PNG copy)>]
-<imagenes/nacVsPlot/general.png, id=219, 462.528pt x 346.896pt>
+<imagenes/nacVsPlot/general.png, id=216, 462.528pt x 346.896pt>
 File: imagenes/nacVsPlot/general.png Graphic file (type png)
 <use imagenes/nacVsPlot/general.png>
-Package pdftex.def Info: imagenes/nacVsPlot/general.png  used on input line 345
-. on input line 345.
+Package pdftex.def Info: imagenes/nacVsPlot/general.png  used on input line 350
+. on input line 350.
 Package pdftex.def Info: Requested size: 298.75264pt x 200.18425pt on input lin
-e 345.
+e 350.
 )
-LaTeX Info: Redefining \. on input line 82.
-LaTeX Info: Redefining \% on input line 82.
- [33 <./imagenes/nacVsPlot/general.png>]
-LaTeX Info: Redefining \. on input line 82.
-LaTeX Info: Redefining \% on input line 82.
- [34]
-Cap\'{\i }tulo 4.
-(./final/final.tex) [35
+LaTeX Info: Redefining \. on input line 83.
+LaTeX Info: Redefining \% on input line 83.
+ [32 <./imagenes/nacVsPlot/general.png>]
+LaTeX Info: Redefining \. on input line 84.
+LaTeX Info: Redefining \% on input line 84.
+ [33]
+LaTeX Info: Redefining \. on input line 84.
+LaTeX Info: Redefining \% on input line 84.
+ [34
 
 ]
-LaTeX Info: Redefining \. on input line 86.
-LaTeX Info: Redefining \% on input line 86.
+Cap\'{\i }tulo 4.
+(./final/final.tex) [35]
+LaTeX Info: Redefining \. on input line 88.
+LaTeX Info: Redefining \% on input line 88.
  [36
 
 ]
@@ -5115,8 +5111,8 @@ raha-llad,
 [43
 
 ])
-LaTeX Info: Redefining \. on input line 89.
-LaTeX Info: Redefining \% on input line 89.
+LaTeX Info: Redefining \. on input line 91.
+LaTeX Info: Redefining \% on input line 91.
  [44] (./tesis.aux
 LaTeX Info: Redefining \. on input line 7.
 LaTeX Info: Redefining \% on input line 7.
@@ -5126,12 +5122,12 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 17323 strings out of 492990
- 313184 string characters out of 6135005
- 560282 words of memory out of 5000000
- 20510 multiletter control sequences out of 15000+600000
+ 16847 strings out of 494796
+ 306373 string characters out of 6177331
+ 546195 words of memory out of 5000000
+ 19796 multiletter control sequences out of 15000+600000
  11523 words of font info for 39 fonts, out of 8000000 for 9000
- 1141 hyphenation exceptions out of 8191
+ 85 hyphenation exceptions out of 8191
  54i,15n,73p,1410b,530s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
@@ -5146,7 +5142,7 @@ amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
 10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
 ></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr
 /share/texmf/fonts/type1/fkr/tipa/tipa10.pfb>
-Output written on tesis.pdf (54 pages, 1001709 bytes).
+Output written on tesis.pdf (54 pages, 1003459 bytes).
 PDF statistics:
  308 PDF objects out of 1000 (max. 8388607)
  186 compressed objects within 2 object streams

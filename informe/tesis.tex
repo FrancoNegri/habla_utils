@@ -10,12 +10,16 @@
 \usepackage{booktabs}
 \usepackage{listings}
 \raggedbottom
+\usepackage{float}
+\makeatletter
+\def\fps@figure{H}
+\def\fps@table{H}
+\makeatother
+
 \usepackage{tcolorbox}
 \usepackage{floatrow}
 \usepackage{multicol}
 \usepackage{supertabular}
-\floatplacement{figure}{H}
-\floatplacement{table}{H}
 \begin{document}
 %%%% CARATULA
 
@@ -59,7 +63,7 @@
 \section{Preparación de los datos}\label{dataPrepartion}
 \input{metodologia/dataPreparation.tex}
 
-\section{Repertorio fonético y mapeo de fonemas}\label{phoneMaping}
+\section{Repertorio fonético y mapeo de fonos}\label{phoneMaping}
 \input{metodologia/phoneMaping.tex}
 
 \section{Interpolación entre modelos}\label{modelInterpolation}
@@ -70,18 +74,16 @@
 
 \section{Herramientas} \label{herramientas}
 \input{metodologia/herramientas.tex}
-\pagebreak
 %Experimentación
 \chapter{Evaluación perceptual}\label{evaluacionPerceptual}
 \input{experimentacion/experimentacion.tex}
-\pagebreak
 
 \section{Resultados}
 \input{experimentacion/resultados.tex}
-\pagebreak
 
 \chapter{Conclusiones y trabajo futuro}
 \input{final/final.tex}
+
 \pagebreak
 \chapter{Apendice}
 \input{final/apendice.tex}

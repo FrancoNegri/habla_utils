@@ -2,7 +2,7 @@ El objetivo de esta sección es dar una introducción a los corpus utilizados, j
 
 \subsection{Primer corpus en castellano}
 
-Al inicio de la investigación, comenzamos con el corpus "SECYT-mujer", construido por el Laboratorio de Investigaciones Sensoriales (INIGEM, UBA-CONICET) \cite{secytMujer}. El mismo está compuesto por $741$ oraciones cortas declarativas habladas por una locutora profesional en castellano rioplatense, equivalentes a $48$ minutos de habla. A continuación tres ejemplos de las oraciones articuladas por la locutora:
+Al inicio de la investigación, comenzamos con el corpus \textit{SECYT-mujer}, construido por el Laboratorio de Investigaciones Sensoriales (INIGEM, UBA-CONICET) \cite{secytMujer}. El mismo está compuesto por $741$ oraciones cortas declarativas habladas por una locutora profesional en castellano rioplatense, equivalentes a $48$ minutos de habla. A continuación, tres ejemplos de las oraciones articuladas por la locutora:
 
 \indent\indent \textit{La voluntad del juez fue impuesta en tribunales.}
 
@@ -10,23 +10,23 @@ Al inicio de la investigación, comenzamos con el corpus "SECYT-mujer", construi
 
 \indent\indent \textit{Al atardecer se puso su disfraz juglaresco.}
 
-Como parte inicial del trabajo es indispensable construir el etiquetado fonético para el corpus. Estos etiquetados consistirán en una lista de fonos donde se indica cuándo comienza y termina cada uno en el audio. La calidad de las oraciones que logremos sintetizar a posteriori dependerá fuertemente del etiquetado, por lo que es necesario prestar especial cuidado en que las transcripciones estén lo mejor alineadamente posible con los audios. Las transcripciones serán necesarias para entrenar los modelos de HMM+GMM, extrayendo tanto la información acústica para cada fono (cosas tales como la frecuencia principal, la duración, etc), como así también información contextual (por ejemplo: cómo suena un fonema cuando está seguido de algún otro, al principio de una oración, si se encuentra en un diptongo). Por ende, una mala transcripción se traducirá indefectiblemente en un mal modelo y malas oraciones sintetizadas. Llevamos a cabo varias pruebas de concepto utilizando HTS en este corpus, experimentando con diversos métodos para obtener el etiquetado fonético. 
+Como parte inicial del trabajo es indispensable construir el etiquetado fonético para el corpus. Estos etiquetados consistirán en una lista de fonos donde se indica cuándo comienza y termina cada uno en el audio. La calidad de las oraciones que logremos sintetizar a posteriori dependerá fuertemente del etiquetado, por lo que es necesario prestar especial cuidado en que las transcripciones estén lo mejor alineadamente posible con los audios. Las transcripciones serán necesarias para entrenar los modelos de HMM+GMM, extrayendo tanto la información acústica para cada fono (cosas tales como la frecuencia principal, la duración, etc), como así también información contextual (por ejemplo: cómo suena un fono cuando está seguido de algún otro, al principio de una oración, si se encuentra en un diptongo, etc). Por ende, una mala transcripción se traducirá indefectiblemente en un mal modelo y malas oraciones sintetizadas. Llevamos a cabo varias pruebas de concepto utilizando HTS en este corpus, experimentando con diversos métodos para obtener el etiquetado fonético. 
 
-La primera estrategia consistió en utilizar alineamiento automático con \textit{EHMM alignment} \cite{phoneticCapturing} empleando Festival y Festvox. Estos programas tienen como ventaja que tanto la anotación del corpus como la generación de oraciones utilizadas para la síntesis presentan el mismo repertorio fonético. Esto es útil ya que podemos garantizar que el entrenamiento y la síntesis están utilizando el mismo método de generación de oraciones.
+La primera estrategia consistió en utilizar alineamiento automático con \textit{EHMM alignment} \cite{phoneticCapturing} empleando Festival y Festvox. Esta técnica tienen como principal ventaja su sencillez. Para generar las transcripciones solo es necesario contar con el corpus que se quiere anotar y sus \textit{transcripciones grafémicas} (Transcripciones gráficas, escritas).
 
 Los resultados preliminares con este método fueron bastante negativos: los audios generados resultaban poco inteligibles notándose claros defectos acústicos, el más notable siendo el fono /\textipa{r}/ (perro) que se asemejaba más a /\textipa{R}/ (pero).
 
-Utilizando la herramienta de visualización y manipulación de audio Praat \cite{praat} para visualizar el alineamiento entre las transcripciones fonéticas obtenidas y los audios, descubrimos que la alineación de algunas oraciones estaba desfasada algunas milésimas de segundo respecto de los audios. Dado que para el alineamiento automático es necesario alinear los audios del corpus con audios sintetizados con festival, sospechamos que pudo haber problemas con la calidad del corpus o que los audio sintetizados por Festival eran demasiado discimiles comparados con los audios reales. 
+Utilizando la herramienta de visualización y manipulación de audio Praat \cite{praat} para visualizar el alineamiento entre las transcripciones fonéticas y los audios, descubrimos que la alineación de algunas oraciones estaba desfasada algunas milésimas de segundo respecto de los audios. Dado que para el alineamiento automático es necesario alinear los audios del corpus con audios sintetizados con festival, sospechamos que pudo haber problemas con la calidad del corpus o que los audio sintetizados por Festival eran demasiado disimiles comparados con los audios reales. 
 
-Dado que para el corpus contamos con las transcripciones fonéticas anotadas de manera manual, procedimos a implementar un híbrido que consiste en tomar las anotaciones hechas a mano para cada fonema por un lado y la información contextual y el repertorio fonético generado a partir del proceso de EHMM por otro y combinarlos en una nueva transcripción fonética. De esta manera buscamos mejorar la alineación pero manteniendo el mismo repertorio fonético y la misma meta-información brindada por el alineamiento automático.
+Dado que para el corpus contamos con las transcripciones fonéticas anotadas de manera manual, procedimos a implementar un híbrido, que consiste en tomar los tiempos de las anotaciones fonéticas manuales y la información contextual y el repertorio fonético generado a partir del proceso de EHMM y combinarlos en una nueva transcripción fonética. De esta manera buscamos mejorar la alineación, utilizando en teoría una transcripción mas precisa, pero manteniendo el fonético y la misma meta-información brindada por el alineamiento automático. Mantener el mismo repertorio fonético y meta-información de las transcripciones será clave para la síntesis de audios. Esto nos permitirá utilizar Festival para generar las ``partituras'' que queramos sintetizar y que estas tengan los mismos símbolos fonéticos (Para mas información ver Sección \ref{phoneMaping}).
 
-El modelo generado con estas transcripciones mixtas resultó superior a los generadas solo con alineamiento automático. Aún así los audios sintetizados todavía no alcanzaron una calidad aceptable, realizando pruebas todavía notamos que el sonido resultaba metálico y las frases poco inteligibles. Además se pudo percibir de manera informal otros detalles tales como que la voz original tenía un pitch mayor que la producida por los modelos, alrededor de un $10\%$.
+El modelo generado con estas transcripciones mixtas resultó superior a los generadas solo con alineamiento automático. Aún así los audios sintetizados todavía no alcanzaron una calidad aceptable, realizando pruebas notamos que el sonido resultaba metálico y las frases poco inteligibles. Además se pudo percibir de manera informal otros detalles tales como que la voz original tenía un pitch mayor que la producida por los modelos, alrededor de un $10\%$.
 
 Para intentar mejorar la calidad de los audios en este punto sumamos otro corpus de datos en castellano.
 
 \subsection{Segundo corpus en castellano}
 
-En este punto de la investigación obtenemos un segundo corpus de datos, tambien contribuido por el Laboratorio de Investigaciones Sensoriales, \textit{loc1\_pal} \cite{loc1pal} con $1593$ oraciones cortas con una mezcla entre frases declarativas e interrogativas del $80\%$ y $20\%$ aproximadamente, pronunciadas por una locutora profesional con acento Rioplatense con aproximadamente $2$ horas y $26$ minutos de habla. Con este nuevo conjunto de datos esperamos conseguir mejores resultados.
+En este punto de la investigación obtenemos un segundo corpus de datos, también contribuido por el Laboratorio de Investigaciones Sensoriales, \textit{loc1\_pal} \cite{loc1pal} con $1593$ oraciones cortas con una mezcla entre frases declarativas e interrogativas del $80\%$ y $20\%$ aproximadamente, pronunciadas por una locutora profesional con acento rioplatense con aproximadamente $2$ horas y $26$ minutos de habla. Con este nuevo conjunto de datos esperamos conseguir mejores resultados.
 
 Presentamos tres ejemplos de las oraciones articuladas por la locutora:
 
@@ -38,7 +38,7 @@ Presentamos tres ejemplos de las oraciones articuladas por la locutora:
 
 También vale la pena aclarar que algunas de las oraciones del primer y el segundo corpus están duplicadas. Por ejemplo la primera oración de ejemplo también estaba presente en \textit{secyt-mujer}.
 
-Para este corpus no contábamos con transcripciones fonéticas manuales por lo que nos vimos forzados a utilizar EHMM nuevamente. Aún así, los resultados fueron superiores a los conseguidos con \textit{secyt-mujer}. Al contrario que en \textit{secyt-mujer}, al visualizar este corpus con Praat, no apreciamos mayores desfasajes con las anotaciones fonéticas.
+Para este corpus no contábamos con transcripciones fonéticas manuales por lo que nos vimos forzados a utilizar EHMM nuevamente. Aún así, los resultados fueron superiores a los conseguidos con \textit{secyt-mujer}. Al contrario que en \textit{secyt-mujer}, al visualizar este corpus con Praat, no pudieron apreciarse mayores desfasajes entre las transcripciones fonéticas y los audios.
 
 Además los audios sintetizados resultaban inteligibles y con un marcado acento rioplatense. Tras algunas pruebas de concepto donde se experimentó con varios parámetros modificables dentro de HTK, logramos obtener resultados que superaban de manera significativa aquellos obtenidos previamente con \textit{secyt-mujer}. Por consiguiente consideramos que los audios generados habían alcanzado una buena calidad que resultara ininteligible y aceptable para el objetivo de la investigación, por lo que decidimos utilizar uno de estos modelos para el resto del trabajo.
 
@@ -52,9 +52,9 @@ Especulamos que la disparidad en la calidad de los resultados es causada princip
 
 \subsection{Corpus en inglés}
 
-Por otro lado entrenamos una voz en inglés \textit{CMU-ARCTIC-SLT} \cite{cmuArtic} con $1132$ oraciones en inglés y $56$ minutos de habla articuladas por una mujer estadounidense, disponible en la página de HTS \cite{hts}. Ya que este corpus venía a modo de demo con HTS, asumimos que los parámetros de entrenamiento y las transcripciones fonéticas ya habían sido seleccionadas de manera apropiada, por lo que no intentamos mejorar la calidad de las transcripciones fonéticas mas allá de lo que la demo ofrecía. 
+Por otro lado entrenamos una voz en inglés \textit{CMU-ARCTIC-SLT} \cite{cmuArtic} con $1132$ oraciones en inglés y $56$ minutos de habla articuladas por una mujer estadounidense, disponible en la página de HTS \cite{hts}. Ya que este corpus venía a modo de demo con HTS, asumimos que los parámetros de entrenamiento y las transcripciones fonéticas habían sido seleccionadas de manera apropiada, por lo que no intentamos mejorar la calidad de las transcripciones fonéticas mas allá de lo que los scripts ofrecían. 
 
-Una vez mas realizamos pruebas perceptuales informales para tener una idea cualitativa de los modelos generados. Los audios en ingles sintetizados con este modelo resultan inteligibles y con buena pronunciación. Sin embargo, en oraciones extensas, por ejemplo en audios de $17$ segundos, pueden empezar notarse errores mas grabes en la entonación. La misma se torna monotona y con ella, la inteligibilidad de los audios disminuye. 
+Una vez mas realizamos pruebas perceptuales informales para tener una idea cualitativa de los modelos generados. Los audios en inglés sintetizados con este modelo resultan inteligibles y con buena pronunciación. Sin embargo, en oraciones extensas, por ejemplo en audios de $17$ segundos, pueden empezar a notarse errores más grabes en la prosodia. La misma se torna monótona y con ella, la inteligibilidad de los audios disminuye.
 
 Presentamos tres ejemplos de las oraciones articuladas por la locutora:
 
@@ -68,6 +68,6 @@ En la Sección \ref{entrenamientoHTS} detallaremos mas detenidamente los aspecto
 
 % hablar de intelibililidad como para ya ir adelantando el tema
 % Cosas para hablar:
-% 5 fonemas.
+% 5 fonos.
 %TODO: phonetically balanced?
 % desarrollar generacion de uternaces: secty alineaminento mixto: tiempos a mano, features automaticos.
