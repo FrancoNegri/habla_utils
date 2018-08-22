@@ -68,7 +68,7 @@ festvox/uba\_es\_\_clunits.scm
 (require 'uba\_es\_\_lexicon\_mex)
 \end{tcolorbox}
 
-\noindent que contienen el conjunto de símbolos fonéticos del español mexicano, que se aproximan mucho a los del castellano rioplatense (no contiene /th/, por ejemplo).
+\noindent que contienen el conjunto de símbolos fonéticos del español mexicano, que se aproximan mucho a los del castellano rioplatense (no contiene [th], por ejemplo).
 
 Finalmente, corriendo los siguientes comandos:
 
@@ -98,7 +98,7 @@ HTS \cite{hts} es un framework de entrenamiento y síntesis de sistemas TTS basa
 
 \begin{figure}
 \includegraphics[scale=0.5]{imagenes/hmm.png}
-\caption{Estructura de un HMM (tomado de \cite{phoneticAndProsodic}, pagina 41)}
+\caption{Estructura de un HMM (tomado de \cite{phoneticAndProsodic}, página 41)}
 \label{hmmStructure}
 \centering
 \end{figure}
@@ -109,7 +109,7 @@ Al mismo tiempo HTS toma la decisión de modelar la información prosódica dent
 
 \begin{figure}
 \includegraphics[scale=0.5]{imagenes/hmmContext.png}
-\caption{Esquema HMM generado utilizando árboles de decisión (tomado de \cite{phoneticAndProsodic}, pagina 45)}
+\caption{Esquema HMM generado utilizando árboles de decisión (tomado de \cite{phoneticAndProsodic}, página 45)}
 \label{hmmTree}
 \centering
 \end{figure}
@@ -130,12 +130,12 @@ Por otro lado, como información contextual para el entrenamiento se tomaron los
 \end{itemize}
 \item La perspectiva articulatoria (anterior, central o posterior).
 \item Si el fono es una vocal o una consonante.
-\item En caso de ser una vocal, a que categoría pertenece: por ejemplo para el fono $/i/:${$i$ (no acentuada), $i0$ (diptongo), $i1$ (acentuada)}.
+\item En caso de ser una vocal, a que categoría pertenece: por ejemplo para el fono $[i]:${$i$ (no acentuada), $i0$ (diptongo), $i1$ (acentuada)}.
 \item En caso de ser una vocal, su redondeamiento vocálico.
 \item En caso de ser una consonante, si es débil o fuerte.
 \end{itemize}
 
-De esta manera HTS espera tener una voz mas dinámica, que para diferentes valores contextuales darán diferentes modelos acústicos para cada fono.
+De esta manera HTS espera tener una voz más dinámica, que para diferentes valores contextuales darán diferentes modelos acústicos para cada fono.
 
 En la Figura \ref{genTree} se muestra el resultado de un fragmento de uno de los árboles de decisión generado para modelar la duración de un fono. En base a este modelo, el sistema podrá inferir, por ejemplo, que si el fono actual no es nasal (C-Nasal) seguido de un stop (R-Stop), que no es el fono $l$ estará modelado por función de probabilidad Gaussiana definida en $dur\_s2\_7$.
 
@@ -189,7 +189,7 @@ A grandes rasgos, la interpolación consiste en tomar los vectores generados ant
 \begin{figure}
 \begin{center}
 \includegraphics[scale=0.4]{imagenes/speakerInterpolation.png}
-\caption{Block diagram of speech synthesis system with speaker interpolation. (tomado de \cite{phoneticAndProsodic}, pagina $70$) }
+\caption{Block diagram of speech synthesis system with speaker interpolation. (tomado de \cite{phoneticAndProsodic}, página $70$) }
 \label{spekerInterpolationImagen}
 \end{center}
 \end{figure}

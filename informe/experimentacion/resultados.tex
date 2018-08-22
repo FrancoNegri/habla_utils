@@ -112,15 +112,15 @@ En primera instancia evaluamos usar el Student's two-sample t-test para este an�
 Interpolación & p-valor & W \\
 \hline
 \hline
-$30\%$ & 6.875e-13 & 0.58326 \\
+$30\%$ & 6.875e-13 & 0.5832 \\
 \hline
-$40\%$ & 6.875e-13 & 0.69505 \\
+$40\%$ & 6.875e-13 & 0.6950 \\
 \hline
-$50\%$ & 1.271e-06 & 0.86748 \\
+$50\%$ & 1.271e-06 & 0.8674 \\
 \hline
-$60\%$ & 2.932e-06 & 0.86947 \\
+$60\%$ & 2.932e-06 & 0.8694 \\
 \hline
-$60\%$ & 0.00215 & 0.93804\\
+$60\%$ & 0.00215 & 0.9380\\
 
 \hline
 \end{tabular}
@@ -128,7 +128,7 @@ $60\%$ & 0.00215 & 0.93804\\
 \label{fig:resultadosShapiro}
 \end{table}
 
-Como puede verse en la Tabla \ref{fig:resultadosShapiro} los $5$ tests dan $p<0.01$, entonces rechazamos la hipótesis nula de normalidad, y concluimos que los datos no siguen una distribución normal. Descartamos la posibilidad de usar el Student's two-sample t-test y procedemos a utilizar el test no paramétrico Mann-Whitney-Wilcoxon, con restricciones mas laxas. Este test pide como único requerimiento que las observaciones de ambos grupos sean independientes. Cabe recordar que, por diseño, nuestras observaciones cumplen con este requerimiento, ya que el sistema siempre asignaba audios con diferentes oraciones a un mismo participante, por lo que aunque contestaran más de una vez, las respuestas eran independientes entre sí.
+Como puede verse en la Tabla \ref{fig:resultadosShapiro} los $5$ tests dan $p<0.01$, entonces rechazamos la hipótesis nula de normalidad, y concluimos que los datos no siguen una distribución normal. Descartamos la posibilidad de usar el Student's two-sample t-test y procedemos a utilizar el test no paramétrico Mann-Whitney-Wilcoxon, con restricciones más laxas. Este test pide como único requerimiento que las observaciones de ambos grupos sean independientes. Cabe recordar que, por diseño, nuestras observaciones cumplen con este requerimiento, ya que el sistema siempre asignaba audios con diferentes oraciones a un mismo participante, por lo que aunque contestaran más de una vez, las respuestas eran independientes entre sí.
 
 \begin{table}
 \centering
@@ -143,7 +143,7 @@ $40\%$ vs. $50\%$ & 0.1148 & 2132 \\
 \hline
 $50\%$ vs. $60\%$ & 0.0051 & 1921.5 \\
 \hline
-$60\%$ vs. $70\%$ & 0.07083 & 1956 \\
+$60\%$ vs. $70\%$ & 0.0708 & 1956 \\
 \hline
 \end{tabular}
 \caption{Resultados test no paramétrico Mann-Whitney-Wilcoxon} 
@@ -174,7 +174,7 @@ Para todas las interpolaciones enunciadas previamente, los errores más comunes 
 
 Como caso particular, en la oración $3$ (Figura \ref{boxplot:fig3}), ``este enjoyado juez comprará nuestro corchete'', observamos que la mayoría de los participantes cometieron errores al transcribir la palabra ``juez'', que confundieron de manera sistemática con palabras sonoramente similares como ``fue'', ``enjoyado'', que transcribieron como ``enfollado'' o ``enrollado'', y la conjugación del verbo ``comprar'' que transcribieron como ``comprando'' o ``comprar''.
 
-Buscando una explicación a estos errores y revisando el mapeo de fonos realizado previamente, descubrimos que el mapeo de /hh/ a /g/ es erróneo. Esto produjo que palabras como ``gato'' sonaran más como ``jato'' (/hh/ /a/ /t/ /o/). Adicionalmente descubrimos que ningún fono del inglés estaba siendo mapeado al fono /x/, correspondiente al grafema j en castellano. Esto produjo que cuando el sintetizador interpola entre el fono del castellano y el fono inexistente del inglés (que HTS toma como ruido blanco), el resultado fuera una mezcla entre ruido y /x/. Al ser la /x/ ruido blanco (consonante fricativa), no pudimos reconocer el error en las instancias preliminares de evaluación. Esto explicaría por qué algunos participantes tuvieron problemas transcribiendo la palabra ``juez''.
+Buscando una explicación a estos errores y revisando el mapeo de fonos realizado previamente, descubrimos que el mapeo de [hh] a [g] es erróneo. Esto produjo que palabras como ``gato'' sonaran más como ``jato'' ([hh] [a] [t] [o]). Adicionalmente descubrimos que ningún fono del inglés estaba siendo mapeado al fono [x], correspondiente al grafema j en castellano. Esto produjo que cuando el sintetizador interpola entre el fono del castellano y el fono inexistente del inglés (que HTS toma como ruido blanco), el resultado fuera una mezcla entre ruido y [x]. Al ser la [x] ruido blanco (consonante fricativa), no pudimos reconocer el error en las instancias preliminares de evaluación. Esto explicaría por qué algunos participantes tuvieron problemas transcribiendo la palabra ``juez''.
 
 Continuando con el análisis, para la interpolación de $60\%$ inglés, podemos observar un aumento notable de la variabilidad en las respuestas. Para el primero, de las $70$ respuestas obtenidas, $40$ participantes transcribieron el audio con una distancia menor a $10$ caracteres, $6$ anotaron una distancia entre $10$ y $20$ caracteres, y $24$ transcribieron el audio con distancia mayor a $20$ caracteres. Además, podemos ver en la Figura \ref{boxplot:fig3} que la distancia entre el primer y tercer cuartil es muy marcada, siendo de $20$ caracteres con una mediana igual a $10$.
 
@@ -200,7 +200,7 @@ Consideramos que este salto tan marcado en la distancia intercuartil puede deber
 
 %El segundo motivo puede deberse a que existen características particulares de las oraciones o del sintetizador generado que afectan la comprensión del audio:
 
-Además, comparando la oración $10$ (Figura \ref{boxplot:fig10}) ``El nudillo Argentino perdió su vaso'' con las anteriores, podemos apreciar que parecerían haber características particulares en las oraciones o en el modelo generado que afectan la comprensión de los audios. Para esta oración, con $70\%$ de inglés en la interpolación, $6$ de los $8$ participantes obtuvieron una transcripción del audio con distancia menor a $15$, tanto que para la oración $3$\footnote{Tener en cuenta que ambas oraciones se encuentran afectadas por el mismo mapeo incorrecto de la /x/ como fue discutido previamente}, con ese mismo grado de interpolación, todos los participantes transcribieron el audio con distancia de Levenshtein mayor a $15$. Esto parecería indicar que o bien la dificultad de las oraciones es variable o, lo que es todavía mas probable, llegado cierto punto en la interpolación, algunos fonos empiezan a ``romperse'' o se alejan demasiado del fono del castellano correcto y terminan por disminuir la claridad de la voz.
+Además, comparando la oración $10$ (Figura \ref{boxplot:fig10}) ``El nudillo Argentino perdió su vaso'' con las anteriores, podemos apreciar que parecería haber características particulares en las oraciones o en el modelo generado que afectan la comprensión de los audios. Para esta oración, con $70\%$ de inglés en la interpolación, $6$ de los $8$ participantes obtuvieron una transcripción del audio con distancia menor a $15$, tanto que para la oración $3$\footnote{Tener en cuenta que ambas oraciones se encuentran afectadas por el mismo mapeo incorrecto de la [x] como fue discutido previamente}, con ese mismo grado de interpolación, todos los participantes transcribieron el audio con distancia de Levenshtein mayor a $15$. Esto parecería indicar que o bien la dificultad de las oraciones es variable o, lo que es todavía más probable, llegado cierto punto en la interpolación, algunos fonos empiezan a ``romperse'' o se alejan demasiado del fono del castellano correcto y terminan por disminuir la claridad de la voz.
 
 \begin{figure}
 \begin{center}
@@ -288,7 +288,7 @@ Observando las oraciones una por una, podemos ver algunas discrepancias con los 
 \label{tresNueve}
 \end{figure}
 
-Buscando una explicación para este fenómeno, postulamos que esta gran diferencia entre los resultados se podría atribuir a las características particulares de cada oración. En particular la oración $9$ contiene una /\textipa{r}/ (\textit{perro}) que resulta muy notoria al pronunciarse con una intensidad menor a la esperada (más similar a una /\textipa{R}/ (\textit{pero})) y puede ser atribuida, entre otras causas, a un hablante Anglosajón con dificultades en la dicción de fonos extranjeros.
+Buscando una explicación para este fenómeno, postulamos que esta gran diferencia entre los resultados se podría atribuir a las características particulares de cada oración. En particular la oración $9$ contiene una [\textipa{r}] (\textit{perro}) que resulta muy notoria al pronunciarse con una intensidad menor a la esperada (más similar a una [\textipa{R}] (\textit{pero})) y puede ser atribuida, entre otras causas, a un hablante Anglosajón con dificultades en la dicción de fonos extranjeros.
 %perro vibrante múltiple alveolar sonora
 
 Bajo esta suposición buscamos en qué otras oraciones se presenta este fono:
@@ -319,7 +319,7 @@ En la Figura \ref{unoSeis} podemos observar que las oraciones $1$ y $7$ también
 \end{figure}
 
 
-Por otro lado en la Figura \ref{sieteOcho} mostramos los resultados obtenidos para las oraciones $6$ y $8$. En estos casos no pueden observarse diferencias notorias al compararlos contra los resultados generales. Ambas oraciones presentan el mismo comportamiento monótono, que al tener una menor cantidad de datos, se observa de manera mas difusa.
+Por otro lado en la Figura \ref{sieteOcho} mostramos los resultados obtenidos para las oraciones $6$ y $8$. En estos casos no pueden observarse diferencias notorias al compararlos contra los resultados generales. Ambas oraciones presentan el mismo comportamiento monótono, que al tener una menor cantidad de datos, se observa de manera más difusa.
 
 
 \begin{figure}
