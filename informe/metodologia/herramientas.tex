@@ -122,11 +122,20 @@ Por otro lado, como información contextual para el entrenamiento se tomaron los
 \begin{itemize}
 \item Modo de articulación del fono:
 \begin{itemize}
-	\item \TODO
+\item Oclusivo
+\item Líquido
+\item Fricativo
+\item Africativo
+\item Nasal
 \end{itemize}
 \item Punto de articulación del fono:
 \begin{itemize}
-	\item \TODO
+\item Palatal
+\item Labial
+\item Alveolar
+\item Labio-dental
+\item Dental
+\item Velar
 \end{itemize}
 \item La perspectiva articulatoria (anterior, central o posterior).
 \item Si el fono es una vocal o una consonante.
@@ -154,7 +163,7 @@ En las primeras iteraciones del desarrollo no contábamos con la información ac
 
 Desde un punto de vista puramente técnico, utilizar HTS para entrenar un modelo es bastante sencillo. Asumiendo que todos los paquetes necesarios fueron instalados, es posible entrenar una nueva voz adaptando los scripts disponibles en la página de descargas de HTS.
 
-Para ello, reemplazamos los audios en la carpeta data/raw con aquellos que se quieran utilizar y los utts correspondientes previamente generados. Además, como adelantamos en la sección anterior, le indicamos a HTS qué información contextual se utilizará para la clusterización, por lo que es necesario modificar el archivo data/questions/questions\_qst001.hed con la información contextual apropiada para una voz en castellano. En el apéndice \ref{apendiceQuestions} \completar se presenta el archivo utilizado para Loc1\_pal.
+Para ello, reemplazamos los audios en la carpeta data/raw con aquellos que se quieran utilizar y los utts correspondientes previamente generados. Además, como adelantamos en la sección anterior, le indicamos a HTS qué información contextual se utilizará para la clusterización, por lo que es necesario modificar el archivo data/questions/questions\_qst001.hed con la información contextual apropiada para una voz en castellano. En el Apéndice \ref{apendiceQuestions} se presenta el archivo utilizado para Loc1\_pal.
 
 Una vez finalizadas estas modificaciones, en la carpeta data/ de la demo puede iniciarse el pre-entrenamiento de la siguiente manera:
 

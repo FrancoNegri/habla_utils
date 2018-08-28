@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.3.19)  21 AUG 2018 23:54
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.3.19)  28 AUG 2018 08:53
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1115,66 +1115,30 @@ File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 125.
-
-! Undefined control sequence.
-<recently read> \TODO 
-                      
-l.125 	\item \TODO
-                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<recently read> \TODO 
-                      
-l.129 	\item \TODO
-                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-<imagenes/arbolDeDesicionTesis.png, id=96, 879.285pt x 580.1675pt>
+LaTeX Info: Redefining \. on input line 144.
+LaTeX Info: Redefining \% on input line 144.
+ [13 <./imagenes/hmmContext.png>]
+<imagenes/arbolDeDesicionTesis.png, id=100, 879.285pt x 580.1675pt>
 File: imagenes/arbolDeDesicionTesis.png Graphic file (type png)
 <use imagenes/arbolDeDesicionTesis.png>
 Package pdftex.def Info: imagenes/arbolDeDesicionTesis.png  used on input line 
-144. on input line 144.
+153. on input line 153.
 Package pdftex.def Info: Requested size: 351.70778pt x 232.06288pt on input lin
-e 144.
-LaTeX Info: Redefining \. on input line 149.
-LaTeX Info: Redefining \% on input line 149.
-[13 <./imagenes/hmmContext.png>]
-
-LaTeX Warning: Reference `apendiceQuestions' on page 14 undefined on input line
- 157.
-
-! Undefined control sequence.
-l.157 ...©ndice \ref{apendiceQuestions} \completar
-                                                   se presenta el archivo ut...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-LaTeX Info: Redefining \. on input line 164.
-LaTeX Info: Redefining \% on input line 164.
-[14 <./imagenes/arbolDeDesicionTesis.png>]
+e 153.
+LaTeX Info: Redefining \. on input line 166.
+LaTeX Info: Redefining \% on input line 166.
+ [14 <./imagenes/arbolDeDesicionTesis.png>]
 <imagenes/speakerInterpolation.png, id=104, 496.85625pt x 597.23125pt>
 File: imagenes/speakerInterpolation.png Graphic file (type png)
 <use imagenes/speakerInterpolation.png>
 Package pdftex.def Info: imagenes/speakerInterpolation.png  used on input line 
-191. on input line 191.
+200. on input line 200.
 Package pdftex.def Info: Requested size: 198.73897pt x 238.88826pt on input lin
-e 191.
+e 200.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 192.
-LaTeX Info: Redefining \. on input line 196.
-LaTeX Info: Redefining \% on input line 196.
+(Font)              <7> on input line 201.
+LaTeX Info: Redefining \. on input line 205.
+LaTeX Info: Redefining \% on input line 205.
  [15])
 LaTeX Info: Redefining \. on input line 78.
 LaTeX Info: Redefining \% on input line 78.
@@ -5112,13 +5076,75 @@ LaTeX Info: Redefining \% on input line 766.
  [41]
 LaTeX Info: Redefining \. on input line 766.
 LaTeX Info: Redefining \% on input line 766.
- [42]) (./final/referencias.tex
+ [42])
+LaTeX Info: Redefining \. on input line 90.
+LaTeX Info: Redefining \% on input line 90.
+ [43] (./final/questions_qst001.tex
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <6> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 6.
+
+Overfull \hbox (39.60799pt too wide) in paragraph at lines 7--8
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][] 
+ []
+
+
+Overfull \hbox (206.80775pt too wide) in paragraph at lines 76--77
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][] 
+ []
+
+LaTeX Info: Redefining \. on input line 95.
+LaTeX Info: Redefining \% on input line 95.
+[44]
+Overfull \hbox (30.808pt too wide) in paragraph at lines 104--105
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (206.80775pt too wide) in paragraph at lines 145--146
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][] 
+ []
+
+
+Overfull \hbox (30.808pt too wide) in paragraph at lines 173--174
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+LaTeX Info: Redefining \. on input line 186.
+LaTeX Info: Redefining \% on input line 186.
+[45]
+Overfull \hbox (206.80775pt too wide) in paragraph at lines 214--215
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][] 
+ []
+
+
+Overfull \hbox (30.808pt too wide) in paragraph at lines 242--243
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+LaTeX Info: Redefining \. on input line 277.
+LaTeX Info: Redefining \% on input line 277.
+[46]
+Overfull \hbox (206.80775pt too wide) in paragraph at lines 283--284
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (30.808pt too wide) in paragraph at lines 311--312
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+)
+LaTeX Info: Redefining \. on input line 92.
+LaTeX Info: Redefining \% on input line 92.
+ [47] (./final/referencias.tex
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
- [43]
-LaTeX Info: Redefining \. on input line 1.
-LaTeX Info: Redefining \% on input line 1.
- [44
+ [48
 
 ]
 Underfull \hbox (badness 1484) in paragraph at lines 4--5
@@ -5126,43 +5152,40 @@ Underfull \hbox (badness 1484) in paragraph at lines 4--5
 i & Ko-ba-yas-hi, Ta-kao.
  []
 
-[45])
-LaTeX Info: Redefining \. on input line 90.
-LaTeX Info: Redefining \% on input line 90.
- [46] (./tesis.aux
+[49])
+LaTeX Info: Redefining \. on input line 94.
+LaTeX Info: Redefining \% on input line 94.
+ [50] (./tesis.aux
 LaTeX Info: Redefining \. on input line 7.
 LaTeX Info: Redefining \% on input line 7.
-)
-
-LaTeX Warning: There were undefined references.
-
- ) 
+) ) 
 Here is how much of TeX's memory you used:
- 16852 strings out of 494796
- 306432 string characters out of 6177331
- 546194 words of memory out of 5000000
- 19800 multiletter control sequences out of 15000+600000
+ 17119 strings out of 494796
+ 308558 string characters out of 6177331
+ 546170 words of memory out of 5000000
+ 20064 multiletter control sequences out of 15000+600000
  11868 words of font info for 40 fonts, out of 8000000 for 9000
  85 hyphenation exceptions out of 8191
- 54i,15n,73p,1410b,534s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/tex
-live/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/font
-s/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1
-/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
-amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl
-10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
-></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr
-/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/share/
-texmf/fonts/type1/fkr/tipa/tipa10.pfb>
-Output written on tesis.pdf (56 pages, 1014476 bytes).
+ 54i,15n,73p,1320b,1815s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></u
+sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/sha
+re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/te
+xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cms
+l10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pf
+b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr
+/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share
+/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/share/texmf/
+fonts/type1/fkr/tipa/tipa10.pfb>
+Output written on tesis.pdf (60 pages, 1041793 bytes).
 PDF statistics:
- 319 PDF objects out of 1000 (max. 8388607)
- 194 compressed objects within 2 object streams
+ 336 PDF objects out of 1000 (max. 8388607)
+ 205 compressed objects within 3 object streams
  0 named destinations out of 1000 (max. 500000)
  244 words of extra memory for PDF output out of 10000 (max. 10000000)
 
