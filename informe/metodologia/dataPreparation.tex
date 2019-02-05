@@ -1,6 +1,6 @@
 El objetivo de esta sección es dar una introducción a los corpus utilizados, junto con la teoría referente a las metodologías utilizadas para su procesamiento. Los detalles implementativos serán descriptos más adelante en la Sección \ref{herramientas}.
 
-\subsection{Primer corpus en castellano}
+\subsection{Primer corpus en castellano} \label{firstCorpus}
 
 Al inicio de la investigación, comenzamos con el corpus \textit{SECYT-mujer}, construido por el Laboratorio de Investigaciones Sensoriales (INIGEM, UBA-CONICET) \cite{secytMujer}. El mismo está compuesto por $741$ oraciones cortas declarativas habladas por una locutora profesional en castellano rioplatense, equivalentes a $48$ minutos de habla. A continuación, tres ejemplos de las oraciones articuladas por la locutora:
 
@@ -10,7 +10,16 @@ Al inicio de la investigación, comenzamos con el corpus \textit{SECYT-mujer}, c
 
 \indent\indent \textit{Al atardecer se puso su disfraz juglaresco.}
 
-Como parte inicial del trabajo es indispensable construir el etiquetado fonético para el corpus. Estos etiquetados consistirán en una lista de fonos donde se indica cuándo comienza y termina cada uno en el audio. La calidad de las oraciones que logremos sintetizar a posteriori dependerá fuertemente del etiquetado, por lo que es necesario prestar especial cuidado en que las transcripciones estén lo mejor alineadamente posible con los audios. Las transcripciones serán necesarias para entrenar los modelos de HMM+GMM, extrayendo tanto la información acústica para cada fono (cosas tales como la frecuencia principal, la duración, etc), como así también información contextual (por ejemplo: cómo suena un fono cuando está seguido de algún otro, al principio de una oración, si se encuentra en un diptongo, etc). Por ende, una mala transcripción se traducirá indefectiblemente en un mal modelo y malas oraciones sintetizadas. Llevamos a cabo varias pruebas de concepto utilizando HTS en este corpus, experimentando con diversos métodos para obtener el etiquetado fonético. 
+En la Figura \ref{pipeline} presentamos el esquema general para en entrenamiento de un HMM que utilizaremos a lo largo de todo el trabajo. En primer lugar extraemos las caracteristicas acusticas del corpus (exitation parameters y spectral parameters en la figura) y generaremos el etiquetado fonético. Estos serán utilizados para entrenar el modelo. Por último, una vez generado el modelo se procede a la etapa de sintesis donde tomamos el HMM y una nueva transcripción para generar los parametros acusticos necesarios para producir el nuevo audio.
+
+\begin{figure}
+\includegraphics[scale=0.5]{imagenes/pipeline.png}
+\centering
+\caption{Esquema de un sistema TTS basado en HMM (tomado de \cite{phoneticAndProsodic}, página 18)}
+\label{pipeline}
+\end{figure}
+
+Comenzamos entonces construyendo el etiquetado fonético para el corpus. Estos etiquetados consistirán en una lista de fonos donde se indica cuándo comienza y termina cada uno en el audio. La calidad de las oraciones que logremos sintetizar a posteriori dependerá fuertemente del etiquetado, por lo que es necesario prestar especial cuidado en que las transcripciones estén lo mejor alineadamente posible con los audios. Las transcripciones serán necesarias para entrenar los modelos de HMM+GMM, extrayendo tanto la información acústica para cada fono (cosas tales como la frecuencia principal, la duración, etc), como así también información contextual (por ejemplo: cómo suena un fono cuando está seguido de algún otro, al principio de una oración, si se encuentra en un diptongo, etc). Por ende, una mala transcripción se traducirá indefectiblemente en un mal modelo y malas oraciones sintetizadas. Llevamos a cabo varias pruebas de concepto utilizando HTS en este corpus, experimentando con diversos métodos para obtener el etiquetado fonético. 
 
 La primera estrategia consistió en utilizar alineamiento automático con \textit{EHMM alignment} \cite{phoneticCapturing} empleando Festival y Festvox. Esta técnica tienen como principal ventaja su sencillez. Para generar las transcripciones solo es necesario contar con el corpus que se quiere anotar y sus \textit{transcripciones grafémicas} (Transcripciones gráficas, escritas).
 

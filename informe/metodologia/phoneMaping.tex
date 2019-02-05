@@ -64,6 +64,15 @@ Inglés \\
 
 Como solución general, ideamos el siguiente método. Tomamos los fonos generados por Festival para el corpus en inglés y los traducimos a fonos del castellano antes del entrenamiento. Luego, entrenamos el modelo en inglés, utilizando los símbolos en castellano. De esta manera, esperamos construir un modelo en inglés capaz de comprender partituras que utilizan los símbolos en castellano.
 
+Recordemos en la Sección \ref{firstCorpus} donde se introdujo el esquema general de entrenamiento. El proceso de entrenamiento y sintesis se verá afectado como se muestra en la Figura \ref{pipelineAdapted}.
+
+\begin{figure}
+\includegraphics[scale=0.5]{imagenes/pipeline.png}
+\caption{Esquema de un sistema TTS basado en HMM adaptado para mapear de un conjunto de fonos a otro}
+\label{pipelineAdapted}
+\centering
+\end{figure}
+
 El objetivo de esta sección será entonces generar una traducción de los fonos del inglés al castellano que nos permita junto con una partitura en castellano y un corpus en inglés, sintetizar habla en castellano.
 
 Para ello, confeccionamos una tabla donde cada fono del repertorio del castellano estuviera mapeado a uno del repertorio del inglés. Por ejemplo el fono [ae] (\textit{alice}) del inglés lo traducimos al fono [a] (\textit{amigo}) del castellano. De la misma manera, el fono [ao] del inglés (\textit{for}) pasa a ser el fono [o] (\textit{gato}) del castellano. En la Tabla \ref{mapeoFonetico} se presenta una lista exhaustiva de los reemplazos fonéticos utilizados.
