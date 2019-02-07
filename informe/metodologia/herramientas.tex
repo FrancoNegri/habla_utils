@@ -47,25 +47,25 @@ En la nueva estructura de archivos generada, copiamos los audios en la carpeta w
 Además en los archivos 
 
 \begin{tcolorbox}
-festvox/uba\_es\_\_cg.scm 
+festvox/uba\_es\_cg.scm 
 
-festvox/uba\_es\_\_clunits.scm
+festvox/uba\_es\_clunits.scm
 \end{tcolorbox}
 
 \noindent es necesario cambiar las dependencias 
 
 \begin{tcolorbox}
-(require 'uba\_es\_\_phoneset)
+(require 'uba\_es\_phoneset)
 
-(require 'uba\_es\_\_lexicon)
+(require 'uba\_es\_lexicon)
 \end{tcolorbox}
 
 \noindent que contienen los símbolos fonéticos del español de España, por estas otras:
 
 \begin{tcolorbox}
-(require 'uba\_es\_\_phoneset\_mex)
+(require 'uba\_es\_phoneset\_mex)
 
-(require 'uba\_es\_\_lexicon\_mex)
+(require 'uba\_es\_lexicon\_mex)
 \end{tcolorbox}
 
 \noindent que contienen el conjunto de símbolos fonéticos del español mexicano, que se aproximan mucho a los del castellano rioplatense (no contiene [th], por ejemplo).
@@ -88,7 +88,7 @@ De manera análoga, esta herramienta permite crear partituras utilizadas para la
 ./bin/do\_build build\_prompts ./synth/txt.done.data
 \end{tcolorbox}
 
-En la carpeta utt gen/prompt-utt se habrán generado los .utt necesarios para la síntesis.
+En la carpeta utt\\ gen/prompt-utt se habrán generado los .utt necesarios para la síntesis.
 
 
 \subsection{HTS}
@@ -103,7 +103,7 @@ HTS \cite{hts} es un framework de entrenamiento y síntesis de sistemas TTS basa
 \centering
 \end{figure}
 
-La Figura \ref{hmmStructure} resume la estructura de un HMM usado para síntesis del habla. El espectro y la frecuencia fundamental son modelados en paralelo usando vectores separados. En particular el espectro es modelado como un vector de Gaussianas $n$ dimensional, mientras que la frecuencia principal es modelada como un conjunto de vectores de Gaussianas de dimensión uno y cero.
+La Figura \ref{hmmStructure} resume la estructura de un HMM usado para síntesis del habla. El espectro y la frecuencia fundamental son modelados en paralelo usando vectores separados. En particular el espectro es modelado como un vector $n$ dimensional de Gaussianas, mientras que la frecuencia principal es modelada como un conjunto de vectores de Gaussianas de dimensión uno y cero.
 
 Al mismo tiempo HTS toma la decisión de modelar la información prosódica dentro de este mismo framework. Para esto, las distribuciones para el espectro, la frecuencia principal y las duraciones son clusterizadas independientemente utilizando la información contextual extraída de los audios de entrenamiento. A modo ilustrativo en la Figura \ref{hmmTree} se muestra una esquematización de un HMM resultante, utilizando árboles de decisión para clusterizar los datos. Notar que cada hoja del árbol resultante coincide con un vector $n$ dimensional de Gaussianas o un conjunto de vector de Gaussianas de dimensión cero y uno, según corresponda al espectro o a la frecuencia principal.
 
@@ -151,7 +151,7 @@ En la Figura \ref{genTree} se muestra el resultado de un fragmento de uno de los
 \begin{figure}
 \begin{center}
 \includegraphics[scale=0.4]{imagenes/arbolDeDesicionTesis.png}
-\caption{Árbol de decisión generado a partir de los datos para la duración de un HMM}
+\caption{Representación de un árbol de decisión generado a partir de los datos para la duración de un HMM}
 \label{genTree}
 \end{center}
 \end{figure}
@@ -179,7 +179,7 @@ perl scripts/Training.pl scripts/Config.pm $>$ train.log 2$>$ err.log
 
 Una vez que se completa el entrenamiento, podemos encontrar en la carpeta voices/qst001/ver1 el modelo generado (.htsvoice).
 
-Para este trabajo todos los audios usaron sampling rate de $48$kHz, precisión de $16$bits, mono. Además HTS requiere que explicitemos un rango de extracción para la frecuencia fundamental de la voz. Tanto para \textit{SECYT-mujer} como para \textit{Loc1-Pal} el rango utilizado utilizado fue desde $100$hz hasta $350$hz, mientras que para \textit{CMU-ARCTIC} el rango de extracción fue desde $110$kHz hasta $280$kHz.
+Para este trabajo todos los audios usaron sampling rate de $48$kHz, precisión de $16$bits, mono. Además HTS requiere que explicitemos un rango de extracción para la frecuencia fundamental de la voz. Tanto para \textit{SECYT-mujer} como para \textit{Loc1-Pal} el rango utilizado fue desde $100$hz hasta $350$hz, mientras que para \textit{CMU-ARCTIC} el rango de extracción fue desde $110$kHz hasta $280$kHz.
 
 Estos parámetros y muchos otros pueden ser configurados fácilmente corriendo
 
@@ -209,4 +209,4 @@ Una vez obtenido el nuevo HMM, el proceso de síntesis puede ocurrir como para c
 hts\_engine -m models/cmu\_us\_arctic\_slt.htsvoice -m models/loc1\_pal.htsvoice -i 2 0.7 0.3 -ow out.wav in.lab
 \end{tcolorbox}
 
-Esta herramienta permite además modificar el pitch, la duración del audio y otros aspectos de la síntesis. La documentación completa puede encontrarse en la pagina web: http://hts-engine.sourceforge.net/.
+Esta herramienta permite además modificar el pitch, la duración del audio y otros aspectos de la síntesis. La documentación completa puede encontrarse en la página web: http://hts-engine.sourceforge.net/.

@@ -39,7 +39,7 @@ Con respecto de la región en que cada participante pasó su infancia puede vers
 
 A continuación intentaremos medir la inteligibilidad de cada una de las oraciones en base a las respuestas obtenidas en la encuesta. Para ello tomaremos la oración transcripta por los participantes y mediremos cuán lejos o cerca está de la oración original. 
 
-Para esto utilizaremos un concepto denominado \textit{distancia de Levenshtein}. La distancia de Levenshtein consiste en calcular la menor cantidad posible de inserciones, remociones o reemplazos de caracteres que son requeridos para transformar una oración en otra. Así por ejemplo, para transformar \textit{cosa} en \textit{cal} se requieren $3$ transformaciones: reemplazar \textit{o} por \textit{a} final, reemplazar \textit{s} por \textit{l} y remover la \textit{a}. Por lo tanto, la distancia de Levenshtein entre estas dos palabras es de $3$. Además, se considerará un reemplazo cualquier acento, por lo que \textit{á} y \textit{a} tendrán distancia $1$ pero no así el reemplazo de mayúsculas y minúsculas, por lo que \textit{a} y \textit{A} tendrán distancia $0$.
+Para esto utilizaremos un concepto denominado \textit{distancia de Levenshtein}. La distancia de Levenshtein consiste en calcular la menor cantidad posible de inserciones, remociones o reemplazos de caracteres que son requeridos para transformar una oración en otra. Así por ejemplo, para transformar \textit{cosa} en \textit{cal} se requieren $3$ transformaciones: reemplazar \textit{o} por \textit{a}, reemplazar \textit{s} por \textit{l} y remover la \textit{a}. Por lo tanto, la distancia de Levenshtein entre estas dos palabras es de $3$. Además, se considerará un reemplazo cualquier acento, por lo que \textit{á} y \textit{a} tendrán distancia $1$ pero no así el reemplazo de mayúsculas y minúsculas, por lo que \textit{a} y \textit{A} tendrán distancia $0$.
 
 En la Figura \ref{resultadosGenerales} presentamos los resultados generales obtenidos sin ningún tipo de modificación a las transcripciones ingresadas por los sujetos. En el eje $x$ presentamos los grados de interpolación de inglés-castellano, que varía entre $30\%$ inglés + $70\%$ castellano (desde ahora, $30\%$ inglés) y $70\%$ inglés + $30\%$ castellano (desde ahora, $70\%$ inglés). En el eje $y$ presentamos la distancia de Levenshtein entre la oración objetivo y aquella transcripta por cada participante. Cada uno de los boxplots describe la distancia mínima obtenida y la distancia máxima (los bigotes), como así también el primer y tercer cuartil (el piso y el techo de la caja) y la mediana (línea interior que atraviesa la caja). Adicionalmente podemos observar con círculos vacíos los outliers de la muestra.
 
@@ -65,7 +65,7 @@ También pueden verse omisiones de acentos y faltas ortográficas en palabras qu
 
 Todas estas expresiones, modismos, y faltas ortográficas tienen un efecto directo y negativo sobre lo que estamos intentando medir. Así, por ejemplo, un participante que haya transcripto ``\textit{no entendí nada}'' en su respuesta devolverá una distancia de Levenshtein distinta de aquel que simplemente dejó el campo vacío, cuando en realidad estas dos respuestas expresan el mismo grado de comprensión del texto.
 
-Con el objetivo de reducir la variabilidad en la muestra, decidimos realizar una limpieza de los datos. Intentando mantener el espíritu de las transcripciones, buscamos uniformizarlas para poder realizar un mejor análisis. Así, consideramos que si un participante escribió ``...'' en medio de una oración, su intención era la darnos a entender que no comprendió parte de la misma. Para nuestro análisis, esto sería equivalente a no haber escrito nada. Bajo este razonamiento, consideramos que los siguientes cambios no presentan alteraciones graves en las respuestas de los participantes:
+Con el objetivo de reducir la variabilidad en la muestra, decidimos realizar una limpieza de los datos. Intentando mantener el espíritu de las transcripciones, buscamos uniformizarlas para poder realizar un mejor análisis. Así, consideramos que si un participante escribió ``...'' en medio de una oración, su intención era la de darnos a entender que no comprendió parte de la misma. Para nuestro análisis, esto sería equivalente a no haber escrito nada. Bajo este razonamiento, consideramos que los siguientes cambios no presentan alteraciones graves en las respuestas de los participantes:
 
 \begin{itemize}
 	\item Corrección de ``ni'' por ``ñ'' en la palabra \textit{grunion}.
@@ -101,7 +101,7 @@ Para la interpolación $50\%$ de inglés, de un total de $75$ participantes, $57
 %Estadistica
 \subsection{Análisis estadístico}
 
-En la siguiente sección, realizaremos un análisis estadístico con el objetivo de vislumbrar cuan estadísticamente significativas son las diferencias en inteligibilidad entre los saltos de interpolación.
+En la siguiente sección, realizaremos un análisis estadístico con el objetivo de vislumbrar cuán estadísticamente significativas son las diferencias en inteligibilidad entre los saltos de interpolación.
 
 En primera instancia evaluamos usar el Student's two-sample t-test para este análisis. Este test pide como requerimiento que las muestras tengan una distribución normal. Para probar esto aplicamos el test de Shapiro sobre los datos normalizados.
 
@@ -120,7 +120,7 @@ $50\%$ & 1.271e-06 & 0.8674 \\
 \hline
 $60\%$ & 2.932e-06 & 0.8694 \\
 \hline
-$60\%$ & 0.00215 & 0.9380\\
+$70\%$ & 0.00215 & 0.9380\\
 
 \hline
 \end{tabular}
@@ -159,7 +159,7 @@ Tras aplicar la normalización de los datos descripta en la Sección \ref{transc
 	\item ``Las acongojadas cotorras sonrieron a mi círculo''
 \end{itemize}
 
-Podemos observar las siguientes transcripciones extraídas de los resultados:
+Podemos observar las siguientes transcripciones extraídas de los $32$ resultados para esta oración:
 
 \begin{itemize}
 	\item Distancia 0: ``Las acongojadas cotorras sonrieron a mi círculo''
@@ -172,7 +172,7 @@ Podemos observar las siguientes transcripciones extraídas de los resultados:
 
 Para todas las interpolaciones enunciadas previamente, los errores más comunes varían desde falta de acentos en palabras como ``concluyó'' hasta faltas de inteligibilidad en palabras con cierta complejidad fonética como ``aguileña'' o ``gruñón''. En el Apéndice \ref{transcripcionesParticipantes} listamos todas las transcripciones ingresadas por los participantes del estudio.
 
-Como caso particular, en la oración $3$ (Figura \ref{boxplot:fig3}), ``este enjoyado juez comprará nuestro corchete'', observamos que la mayoría de los participantes cometieron errores al transcribir la palabra ``juez'', que confundieron de manera sistemática con palabras sonoramente similares como ``fue'', ``enjoyado'', que transcribieron como ``enfollado'' o ``enrollado'', y la conjugación del verbo ``comprar'' que transcribieron como ``comprando'' o ``comprar''.
+Como caso particular, en la oración $3$ (Figura \ref{boxplot:fig3}, $37$ respuestas), ``este enjoyado juez comprará nuestro corchete'', observamos que la mayoría de los participantes cometieron errores al transcribir la palabra ``juez'', que confundieron de manera sistemática con palabras sonoramente similares como ``fue'', ``enjoyado'', que transcribieron como ``enfollado'' o ``enrollado'', y la conjugación del verbo ``comprar'' que transcribieron como ``comprando'' o ``comprar''.
 
 Buscando una explicación a estos errores y revisando el mapeo de fonos realizado previamente, descubrimos que el mapeo de [hh] a [g] es erróneo. Esto produjo que palabras como ``gato'' sonaran más como ``jato'' ([hh] [a] [t] [o]). Adicionalmente descubrimos que ningún fono del inglés estaba siendo mapeado al fono [x], correspondiente al grafema j en castellano. Esto produjo que cuando el sintetizador interpola entre el fono del castellano y el fono inexistente del inglés (que HTS toma como ruido blanco), el resultado fuera una mezcla entre ruido y [x]. Al ser la [x] ruido blanco (consonante fricativa), no pudimos reconocer el error en las instancias preliminares de evaluación. Esto explicaría por qué algunos participantes tuvieron problemas transcribiendo la palabra ``juez''.
 
@@ -200,7 +200,7 @@ Consideramos que este salto tan marcado en la distancia intercuartil puede deber
 
 %El segundo motivo puede deberse a que existen características particulares de las oraciones o del sintetizador generado que afectan la comprensión del audio:
 
-Además, comparando la oración $10$ (Figura \ref{boxplot:fig10}) ``El nudillo Argentino perdió su vaso'' con las anteriores, podemos apreciar que parecería haber características particulares en las oraciones o en el modelo generado que afectan la comprensión de los audios. Para esta oración, con $70\%$ de inglés en la interpolación, $6$ de los $8$ participantes obtuvieron una transcripción del audio con distancia menor a $15$, tanto que para la oración $3$\footnote{Tener en cuenta que ambas oraciones se encuentran afectadas por el mismo mapeo incorrecto de la [x] como fue discutido previamente}, con ese mismo grado de interpolación, todos los participantes transcribieron el audio con distancia de Levenshtein mayor a $15$. Esto parecería indicar que o bien la dificultad de las oraciones es variable o, lo que es todavía más probable, llegado cierto punto en la interpolación, algunos fonos empiezan a ``romperse'' o se alejan demasiado del fono del castellano correcto y terminan por disminuir la claridad de la voz.
+Además, comparando la oración $10$ (Figura \ref{boxplot:fig10}, $32$ respuestas) ``El nudillo Argentino perdió su vaso'' con las anteriores, podemos apreciar que parecería haber características particulares en las oraciones o en el modelo generado que afectan la comprensión de los audios. Para esta oración, con $70\%$ de inglés en la interpolación, $6$ de los $8$ participantes obtuvieron una transcripción del audio con distancia menor a $15$, tanto que para la oración $3$\footnote{Tener en cuenta que ambas oraciones se encuentran afectadas por el mismo mapeo incorrecto de la [x] como fue discutido previamente}, con ese mismo grado de interpolación, todos los participantes transcribieron el audio con distancia de Levenshtein mayor a $15$. Esto parecería indicar que o bien la dificultad de las oraciones es variable o, lo que es todavía más probable, llegado cierto punto en la interpolación, algunos fonos empiezan a ``romperse'' o se alejan demasiado del fono del castellano correcto y terminan por disminuir la claridad de la voz.
 
 \begin{figure}
 \begin{center}
@@ -276,7 +276,7 @@ De esto podemos concluir que existe evidencia estadística que indica que aument
 
 \subsection{Análisis por oración}
 
-Observando las oraciones una por una, podemos ver algunas discrepancias con los resultados generales. Por ejemplo, en la oración $9$ (``Ese gruñón perro prometió a esos cuñados''), con un $40\%$ de interpolación de inglés, el $60\%$ de los participantes considera que la voz pertenece a un hablante de habla anglosajona, siendo que en los resultados generales, para ese mismo grado de interpolación, menos del $25\%$ de los participantes lo afirmaban.
+Observando las oraciones una por una, podemos ver algunas discrepancias con los resultados generales. Por ejemplo, en la oración $9$ (``Ese gruñón perro prometió a esos cuñados''), con un $40\%$ de interpolación de inglés, el $60\%$ de los participantes ($16$ de los $30$ que contestaron la encuesta) considera que la voz pertenece a un hablante de habla anglosajona, siendo que en los resultados generales, para ese mismo grado de interpolación, menos del $25\%$ de los participantes lo afirmaban.
 
 \begin{figure}
 \begin{center}$
@@ -288,7 +288,7 @@ Observando las oraciones una por una, podemos ver algunas discrepancias con los 
 \label{tresNueve}
 \end{figure}
 
-Buscando una explicación para este fenómeno, postulamos que esta gran diferencia entre los resultados se podría atribuir a las características particulares de cada oración. En particular la oración $9$ contiene una [\textipa{r}] (\textit{perro}) que resulta muy notoria al pronunciarse con una intensidad menor a la esperada (más similar a una [\textipa{R}] (\textit{pero})) y puede ser atribuida, entre otras causas, a un hablante Anglosajón con dificultades en la dicción de fonos extranjeros.
+Aunque este fenómeno puede deberse a la cantidad reducida de datos con los que trabajamos, no debe descartarse la posibilidad de que esta gran diferencia entre los resultados se pueda atribuir a las características particulares de cada oración. En particular la oración $9$ contiene una [\textipa{r}] (\textit{perro}) que resulta muy notoria al pronunciarse con una intensidad menor a la esperada (más similar a una [\textipa{R}] (\textit{pero})) y puede ser atribuida, entre otras causas, a un hablante Anglosajón con dificultades en la dicción de fonos extranjeros.
 %perro vibrante múltiple alveolar sonora
 
 Bajo esta suposición buscamos en qué otras oraciones se presenta este fono:
@@ -300,7 +300,7 @@ Bajo esta suposición buscamos en qué otras oraciones se presenta este fono:
 \item Oración $8$: ``Las acongojadas cotorras sonrieron a mi círculo''
 \end{itemize}
 
-En la Figura \ref{unoSeis} podemos observar que las oraciones $1$ y $7$ también tienen una marcada diferenciación respecto a los resultados generales. En particular estas dos oraciones no describen el comportamiento monótono observado previamente. 
+En la Figura \ref{unoSeis} podemos observar que las oraciones $1$ y $7$ (con $37$ respuestas cada una) también tienen una marcada diferenciación respecto a los resultados generales. En particular estas dos oraciones no describen el comportamiento monótono observado previamente. 
 
 \begin{figure}
 \centering
@@ -319,7 +319,7 @@ En la Figura \ref{unoSeis} podemos observar que las oraciones $1$ y $7$ también
 \end{figure}
 
 
-Por otro lado en la Figura \ref{sieteOcho} mostramos los resultados obtenidos para las oraciones $6$ y $8$. En estos casos no pueden observarse diferencias notorias al compararlos contra los resultados generales. Ambas oraciones presentan el mismo comportamiento monótono, que al tener una menor cantidad de datos, se observa de manera más difusa.
+Por otro lado en la Figura \ref{sieteOcho} mostramos los resultados obtenidos para las oraciones $6$ ($41$ respuestas) y $8$ ($30$ respuestas). En estos casos no pueden observarse diferencias notorias al compararlos contra los resultados generales. Ambas oraciones presentan el mismo comportamiento monótono, que al tener una menor cantidad de datos, se observa de manera más difusa.
 
 
 \begin{figure}
